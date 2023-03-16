@@ -12,11 +12,13 @@ function windowLoad() {
             !saveUserTheme ? changeTheme() : null;
         });
 
-        const themeButton = document.querySelector(".change-theme");
-        if(themeButton) {
-            themeButton.addEventListener("click", function (e) {
-                changeTheme(true);
-            });
+        const themeButtons = document.querySelectorAll(".change-theme");
+        if(themeButtons.length) {
+            themeButtons.forEach(btn => {
+                btn.addEventListener("click", function (e) {
+                    changeTheme(true);
+                });
+            })
         }
     };
     
