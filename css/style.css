@@ -131,6 +131,10 @@ body {
   color: #1E222A;
 }
 
+button, a, .header-main-actions__el, .header-navigation__el {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .header-burger {
   display: none;
   width: 40px;
