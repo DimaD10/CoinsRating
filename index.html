@@ -751,7 +751,7 @@
                                 </span>
                                 <span class="watchlist-filters__name">Customize</span>
                             </button>
-                            <button class="watchlist-filters__button watchlist-filters__button_filter">
+                            <button class="watchlist-filters__button watchlist-filters__button_filter" data-filter="open">
                                 <span class="watchlist-filters__icon">
                                     <img src="./img/icons/filters-icon.svg" alt="filters">
                                 </span>
@@ -1372,6 +1372,154 @@
                 </p>
             </div>
         </footer>
+
+
+        <div class="filter">
+            <div class="filter__wrapper">
+                <div class="filter__form">
+                    <div class="filter-select">
+                        <div class="filter-select__label">Platform</div>
+                        <div class="filter-select__select select">
+                            <div class="select__header">
+                                <span class="select__current">All genre</span>
+                                <div class="select__icon">
+                                    <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.32145 7.26271L9.16204 7.26271C9.47937 7.26271 9.77043 7.10216 9.9185 6.84612C10.0664 6.58955 10.0469 6.28006 9.8676 6.04042L5.89899 0.744724C5.75692 0.555176 5.5217 0.441703 5.27009 0.440676C5.01875 0.440116 4.78278 0.552189 4.63955 0.741177L0.618614 6.03696C0.437394 6.27555 0.416305 6.58657 0.563863 6.8441C0.711422 7.10119 1.00327 7.26271 1.32145 7.26271Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="select__body">
+                                <div class="select__item">All genre</div>
+                                <div class="select__item">All genre</div>
+                                <div class="select__item">Something else</div>
+                                <div class="select__item">All genre</div>
+                                <div class="select__item">All genre</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-select">
+                        <div class="filter-select__label">Algoritm</div>
+                        <div class="filter-select__select select">
+                            <div class="select__header">
+                                <span class="select__current">All genre</span>
+                                <div class="select__icon">
+                                    <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.32145 7.26271L9.16204 7.26271C9.47937 7.26271 9.77043 7.10216 9.9185 6.84612C10.0664 6.58955 10.0469 6.28006 9.8676 6.04042L5.89899 0.744724C5.75692 0.555176 5.5217 0.441703 5.27009 0.440676C5.01875 0.440116 4.78278 0.552189 4.63955 0.741177L0.618614 6.03696C0.437394 6.27555 0.416305 6.58657 0.563863 6.8441C0.711422 7.10119 1.00327 7.26271 1.32145 7.26271Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="select__body">
+                                <div class="select__item">All genre</div>
+                                <div class="select__item">All genre</div>
+                                <div class="select__item">Something else</div>
+                                <div class="select__item">All genre</div>
+                                <div class="select__item">All genre</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-range">
+                        <div class="filter-range__title">Market Cap</div>
+                        <div class="filter-range__inputs">
+                            <div class="filter-range__input-box">
+                                <input type="number" class="filter-range__input" placeholder="From">
+                                <div class="filter-range__icon">
+                                    $
+                                </div>
+                            </div>
+                            <div class="filter-range__input-box">
+                                <input type="number" class="filter-range__input" placeholder="To">
+                                <div class="filter-range__icon">
+                                    $
+                                </div>
+                            </div>
+                        </div>
+                        <input type="range" class="filter-range__range" min="0" max="500000" value="0">
+                        <div class="filter-range__labels">
+                            <span class="filter-range__label">0</span>
+                            <span class="filter-range__label">500 k</span>
+                        </div>
+                    </div>
+                    <div class="filter-range">
+                        <div class="filter-range__title">Price</div>
+                        <div class="filter-range__inputs">
+                            <div class="filter-range__input-box">
+                                <input type="number" class="filter-range__input" placeholder="From">
+                                <div class="filter-range__icon">
+                                    $
+                                </div>
+                            </div>
+                            <div class="filter-range__input-box">
+                                <input type="number" class="filter-range__input" placeholder="To">
+                                <div class="filter-range__icon">
+                                    $
+                                </div>
+                            </div>
+                        </div>
+                        <input type="range" class="filter-range__range" min="0" max="500000" value="0">
+                        <div class="filter-range__labels">
+                            <span class="filter-range__label">0</span>
+                            <span class="filter-range__label">500 k</span>
+                        </div>
+                    </div>
+                    <div class="filter-range">
+                        <div class="filter-range__title">Trading Volume</div>
+                        <div class="filter-range__inputs">
+                            <div class="filter-range__input-box">
+                                <input type="number" class="filter-range__input" placeholder="From">
+                                <div class="filter-range__icon">
+                                    $
+                                </div>
+                            </div>
+                            <div class="filter-range__input-box">
+                                <input type="number" class="filter-range__input" placeholder="To">
+                                <div class="filter-range__icon">
+                                    $
+                                </div>
+                            </div>
+                        </div>
+                        <input type="range" class="filter-range__range" min="0" max="500000" value="0">
+                        <div class="filter-range__labels">
+                            <span class="filter-range__label">0</span>
+                            <span class="filter-range__label">500 k</span>
+                        </div>
+                    </div>
+                    <div class="filter-range">
+                        <div class="filter-range__title">Circulating Supply</div>
+                        <div class="filter-range__inputs">
+                            <div class="filter-range__input-box">
+                                <input type="number" class="filter-range__input" placeholder="From">
+                                <div class="filter-range__icon">
+                                    $
+                                </div>
+                            </div>
+                            <div class="filter-range__input-box">
+                                <input type="number" class="filter-range__input" placeholder="To">
+                                <div class="filter-range__icon">
+                                    $
+                                </div>
+                            </div>
+                        </div>
+                        <input type="range" class="filter-range__range" min="0" max="500000" value="0">
+                        <div class="filter-range__labels">
+                            <span class="filter-range__label">0</span>
+                            <span class="filter-range__label">500 k</span>
+                        </div>
+                    </div>
+
+                    <div class="filter-search">
+                        <button class="filter-search__icon">
+                            <img src="./img/icons/search-icon.svg" alt="">
+                        </button>
+                        <input type="text" class="filter-search__input" placeholder="Search"></input>
+                    </div>
+                    <div class="filter__buttons">
+                        <button class="filter__button filter__button_filled" data-filter="close">Apply</button>
+                        <button class="filter__button filter__button_stroke" data-filter="close">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="./js/burger.js"></script>
@@ -1383,5 +1531,7 @@
     <script src="./js/category-togler.js"></script>
     <script src="./js/favorite.js"></script>
     <script src="./js/horizontal-scroll.js"></script>
+
+    <script src="./js/filetr-popup.js"></script>
 </body>
 </html>
