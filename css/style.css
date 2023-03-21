@@ -301,6 +301,47 @@ button, a, .header-main-actions__el, .header-navigation__el {
   }
 }
 
+.breadcrumbs__wrapper {
+  padding-bottom: 13px;
+  margin-bottom: 16px;
+  -webkit-transition: border ease-in-out 0.3s;
+  transition: border ease-in-out 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6px;
+}
+.breadcrumbs__page {
+  font-family: Rubik;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 138.19%;
+  color: #A5B2C2;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.breadcrumbs__page::after {
+  content: "";
+  width: 5px;
+  height: 4px;
+  background: url("../img/icons/arrow-right.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-left: 6px;
+}
+.breadcrumbs__page_current {
+  pointer-events: none;
+  color: #4A596D;
+}
+.breadcrumbs__page_current::after {
+  display: none;
+}
+
 body {
   background-color: #E8EBEF;
   -webkit-transition: background-color ease-in-out 0.3s, color ease-in-out 0.3s;
@@ -695,6 +736,29 @@ body .footer .footer-social__el::after {
   body .footer .info-footer {
     border-bottom: 1px solid #B5BACB;
   }
+}
+body .main__breadcrumbs .breadcrumbs__wrapper {
+  border-bottom: 1px solid rgba(181, 186, 203, 0.4);
+}
+body .watchlist_earn-games .watchlist-title {
+  border-right: 1px solid #B5BACB;
+}
+@media (max-width: 480px) {
+  body .watchlist_earn-games .watchlist-title {
+    border-right: 0px;
+  }
+}
+body .watchlist_earn-games .watchlist-showing {
+  border-right: 0;
+}
+body .watchlist_earn-games .watchlist-filters__button_filter._opened {
+  border: 1px solid transparent;
+}
+body .watchlist_earn-games .watchlist-orientation__button._current {
+  border: 1px solid transparent;
+}
+body .watchlist_earn-games .filter, body .watchlist_earn-games .filter__wrapper {
+  background: transparent;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1210,6 +1274,41 @@ body .footer .footer-social__el::after {
     border-bottom: 1px solid #B5BACB;
   }
 }
+@media (prefers-color-scheme: dark) {
+  body .main__breadcrumbs .breadcrumbs__wrapper {
+    border-bottom: 1px solid rgba(28, 41, 81, 0.431372549);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .watchlist_earn-games .watchlist-title {
+    border-right: 1px solid #323642;
+  }
+}
+@media (prefers-color-scheme: dark) and (max-width: 480px) {
+  body .watchlist_earn-games .watchlist-title {
+    border-right: 0px;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .watchlist_earn-games .watchlist-showing {
+    border-right: 0;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .watchlist_earn-games .watchlist-filters__button_filter._opened {
+    border: 1px solid transparent;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .watchlist_earn-games .watchlist-orientation__button._current {
+    border: 1px solid transparent;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .watchlist_earn-games .filter, body .watchlist_earn-games .filter__wrapper {
+    background: transparent;
+  }
+}
 html.dark body {
   background-color: #1E222A;
   color: #fff;
@@ -1637,6 +1736,29 @@ html.dark body .footer .footer-social__el::after {
   html.dark body .footer .info-footer {
     border-bottom: 1px solid #B5BACB;
   }
+}
+html.dark body .main__breadcrumbs .breadcrumbs__wrapper {
+  border-bottom: 1px solid rgba(28, 41, 81, 0.431372549);
+}
+html.dark body .watchlist_earn-games .watchlist-title {
+  border-right: 1px solid #323642;
+}
+@media (max-width: 480px) {
+  html.dark body .watchlist_earn-games .watchlist-title {
+    border-right: 0px;
+  }
+}
+html.dark body .watchlist_earn-games .watchlist-showing {
+  border-right: 0;
+}
+html.dark body .watchlist_earn-games .watchlist-filters__button_filter._opened {
+  border: 1px solid transparent;
+}
+html.dark body .watchlist_earn-games .watchlist-orientation__button._current {
+  border: 1px solid transparent;
+}
+html.dark body .watchlist_earn-games .filter, html.dark body .watchlist_earn-games .filter__wrapper {
+  background: transparent;
 }
 
 html.light body {
@@ -2072,6 +2194,29 @@ html.light body .footer .footer-social__el::after {
   html.light body .footer .info-footer {
     border-bottom: 1px solid #B5BACB;
   }
+}
+html.light body .main__breadcrumbs .breadcrumbs__wrapper {
+  border-bottom: 1px solid rgba(181, 186, 203, 0.4);
+}
+html.light body .watchlist_earn-games .watchlist-title {
+  border-right: 1px solid #B5BACB;
+}
+@media (max-width: 480px) {
+  html.light body .watchlist_earn-games .watchlist-title {
+    border-right: 0px;
+  }
+}
+html.light body .watchlist_earn-games .watchlist-showing {
+  border-right: 0;
+}
+html.light body .watchlist_earn-games .watchlist-filters__button_filter._opened {
+  border: 1px solid transparent;
+}
+html.light body .watchlist_earn-games .watchlist-orientation__button._current {
+  border: 1px solid transparent;
+}
+html.light body .watchlist_earn-games .filter, html.light body .watchlist_earn-games .filter__wrapper {
+  background: transparent;
 }
 
 .header {
@@ -3727,6 +3872,13 @@ html.light body .footer .footer-social__el::after {
   transition: background-color ease-in-out 0.3s, color ease-in-out 0.3s;
   gap: 6px;
 }
+.list-pos__date {
+  margin-left: auto;
+  margin-right: 9px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
 
 @media (max-width: 1200px) {
   .list-trends._current {
@@ -4037,6 +4189,209 @@ html.light body .footer .footer-social__el::after {
   .watchlist .pagination {
     margin-top: 15px;
   }
+}
+.watchlist_earn-games .watchlist-header__title {
+  margin-right: auto;
+  font-family: Rubik;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+}
+.watchlist_earn-games .watchlist-title {
+  padding-right: 18px;
+  -webkit-transition: border ease-in-out 0.3s;
+  transition: border ease-in-out 0.3s;
+}
+.watchlist_earn-games .watchlist-header__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.watchlist_earn-games .watchlist-showing {
+  border-right: 0;
+}
+@media (max-width: 767.98px) {
+  .watchlist_earn-games .watchlist-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 10px;
+  }
+}
+@media (max-width: 767.98px) {
+  .watchlist_earn-games .watchlist-filters {
+    margin-left: auto;
+  }
+}
+@media (max-width: 767.98px) {
+  .watchlist_earn-games .watchlist-showing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media (max-width: 480px) {
+  .watchlist_earn-games .watchlist-showing {
+    display: none;
+  }
+}
+@media (max-width: 767.98px) {
+  .watchlist_earn-games .watchlist-header__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+}
+.watchlist_earn-games .watchlist-filters__button_filter._opened {
+  border: 1px solid transparent;
+  background-color: #2A59FF;
+}
+.watchlist_earn-games .watchlist-filters__button_filter._opened::before, .watchlist_earn-games .watchlist-filters__button_filter._opened::after {
+  display: none;
+}
+.watchlist_earn-games .watchlist-filters__button_filter._opened path {
+  fill: #fff;
+}
+.watchlist_earn-games .watchlist-filters__button_filter._opened .watchlist-filters__name {
+  color: #fff;
+}
+.watchlist_earn-games .watchlist-filters__button_filter {
+  -webkit-transition: border ease-in-out 0.3s, background-color ease-in-out 0.3s;
+  transition: border ease-in-out 0.3s, background-color ease-in-out 0.3s;
+}
+.watchlist_earn-games .watchlist-filters__button_filter svg {
+  width: 10px;
+}
+.watchlist_earn-games .watchlist-filters__button_filter path {
+  fill: #2A59FF;
+  -webkit-transition: fill ease-in-out 0.3s;
+  transition: fill ease-in-out 0.3s;
+}
+.watchlist_earn-games .watchlist-orientation__button {
+  -webkit-transition: background-color ease-in-out 0.3s;
+  transition: background-color ease-in-out 0.3s;
+}
+.watchlist_earn-games .watchlist-orientation__button path {
+  -webkit-transition: fill ease-in-out 0.3s;
+  transition: fill ease-in-out 0.3s;
+}
+.watchlist_earn-games .watchlist-orientation__button svg {
+  pointer-events: none;
+}
+.watchlist_earn-games .watchlist-orientation__button._current {
+  background-color: #2A59FF;
+  border: 1px solid transparent;
+}
+.watchlist_earn-games .watchlist-orientation__button._current path {
+  fill: #fff;
+}
+.watchlist_earn-games .filter {
+  position: static;
+  width: auto;
+  height: auto;
+  background: transparent;
+  overflow: visible;
+  -webkit-transform: none;
+          transform: none;
+  padding: 0;
+  display: none;
+  margin-bottom: 8px;
+}
+.watchlist_earn-games .filter__wrapper {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  padding: 0;
+}
+.watchlist_earn-games .filter__form {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  grid-template-columns: repeat(auto-fill, 136px) 286px;
+  gap: 6px;
+}
+@media (max-width: 1300px) {
+  .watchlist_earn-games .filter__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    row-gap: 12px;
+    padding: 0 10px;
+  }
+  .watchlist_earn-games .filter__form .filter-select {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    max-width: calc(20% - 4.8px);
+  }
+}
+@media (max-width: 767.98px) {
+  .watchlist_earn-games .filter__form .filter-select {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    max-width: calc(33.3333333333% - 4px);
+  }
+}
+@media (max-width: 480px) {
+  .watchlist_earn-games .filter__form .filter-select {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    max-width: calc(50% - 3px);
+  }
+}
+.watchlist_earn-games .filter .filter-search {
+  border-radius: 6px;
+}
+@media (max-width: 1300px) {
+  .watchlist_earn-games .filter .filter-search {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    min-width: none;
+  }
+}
+@media (max-width: 480px) {
+  .watchlist_earn-games .filter .filter-search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    max-width: calc(50% - 3px);
+  }
+}
+@media (max-width: 767.98px) {
+  .watchlist_earn-games .filter {
+    margin-bottom: 12px;
+  }
+}
+.watchlist_earn-games .filter._opened {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .watchlist-title {
@@ -4508,6 +4863,7 @@ html.light body .footer .footer-social__el::after {
   grid-template-columns: 59px 180px 124px 83px 87px 84px 153px 149px 176px 131px 53px;
   border-radius: 4px;
   height: 40px;
+  min-width: 1278px;
   position: relative;
   margin-bottom: 5px;
   -webkit-transition: border ease-in-out 0.3s;
@@ -5197,6 +5553,10 @@ html.light body .footer .footer-social__el::after {
   display: flex;
   width: 100%;
   position: relative;
+}
+
+.filter-select__select.is-active {
+  z-index: 100;
 }
 
 .filter-range {
