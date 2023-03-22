@@ -801,31 +801,31 @@ body .watchlist_events .watchlist-main__list._grid .watchlist-product-links__lin
 body .watchlist_events .watchlist-main__list._grid .watchlist-product-start {
   border-left: 1px solid #DFE3F0;
 }
-body .watchlist_collections .watchlist-main__list._grid #floor-price {
+body .watchlist_collections .watchlist-main__list._grid .floor-price {
   border-left: 0;
 }
-body .watchlist_collections .watchlist-main__list._grid .watchlist-product-name::before, body .watchlist_collections .watchlist-main__list._grid #day-volume::before, body .watchlist_collections .watchlist-main__list._grid #est::before {
+body .watchlist_collections .watchlist-main__list._grid .watchlist-product-name::before, body .watchlist_collections .watchlist-main__list._grid .day-volume::before, body .watchlist_collections .watchlist-main__list._grid .est::before {
   opacity: 1;
 }
-body .watchlist_collections .watchlist-main__list._grid .watchlist-product-name::after, body .watchlist_collections .watchlist-main__list._grid #day-volume::after, body .watchlist_collections .watchlist-main__list._grid #est::after {
+body .watchlist_collections .watchlist-main__list._grid .watchlist-product-name::after, body .watchlist_collections .watchlist-main__list._grid .day-volume::after, body .watchlist_collections .watchlist-main__list._grid .est::after {
   opacity: 0;
 }
 body .watchlist_defi .watchlist-main__list._grid .watchlist-product-name {
   border-bottom: 1px solid #DFE3F0;
 }
-body .watchlist_defi .watchlist-main__list._grid #day-volume {
+body .watchlist_defi .watchlist-main__list._grid .day-volume {
   border-left: 0px;
 }
 body .watchlist-product-more__button {
   border: 1px solid #B5BACB;
 }
-body .watchlist_exchanges .watchlist-main__list._grid #traffic, body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-more {
+body .watchlist_exchanges .watchlist-main__list._grid .traffic, body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-more {
   border-left: 0;
 }
-body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name::before, body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score::before, body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price::before, body .watchlist_exchanges .watchlist-main__list._grid #effective::before {
+body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name::before, body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score::before, body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price::before, body .watchlist_exchanges .watchlist-main__list._grid .effective::before {
   opacity: 1;
 }
-body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name::after, body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score::after, body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price::after, body .watchlist_exchanges .watchlist-main__list._grid #effective::after {
+body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name::after, body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score::after, body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price::after, body .watchlist_exchanges .watchlist-main__list._grid .effective::after {
   opacity: 0;
 }
 
@@ -1428,13 +1428,13 @@ body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name::a
   }
 }
 @media (prefers-color-scheme: dark) {
-  body .watchlist_collections .watchlist-main__list._grid #floor-price {
+  body .watchlist_collections .watchlist-main__list._grid .floor-price {
     border-left: 0;
   }
-  body .watchlist_collections .watchlist-main__list._grid .watchlist-product-name::before, body .watchlist_collections .watchlist-main__list._grid #day-volume::before, body .watchlist_collections .watchlist-main__list._grid #est::before {
+  body .watchlist_collections .watchlist-main__list._grid .watchlist-product-name::before, body .watchlist_collections .watchlist-main__list._grid .day-volume::before, body .watchlist_collections .watchlist-main__list._grid .est::before {
     opacity: 0;
   }
-  body .watchlist_collections .watchlist-main__list._grid .watchlist-product-name::after, body .watchlist_collections .watchlist-main__list._grid #day-volume::after, body .watchlist_collections .watchlist-main__list._grid #est::after {
+  body .watchlist_collections .watchlist-main__list._grid .watchlist-product-name::after, body .watchlist_collections .watchlist-main__list._grid .day-volume::after, body .watchlist_collections .watchlist-main__list._grid .est::after {
     opacity: 1;
   }
 }
@@ -1442,7 +1442,7 @@ body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name::a
   body .watchlist_defi .watchlist-main__list._grid .watchlist-product-name {
     border-bottom: 1px solid #1E222A;
   }
-  body .watchlist_defi .watchlist-main__list._grid #day-volume {
+  body .watchlist_defi .watchlist-main__list._grid .day-volume {
     border-left: 0px;
   }
 }
@@ -1452,13 +1452,13 @@ body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name::a
   }
 }
 @media (prefers-color-scheme: dark) {
-  body .watchlist_exchanges .watchlist-main__list._grid #traffic, body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-more {
+  body .watchlist_exchanges .watchlist-main__list._grid .traffic, body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-more {
     border-left: 0;
   }
-  body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name::before, body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score::before, body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price::before, body .watchlist_exchanges .watchlist-main__list._grid #effective::before {
+  body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name::before, body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score::before, body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price::before, body .watchlist_exchanges .watchlist-main__list._grid .effective::before {
     opacity: 0;
   }
-  body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name::after, body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score::after, body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price::after, body .watchlist_exchanges .watchlist-main__list._grid #effective::after {
+  body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name::after, body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score::after, body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price::after, body .watchlist_exchanges .watchlist-main__list._grid .effective::after {
     opacity: 1;
   }
 }
@@ -1950,25 +1950,25 @@ html.dark body .watchlist_events .watchlist-main__list._grid .watchlist-product-
 html.dark body .watchlist_events .watchlist-main__list._grid .watchlist-product-start {
   border-left: 1px solid rgba(28, 41, 81, 0.5);
 }
-html.dark body .watchlist_collections .watchlist-main__list._grid #floor-price {
+html.dark body .watchlist_collections .watchlist-main__list._grid .floor-price {
   border-left: 0;
 }
 html.dark body .watchlist_defi .watchlist-main__list._grid .watchlist-product-name {
   border-bottom: 1px solid #1E222A;
 }
-html.dark body .watchlist_defi .watchlist-main__list._grid #day-volume {
+html.dark body .watchlist_defi .watchlist-main__list._grid .day-volume {
   border-left: 0px;
 }
 html.dark body .watchlist-product-more__button {
   border: 1px solid #454E53;
 }
-html.dark body .watchlist_exchanges .watchlist-main__list._grid #traffic, html.dark body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-more {
+html.dark body .watchlist_exchanges .watchlist-main__list._grid .traffic, html.dark body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-more {
   border-left: 0;
 }
-html.dark body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name::before, html.dark body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score::before, html.dark body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price::before, html.dark body .watchlist_exchanges .watchlist-main__list._grid #effective::before {
+html.dark body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name::before, html.dark body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score::before, html.dark body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price::before, html.dark body .watchlist_exchanges .watchlist-main__list._grid .effective::before {
   opacity: 0;
 }
-html.dark body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name::after, html.dark body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score::after, html.dark body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price::after, html.dark body .watchlist_exchanges .watchlist-main__list._grid #effective::after {
+html.dark body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name::after, html.dark body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score::after, html.dark body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price::after, html.dark body .watchlist_exchanges .watchlist-main__list._grid .effective::after {
   opacity: 1;
 }
 
@@ -2466,31 +2466,31 @@ html.light body .watchlist_events .watchlist-main__list._grid .watchlist-product
 html.light body .watchlist_events .watchlist-main__list._grid .watchlist-product-start {
   border-left: 1px solid #DFE3F0;
 }
-html.light body .watchlist_collections .watchlist-main__list._grid #floor-price {
+html.light body .watchlist_collections .watchlist-main__list._grid .floor-price {
   border-left: 0;
 }
-html.light body .watchlist_collections .watchlist-main__list._grid .watchlist-product-name::before, html.light body .watchlist_collections .watchlist-main__list._grid #day-volume::before, html.light body .watchlist_collections .watchlist-main__list._grid #est::before {
+html.light body .watchlist_collections .watchlist-main__list._grid .watchlist-product-name::before, html.light body .watchlist_collections .watchlist-main__list._grid .day-volume::before, html.light body .watchlist_collections .watchlist-main__list._grid .est::before {
   opacity: 1;
 }
-html.light body .watchlist_collections .watchlist-main__list._grid .watchlist-product-name::after, html.light body .watchlist_collections .watchlist-main__list._grid #day-volume::after, html.light body .watchlist_collections .watchlist-main__list._grid #est::after {
+html.light body .watchlist_collections .watchlist-main__list._grid .watchlist-product-name::after, html.light body .watchlist_collections .watchlist-main__list._grid .day-volume::after, html.light body .watchlist_collections .watchlist-main__list._grid .est::after {
   opacity: 0;
 }
 html.light body .watchlist_defi .watchlist-main__list._grid .watchlist-product-name {
   border-bottom: 1px solid #DFE3F0;
 }
-html.light body .watchlist_defi .watchlist-main__list._grid #day-volume {
+html.light body .watchlist_defi .watchlist-main__list._grid .day-volume {
   border-left: 0px;
 }
 html.light body .watchlist-product-more__button {
   border: 1px solid #B5BACB;
 }
-html.light body .watchlist_exchanges .watchlist-main__list._grid #traffic, html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-more {
+html.light body .watchlist_exchanges .watchlist-main__list._grid .traffic, html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-more {
   border-left: 0;
 }
-html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name::before, html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score::before, html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price::before, html.light body .watchlist_exchanges .watchlist-main__list._grid #effective::before {
+html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name::before, html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score::before, html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price::before, html.light body .watchlist_exchanges .watchlist-main__list._grid .effective::before {
   opacity: 1;
 }
-html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name::after, html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score::after, html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price::after, html.light body .watchlist_exchanges .watchlist-main__list._grid #effective::after {
+html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name::after, html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score::after, html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price::after, html.light body .watchlist_exchanges .watchlist-main__list._grid .effective::after {
   opacity: 0;
 }
 
@@ -3854,7 +3854,7 @@ html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-prod
       -ms-flex-align: center;
           align-items: center;
 }
-.trends-switch__switch div {
+.trends-switch__switch span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3876,7 +3876,7 @@ html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-prod
           user-select: none;
 }
 
-.trends-switch._active .trends-switch__switch div {
+.trends-switch._active .trends-switch__switch span {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -5159,6 +5159,12 @@ html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-prod
 }
 .watchlist_exchanges .watchlist-product-name__name .watchlist-product-name__full-name {
   white-space: nowrap;
+}
+.watchlist_exchanges .watchlist-product__price {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 0;
 }
 
 .watchlist-title {
@@ -7116,20 +7122,20 @@ html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-prod
   padding-top: 0;
   padding-bottom: 0;
 }
-.watchlist_collections .watchlist-main__list._grid #day-volume {
+.watchlist_collections .watchlist-main__list._grid .day-volume {
   -ms-grid-row: 1;
   -ms-grid-column: 4;
   -ms-grid-column-span: 2;
   grid-area: day-volume;
   min-width: 100px;
 }
-.watchlist_collections .watchlist-main__list._grid #est {
+.watchlist_collections .watchlist-main__list._grid .est {
   -ms-grid-row: 1;
   -ms-grid-column: 6;
   -ms-grid-column-span: 3;
   grid-area: est;
 }
-.watchlist_collections .watchlist-main__list._grid #est .watchlist-product-single__content {
+.watchlist_collections .watchlist-main__list._grid .est .watchlist-product-single__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7141,7 +7147,7 @@ html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-prod
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
-.watchlist_collections .watchlist-main__list._grid #est.watchlist-product__part {
+.watchlist_collections .watchlist-main__list._grid .est.watchlist-product__part {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7154,33 +7160,33 @@ html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-prod
           justify-content: flex-start;
   padding-left: 27px;
 }
-.watchlist_collections .watchlist-main__list._grid #floor-price {
+.watchlist_collections .watchlist-main__list._grid .floor-price {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: floor-price;
 }
-.watchlist_collections .watchlist-main__list._grid #avg-price {
+.watchlist_collections .watchlist-main__list._grid .avg-price {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   grid-area: avg-price;
 }
-.watchlist_collections .watchlist-main__list._grid #sales {
+.watchlist_collections .watchlist-main__list._grid .sales {
   -ms-grid-row: 3;
   -ms-grid-column: 4;
   grid-area: sales;
 }
-.watchlist_collections .watchlist-main__list._grid #assets {
+.watchlist_collections .watchlist-main__list._grid .assets {
   -ms-grid-row: 3;
   -ms-grid-column: 5;
   -ms-grid-column-span: 2;
   grid-area: assets;
 }
-.watchlist_collections .watchlist-main__list._grid #owners {
+.watchlist_collections .watchlist-main__list._grid .owners {
   -ms-grid-row: 3;
   -ms-grid-column: 7;
   grid-area: owners;
 }
-.watchlist_collections .watchlist-main__list._grid #owners-procent {
+.watchlist_collections .watchlist-main__list._grid .owners-procent {
   -ms-grid-row: 3;
   -ms-grid-column: 8;
   grid-area: owners-procent;
@@ -7206,10 +7212,10 @@ html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-prod
   padding: 12px;
       grid-template-areas: "actions info info day-volume day-volume est est est" "actions floor-price avg-price sales assets assets owners owners-procent";
 }
-.watchlist_collections .watchlist-main__list._grid .watchlist-product-name, .watchlist_collections .watchlist-main__list._grid #day-volume, .watchlist_collections .watchlist-main__list._grid #est {
+.watchlist_collections .watchlist-main__list._grid .watchlist-product-name, .watchlist_collections .watchlist-main__list._grid .day-volume, .watchlist_collections .watchlist-main__list._grid .est {
   position: relative;
 }
-.watchlist_collections .watchlist-main__list._grid .watchlist-product-name::before, .watchlist_collections .watchlist-main__list._grid #day-volume::before, .watchlist_collections .watchlist-main__list._grid #est::before {
+.watchlist_collections .watchlist-main__list._grid .watchlist-product-name::before, .watchlist_collections .watchlist-main__list._grid .day-volume::before, .watchlist_collections .watchlist-main__list._grid .est::before {
   content: "";
   position: absolute;
   height: 1px;
@@ -7220,7 +7226,7 @@ html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-prod
   -webkit-transition: opacity ease-in-out 0.3s;
   transition: opacity ease-in-out 0.3s;
 }
-.watchlist_collections .watchlist-main__list._grid .watchlist-product-name::after, .watchlist_collections .watchlist-main__list._grid #day-volume::after, .watchlist_collections .watchlist-main__list._grid #est::after {
+.watchlist_collections .watchlist-main__list._grid .watchlist-product-name::after, .watchlist_collections .watchlist-main__list._grid .day-volume::after, .watchlist_collections .watchlist-main__list._grid .est::after {
   content: "";
   position: absolute;
   height: 1px;
@@ -7261,32 +7267,32 @@ html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-prod
   -webkit-transition: border ease-in-out 0.3s;
   transition: border ease-in-out 0.3s;
 }
-.watchlist_defi .watchlist-main__list._grid #day-volume {
+.watchlist_defi .watchlist-main__list._grid .day-volume {
   -ms-grid-row: 1;
   -ms-grid-column: 4;
   -ms-grid-column-span: 2;
   grid-area: day-volume;
   padding: 5px 0;
 }
-.watchlist_defi .watchlist-main__list._grid #week-volume {
+.watchlist_defi .watchlist-main__list._grid .week-volume {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   grid-area: week-volume;
   padding: 5px 0;
 }
-.watchlist_defi .watchlist-main__list._grid #tvl {
+.watchlist_defi .watchlist-main__list._grid .tvl {
   -ms-grid-row: 3;
   -ms-grid-column: 4;
   grid-area: tvl;
   padding: 5px 0;
 }
-.watchlist_defi .watchlist-main__list._grid #mtvl {
+.watchlist_defi .watchlist-main__list._grid .mtvl {
   -ms-grid-row: 3;
   -ms-grid-column: 5;
   grid-area: mtvl;
   padding: 5px 0;
 }
-.watchlist_defi .watchlist-main__list._grid #rating {
+.watchlist_defi .watchlist-main__list._grid .rating {
   -ms-grid-row: 3;
   -ms-grid-column: 6;
   grid-area: rating;
@@ -7318,6 +7324,21 @@ html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-prod
 .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-single__label {
   display: none;
 }
+.watchlist_exchanges .watchlist-main__list._grid .watchlist-product__part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__part_actions {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
@@ -7346,7 +7367,7 @@ html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-prod
   grid-area: price;
   padding: 0;
 }
-.watchlist_exchanges .watchlist-main__list._grid #effective {
+.watchlist_exchanges .watchlist-main__list._grid .effective {
   -ms-grid-row: 1;
   -ms-grid-column: 6;
   -ms-grid-column-span: 3;
@@ -7356,18 +7377,18 @@ html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-prod
           justify-content: flex-start;
   padding-left: 20px;
 }
-.watchlist_exchanges .watchlist-main__list._grid #traffic {
+.watchlist_exchanges .watchlist-main__list._grid .traffic {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: traffic;
 }
-.watchlist_exchanges .watchlist-main__list._grid #markets {
+.watchlist_exchanges .watchlist-main__list._grid .markets {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-area: markets;
 }
-.watchlist_exchanges .watchlist-main__list._grid #coins {
+.watchlist_exchanges .watchlist-main__list._grid .coins {
   -ms-grid-row: 3;
   -ms-grid-column: 5;
   -ms-grid-column-span: 2;
@@ -7383,25 +7404,10 @@ html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-prod
   -ms-grid-column: 8;
   grid-area: more;
 }
-.watchlist_exchanges .watchlist-main__list._grid .watchlist-product__part {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name, .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score, .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price, .watchlist_exchanges .watchlist-main__list._grid #effective {
+.watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name, .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score, .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price, .watchlist_exchanges .watchlist-main__list._grid .effective {
   position: relative;
 }
-.watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name::before, .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score::before, .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price::before, .watchlist_exchanges .watchlist-main__list._grid #effective::before {
+.watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name::before, .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score::before, .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price::before, .watchlist_exchanges .watchlist-main__list._grid .effective::before {
   content: "";
   position: absolute;
   height: 1px;
@@ -7412,7 +7418,7 @@ html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-prod
   -webkit-transition: opacity ease-in-out 0.3s;
   transition: opacity ease-in-out 0.3s;
 }
-.watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name::after, .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score::after, .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price::after, .watchlist_exchanges .watchlist-main__list._grid #effective::after {
+.watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name::after, .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score::after, .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price::after, .watchlist_exchanges .watchlist-main__list._grid .effective::after {
   content: "";
   position: absolute;
   height: 1px;
