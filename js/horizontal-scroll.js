@@ -1,13 +1,23 @@
 const scrollContainer = document.querySelector(".watchlist-main__wrapper");
 const decorParrent = document.querySelector('.watchlist-main');
+const ruler = document.querySelector('.watchlist-product');
+
 
 scrollContainer.addEventListener('scroll', () => {
     const scrollPosition = scrollContainer.scrollLeft;
-    console.log(scrollPosition + window.innerWidth);
+    let gridWidth = document.querySelector('.watchlist-main__list');
 
-    if (scrollPosition + window.innerWidth > 1280) {
-        decorParrent.classList.add('_in-the-end');
+    if (gridWidth.classList.contains('_grid') && window.innerWidth > 991.98) {
+        if (scrollPosition + window.innerWidth > 1280) {
+            decorParrent.classList.add('_in-the-end');
+        } else {
+            decorParrent.classList.remove('_in-the-end');
+        }
     } else {
-        decorParrent.classList.remove('_in-the-end');
+        if (scrollPosition + window.innerWidth > ruler.offsetWidth) {
+            decorParrent.classList.add('_in-the-end');
+        } else {
+            decorParrent.classList.remove('_in-the-end');
+        }
     }
 });

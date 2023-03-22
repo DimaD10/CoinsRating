@@ -780,7 +780,7 @@
                 </div>
             </section>
 
-            <section class="main__watchlist watchlist watchlist_earn-games">
+            <section class="main__watchlist watchlist watchlist_mod watchlist_earn-games">
                 <div class="watchlist__container">
                     <div class="watchlist__header watchlist-header">
                         <h2 class="watchlist-header__title">List of 1,490 Play to Earn Games</h2>
@@ -820,7 +820,7 @@
                                         <path d="M0 11C0 10.4477 0.482155 10 1.07692 10H12.9231C13.5178 10 14 10.4477 14 11C14 11.5523 13.5178 12 12.9231 12H1.07692C0.482155 12 0 11.5523 0 11Z" fill="#2A59FF"/>
                                     </svg>                                    
                                 </button>
-                                <button class="watchlist-orientation__button">
+                                <button class="watchlist-orientation__button watchlist-orientation__button_grid">
                                     <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0 1.5C0 0.671573 0.671573 0 1.5 0C2.32843 0 3 0.671573 3 1.5C3 2.32843 2.32843 3 1.5 3C0.671573 3 0 2.32843 0 1.5Z" fill="#2A2E3A"/>
                                         <path d="M0 6.5C0 5.67157 0.671573 5 1.5 5C2.32843 5 3 5.67157 3 6.5C3 7.32843 2.32843 8 1.5 8C0.671573 8 0 7.32843 0 6.5Z" fill="#2A2E3A"/>
@@ -990,7 +990,6 @@
                         </div>
                     </div>
 
-
                     <div class="watchlist-main">
                         <div class="watchlist-main__wrapper">
                             <div class="watchlist-main__header watchlist-legends">
@@ -1005,34 +1004,30 @@
                                 <div class="watchlist-legend watchlist-legends__title">
                                     <div class="watchlist-legends__name">Name</div>
                                 </div>
-                                <div class="watchlist-legend watchlist-legends__price">
-                                    <div class="watchlist-legends__name">Price</div>
+                                <div class="watchlist-legend watchlist-legends__genre">
+                                    <div class="watchlist-legends__name">Genre</div>
                                 </div>
-                                <div class="watchlist-legend watchlist-legends__hour-procent">
-                                    <div class="watchlist-legends__name">1h %</div>
+                                <div class="watchlist-legend watchlist-legends__blockchain">
+                                    <div class="watchlist-legends__name">Blockchain</div>
                                 </div>
-                                <div class="watchlist-legend watchlist-legends__day-procent">
-                                    <div class="watchlist-legends__name">24h %</div>
+                                <div class="watchlist-legend watchlist-legends__device">
+                                    <div class="watchlist-legends__name">Device</div>
                                 </div>
-                                <div class="watchlist-legend watchlist-legends__week-procent">
-                                    <div class="watchlist-legends__name">7d %</div>
+                                <div class="watchlist-legend watchlist-legends__nft">
+                                    <div class="watchlist-legends__name">NFT</div>
                                 </div>
-                                <div class="watchlist-legend watchlist-legends__market-cap">
-                                    <div class="watchlist-legends__name">Market Cap</div>
+                                <div class="watchlist-legend watchlist-legends__status">
+                                    <div class="watchlist-legends__name">Status</div>
                                 </div>
-                                <div class="watchlist-legend watchlist-legends__volume">
-                                    <div class="watchlist-legends__name">Volume(24h)</div>
+                                <div class="watchlist-legend watchlist-legends__f2p">
+                                    <div class="watchlist-legends__name">F2P</div>
                                 </div>
-                                <div class="watchlist-legend watchlist-legends__supply">
-                                    <div class="watchlist-legends__name">Circulating Supply</div>
-                                    <div class="watchlist-legends__icon">
-                                        <img src="./img/icons/info-icon.svg" alt="">
-                                    </div>
+                                <div class="watchlist-legend watchlist-legends__p2e">
+                                    <div class="watchlist-legends__name">P2E</div>
                                 </div>
-                                <div class="watchlist-legend watchlist-legends__last-days">
-                                    <div class="watchlist-legends__name">Last 7 Days</div>
+                                <div class="watchlist-legend watchlist-legends__rating">
+                                    <div class="watchlist-legends__name">Rating 24h</div>
                                 </div>
-                                <div class="watchlist-legend watchlist-legends__settings"></div>
                             </div>
                             <div class="watchlist-main__list">
                                 <div class="watchlist-product">
@@ -1048,47 +1043,74 @@
                                         </div>
                                         <div class="watchlist-product__part watchlist-product-name">
                                             <a href="#" class="watchlist-product-name__icon">
-                                                <img src="./img/watchlist/icon1.svg" alt="Bitcoin">
+                                                <img src="./img/watchlist/icon2.png" alt="Axie Infinity">
                                             </a>
-                                            <a href="#" class="watchlist-product-name__name">
-                                                <span class="watchlist-product-name__full-name">Bitcoin</span>/ BTC
-                                            </a>
+                                            <span class="watchlist-product-name__name">
+                                                <a href="#" class="watchlist-product-name__full-name">Axie Infinity</a>
+                                                <p class="watchlist-product-name__descr">Battle and collect fantasy creatures called Axie.</p>
+                                            </span>
                                         </div>
-                                        <div class="watchlist-product__part watchlist-product__price">
-                                            <span class="watchlist-product__text">$22.909.79</span>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-genre">
+                                            <span class="watchlist-product-single__label">Genre</span>
+                                            <ul class="watchlist-product-genre__list">
+                                                <li class="watchlist-product-genre__el">BREEDING</li>
+                                                <li class="watchlist-product-genre__el">CARD</li>
+                                                <li class="watchlist-product-genre__el">PVP</li>
+                                            </ul>
                                         </div>
-                                        <div class="watchlist-product__part watchlist-product-rate">
-                                            <div class="watchlist-product-rate__num minus">0.24%</div>
-                                        </div>
-                                        <div class="watchlist-product__part watchlist-product-rate">
-                                            <div class="watchlist-product-rate__num plus">3.15%</div>
-                                        </div>
-                                        <div class="watchlist-product__part watchlist-product-rate">
-                                            <div class="watchlist-product-rate__num minus">0.75%</div>
-                                        </div>
-                                        <div class="watchlist-product__part watchlist-product__market-cap">
-                                            <span class="watchlist-product__text">$441,646,751,904</span>
-                                        </div>
-                                        <div class="watchlist-product__part watchlist-product-volume">
-                                            <span class="watchlist-product-volume__text">$441,646,751,904</span>
-                                            <span class="watchlist-product-volume__subtext">1,176,906 BTC</span>
-                                        </div>
-                                        <div class="watchlist-product__part watchlist-product-supply">
-                                            <div class="watchlist-product-supply__label">
-                                                <div class="watchlist-product-supply__icon">
-                                                    <img src="./img/watchlist/icon1.svg" alt="BTC">
-                                                </div>
-                                                <span class="watchlist-product__text">19,277,643 BTC</span>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-blockchain">
+                                            <span class="watchlist-product-single__label">Blockchain</span>
+                                            <div class="watchlist-product-single__content watchlist-product-blockchain__list">
+                                                <img src="./img/blockchain/icon1.svg" alt="ethereum">
+                                                <img src="./img/blockchain/icon2.svg" alt="ethereum">
                                             </div>
                                         </div>
-                                        <div class="watchlist-product__part watchlist-product__last-days">
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-os">
+                                            <span class="watchlist-product-single__label">Device</span>
+                                            <div class="watchlist-product-single__content watchlist-product-os__list">
+                                                <img src="./img/OS/apple.svg" alt="apple">
+                                                <img src="./img/OS/microsoft.svg" alt="windows">
+                                                <img src="./img/OS/android.svg" alt="android">
+                                            </div>
                                         </div>
-                                        <div class="watchlist-product__part watchlist-product-settings">
-                                            <button class="watchlist-product-settings__button">
-                                                <span></span>
-                                                <span></span>
-                                                <span></span>
-                                            </button>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-nft">
+                                            <span class="watchlist-product-single__label">NFT</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-nft__marker watchlist-product-nft__marker_green">Live</div>
+                                            </div>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-status">
+                                            <span class="watchlist-product-single__label">Status</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-status__status"><img src="./img/icons/status-green.svg"></div>
+                                            </div>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-f2p">
+                                            <span class="watchlist-product-single__label">F2P</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-f2p__status">NFT</div>
+                                            </div>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-p2e">
+                                            <span class="watchlist-product-single__label">P2E</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-p2e__status">BOTH</div>
+                                            </div>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-rating-day">
+                                            <span class="watchlist-product-single__label">Rating 24h</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-rating-day__info">
+                                                    <span class="watchlist-product-rating-day__price">3,054</span>
+                                                    <span class="watchlist-product-rating-day__grow minus">
+                                                        <div class="watchlist-product-rating-day__icon">
+                                                            <img src="./img/rate-icons/minus.svg" class="watchlist-product-rating-day__grow-down" alt="">
+                                                            <img src="./img/rate-icons/plus.svg" class="watchlist-product-rating-day__grow-up" alt="">
+                                                        </div>
+                                                        <div class="watchlist-product-rating-day__percent">2.12%</div>
+                                                    </span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1096,7 +1118,7 @@
                                 <div class="watchlist-product">
                                     <div class="watchlist-product__wrapper">
                                         <div class="watchlist-product__part watchlist-product__part_actions">
-                                            <div class="watchlist-product__favorite watchlist-favorite ">
+                                            <div class="watchlist-product__favorite watchlist-favorite _favorite">
                                                 <img src="./img/icons/favorite-stroke.png" alt="" class="watchlist-favorite__stroke">
                                                 <img src="./img/icons/favorite-filled.svg" alt="" class="watchlist-favorite__filled">
                                             </div>
@@ -1106,47 +1128,74 @@
                                         </div>
                                         <div class="watchlist-product__part watchlist-product-name">
                                             <a href="#" class="watchlist-product-name__icon">
-                                                <img src="./img/watchlist/icon1.svg" alt="Bitcoin">
+                                                <img src="./img/watchlist/icon2.png" alt="Axie Infinity">
                                             </a>
-                                            <a href="#" class="watchlist-product-name__name">
-                                                <span class="watchlist-product-name__full-name">Bitcoin</span>/ BTC
-                                            </a>
+                                            <span class="watchlist-product-name__name">
+                                                <a href="#" class="watchlist-product-name__full-name">Axie Infinity</a>
+                                                <p class="watchlist-product-name__descr">Battle and collect fantasy creatures called Axie.</p>
+                                            </span>
                                         </div>
-                                        <div class="watchlist-product__part watchlist-product__price">
-                                            <span class="watchlist-product__text">$22.909.79</span>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-genre">
+                                            <span class="watchlist-product-single__label">Genre</span>
+                                            <ul class="watchlist-product-genre__list">
+                                                <li class="watchlist-product-genre__el">BREEDING</li>
+                                                <li class="watchlist-product-genre__el">CARD</li>
+                                                <li class="watchlist-product-genre__el">PVP</li>
+                                            </ul>
                                         </div>
-                                        <div class="watchlist-product__part watchlist-product-rate">
-                                            <div class="watchlist-product-rate__num minus">0.24%</div>
-                                        </div>
-                                        <div class="watchlist-product__part watchlist-product-rate">
-                                            <div class="watchlist-product-rate__num plus">3.15%</div>
-                                        </div>
-                                        <div class="watchlist-product__part watchlist-product-rate">
-                                            <div class="watchlist-product-rate__num minus">0.75%</div>
-                                        </div>
-                                        <div class="watchlist-product__part watchlist-product__market-cap">
-                                            <span class="watchlist-product__text">$441,646,751,904</span>
-                                        </div>
-                                        <div class="watchlist-product__part watchlist-product-volume">
-                                            <span class="watchlist-product-volume__text">$441,646,751,904</span>
-                                            <span class="watchlist-product-volume__subtext">1,176,906 BTC</span>
-                                        </div>
-                                        <div class="watchlist-product__part watchlist-product-supply">
-                                            <div class="watchlist-product-supply__label">
-                                                <div class="watchlist-product-supply__icon">
-                                                    <img src="./img/watchlist/icon1.svg" alt="BTC">
-                                                </div>
-                                                <span class="watchlist-product__text">19,277,643 BTC</span>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-blockchain">
+                                            <span class="watchlist-product-single__label">Blockchain</span>
+                                            <div class="watchlist-product-single__content watchlist-product-blockchain__list">
+                                                <img src="./img/blockchain/icon1.svg" alt="ethereum">
+                                                <img src="./img/blockchain/icon2.svg" alt="ethereum">
                                             </div>
                                         </div>
-                                        <div class="watchlist-product__part watchlist-product__last-days">
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-os">
+                                            <span class="watchlist-product-single__label">Device</span>
+                                            <div class="watchlist-product-single__content watchlist-product-os__list">
+                                                <img src="./img/OS/apple.svg" alt="apple">
+                                                <img src="./img/OS/microsoft.svg" alt="windows">
+                                                <img src="./img/OS/android.svg" alt="android">
+                                            </div>
                                         </div>
-                                        <div class="watchlist-product__part watchlist-product-settings">
-                                            <button class="watchlist-product-settings__button">
-                                                <span></span>
-                                                <span></span>
-                                                <span></span>
-                                            </button>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-nft">
+                                            <span class="watchlist-product-single__label">NFT</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-nft__marker watchlist-product-nft__marker_yellow">DEV</div>
+                                            </div>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-status">
+                                            <span class="watchlist-product-single__label">Status</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-status__status"><img src="./img/icons/status-green.svg"></div>
+                                            </div>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-f2p">
+                                            <span class="watchlist-product-single__label">F2P</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-f2p__status">CRYPTO</div>
+                                            </div>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-p2e">
+                                            <span class="watchlist-product-single__label">P2E</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-p2e__status">CRYPTO</div>
+                                            </div>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-rating-day">
+                                            <span class="watchlist-product-single__label">Rating 24h</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-rating-day__info">
+                                                    <span class="watchlist-product-rating-day__price">3,054</span>
+                                                    <span class="watchlist-product-rating-day__grow plus">
+                                                        <div class="watchlist-product-rating-day__icon">
+                                                            <img src="./img/rate-icons/minus.svg" class="watchlist-product-rating-day__grow-down" alt="">
+                                                            <img src="./img/rate-icons/plus.svg" class="watchlist-product-rating-day__grow-up" alt="">
+                                                        </div>
+                                                        <div class="watchlist-product-rating-day__percent">2.12%</div>
+                                                    </span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1164,47 +1213,74 @@
                                         </div>
                                         <div class="watchlist-product__part watchlist-product-name">
                                             <a href="#" class="watchlist-product-name__icon">
-                                                <img src="./img/watchlist/icon1.svg" alt="Bitcoin">
+                                                <img src="./img/watchlist/icon2.png" alt="Axie Infinity">
                                             </a>
-                                            <a href="#" class="watchlist-product-name__name">
-                                                <span class="watchlist-product-name__full-name">Bitcoin</span>/ BTC
-                                            </a>
+                                            <span class="watchlist-product-name__name">
+                                                <a href="#" class="watchlist-product-name__full-name">Axie Infinity</a>
+                                                <p class="watchlist-product-name__descr">Battle and collect fantasy creatures called Axie.</p>
+                                            </span>
                                         </div>
-                                        <div class="watchlist-product__part watchlist-product__price">
-                                            <span class="watchlist-product__text">$22.909.79</span>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-genre">
+                                            <span class="watchlist-product-single__label">Genre</span>
+                                            <ul class="watchlist-product-genre__list">
+                                                <li class="watchlist-product-genre__el">BREEDING</li>
+                                                <li class="watchlist-product-genre__el">CARD</li>
+                                                <li class="watchlist-product-genre__el">PVP</li>
+                                            </ul>
                                         </div>
-                                        <div class="watchlist-product__part watchlist-product-rate">
-                                            <div class="watchlist-product-rate__num minus">0.24%</div>
-                                        </div>
-                                        <div class="watchlist-product__part watchlist-product-rate">
-                                            <div class="watchlist-product-rate__num plus">3.15%</div>
-                                        </div>
-                                        <div class="watchlist-product__part watchlist-product-rate">
-                                            <div class="watchlist-product-rate__num minus">0.75%</div>
-                                        </div>
-                                        <div class="watchlist-product__part watchlist-product__market-cap">
-                                            <span class="watchlist-product__text">$441,646,751,904</span>
-                                        </div>
-                                        <div class="watchlist-product__part watchlist-product-volume">
-                                            <span class="watchlist-product-volume__text">$441,646,751,904</span>
-                                            <span class="watchlist-product-volume__subtext">1,176,906 BTC</span>
-                                        </div>
-                                        <div class="watchlist-product__part watchlist-product-supply">
-                                            <div class="watchlist-product-supply__label">
-                                                <div class="watchlist-product-supply__icon">
-                                                    <img src="./img/watchlist/icon1.svg" alt="BTC">
-                                                </div>
-                                                <span class="watchlist-product__text">19,277,643 BTC</span>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-blockchain">
+                                            <span class="watchlist-product-single__label">Blockchain</span>
+                                            <div class="watchlist-product-single__content watchlist-product-blockchain__list">
+                                                <img src="./img/blockchain/icon1.svg" alt="ethereum">
+                                                <img src="./img/blockchain/icon2.svg" alt="ethereum">
                                             </div>
                                         </div>
-                                        <div class="watchlist-product__part watchlist-product__last-days">
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-os">
+                                            <span class="watchlist-product-single__label">Device</span>
+                                            <div class="watchlist-product-single__content watchlist-product-os__list">
+                                                <img src="./img/OS/apple.svg" alt="apple">
+                                                <img src="./img/OS/microsoft.svg" alt="windows">
+                                                <img src="./img/OS/android.svg" alt="android">
+                                            </div>
                                         </div>
-                                        <div class="watchlist-product__part watchlist-product-settings">
-                                            <button class="watchlist-product-settings__button">
-                                                <span></span>
-                                                <span></span>
-                                                <span></span>
-                                            </button>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-nft">
+                                            <span class="watchlist-product-single__label">NFT</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-nft__marker watchlist-product-nft__marker_green">Live</div>
+                                            </div>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-status">
+                                            <span class="watchlist-product-single__label">Status</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-status__status"><img src="./img/icons/status-green.svg"></div>
+                                            </div>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-f2p">
+                                            <span class="watchlist-product-single__label">F2P</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-f2p__status">NFT</div>
+                                            </div>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-p2e">
+                                            <span class="watchlist-product-single__label">P2E</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-p2e__status">BOTH</div>
+                                            </div>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-rating-day">
+                                            <span class="watchlist-product-single__label">Rating 24h</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-rating-day__info">
+                                                    <span class="watchlist-product-rating-day__price">3,054</span>
+                                                    <span class="watchlist-product-rating-day__grow minus">
+                                                        <div class="watchlist-product-rating-day__icon">
+                                                            <img src="./img/rate-icons/minus.svg" class="watchlist-product-rating-day__grow-down" alt="">
+                                                            <img src="./img/rate-icons/plus.svg" class="watchlist-product-rating-day__grow-up" alt="">
+                                                        </div>
+                                                        <div class="watchlist-product-rating-day__percent">2.12%</div>
+                                                    </span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1217,52 +1293,79 @@
                                                 <img src="./img/icons/favorite-filled.svg" alt="" class="watchlist-favorite__filled">
                                             </div>
                                             <span class="watchlist-product__num">
-                                                1
+                                                4
                                             </span>
                                         </div>
                                         <div class="watchlist-product__part watchlist-product-name">
                                             <a href="#" class="watchlist-product-name__icon">
-                                                <img src="./img/watchlist/icon1.svg" alt="Bitcoin">
+                                                <img src="./img/watchlist/icon2.png" alt="Axie Infinity">
                                             </a>
-                                            <a href="#" class="watchlist-product-name__name">
-                                                <span class="watchlist-product-name__full-name">Bitcoin</span>/ BTC
-                                            </a>
+                                            <span class="watchlist-product-name__name">
+                                                <a href="#" class="watchlist-product-name__full-name">Axie Infinity</a>
+                                                <p class="watchlist-product-name__descr">Battle and collect fantasy creatures called Axie.</p>
+                                            </span>
                                         </div>
-                                        <div class="watchlist-product__part watchlist-product__price">
-                                            <span class="watchlist-product__text">$22.909.79</span>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-genre">
+                                            <span class="watchlist-product-single__label">Genre</span>
+                                            <ul class="watchlist-product-genre__list">
+                                                <li class="watchlist-product-genre__el">BREEDING</li>
+                                                <li class="watchlist-product-genre__el">CARD</li>
+                                                <li class="watchlist-product-genre__el">PVP</li>
+                                            </ul>
                                         </div>
-                                        <div class="watchlist-product__part watchlist-product-rate">
-                                            <div class="watchlist-product-rate__num minus">0.24%</div>
-                                        </div>
-                                        <div class="watchlist-product__part watchlist-product-rate">
-                                            <div class="watchlist-product-rate__num plus">3.15%</div>
-                                        </div>
-                                        <div class="watchlist-product__part watchlist-product-rate">
-                                            <div class="watchlist-product-rate__num minus">0.75%</div>
-                                        </div>
-                                        <div class="watchlist-product__part watchlist-product__market-cap">
-                                            <span class="watchlist-product__text">$441,646,751,904</span>
-                                        </div>
-                                        <div class="watchlist-product__part watchlist-product-volume">
-                                            <span class="watchlist-product-volume__text">$441,646,751,904</span>
-                                            <span class="watchlist-product-volume__subtext">1,176,906 BTC</span>
-                                        </div>
-                                        <div class="watchlist-product__part watchlist-product-supply">
-                                            <div class="watchlist-product-supply__label">
-                                                <div class="watchlist-product-supply__icon">
-                                                    <img src="./img/watchlist/icon1.svg" alt="BTC">
-                                                </div>
-                                                <span class="watchlist-product__text">19,277,643 BTC</span>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-blockchain">
+                                            <span class="watchlist-product-single__label">Blockchain</span>
+                                            <div class="watchlist-product-single__content watchlist-product-blockchain__list">
+                                                <img src="./img/blockchain/icon1.svg" alt="ethereum">
+                                                <img src="./img/blockchain/icon2.svg" alt="ethereum">
                                             </div>
                                         </div>
-                                        <div class="watchlist-product__part watchlist-product__last-days">
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-os">
+                                            <span class="watchlist-product-single__label">Device</span>
+                                            <div class="watchlist-product-single__content watchlist-product-os__list">
+                                                <img src="./img/OS/apple.svg" alt="apple">
+                                                <img src="./img/OS/microsoft.svg" alt="windows">
+                                                <img src="./img/OS/android.svg" alt="android">
+                                            </div>
                                         </div>
-                                        <div class="watchlist-product__part watchlist-product-settings">
-                                            <button class="watchlist-product-settings__button">
-                                                <span></span>
-                                                <span></span>
-                                                <span></span>
-                                            </button>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-nft">
+                                            <span class="watchlist-product-single__label">NFT</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-nft__marker watchlist-product-nft__marker_yellow">DEV</div>
+                                            </div>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-status">
+                                            <span class="watchlist-product-single__label">Status</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-status__status"><img src="./img/icons/status-green.svg"></div>
+                                            </div>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-f2p">
+                                            <span class="watchlist-product-single__label">F2P</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-f2p__status">CRYPTO</div>
+                                            </div>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-p2e">
+                                            <span class="watchlist-product-single__label">P2E</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-p2e__status">CRYPTO</div>
+                                            </div>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-rating-day">
+                                            <span class="watchlist-product-single__label">Rating 24h</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-rating-day__info">
+                                                    <span class="watchlist-product-rating-day__price">3,054</span>
+                                                    <span class="watchlist-product-rating-day__grow plus">
+                                                        <div class="watchlist-product-rating-day__icon">
+                                                            <img src="./img/rate-icons/minus.svg" class="watchlist-product-rating-day__grow-down" alt="">
+                                                            <img src="./img/rate-icons/plus.svg" class="watchlist-product-rating-day__grow-up" alt="">
+                                                        </div>
+                                                        <div class="watchlist-product-rating-day__percent">2.12%</div>
+                                                    </span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1275,52 +1378,79 @@
                                                 <img src="./img/icons/favorite-filled.svg" alt="" class="watchlist-favorite__filled">
                                             </div>
                                             <span class="watchlist-product__num">
-                                                2
+                                                5
                                             </span>
                                         </div>
                                         <div class="watchlist-product__part watchlist-product-name">
                                             <a href="#" class="watchlist-product-name__icon">
-                                                <img src="./img/watchlist/icon1.svg" alt="Bitcoin">
+                                                <img src="./img/watchlist/icon2.png" alt="Axie Infinity">
                                             </a>
-                                            <a href="#" class="watchlist-product-name__name">
-                                                <span class="watchlist-product-name__full-name">Bitcoin</span>/ BTC
-                                            </a>
+                                            <span class="watchlist-product-name__name">
+                                                <a href="#" class="watchlist-product-name__full-name">Axie Infinity</a>
+                                                <p class="watchlist-product-name__descr">Battle and collect fantasy creatures called Axie.</p>
+                                            </span>
                                         </div>
-                                        <div class="watchlist-product__part watchlist-product__price">
-                                            <span class="watchlist-product__text">$22.909.79</span>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-genre">
+                                            <span class="watchlist-product-single__label">Genre</span>
+                                            <ul class="watchlist-product-genre__list">
+                                                <li class="watchlist-product-genre__el">BREEDING</li>
+                                                <li class="watchlist-product-genre__el">CARD</li>
+                                                <li class="watchlist-product-genre__el">PVP</li>
+                                            </ul>
                                         </div>
-                                        <div class="watchlist-product__part watchlist-product-rate">
-                                            <div class="watchlist-product-rate__num minus">0.24%</div>
-                                        </div>
-                                        <div class="watchlist-product__part watchlist-product-rate">
-                                            <div class="watchlist-product-rate__num plus">3.15%</div>
-                                        </div>
-                                        <div class="watchlist-product__part watchlist-product-rate">
-                                            <div class="watchlist-product-rate__num minus">0.75%</div>
-                                        </div>
-                                        <div class="watchlist-product__part watchlist-product__market-cap">
-                                            <span class="watchlist-product__text">$441,646,751,904</span>
-                                        </div>
-                                        <div class="watchlist-product__part watchlist-product-volume">
-                                            <span class="watchlist-product-volume__text">$441,646,751,904</span>
-                                            <span class="watchlist-product-volume__subtext">1,176,906 BTC</span>
-                                        </div>
-                                        <div class="watchlist-product__part watchlist-product-supply">
-                                            <div class="watchlist-product-supply__label">
-                                                <div class="watchlist-product-supply__icon">
-                                                    <img src="./img/watchlist/icon1.svg" alt="BTC">
-                                                </div>
-                                                <span class="watchlist-product__text">19,277,643 BTC</span>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-blockchain">
+                                            <span class="watchlist-product-single__label">Blockchain</span>
+                                            <div class="watchlist-product-single__content watchlist-product-blockchain__list">
+                                                <img src="./img/blockchain/icon1.svg" alt="ethereum">
+                                                <img src="./img/blockchain/icon2.svg" alt="ethereum">
                                             </div>
                                         </div>
-                                        <div class="watchlist-product__part watchlist-product__last-days">
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-os">
+                                            <span class="watchlist-product-single__label">Device</span>
+                                            <div class="watchlist-product-single__content watchlist-product-os__list">
+                                                <img src="./img/OS/apple.svg" alt="apple">
+                                                <img src="./img/OS/microsoft.svg" alt="windows">
+                                                <img src="./img/OS/android.svg" alt="android">
+                                            </div>
                                         </div>
-                                        <div class="watchlist-product__part watchlist-product-settings">
-                                            <button class="watchlist-product-settings__button">
-                                                <span></span>
-                                                <span></span>
-                                                <span></span>
-                                            </button>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-nft">
+                                            <span class="watchlist-product-single__label">NFT</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-nft__marker watchlist-product-nft__marker_green">Live</div>
+                                            </div>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-status">
+                                            <span class="watchlist-product-single__label">Status</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-status__status"><img src="./img/icons/status-green.svg"></div>
+                                            </div>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-f2p">
+                                            <span class="watchlist-product-single__label">F2P</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-f2p__status">NFT</div>
+                                            </div>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-p2e">
+                                            <span class="watchlist-product-single__label">P2E</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-p2e__status">BOTH</div>
+                                            </div>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-rating-day">
+                                            <span class="watchlist-product-single__label">Rating 24h</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-rating-day__info">
+                                                    <span class="watchlist-product-rating-day__price">3,054</span>
+                                                    <span class="watchlist-product-rating-day__grow minus">
+                                                        <div class="watchlist-product-rating-day__icon">
+                                                            <img src="./img/rate-icons/minus.svg" class="watchlist-product-rating-day__grow-down" alt="">
+                                                            <img src="./img/rate-icons/plus.svg" class="watchlist-product-rating-day__grow-up" alt="">
+                                                        </div>
+                                                        <div class="watchlist-product-rating-day__percent">2.12%</div>
+                                                    </span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1333,52 +1463,249 @@
                                                 <img src="./img/icons/favorite-filled.svg" alt="" class="watchlist-favorite__filled">
                                             </div>
                                             <span class="watchlist-product__num">
-                                                3
+                                                6
                                             </span>
                                         </div>
                                         <div class="watchlist-product__part watchlist-product-name">
                                             <a href="#" class="watchlist-product-name__icon">
-                                                <img src="./img/watchlist/icon1.svg" alt="Bitcoin">
+                                                <img src="./img/watchlist/icon2.png" alt="Axie Infinity">
                                             </a>
-                                            <a href="#" class="watchlist-product-name__name">
-                                                <span class="watchlist-product-name__full-name">Bitcoin</span>/ BTC
-                                            </a>
+                                            <span class="watchlist-product-name__name">
+                                                <a href="#" class="watchlist-product-name__full-name">Axie Infinity</a>
+                                                <p class="watchlist-product-name__descr">Battle and collect fantasy creatures called Axie.</p>
+                                            </span>
                                         </div>
-                                        <div class="watchlist-product__part watchlist-product__price">
-                                            <span class="watchlist-product__text">$22.909.79</span>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-genre">
+                                            <span class="watchlist-product-single__label">Genre</span>
+                                            <ul class="watchlist-product-genre__list">
+                                                <li class="watchlist-product-genre__el">BREEDING</li>
+                                                <li class="watchlist-product-genre__el">CARD</li>
+                                                <li class="watchlist-product-genre__el">PVP</li>
+                                            </ul>
                                         </div>
-                                        <div class="watchlist-product__part watchlist-product-rate">
-                                            <div class="watchlist-product-rate__num minus">0.24%</div>
-                                        </div>
-                                        <div class="watchlist-product__part watchlist-product-rate">
-                                            <div class="watchlist-product-rate__num plus">3.15%</div>
-                                        </div>
-                                        <div class="watchlist-product__part watchlist-product-rate">
-                                            <div class="watchlist-product-rate__num minus">0.75%</div>
-                                        </div>
-                                        <div class="watchlist-product__part watchlist-product__market-cap">
-                                            <span class="watchlist-product__text">$441,646,751,904</span>
-                                        </div>
-                                        <div class="watchlist-product__part watchlist-product-volume">
-                                            <span class="watchlist-product-volume__text">$441,646,751,904</span>
-                                            <span class="watchlist-product-volume__subtext">1,176,906 BTC</span>
-                                        </div>
-                                        <div class="watchlist-product__part watchlist-product-supply">
-                                            <div class="watchlist-product-supply__label">
-                                                <div class="watchlist-product-supply__icon">
-                                                    <img src="./img/watchlist/icon1.svg" alt="BTC">
-                                                </div>
-                                                <span class="watchlist-product__text">19,277,643 BTC</span>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-blockchain">
+                                            <span class="watchlist-product-single__label">Blockchain</span>
+                                            <div class="watchlist-product-single__content watchlist-product-blockchain__list">
+                                                <img src="./img/blockchain/icon1.svg" alt="ethereum">
+                                                <img src="./img/blockchain/icon2.svg" alt="ethereum">
                                             </div>
                                         </div>
-                                        <div class="watchlist-product__part watchlist-product__last-days">
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-os">
+                                            <span class="watchlist-product-single__label">Device</span>
+                                            <div class="watchlist-product-single__content watchlist-product-os__list">
+                                                <img src="./img/OS/apple.svg" alt="apple">
+                                                <img src="./img/OS/microsoft.svg" alt="windows">
+                                                <img src="./img/OS/android.svg" alt="android">
+                                            </div>
                                         </div>
-                                        <div class="watchlist-product__part watchlist-product-settings">
-                                            <button class="watchlist-product-settings__button">
-                                                <span></span>
-                                                <span></span>
-                                                <span></span>
-                                            </button>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-nft">
+                                            <span class="watchlist-product-single__label">NFT</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-nft__marker watchlist-product-nft__marker_yellow">DEV</div>
+                                            </div>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-status">
+                                            <span class="watchlist-product-single__label">Status</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-status__status"><img src="./img/icons/status-green.svg"></div>
+                                            </div>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-f2p">
+                                            <span class="watchlist-product-single__label">F2P</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-f2p__status">CRYPTO</div>
+                                            </div>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-p2e">
+                                            <span class="watchlist-product-single__label">P2E</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-p2e__status">CRYPTO</div>
+                                            </div>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-rating-day">
+                                            <span class="watchlist-product-single__label">Rating 24h</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-rating-day__info">
+                                                    <span class="watchlist-product-rating-day__price">3,054</span>
+                                                    <span class="watchlist-product-rating-day__grow plus">
+                                                        <div class="watchlist-product-rating-day__icon">
+                                                            <img src="./img/rate-icons/minus.svg" class="watchlist-product-rating-day__grow-down" alt="">
+                                                            <img src="./img/rate-icons/plus.svg" class="watchlist-product-rating-day__grow-up" alt="">
+                                                        </div>
+                                                        <div class="watchlist-product-rating-day__percent">2.12%</div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="watchlist-product">
+                                    <div class="watchlist-product__wrapper">
+                                        <div class="watchlist-product__part watchlist-product__part_actions">
+                                            <div class="watchlist-product__favorite watchlist-favorite ">
+                                                <img src="./img/icons/favorite-stroke.png" alt="" class="watchlist-favorite__stroke">
+                                                <img src="./img/icons/favorite-filled.svg" alt="" class="watchlist-favorite__filled">
+                                            </div>
+                                            <span class="watchlist-product__num">
+                                                7
+                                            </span>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-name">
+                                            <a href="#" class="watchlist-product-name__icon">
+                                                <img src="./img/watchlist/icon2.png" alt="Axie Infinity">
+                                            </a>
+                                            <span class="watchlist-product-name__name">
+                                                <a href="#" class="watchlist-product-name__full-name">Axie Infinity</a>
+                                                <p class="watchlist-product-name__descr">Battle and collect fantasy creatures called Axie.</p>
+                                            </span>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-genre">
+                                            <span class="watchlist-product-single__label">Genre</span>
+                                            <ul class="watchlist-product-genre__list">
+                                                <li class="watchlist-product-genre__el">BREEDING</li>
+                                                <li class="watchlist-product-genre__el">CARD</li>
+                                                <li class="watchlist-product-genre__el">PVP</li>
+                                            </ul>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-blockchain">
+                                            <span class="watchlist-product-single__label">Blockchain</span>
+                                            <div class="watchlist-product-single__content watchlist-product-blockchain__list">
+                                                <img src="./img/blockchain/icon1.svg" alt="ethereum">
+                                                <img src="./img/blockchain/icon2.svg" alt="ethereum">
+                                            </div>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-os">
+                                            <span class="watchlist-product-single__label">Device</span>
+                                            <div class="watchlist-product-single__content watchlist-product-os__list">
+                                                <img src="./img/OS/apple.svg" alt="apple">
+                                                <img src="./img/OS/microsoft.svg" alt="windows">
+                                                <img src="./img/OS/android.svg" alt="android">
+                                            </div>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-nft">
+                                            <span class="watchlist-product-single__label">NFT</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-nft__marker watchlist-product-nft__marker_green">Live</div>
+                                            </div>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-status">
+                                            <span class="watchlist-product-single__label">Status</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-status__status"><img src="./img/icons/status-green.svg"></div>
+                                            </div>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-f2p">
+                                            <span class="watchlist-product-single__label">F2P</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-f2p__status">NFT</div>
+                                            </div>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-p2e">
+                                            <span class="watchlist-product-single__label">P2E</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-p2e__status">BOTH</div>
+                                            </div>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-rating-day">
+                                            <span class="watchlist-product-single__label">Rating 24h</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-rating-day__info">
+                                                    <span class="watchlist-product-rating-day__price">3,054</span>
+                                                    <span class="watchlist-product-rating-day__grow minus">
+                                                        <div class="watchlist-product-rating-day__icon">
+                                                            <img src="./img/rate-icons/minus.svg" class="watchlist-product-rating-day__grow-down" alt="">
+                                                            <img src="./img/rate-icons/plus.svg" class="watchlist-product-rating-day__grow-up" alt="">
+                                                        </div>
+                                                        <div class="watchlist-product-rating-day__percent">2.12%</div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="watchlist-product">
+                                    <div class="watchlist-product__wrapper">
+                                        <div class="watchlist-product__part watchlist-product__part_actions">
+                                            <div class="watchlist-product__favorite watchlist-favorite ">
+                                                <img src="./img/icons/favorite-stroke.png" alt="" class="watchlist-favorite__stroke">
+                                                <img src="./img/icons/favorite-filled.svg" alt="" class="watchlist-favorite__filled">
+                                            </div>
+                                            <span class="watchlist-product__num">
+                                                8
+                                            </span>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-name">
+                                            <a href="#" class="watchlist-product-name__icon">
+                                                <img src="./img/watchlist/icon2.png" alt="Axie Infinity">
+                                            </a>
+                                            <span class="watchlist-product-name__name">
+                                                <a href="#" class="watchlist-product-name__full-name">Axie Infinity</a>
+                                                <p class="watchlist-product-name__descr">Battle and collect fantasy creatures called Axie.</p>
+                                            </span>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-genre">
+                                            <span class="watchlist-product-single__label">Genre</span>
+                                            <ul class="watchlist-product-genre__list">
+                                                <li class="watchlist-product-genre__el">BREEDING</li>
+                                                <li class="watchlist-product-genre__el">CARD</li>
+                                                <li class="watchlist-product-genre__el">PVP</li>
+                                            </ul>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-blockchain">
+                                            <span class="watchlist-product-single__label">Blockchain</span>
+                                            <div class="watchlist-product-single__content watchlist-product-blockchain__list">
+                                                <img src="./img/blockchain/icon1.svg" alt="ethereum">
+                                                <img src="./img/blockchain/icon2.svg" alt="ethereum">
+                                            </div>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-os">
+                                            <span class="watchlist-product-single__label">Device</span>
+                                            <div class="watchlist-product-single__content watchlist-product-os__list">
+                                                <img src="./img/OS/apple.svg" alt="apple">
+                                                <img src="./img/OS/microsoft.svg" alt="windows">
+                                                <img src="./img/OS/android.svg" alt="android">
+                                            </div>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-nft">
+                                            <span class="watchlist-product-single__label">NFT</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-nft__marker watchlist-product-nft__marker_yellow">DEV</div>
+                                            </div>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-status">
+                                            <span class="watchlist-product-single__label">Status</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-status__status"><img src="./img/icons/status-green.svg"></div>
+                                            </div>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-f2p">
+                                            <span class="watchlist-product-single__label">F2P</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-f2p__status">CRYPTO</div>
+                                            </div>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-p2e">
+                                            <span class="watchlist-product-single__label">P2E</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-p2e__status">CRYPTO</div>
+                                            </div>
+                                        </div>
+                                        <div class="watchlist-product__part watchlist-product-single watchlist-product-rating-day">
+                                            <span class="watchlist-product-single__label">Rating 24h</span>
+                                            <div class="watchlist-product-single__content">
+                                                <div class="watchlist-product-rating-day__info">
+                                                    <span class="watchlist-product-rating-day__price">3,054</span>
+                                                    <span class="watchlist-product-rating-day__grow plus">
+                                                        <div class="watchlist-product-rating-day__icon">
+                                                            <img src="./img/rate-icons/minus.svg" class="watchlist-product-rating-day__grow-down" alt="">
+                                                            <img src="./img/rate-icons/plus.svg" class="watchlist-product-rating-day__grow-up" alt="">
+                                                        </div>
+                                                        <div class="watchlist-product-rating-day__percent">2.12%</div>
+                                                    </span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

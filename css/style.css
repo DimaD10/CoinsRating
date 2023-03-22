@@ -150,6 +150,10 @@ body {
   font-size: 14px;
 }
 
+.scroll-none {
+  overflow: hidden;
+}
+
 .stroke-button {
   background-color: transparent;
   border: 1px solid #2A59FF;
@@ -340,6 +344,9 @@ button, a, .header-main-actions__el, .header-navigation__el {
 }
 .breadcrumbs__page_current::after {
   display: none;
+}
+.breadcrumbs_without-margin .breadcrumbs__wrapper {
+  margin-bottom: 0;
 }
 
 body {
@@ -740,25 +747,59 @@ body .footer .footer-social__el::after {
 body .main__breadcrumbs .breadcrumbs__wrapper {
   border-bottom: 1px solid rgba(181, 186, 203, 0.4);
 }
-body .watchlist_earn-games .watchlist-title {
+body .watchlist_mod .watchlist-title {
   border-right: 1px solid #B5BACB;
 }
 @media (max-width: 480px) {
-  body .watchlist_earn-games .watchlist-title {
+  body .watchlist_mod .watchlist-title {
     border-right: 0px;
   }
 }
-body .watchlist_earn-games .watchlist-showing {
+body .watchlist_mod .watchlist-showing {
   border-right: 0;
 }
-body .watchlist_earn-games .watchlist-filters__button_filter._opened {
+body .watchlist_mod .watchlist-filters__button_filter._opened {
   border: 1px solid transparent;
 }
-body .watchlist_earn-games .watchlist-orientation__button._current {
+body .watchlist_mod .watchlist-orientation__button._current {
   border: 1px solid transparent;
 }
-body .watchlist_earn-games .filter, body .watchlist_earn-games .filter__wrapper {
+body .watchlist_mod .filter, body .watchlist_mod .filter__wrapper {
   background: transparent;
+}
+body .watchlist_mod .select__header, body .watchlist_mod .select__body, body .watchlist_mod .filter-search {
+  border: 1px solid #B5BACB;
+}
+body .watchlist .watchlist-product-status__status {
+  background-color: #DFE4F0;
+}
+body .watchlist-main__list._grid .watchlist-product-nft {
+  border-left: 0px;
+}
+body .watchlist-main__list._grid .watchlist-product-sale {
+  border-left: 0;
+}
+body .watchlist-main__list._grid .watchlist-product-links {
+  border-left: 0;
+}
+body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-name::before, body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-genre::before, body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-blockchain::before, body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-os::before {
+  opacity: 1;
+}
+body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-name::after, body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-genre::after, body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-blockchain::after, body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-os::after {
+  opacity: 0;
+}
+body .watchlist_events .watchlist-main__list._grid .watchlist-product-name__blockchain {
+  border-left: 1px solid #DFE3F0;
+}
+body .watchlist_events .watchlist-main__list._grid .watchlist-product-sale {
+  border-top: 1px solid #DFE3F0;
+  border-bottom: 1px solid #DFE3F0;
+}
+body .watchlist_events .watchlist-main__list._grid .watchlist-product-links__link:not(:last-child) {
+  border-right: 1px solid #DFE3F0;
+}
+body .watchlist_events .watchlist-main__list._grid .watchlist-product-start {
+  border-left: 1px solid #DFE3F0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1280,33 +1321,83 @@ body .watchlist_earn-games .filter, body .watchlist_earn-games .filter__wrapper 
   }
 }
 @media (prefers-color-scheme: dark) {
-  body .watchlist_earn-games .watchlist-title {
+  body .watchlist_mod .watchlist-title {
     border-right: 1px solid #323642;
   }
 }
 @media (prefers-color-scheme: dark) and (max-width: 480px) {
-  body .watchlist_earn-games .watchlist-title {
+  body .watchlist_mod .watchlist-title {
     border-right: 0px;
   }
 }
 @media (prefers-color-scheme: dark) {
-  body .watchlist_earn-games .watchlist-showing {
+  body .watchlist_mod .watchlist-showing {
     border-right: 0;
   }
 }
 @media (prefers-color-scheme: dark) {
-  body .watchlist_earn-games .watchlist-filters__button_filter._opened {
+  body .watchlist_mod .watchlist-filters__button_filter._opened {
     border: 1px solid transparent;
   }
 }
 @media (prefers-color-scheme: dark) {
-  body .watchlist_earn-games .watchlist-orientation__button._current {
+  body .watchlist_mod .watchlist-orientation__button._current {
     border: 1px solid transparent;
   }
 }
 @media (prefers-color-scheme: dark) {
-  body .watchlist_earn-games .filter, body .watchlist_earn-games .filter__wrapper {
+  body .watchlist_mod .filter, body .watchlist_mod .filter__wrapper {
     background: transparent;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .watchlist_mod .select__header, body .watchlist_mod .select__body, body .watchlist_mod .filter-search {
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .watchlist .watchlist-product-status__status {
+    background-color: #1E222A;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .watchlist-main__list._grid .watchlist-product-nft {
+    border-left: 0px;
+  }
+  body .watchlist-main__list._grid .watchlist-product-sale {
+    border-left: 0;
+  }
+  body .watchlist-main__list._grid .watchlist-product-links {
+    border-left: 0;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-name::before, body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-genre::before, body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-blockchain::before, body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-os::before {
+    opacity: 0;
+  }
+  body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-name::after, body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-genre::after, body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-blockchain::after, body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-os::after {
+    opacity: 1;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .watchlist_events .watchlist-main__list._grid .watchlist-product-name__blockchain {
+    border-left: 1px solid rgba(28, 41, 81, 0.5);
+  }
+  body .watchlist_events .watchlist-main__list._grid .watchlist-product-sale {
+    border-top: 1px solid rgba(28, 41, 81, 0.5);
+    border-bottom: 1px solid rgba(28, 41, 81, 0.5);
+  }
+  body .watchlist_events .watchlist-main__list._grid .watchlist-product-links__link:not(:last-child) {
+    border-right: 1px solid rgba(28, 41, 81, 0.5);
+  }
+  body .watchlist_events .watchlist-main__list._grid .watchlist-product-sale__el:not(:first-child) {
+    border-left: 1px solid rgba(28, 41, 81, 0.5);
+  }
+  body .watchlist_events .watchlist-main__list._grid .watchlist-product-sale__el:not(:first-child) {
+    border-left: 1px solid #DFE3F0;
+  }
+  body .watchlist_events .watchlist-main__list._grid .watchlist-product-start {
+    border-left: 1px solid rgba(28, 41, 81, 0.5);
   }
 }
 html.dark body {
@@ -1740,25 +1831,62 @@ html.dark body .footer .footer-social__el::after {
 html.dark body .main__breadcrumbs .breadcrumbs__wrapper {
   border-bottom: 1px solid rgba(28, 41, 81, 0.431372549);
 }
-html.dark body .watchlist_earn-games .watchlist-title {
+html.dark body .watchlist_mod .watchlist-title {
   border-right: 1px solid #323642;
 }
 @media (max-width: 480px) {
-  html.dark body .watchlist_earn-games .watchlist-title {
+  html.dark body .watchlist_mod .watchlist-title {
     border-right: 0px;
   }
 }
-html.dark body .watchlist_earn-games .watchlist-showing {
+html.dark body .watchlist_mod .watchlist-showing {
   border-right: 0;
 }
-html.dark body .watchlist_earn-games .watchlist-filters__button_filter._opened {
+html.dark body .watchlist_mod .watchlist-filters__button_filter._opened {
   border: 1px solid transparent;
 }
-html.dark body .watchlist_earn-games .watchlist-orientation__button._current {
+html.dark body .watchlist_mod .watchlist-orientation__button._current {
   border: 1px solid transparent;
 }
-html.dark body .watchlist_earn-games .filter, html.dark body .watchlist_earn-games .filter__wrapper {
+html.dark body .watchlist_mod .filter, html.dark body .watchlist_mod .filter__wrapper {
   background: transparent;
+}
+html.dark body .watchlist_mod .select__header, html.dark body .watchlist_mod .select__body, html.dark body .watchlist_mod .filter-search {
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+}
+html.dark body .watchlist .watchlist-product-status__status {
+  background-color: #1E222A;
+}
+html.dark body .watchlist-main__list._grid .watchlist-product-nft {
+  border-left: 0px;
+}
+html.dark body .watchlist-main__list._grid .watchlist-product-sale {
+  border-left: 0;
+}
+html.dark body .watchlist-main__list._grid .watchlist-product-links {
+  border-left: 0;
+}
+html.dark body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-name::before, html.dark body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-genre::before, html.dark body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-blockchain::before, html.dark body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-os::before {
+  opacity: 0;
+}
+html.dark body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-name::after, html.dark body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-genre::after, html.dark body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-blockchain::after, html.dark body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-os::after {
+  opacity: 1;
+}
+html.dark body .watchlist_events .watchlist-main__list._grid .watchlist-product-name__blockchain {
+  border-left: 1px solid rgba(28, 41, 81, 0.5);
+}
+html.dark body .watchlist_events .watchlist-main__list._grid .watchlist-product-sale {
+  border-top: 1px solid rgba(28, 41, 81, 0.5);
+  border-bottom: 1px solid rgba(28, 41, 81, 0.5);
+}
+html.dark body .watchlist_events .watchlist-main__list._grid .watchlist-product-links__link:not(:last-child) {
+  border-right: 1px solid rgba(28, 41, 81, 0.5);
+}
+html.dark body .watchlist_events .watchlist-main__list._grid .watchlist-product-sale__el:not(:first-child) {
+  border-left: 1px solid rgba(28, 41, 81, 0.5);
+}
+html.dark body .watchlist_events .watchlist-main__list._grid .watchlist-product-start {
+  border-left: 1px solid rgba(28, 41, 81, 0.5);
 }
 
 html.light body {
@@ -2198,25 +2326,62 @@ html.light body .footer .footer-social__el::after {
 html.light body .main__breadcrumbs .breadcrumbs__wrapper {
   border-bottom: 1px solid rgba(181, 186, 203, 0.4);
 }
-html.light body .watchlist_earn-games .watchlist-title {
+html.light body .watchlist_mod .watchlist-title {
   border-right: 1px solid #B5BACB;
 }
 @media (max-width: 480px) {
-  html.light body .watchlist_earn-games .watchlist-title {
+  html.light body .watchlist_mod .watchlist-title {
     border-right: 0px;
   }
 }
-html.light body .watchlist_earn-games .watchlist-showing {
+html.light body .watchlist_mod .watchlist-showing {
   border-right: 0;
 }
-html.light body .watchlist_earn-games .watchlist-filters__button_filter._opened {
+html.light body .watchlist_mod .watchlist-filters__button_filter._opened {
   border: 1px solid transparent;
 }
-html.light body .watchlist_earn-games .watchlist-orientation__button._current {
+html.light body .watchlist_mod .watchlist-orientation__button._current {
   border: 1px solid transparent;
 }
-html.light body .watchlist_earn-games .filter, html.light body .watchlist_earn-games .filter__wrapper {
+html.light body .watchlist_mod .filter, html.light body .watchlist_mod .filter__wrapper {
   background: transparent;
+}
+html.light body .watchlist_mod .select__header, html.light body .watchlist_mod .select__body, html.light body .watchlist_mod .filter-search {
+  border: 1px solid #B5BACB;
+}
+html.light body .watchlist .watchlist-product-status__status {
+  background-color: #DFE4F0;
+}
+html.light body .watchlist-main__list._grid .watchlist-product-nft {
+  border-left: 0px;
+}
+html.light body .watchlist-main__list._grid .watchlist-product-sale {
+  border-left: 0;
+}
+html.light body .watchlist-main__list._grid .watchlist-product-links {
+  border-left: 0;
+}
+html.light body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-name::before, html.light body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-genre::before, html.light body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-blockchain::before, html.light body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-os::before {
+  opacity: 1;
+}
+html.light body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-name::after, html.light body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-genre::after, html.light body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-blockchain::after, html.light body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-os::after {
+  opacity: 0;
+}
+html.light body .watchlist_events .watchlist-main__list._grid .watchlist-product-name__blockchain {
+  border-left: 1px solid #DFE3F0;
+}
+html.light body .watchlist_events .watchlist-main__list._grid .watchlist-product-sale {
+  border-top: 1px solid #DFE3F0;
+  border-bottom: 1px solid #DFE3F0;
+}
+html.light body .watchlist_events .watchlist-main__list._grid .watchlist-product-links__link:not(:last-child) {
+  border-right: 1px solid #DFE3F0;
+}
+html.light body .watchlist_events .watchlist-main__list._grid .watchlist-product-sale__el:not(:first-child) {
+  border-left: 1px solid #DFE3F0;
+}
+html.light body .watchlist_events .watchlist-main__list._grid .watchlist-product-start {
+  border-left: 1px solid #DFE3F0;
 }
 
 .header {
@@ -4190,19 +4355,19 @@ html.light body .watchlist_earn-games .filter, html.light body .watchlist_earn-g
     margin-top: 15px;
   }
 }
-.watchlist_earn-games .watchlist-header__title {
+.watchlist_mod .watchlist-header__title {
   margin-right: auto;
   font-family: Rubik;
   font-weight: 600;
   font-size: 20px;
   line-height: 23px;
 }
-.watchlist_earn-games .watchlist-title {
+.watchlist_mod .watchlist-title {
   padding-right: 18px;
   -webkit-transition: border ease-in-out 0.3s;
   transition: border ease-in-out 0.3s;
 }
-.watchlist_earn-games .watchlist-header__main {
+.watchlist_mod .watchlist-header__main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4210,11 +4375,11 @@ html.light body .watchlist_earn-games .filter, html.light body .watchlist_earn-g
       -ms-flex-align: center;
           align-items: center;
 }
-.watchlist_earn-games .watchlist-showing {
+.watchlist_mod .watchlist-showing {
   border-right: 0;
 }
 @media (max-width: 767.98px) {
-  .watchlist_earn-games .watchlist-header {
+  .watchlist_mod .watchlist-header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -4226,74 +4391,74 @@ html.light body .watchlist_earn-games .filter, html.light body .watchlist_earn-g
   }
 }
 @media (max-width: 767.98px) {
-  .watchlist_earn-games .watchlist-filters {
+  .watchlist_mod .watchlist-filters {
     margin-left: auto;
   }
 }
 @media (max-width: 767.98px) {
-  .watchlist_earn-games .watchlist-showing {
+  .watchlist_mod .watchlist-showing {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
 }
 @media (max-width: 480px) {
-  .watchlist_earn-games .watchlist-showing {
+  .watchlist_mod .watchlist-showing {
     display: none;
   }
 }
 @media (max-width: 767.98px) {
-  .watchlist_earn-games .watchlist-header__main {
+  .watchlist_mod .watchlist-header__main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
   }
 }
-.watchlist_earn-games .watchlist-filters__button_filter._opened {
+.watchlist_mod .watchlist-filters__button_filter._opened {
   border: 1px solid transparent;
   background-color: #2A59FF;
 }
-.watchlist_earn-games .watchlist-filters__button_filter._opened::before, .watchlist_earn-games .watchlist-filters__button_filter._opened::after {
+.watchlist_mod .watchlist-filters__button_filter._opened::before, .watchlist_mod .watchlist-filters__button_filter._opened::after {
   display: none;
 }
-.watchlist_earn-games .watchlist-filters__button_filter._opened path {
+.watchlist_mod .watchlist-filters__button_filter._opened path {
   fill: #fff;
 }
-.watchlist_earn-games .watchlist-filters__button_filter._opened .watchlist-filters__name {
+.watchlist_mod .watchlist-filters__button_filter._opened .watchlist-filters__name {
   color: #fff;
 }
-.watchlist_earn-games .watchlist-filters__button_filter {
+.watchlist_mod .watchlist-filters__button_filter {
   -webkit-transition: border ease-in-out 0.3s, background-color ease-in-out 0.3s;
   transition: border ease-in-out 0.3s, background-color ease-in-out 0.3s;
 }
-.watchlist_earn-games .watchlist-filters__button_filter svg {
+.watchlist_mod .watchlist-filters__button_filter svg {
   width: 10px;
 }
-.watchlist_earn-games .watchlist-filters__button_filter path {
+.watchlist_mod .watchlist-filters__button_filter path {
   fill: #2A59FF;
   -webkit-transition: fill ease-in-out 0.3s;
   transition: fill ease-in-out 0.3s;
 }
-.watchlist_earn-games .watchlist-orientation__button {
-  -webkit-transition: background-color ease-in-out 0.3s;
-  transition: background-color ease-in-out 0.3s;
+.watchlist_mod .watchlist-orientation__button {
+  -webkit-transition: background-color ease-in-out 0.3s, border ease-in-out 0.3s;
+  transition: background-color ease-in-out 0.3s, border ease-in-out 0.3s;
 }
-.watchlist_earn-games .watchlist-orientation__button path {
+.watchlist_mod .watchlist-orientation__button path {
   -webkit-transition: fill ease-in-out 0.3s;
   transition: fill ease-in-out 0.3s;
 }
-.watchlist_earn-games .watchlist-orientation__button svg {
+.watchlist_mod .watchlist-orientation__button svg {
   pointer-events: none;
 }
-.watchlist_earn-games .watchlist-orientation__button._current {
+.watchlist_mod .watchlist-orientation__button._current {
   background-color: #2A59FF;
   border: 1px solid transparent;
 }
-.watchlist_earn-games .watchlist-orientation__button._current path {
+.watchlist_mod .watchlist-orientation__button._current path {
   fill: #fff;
 }
-.watchlist_earn-games .filter {
+.watchlist_mod .filter {
   position: static;
   width: auto;
   height: auto;
@@ -4305,13 +4470,120 @@ html.light body .watchlist_earn-games .filter, html.light body .watchlist_earn-g
   display: none;
   margin-bottom: 8px;
 }
-.watchlist_earn-games .filter__wrapper {
+.watchlist_mod .filter__wrapper {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
   width: 100%;
   padding: 0;
+}
+.watchlist_mod .filter .filter-search {
+  border-radius: 6px;
+}
+@media (max-width: 1300px) {
+  .watchlist_mod .filter .filter-search {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    min-width: none;
+  }
+}
+@media (max-width: 480px) {
+  .watchlist_mod .filter .filter-search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    max-width: calc(50% - 3px);
+  }
+}
+@media (max-width: 767.98px) {
+  .watchlist_mod .filter {
+    margin-bottom: 12px;
+  }
+}
+.watchlist_mod .filter._opened {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.watchlist_mod .select__header, .watchlist_mod .select__body, .watchlist_mod .filter-search {
+  -webkit-transition: border ease-in-out 0.3s;
+  transition: border ease-in-out 0.3s;
+}
+.watchlist_mod .watchlist-product__part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.watchlist_mod .watchlist-product-single {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.watchlist_mod .watchlist-product-single__label {
+  font-family: Rubik;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #55606F;
+  margin-bottom: 4px;
+  display: none;
+}
+.watchlist_mod .watchlist-product__wrapper {
+  height: 100%;
+}
+.watchlist_earn-games .watchlist-legends, .watchlist_earn-games .watchlist-product__wrapper {
+  -ms-grid-columns: 59px 214px 104px 139px 132px 125px 125px 125px 124px 122px;
+  grid-template-columns: 59px 214px 104px 139px 132px 125px 125px 125px 124px 122px;
+}
+.watchlist_earn-games .watchlist-product__wrapper {
+  min-height: 70px;
+  height: 100%;
+}
+.watchlist_earn-games .watchlist-product-name__icon {
+  width: 25px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25px;
+          flex: 0 0 25px;
+  height: 25px;
+  border-radius: 6px;
+  border: 1px solid #fff;
+}
+.watchlist_earn-games .watchlist-product-name__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 5px;
+}
+.watchlist_earn-games .watchlist-product-name__descr {
+  font-family: Rubik;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+}
+.watchlist_earn-games .watchlist-product-genre {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .watchlist_earn-games .filter__form {
   display: -ms-grid;
@@ -4362,19 +4634,51 @@ html.light body .watchlist_earn-games .filter, html.light body .watchlist_earn-g
     max-width: calc(50% - 3px);
   }
 }
-.watchlist_earn-games .filter .filter-search {
-  border-radius: 6px;
+.watchlist_events .filter-select__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 8px;
+}
+.watchlist_events .filter .select__header {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.watchlist_events .filter .select__icon {
+  margin-left: auto;
+}
+.watchlist_events .filter__form {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -ms-grid-columns: 315px 6px 315px 6px auto;
+  grid-template-columns: 315px 315px auto;
+  gap: 6px;
 }
 @media (max-width: 1300px) {
-  .watchlist_earn-games .filter .filter-search {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
-    min-width: none;
+  .watchlist_events .filter__form {
+    padding: 0 10px;
   }
 }
-@media (max-width: 480px) {
-  .watchlist_earn-games .filter .filter-search {
+@media (max-width: 991.98px) {
+  .watchlist_events .filter__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .watchlist_events .filter__form .filter-select {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4382,16 +4686,74 @@ html.light body .watchlist_earn-games .filter, html.light body .watchlist_earn-g
     max-width: calc(50% - 3px);
   }
 }
-@media (max-width: 767.98px) {
-  .watchlist_earn-games .filter {
-    margin-bottom: 12px;
+@media (max-width: 480px) {
+  .watchlist_events .filter__form .filter-search {
+    max-width: none;
+    width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
   }
 }
-.watchlist_earn-games .filter._opened {
-  padding: 0;
+.watchlist_events .watchlist-product-name__icon {
+  width: 25px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25px;
+          flex: 0 0 25px;
+  height: 25px;
+  border-radius: 6px;
+  border: 1px solid #fff;
+}
+.watchlist_events .watchlist-legends, .watchlist_events .watchlist-product__wrapper {
+  -ms-grid-columns: 68px 214px 213px 513px 270px;
+  grid-template-columns: 68px 214px 213px 513px 270px;
+}
+.watchlist_events .watchlist-legends__starts, .watchlist_events .watchlist-legends__sale, .watchlist_events .watchlist-product__wrapper__starts, .watchlist_events .watchlist-product__wrapper__sale {
+  padding-left: 21px;
+}
+.watchlist_events .watchlist-legends__links, .watchlist_events .watchlist-product__wrapper__links {
+  padding-left: 24px;
+}
+.watchlist_events .watchlist-product-name__blockchain {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+.watchlist_events .watchlist-product-name__blockchain-icon {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.watchlist_events .watchlist-product-name__blockchain-icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.watchlist_events .watchlist-product-name__blockchain-name {
+  font-family: Rubik;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #515764;
+}
+.watchlist_events .watchlist-product-start {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 21px;
+}
+.watchlist_events .watchlist-product-single {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .watchlist-title {
@@ -4648,6 +5010,281 @@ html.light body .watchlist_earn-games .filter, html.light body .watchlist_earn-g
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
   pointer-events: all;
+}
+
+.watchlist-product-genre {
+  padding-left: 21px;
+}
+.watchlist-product-genre__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.watchlist-product-genre__el {
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.watchlist-product-blockchain__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+.watchlist-product-os__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+.watchlist-product-os__list img {
+  max-width: 14px;
+  max-height: 15px;
+  width: 100%;
+}
+
+.watchlist-product-nft__marker {
+  width: 44px;
+  height: 20px;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+}
+.watchlist-product-nft__marker_green {
+  background-color: #71BA57;
+}
+.watchlist-product-nft__marker_yellow {
+  background-color: #EAB300;
+}
+
+.watchlist-product-status__status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-transition: background-color ease-in-out 0.3s;
+  transition: background-color ease-in-out 0.3s;
+}
+
+.watchlist-product-f2p__status {
+  padding: 0 10px;
+  height: 20px;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  background-color: #B14C6B;
+}
+
+.watchlist-product-p2e__status {
+  padding: 0 10px;
+  height: 20px;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  background-color: #2A59FF;
+}
+
+.watchlist-product-rating-day__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 2px;
+}
+.watchlist-product-rating-day__price {
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+}
+.watchlist-product-rating-day__grow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+.watchlist-product-rating-day__icon {
+  height: 7px;
+  width: 8px;
+  position: relative;
+}
+.watchlist-product-rating-day__icon img {
+  position: absolute;
+  width: 100%;
+  -webkit-transition: opacity ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s;
+  opacity: 0;
+}
+.watchlist-product-rating-day__percent {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.watchlist-product-rating-day__grow.minus .watchlist-product-rating-day__grow-down {
+  opacity: 1;
+}
+.watchlist-product-rating-day__grow.minus .watchlist-product-rating-day__percent {
+  color: #B14C6B;
+}
+
+.watchlist-product-rating-day__grow.plus .watchlist-product-rating-day__grow-up {
+  opacity: 1;
+}
+.watchlist-product-rating-day__grow.plus .watchlist-product-rating-day__percent {
+  color: #71BA57;
+}
+
+.watchlist-product-start__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.watchlist-product-start__bold {
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 137.19%;
+}
+.watchlist-product-start__normal {
+  font-family: Rubik;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 137.19%;
+  color: #55606F;
+}
+
+.watchlist-product-sale {
+  padding-left: 21px;
+}
+.watchlist-product-sale__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 48px;
+}
+.watchlist-product-sale__title {
+  font-family: Rubik;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #55606F;
+}
+.watchlist-product-sale__value {
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.watchlist-product-links {
+  padding-left: 24px;
+}
+.watchlist-product-links__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+}
+.watchlist-product-links__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4px;
+}
+.watchlist-product-links__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.watchlist-product-links__text {
+  font-family: Rubik;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #55606F;
 }
 
 .pagination {
@@ -4975,6 +5612,14 @@ html.light body .watchlist_earn-games .filter, html.light body .watchlist_earn-g
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.watchlist-legends__genre {
+  padding-left: 21px;
+}
+.watchlist-legends__blockchain, .watchlist-legends__device, .watchlist-legends__nft, .watchlist-legends__status, .watchlist-legends__f2p, .watchlist-legends__p2e, .watchlist-legends__rating {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .watchlist-legend {
@@ -5344,7 +5989,7 @@ html.light body .watchlist_earn-games .filter, html.light body .watchlist_earn-g
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 9999;
+  z-index: 99;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5430,7 +6075,11 @@ html.light body .watchlist_earn-games .filter, html.light body .watchlist_earn-g
 .filter__button_stroke:hover {
   background-color: rgba(204, 204, 204, 0.062745098);
 }
+.filter_popup {
+  z-index: 9999;
+}
 .filter .select__header {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5501,6 +6150,7 @@ html.light body .watchlist_earn-games .filter, html.light body .watchlist_earn-g
   font-size: 12px;
   line-height: 14px;
   color: #55606F;
+  cursor: pointer;
 }
 
 .filter-search {
@@ -5654,6 +6304,333 @@ html.light body .watchlist_earn-games .filter, html.light body .watchlist_earn-g
 .filter._opened .select.is-active .select__icon svg {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
+}
+
+.watchlist-main__ruler {
+  position: absolute;
+  width: 100%;
+}
+
+.watchlist-main__list._grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10px 1fr;
+  grid-template-columns: 1fr 1fr;
+  width: 1280px;
+  gap: 10px;
+}
+@media (max-width: 991.98px) {
+  .watchlist-main__list._grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 635px;
+    margin: 0 auto;
+  }
+}
+.watchlist-main__list._grid .watchlist-product {
+  min-width: 0;
+  width: 100%;
+  overflow: hidden;
+}
+@media (max-width: 654.98px) {
+  .watchlist-main__list._grid .watchlist-product {
+    width: 635px;
+  }
+}
+.watchlist-main__list._grid .watchlist-product::before {
+  content: "";
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  top: 0;
+  left: 0;
+  min-width: 1278px;
+  height: 100%;
+  -webkit-transition: opacity ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s;
+  background: linear-gradient(53.56deg, #EBF2FF -9.61%, #F1F1F1 90.49%);
+  opacity: 0.6;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border-radius: 4px;
+  z-index: -1;
+  opacity: 0;
+}
+.watchlist-main__list._grid .watchlist-product::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 1278px;
+  height: 100%;
+  -webkit-transition: opacity ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s;
+  background: linear-gradient(191.45deg, rgba(42, 46, 58, 0.5) -73.23%, rgba(42, 46, 58, 0) 91.58%);
+  border-radius: 4px;
+  z-index: -1;
+  opacity: 0;
+}
+.watchlist-main__list._grid .watchlist-product-single {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 14px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.watchlist-main__list._grid .watchlist-product-single__label {
+  display: inline-block;
+}
+.watchlist-main__list._grid .watchlist-product-genre {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 0;
+}
+.watchlist-main__list._grid .watchlist-product-genre__list {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.watchlist-main__list._grid .watchlist-product__wrapper {
+  -ms-grid-columns: 55px 84px 118px 118px 118px 118px;
+  grid-template-columns: 55px 84px 118px 118px 118px 118px;
+  -ms-grid-rows: 1fr 22px auto;
+  grid-template-rows: 1fr auto;
+  row-gap: 22px;
+      grid-template-areas: "actions info info genre blockchain os" "actions nft status f2p p2e rating-day";
+}
+
+.watchlist_earn-games .watchlist-main__list._grid .watchlist-product__wrapper {
+  padding: 14px 12px;
+}
+.watchlist_earn-games .watchlist-main__list._grid .watchlist-product-name, .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-genre, .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-blockchain, .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-os {
+  position: relative;
+}
+.watchlist_earn-games .watchlist-main__list._grid .watchlist-product-name::before, .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-genre::before, .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-blockchain::before, .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-os::before {
+  content: "";
+  position: absolute;
+  width: calc(100% + 1px);
+  height: 1px;
+  left: -1px;
+  bottom: -8px;
+  background-color: #DFE3F0;
+  opacity: 0;
+  -webkit-transition: opacity ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s;
+}
+.watchlist_earn-games .watchlist-main__list._grid .watchlist-product-name::after, .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-genre::after, .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-blockchain::after, .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-os::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 1px);
+  height: 1px;
+  left: -1px;
+  bottom: -8px;
+  background-color: #1E222A;
+  opacity: 0;
+  -webkit-transition: opacity ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s;
+}
+.watchlist_earn-games .watchlist-main__list._grid .watchlist-product__part_actions {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: actions;
+  padding-left: 0px;
+}
+.watchlist_earn-games .watchlist-main__list._grid .watchlist-product-name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: info;
+  padding-left: 4px;
+}
+.watchlist_earn-games .watchlist-main__list._grid .watchlist-product-genre {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: genre;
+}
+.watchlist_earn-games .watchlist-main__list._grid .watchlist-product-blockchain {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: blockchain;
+}
+.watchlist_earn-games .watchlist-main__list._grid .watchlist-product-os {
+  -ms-grid-row: 1;
+  -ms-grid-column: 6;
+  grid-area: os;
+}
+.watchlist_earn-games .watchlist-main__list._grid .watchlist-product-nft {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: nft;
+  border-left: 1px solid transparent;
+}
+.watchlist_earn-games .watchlist-main__list._grid .watchlist-product-status {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: status;
+}
+.watchlist_earn-games .watchlist-main__list._grid .watchlist-product-f2p {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: f2p;
+}
+.watchlist_earn-games .watchlist-main__list._grid .watchlist-product-p2e {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+  grid-area: p2e;
+}
+.watchlist_earn-games .watchlist-main__list._grid .watchlist-product-rating-day {
+  -ms-grid-row: 3;
+  -ms-grid-column: 6;
+  grid-area: rating-day;
+  gap: 8px;
+}
+.watchlist_earn-games .watchlist-main__list._grid .watchlist-product-rating-day__info {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 991.98px) {
+  .watchlist_earn-games .watchlist-main::before, .watchlist_earn-games .watchlist-main::after {
+    display: none;
+  }
+}
+@media (max-width: 654.98px) {
+  .watchlist_earn-games .watchlist-main::before, .watchlist_earn-games .watchlist-main::after {
+    display: block;
+  }
+}
+
+.watchlist_events .watchlist-main__list._grid .watchlist-product__part_actions {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: actions;
+  padding-left: 0px;
+}
+.watchlist_events .watchlist-main__list._grid .watchlist-product-name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: info;
+  padding-left: 2px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.watchlist_events .watchlist-main__list._grid .watchlist-product-name__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+.watchlist_events .watchlist-main__list._grid .watchlist-product-name__name .watchlist-product-name__blockchain {
+  padding-left: 22px;
+  -webkit-transition: border ease-in-out 0.3s;
+  transition: border ease-in-out 0.3s;
+}
+.watchlist_events .watchlist-main__list._grid .watchlist-product-start {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: start;
+  gap: 2px;
+}
+.watchlist_events .watchlist-main__list._grid .watchlist-product-start .watchlist-product-start__text {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.watchlist_events .watchlist-main__list._grid .watchlist-product-sale {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: sale;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 28px;
+  padding-left: 0;
+  padding: 12px 0;
+  overflow: hidden;
+}
+.watchlist_events .watchlist-main__list._grid .watchlist-product-sale .watchlist-product-sale__list {
+  gap: 25px;
+}
+.watchlist_events .watchlist-main__list._grid .watchlist-product-sale .watchlist-product-sale__el:not(:first-child) {
+  padding-left: 20px;
+  -webkit-transition: border ease-in-out 0.3s;
+  transition: border ease-in-out 0.3s;
+}
+.watchlist_events .watchlist-main__list._grid .watchlist-product-links {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: links;
+  padding-left: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+}
+.watchlist_events .watchlist-main__list._grid .watchlist-product-links .watchlist-product-single__label {
+  margin: 0;
+}
+.watchlist_events .watchlist-main__list._grid .watchlist-product-links .watchlist-product-links__list {
+  gap: 24px;
+}
+.watchlist_events .watchlist-main__list._grid .watchlist-product-links .watchlist-product-links__link {
+  padding: 6px 0;
+}
+.watchlist_events .watchlist-main__list._grid .watchlist-product-links .watchlist-product-links__link:not(:last-child) {
+  padding-right: 24px;
+  -webkit-transition: border ease-in-out 0.3s;
+  transition: border ease-in-out 0.3s;
+}
+.watchlist_events .watchlist-main__list._grid .watchlist-product__wrapper {
+  -ms-grid-columns: 56px 256px 297px;
+  grid-template-columns: 56px 256px 297px;
+  -ms-grid-rows: auto 8px auto 8px auto;
+  grid-template-rows: auto auto auto;
+  row-gap: 8px;
+  padding: 12px;
+      grid-template-areas: "actions info start" "actions sale sale" "actions links links";
+}
+@media (max-width: 991.98px) {
+  .watchlist_events .watchlist-main::before, .watchlist_events .watchlist-main::after {
+    display: none;
+  }
+}
+@media (max-width: 654.98px) {
+  .watchlist_events .watchlist-main::before, .watchlist_events .watchlist-main::after {
+    display: block;
+  }
 }
 
 .watchlist-filters {
