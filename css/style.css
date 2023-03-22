@@ -801,6 +801,21 @@ body .watchlist_events .watchlist-main__list._grid .watchlist-product-links__lin
 body .watchlist_events .watchlist-main__list._grid .watchlist-product-start {
   border-left: 1px solid #DFE3F0;
 }
+body .watchlist_collections .watchlist-main__list._grid #floor-price {
+  border-left: 0;
+}
+body .watchlist_collections .watchlist-main__list._grid .watchlist-product-name::before, body .watchlist_collections .watchlist-main__list._grid #day-volume::before, body .watchlist_collections .watchlist-main__list._grid #est::before {
+  opacity: 1;
+}
+body .watchlist_collections .watchlist-main__list._grid .watchlist-product-name::after, body .watchlist_collections .watchlist-main__list._grid #day-volume::after, body .watchlist_collections .watchlist-main__list._grid #est::after {
+  opacity: 0;
+}
+body .watchlist_defi .watchlist-main__list._grid .watchlist-product-name {
+  border-bottom: 1px solid #DFE3F0;
+}
+body .watchlist_defi .watchlist-main__list._grid #day-volume {
+  border-left: 0px;
+}
 
 @media (prefers-color-scheme: dark) {
   body {
@@ -1400,6 +1415,25 @@ body .watchlist_events .watchlist-main__list._grid .watchlist-product-start {
     border-left: 1px solid rgba(28, 41, 81, 0.5);
   }
 }
+@media (prefers-color-scheme: dark) {
+  body .watchlist_collections .watchlist-main__list._grid #floor-price {
+    border-left: 0;
+  }
+  body .watchlist_collections .watchlist-main__list._grid .watchlist-product-name::before, body .watchlist_collections .watchlist-main__list._grid #day-volume::before, body .watchlist_collections .watchlist-main__list._grid #est::before {
+    opacity: 0;
+  }
+  body .watchlist_collections .watchlist-main__list._grid .watchlist-product-name::after, body .watchlist_collections .watchlist-main__list._grid #day-volume::after, body .watchlist_collections .watchlist-main__list._grid #est::after {
+    opacity: 1;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .watchlist_defi .watchlist-main__list._grid .watchlist-product-name {
+    border-bottom: 1px solid #1E222A;
+  }
+  body .watchlist_defi .watchlist-main__list._grid #day-volume {
+    border-left: 0px;
+  }
+}
 html.dark body {
   background-color: #1E222A;
   color: #fff;
@@ -1887,6 +1921,15 @@ html.dark body .watchlist_events .watchlist-main__list._grid .watchlist-product-
 }
 html.dark body .watchlist_events .watchlist-main__list._grid .watchlist-product-start {
   border-left: 1px solid rgba(28, 41, 81, 0.5);
+}
+html.dark body .watchlist_collections .watchlist-main__list._grid #floor-price {
+  border-left: 0;
+}
+html.dark body .watchlist_defi .watchlist-main__list._grid .watchlist-product-name {
+  border-bottom: 1px solid #1E222A;
+}
+html.dark body .watchlist_defi .watchlist-main__list._grid #day-volume {
+  border-left: 0px;
 }
 
 html.light body {
@@ -2382,6 +2425,21 @@ html.light body .watchlist_events .watchlist-main__list._grid .watchlist-product
 }
 html.light body .watchlist_events .watchlist-main__list._grid .watchlist-product-start {
   border-left: 1px solid #DFE3F0;
+}
+html.light body .watchlist_collections .watchlist-main__list._grid #floor-price {
+  border-left: 0;
+}
+html.light body .watchlist_collections .watchlist-main__list._grid .watchlist-product-name::before, html.light body .watchlist_collections .watchlist-main__list._grid #day-volume::before, html.light body .watchlist_collections .watchlist-main__list._grid #est::before {
+  opacity: 1;
+}
+html.light body .watchlist_collections .watchlist-main__list._grid .watchlist-product-name::after, html.light body .watchlist_collections .watchlist-main__list._grid #day-volume::after, html.light body .watchlist_collections .watchlist-main__list._grid #est::after {
+  opacity: 0;
+}
+html.light body .watchlist_defi .watchlist-main__list._grid .watchlist-product-name {
+  border-bottom: 1px solid #DFE3F0;
+}
+html.light body .watchlist_defi .watchlist-main__list._grid #day-volume {
+  border-left: 0px;
 }
 
 .header {
@@ -4755,6 +4813,220 @@ html.light body .watchlist_events .watchlist-main__list._grid .watchlist-product
       -ms-flex-align: start;
           align-items: flex-start;
 }
+.watchlist_collections .filter .select__header {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.watchlist_collections .filter .select__icon {
+  margin-left: auto;
+}
+.watchlist_collections .filter__form {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -ms-grid-columns: 315px 6px 315px 6px auto;
+  grid-template-columns: 315px 315px auto;
+  gap: 6px;
+}
+@media (max-width: 1300px) {
+  .watchlist_collections .filter__form {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 991.98px) {
+  .watchlist_collections .filter__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .watchlist_collections .filter__form .filter-select {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    max-width: calc(50% - 3px);
+  }
+}
+@media (max-width: 480px) {
+  .watchlist_collections .filter__form .filter-search {
+    max-width: none;
+    width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+}
+.watchlist_collections .watchlist-product-name__icon {
+  width: 25px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25px;
+          flex: 0 0 25px;
+  height: 25px;
+  border-radius: 6px;
+  border: 1px solid #fff;
+}
+.watchlist_collections .watchlist-legends, .watchlist_collections .watchlist-product__wrapper {
+  -ms-grid-columns: 70px 247px 150px 150px 150px 150px 90px 90px 90px 90px;
+  grid-template-columns: 70px 247px 150px 150px 150px 150px 90px 90px 90px 90px;
+}
+.watchlist_collections .watchlist-legends .watchlist-legends__title {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.watchlist_collections .watchlist-legend {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.watchlist_collections .watchlist-product-name__blockchain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.watchlist_collections .watchlist-product-name__blockchain-icon {
+  max-width: 7px;
+  height: 11px;
+}
+.watchlist_collections .watchlist-product-name__blockchain-icon img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+.watchlist_collections .watchlist-product-name__blockchain-name {
+  font-family: Rubik;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #515764;
+}
+.watchlist_collections .watchlist-product-rating-day__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 6px;
+}
+.watchlist_collections .watchlist-product-rating-day__price .watchlist-product-rating-day__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 11px;
+  max-width: 11px;
+}
+.watchlist_collections .watchlist-product-rating-day__price .watchlist-product-rating-day__icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  opacity: 1;
+}
+.watchlist_collections .watchlist-product__price {
+  padding-left: 0;
+}
+.watchlist_collections .watchlist-product__price .watchlist-product__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 6px;
+}
+.watchlist_collections .watchlist-product__price .watchlist-product__currency {
+  height: 11px;
+  max-width: 11px;
+}
+.watchlist_collections .watchlist-product__price .watchlist-product__currency img {
+  width: 100%;
+  height: 100%;
+}
+.watchlist_defi .filter .select__header {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.watchlist_defi .filter .select__icon {
+  margin-left: auto;
+}
+.watchlist_defi .filter__form {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -ms-grid-columns: 1fr 6px 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+@media (max-width: 1300px) {
+  .watchlist_defi .filter__form {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 480px) {
+  .watchlist_defi .filter__form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .watchlist_defi .filter__form .filter-search {
+    max-width: none;
+    width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+}
+.watchlist_defi .watchlist-legend {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.watchlist_defi .watchlist-legends__title {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.watchlist_defi .watchlist-product-name__icon {
+  width: 25px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25px;
+          flex: 0 0 25px;
+  height: 25px;
+  border-radius: 6px;
+  border: 1px solid #fff;
+}
+.watchlist_defi .watchlist-legends, .watchlist_defi .watchlist-product__wrapper {
+  -ms-grid-columns: 70px 298px 180px 180px 180px 180px 191px;
+  grid-template-columns: 70px 298px 180px 180px 180px 180px 191px;
+}
+.watchlist_defi .watchlist-legends__starts, .watchlist_defi .watchlist-legends__sale, .watchlist_defi .watchlist-product__wrapper__starts, .watchlist_defi .watchlist-product__wrapper__sale {
+  padding-left: 21px;
+}
+.watchlist_defi .watchlist-legends__links, .watchlist_defi .watchlist-product__wrapper__links {
+  padding-left: 24px;
+}
 
 .watchlist-title {
   display: -webkit-box;
@@ -6502,12 +6774,12 @@ html.light body .watchlist_events .watchlist-main__list._grid .watchlist-product
           align-items: center;
 }
 @media (max-width: 991.98px) {
-  .watchlist_earn-games .watchlist-main::before, .watchlist_earn-games .watchlist-main::after {
+  .watchlist_earn-games .watchlist-main.grid-mod::before, .watchlist_earn-games .watchlist-main.grid-mod::after {
     display: none;
   }
 }
 @media (max-width: 654.98px) {
-  .watchlist_earn-games .watchlist-main::before, .watchlist_earn-games .watchlist-main::after {
+  .watchlist_earn-games .watchlist-main.grid-mod::before, .watchlist_earn-games .watchlist-main.grid-mod::after {
     display: block;
   }
 }
@@ -6616,19 +6888,234 @@ html.light body .watchlist_events .watchlist-main__list._grid .watchlist-product
 .watchlist_events .watchlist-main__list._grid .watchlist-product__wrapper {
   -ms-grid-columns: 56px 256px 297px;
   grid-template-columns: 56px 256px 297px;
-  -ms-grid-rows: auto 8px auto 8px auto;
-  grid-template-rows: auto auto auto;
+  -ms-grid-rows: auto 8px auto;
+  grid-template-rows: auto auto;
   row-gap: 8px;
   padding: 12px;
       grid-template-areas: "actions info start" "actions sale sale" "actions links links";
 }
 @media (max-width: 991.98px) {
-  .watchlist_events .watchlist-main::before, .watchlist_events .watchlist-main::after {
+  .watchlist_events .watchlist-main.grid-mod::before, .watchlist_events .watchlist-main.grid-mod::after {
     display: none;
   }
 }
 @media (max-width: 654.98px) {
-  .watchlist_events .watchlist-main::before, .watchlist_events .watchlist-main::after {
+  .watchlist_events .watchlist-main.grid-mod::before, .watchlist_events .watchlist-main.grid-mod::after {
+    display: block;
+  }
+}
+
+.watchlist_collections .watchlist-main__list._grid .watchlist-product__part_actions {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: actions;
+  padding-left: 0px;
+}
+.watchlist_collections .watchlist-main__list._grid .watchlist-product-name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: info;
+  padding-left: 2px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.watchlist_collections .watchlist-main__list._grid #day-volume {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-area: day-volume;
+  min-width: 100px;
+}
+.watchlist_collections .watchlist-main__list._grid #est {
+  -ms-grid-row: 1;
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 3;
+  grid-area: est;
+}
+.watchlist_collections .watchlist-main__list._grid #est .watchlist-product-single__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.watchlist_collections .watchlist-main__list._grid #est.watchlist-product__part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 27px;
+}
+.watchlist_collections .watchlist-main__list._grid #floor-price {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: floor-price;
+}
+.watchlist_collections .watchlist-main__list._grid #avg-price {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: avg-price;
+}
+.watchlist_collections .watchlist-main__list._grid #sales {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: sales;
+}
+.watchlist_collections .watchlist-main__list._grid #assets {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-area: assets;
+}
+.watchlist_collections .watchlist-main__list._grid #owners {
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+  grid-area: owners;
+}
+.watchlist_collections .watchlist-main__list._grid #owners-procent {
+  -ms-grid-row: 3;
+  -ms-grid-column: 8;
+  grid-area: owners-procent;
+}
+.watchlist_collections .watchlist-main__list._grid .watchlist-product-single__label {
+  display: none;
+}
+.watchlist_collections .watchlist-main__list._grid .watchlist-product-single__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+.watchlist_collections .watchlist-main__list._grid .watchlist-product__wrapper {
+  -ms-grid-columns: 56px 93px 136px 79px 20px 66px 86px 75px;
+  grid-template-columns: 56px 93px 136px 79px 20px 66px 86px 75px;
+  -ms-grid-rows: auto 20px auto;
+  grid-template-rows: auto auto;
+  row-gap: 20px;
+  padding: 12px;
+      grid-template-areas: "actions info info day-volume day-volume est est est" "actions floor-price avg-price sales assets assets owners owners-procent";
+}
+.watchlist_collections .watchlist-main__list._grid .watchlist-product-name, .watchlist_collections .watchlist-main__list._grid #day-volume, .watchlist_collections .watchlist-main__list._grid #est {
+  position: relative;
+}
+.watchlist_collections .watchlist-main__list._grid .watchlist-product-name::before, .watchlist_collections .watchlist-main__list._grid #day-volume::before, .watchlist_collections .watchlist-main__list._grid #est::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  left: -1px;
+  width: calc(100% + 1px);
+  bottom: -8px;
+  background-color: #DFE3F0;
+  -webkit-transition: opacity ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s;
+}
+.watchlist_collections .watchlist-main__list._grid .watchlist-product-name::after, .watchlist_collections .watchlist-main__list._grid #day-volume::after, .watchlist_collections .watchlist-main__list._grid #est::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  left: -1px;
+  width: calc(100% + 1px);
+  bottom: -8px;
+  background-color: #1E222A;
+  -webkit-transition: opacity ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s;
+}
+@media (max-width: 991.98px) {
+  .watchlist_collections .watchlist-main.grid-mod::before, .watchlist_collections .watchlist-main.grid-mod::after {
+    display: none;
+  }
+}
+@media (max-width: 654.98px) {
+  .watchlist_collections .watchlist-main.grid-mod::before, .watchlist_collections .watchlist-main.grid-mod::after {
+    display: block;
+  }
+}
+
+.watchlist_defi .watchlist-main__list._grid .watchlist-product__part_actions {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: actions;
+  padding-left: 0px;
+}
+.watchlist_defi .watchlist-main__list._grid .watchlist-product-name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: info;
+  padding-left: 2px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-bottom: 11px;
+  -webkit-transition: border ease-in-out 0.3s;
+  transition: border ease-in-out 0.3s;
+}
+.watchlist_defi .watchlist-main__list._grid #day-volume {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-area: day-volume;
+  padding: 5px 0;
+}
+.watchlist_defi .watchlist-main__list._grid #week-volume {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: week-volume;
+  padding: 5px 0;
+}
+.watchlist_defi .watchlist-main__list._grid #tvl {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: tvl;
+  padding: 5px 0;
+}
+.watchlist_defi .watchlist-main__list._grid #mtvl {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+  grid-area: mtvl;
+  padding: 5px 0;
+}
+.watchlist_defi .watchlist-main__list._grid #rating {
+  -ms-grid-row: 3;
+  -ms-grid-column: 6;
+  grid-area: rating;
+  padding: 5px 0;
+}
+.watchlist_defi .watchlist-main__list._grid .watchlist-product-single__label {
+  display: none;
+}
+.watchlist_defi .watchlist-main__list._grid .watchlist-product__wrapper {
+  -ms-grid-columns: 56px 92px 120px 120px 120px 103px;
+  grid-template-columns: 56px 92px 120px 120px 120px 103px;
+  -ms-grid-rows: auto 10px auto;
+  grid-template-rows: auto auto;
+  row-gap: 10px;
+  padding: 12px;
+      grid-template-areas: "actions info info info info info" "actions day-volume week-volume tvl mtvl rating";
+}
+@media (max-width: 991.98px) {
+  .watchlist_defi .watchlist-main.grid-mod::before, .watchlist_defi .watchlist-main.grid-mod::after {
+    display: none;
+  }
+}
+@media (max-width: 654.98px) {
+  .watchlist_defi .watchlist-main.grid-mod::before, .watchlist_defi .watchlist-main.grid-mod::after {
     display: block;
   }
 }
