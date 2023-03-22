@@ -816,6 +816,18 @@ body .watchlist_defi .watchlist-main__list._grid .watchlist-product-name {
 body .watchlist_defi .watchlist-main__list._grid #day-volume {
   border-left: 0px;
 }
+body .watchlist-product-more__button {
+  border: 1px solid #B5BACB;
+}
+body .watchlist_exchanges .watchlist-main__list._grid #traffic, body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-more {
+  border-left: 0;
+}
+body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name::before, body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score::before, body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price::before, body .watchlist_exchanges .watchlist-main__list._grid #effective::before {
+  opacity: 1;
+}
+body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name::after, body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score::after, body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price::after, body .watchlist_exchanges .watchlist-main__list._grid #effective::after {
+  opacity: 0;
+}
 
 @media (prefers-color-scheme: dark) {
   body {
@@ -1434,6 +1446,22 @@ body .watchlist_defi .watchlist-main__list._grid #day-volume {
     border-left: 0px;
   }
 }
+@media (prefers-color-scheme: dark) {
+  body .watchlist-product-more__button {
+    border: 1px solid #454E53;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .watchlist_exchanges .watchlist-main__list._grid #traffic, body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-more {
+    border-left: 0;
+  }
+  body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name::before, body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score::before, body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price::before, body .watchlist_exchanges .watchlist-main__list._grid #effective::before {
+    opacity: 0;
+  }
+  body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name::after, body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score::after, body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price::after, body .watchlist_exchanges .watchlist-main__list._grid #effective::after {
+    opacity: 1;
+  }
+}
 html.dark body {
   background-color: #1E222A;
   color: #fff;
@@ -1930,6 +1958,18 @@ html.dark body .watchlist_defi .watchlist-main__list._grid .watchlist-product-na
 }
 html.dark body .watchlist_defi .watchlist-main__list._grid #day-volume {
   border-left: 0px;
+}
+html.dark body .watchlist-product-more__button {
+  border: 1px solid #454E53;
+}
+html.dark body .watchlist_exchanges .watchlist-main__list._grid #traffic, html.dark body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-more {
+  border-left: 0;
+}
+html.dark body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name::before, html.dark body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score::before, html.dark body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price::before, html.dark body .watchlist_exchanges .watchlist-main__list._grid #effective::before {
+  opacity: 0;
+}
+html.dark body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name::after, html.dark body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score::after, html.dark body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price::after, html.dark body .watchlist_exchanges .watchlist-main__list._grid #effective::after {
+  opacity: 1;
 }
 
 html.light body {
@@ -2440,6 +2480,18 @@ html.light body .watchlist_defi .watchlist-main__list._grid .watchlist-product-n
 }
 html.light body .watchlist_defi .watchlist-main__list._grid #day-volume {
   border-left: 0px;
+}
+html.light body .watchlist-product-more__button {
+  border: 1px solid #B5BACB;
+}
+html.light body .watchlist_exchanges .watchlist-main__list._grid #traffic, html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-more {
+  border-left: 0;
+}
+html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name::before, html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score::before, html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price::before, html.light body .watchlist_exchanges .watchlist-main__list._grid #effective::before {
+  opacity: 1;
+}
+html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name::after, html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score::after, html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price::after, html.light body .watchlist_exchanges .watchlist-main__list._grid #effective::after {
+  opacity: 0;
 }
 
 .header {
@@ -5027,6 +5079,87 @@ html.light body .watchlist_defi .watchlist-main__list._grid #day-volume {
 .watchlist_defi .watchlist-legends__links, .watchlist_defi .watchlist-product__wrapper__links {
   padding-left: 24px;
 }
+.watchlist_exchanges .filter .select__header {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.watchlist_exchanges .filter .select__icon {
+  margin-left: auto;
+}
+.watchlist_exchanges .filter__form {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -ms-grid-columns: 315px 6px 315px 6px auto;
+  grid-template-columns: 315px 315px auto;
+  gap: 6px;
+}
+@media (max-width: 1300px) {
+  .watchlist_exchanges .filter__form {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 991.98px) {
+  .watchlist_exchanges .filter__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .watchlist_exchanges .filter__form .filter-select {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    max-width: calc(50% - 3px);
+  }
+}
+@media (max-width: 480px) {
+  .watchlist_exchanges .filter__form .filter-search {
+    max-width: none;
+    width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+}
+.watchlist_exchanges .watchlist-product-name__icon {
+  width: 25px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25px;
+          flex: 0 0 25px;
+  height: 25px;
+  border-radius: 6px;
+  border: 1px solid #fff;
+}
+.watchlist_exchanges .watchlist-legends, .watchlist_exchanges .watchlist-product__wrapper {
+  -ms-grid-columns: 70px 130px 144px 145px 145px 145px 145px 145px 145px 65px;
+  grid-template-columns: 70px 130px 144px 145px 145px 145px 145px 145px 145px 65px;
+}
+.watchlist_exchanges .watchlist-legend {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.watchlist_exchanges .watchlist-legends__icon {
+  margin-left: 6px;
+}
+.watchlist_exchanges .watchlist-legends__title {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.watchlist_exchanges .watchlist-product-name__name .watchlist-product-name__full-name {
+  white-space: nowrap;
+}
 
 .watchlist-title {
   display: -webkit-box;
@@ -5559,6 +5692,66 @@ html.light body .watchlist_defi .watchlist-main__list._grid #day-volume {
   color: #55606F;
 }
 
+.watchlist-product-rating-score__score {
+  padding: 0 10px;
+  height: 20px;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+}
+.watchlist-product-rating-score .watchlist-product-rating-score__score._green {
+  background-color: #71BA57;
+}
+
+.watchlist-product-fiat .watchlist-product-single__content {
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.watchlist-product-fiat__list {
+  white-space: nowrap;
+  width: 100%;
+}
+
+.watchlist-product-more__button {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: border ease-in-out 0.3s, background-color ease-in-out 0.3s;
+  transition: border ease-in-out 0.3s, background-color ease-in-out 0.3s;
+}
+.watchlist-product-more__button:hover {
+  background-color: rgba(204, 204, 204, 0.1333333333);
+}
+.watchlist-product-more__button img {
+  width: 7.3px;
+}
+
 .pagination {
   display: -ms-grid;
   display: grid;
@@ -5920,7 +6113,7 @@ html.light body .watchlist_defi .watchlist-main__list._grid #day-volume {
   position: relative;
   border-radius: 4px;
   margin-bottom: 5px;
-  width: 1278px;
+  width: 1280px;
   -webkit-transition: border ease-in-out 0.3s;
   transition: border ease-in-out 0.3s;
 }
@@ -6122,6 +6315,8 @@ html.light body .watchlist_defi .watchlist-main__list._grid #day-volume {
   font-size: 14px;
   line-height: 16px;
   color: #515764;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .watchlist-product-name__full-name {
   font-weight: 600;
@@ -7116,6 +7311,134 @@ html.light body .watchlist_defi .watchlist-main__list._grid #day-volume {
 }
 @media (max-width: 654.98px) {
   .watchlist_defi .watchlist-main.grid-mod::before, .watchlist_defi .watchlist-main.grid-mod::after {
+    display: block;
+  }
+}
+
+.watchlist_exchanges .watchlist-main__list._grid .watchlist-product-single__label {
+  display: none;
+}
+.watchlist_exchanges .watchlist-main__list._grid .watchlist-product__part_actions {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: actions;
+  padding-left: 0px;
+}
+.watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: info;
+  padding-left: 2px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: score;
+}
+.watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-area: price;
+  padding: 0;
+}
+.watchlist_exchanges .watchlist-main__list._grid #effective {
+  -ms-grid-row: 1;
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 3;
+  grid-area: effective;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 20px;
+}
+.watchlist_exchanges .watchlist-main__list._grid #traffic {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: traffic;
+}
+.watchlist_exchanges .watchlist-main__list._grid #markets {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: markets;
+}
+.watchlist_exchanges .watchlist-main__list._grid #coins {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-area: coins;
+}
+.watchlist_exchanges .watchlist-main__list._grid .watchlist-product-fiat {
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+  grid-area: fiat;
+}
+.watchlist_exchanges .watchlist-main__list._grid .watchlist-product-more {
+  -ms-grid-row: 3;
+  -ms-grid-column: 8;
+  grid-area: more;
+}
+.watchlist_exchanges .watchlist-main__list._grid .watchlist-product__part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name, .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score, .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price, .watchlist_exchanges .watchlist-main__list._grid #effective {
+  position: relative;
+}
+.watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name::before, .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score::before, .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price::before, .watchlist_exchanges .watchlist-main__list._grid #effective::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  left: -1px;
+  width: calc(100% + 1px);
+  bottom: -10px;
+  background-color: #DFE3F0;
+  -webkit-transition: opacity ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s;
+}
+.watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name::after, .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score::after, .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price::after, .watchlist_exchanges .watchlist-main__list._grid #effective::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  left: -1px;
+  width: calc(100% + 1px);
+  bottom: -10px;
+  background-color: #1E222A;
+  -webkit-transition: opacity ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s;
+}
+.watchlist_exchanges .watchlist-main__list._grid .watchlist-product__wrapper {
+  -ms-grid-columns: 56px 115px 71px 48px 106px 14px 172px 30px;
+  grid-template-columns: 56px 115px 71px 48px 106px 14px 172px 30px;
+  -ms-grid-rows: auto 20px auto;
+  grid-template-rows: auto auto;
+  row-gap: 20px;
+  padding: 12px;
+      grid-template-areas: "actions info score price price effective effective effective" "actions traffic markets markets coins coins fiat more";
+}
+@media (max-width: 991.98px) {
+  .watchlist_exchanges .watchlist-main.grid-mod::before, .watchlist_exchanges .watchlist-main.grid-mod::after {
+    display: none;
+  }
+}
+@media (max-width: 654.98px) {
+  .watchlist_exchanges .watchlist-main.grid-mod::before, .watchlist_exchanges .watchlist-main.grid-mod::after {
     display: block;
   }
 }
