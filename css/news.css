@@ -147,6 +147,12 @@ body .header .header-burger._active span {
 body .header .header-burger._active::before {
   opacity: 0;
 }
+body .header .header-main-actions__select-wrapper::before {
+  opacity: 1;
+}
+body .header .header-main-actions__select-wrapper::after {
+  opacity: 0;
+}
 body .main__trends .trends__header {
   border-bottom: 1px solid #B5BACB;
 }
@@ -753,6 +759,14 @@ body .news .news-card__title:hover {
     background-color: #2A59FF;
   }
   body .header .header-burger._active::before {
+    opacity: 1;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .header .header-main-actions__select-wrapper::before {
+    opacity: 0;
+  }
+  body .header .header-main-actions__select-wrapper::after {
     opacity: 1;
   }
 }
@@ -1373,6 +1387,12 @@ html.dark body .header .header-burger._active span {
 html.dark body .header .header-burger._active::before {
   opacity: 1;
 }
+html.dark body .header .header-main-actions__select-wrapper::before {
+  opacity: 0;
+}
+html.dark body .header .header-main-actions__select-wrapper::after {
+  opacity: 1;
+}
 html.dark body .main__trends .trends__header {
   border-bottom: 1px solid #1E222A;
 }
@@ -1917,6 +1937,12 @@ html.light body .header .header-burger._active span {
   background-color: #fff;
 }
 html.light body .header .header-burger._active::before {
+  opacity: 0;
+}
+html.light body .header .header-main-actions__select-wrapper::before {
+  opacity: 1;
+}
+html.light body .header .header-main-actions__select-wrapper::after {
   opacity: 0;
 }
 html.light body .main__trends .trends__header {
@@ -2791,6 +2817,12 @@ body .header .header-burger._active span {
 body .header .header-burger._active::before {
   opacity: 0;
 }
+body .header .header-main-actions__select-wrapper::before {
+  opacity: 1;
+}
+body .header .header-main-actions__select-wrapper::after {
+  opacity: 0;
+}
 body .main__trends .trends__header {
   border-bottom: 1px solid #B5BACB;
 }
@@ -3397,6 +3429,14 @@ body .news .news-card__title:hover {
     background-color: #2A59FF;
   }
   body .header .header-burger._active::before {
+    opacity: 1;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .header .header-main-actions__select-wrapper::before {
+    opacity: 0;
+  }
+  body .header .header-main-actions__select-wrapper::after {
     opacity: 1;
   }
 }
@@ -4017,6 +4057,12 @@ html.dark body .header .header-burger._active span {
 html.dark body .header .header-burger._active::before {
   opacity: 1;
 }
+html.dark body .header .header-main-actions__select-wrapper::before {
+  opacity: 0;
+}
+html.dark body .header .header-main-actions__select-wrapper::after {
+  opacity: 1;
+}
 html.dark body .main__trends .trends__header {
   border-bottom: 1px solid #1E222A;
 }
@@ -4561,6 +4607,12 @@ html.light body .header .header-burger._active span {
   background-color: #fff;
 }
 html.light body .header .header-burger._active::before {
+  opacity: 0;
+}
+html.light body .header .header-main-actions__select-wrapper::before {
+  opacity: 1;
+}
+html.light body .header .header-main-actions__select-wrapper::after {
   opacity: 0;
 }
 html.light body .main__trends .trends__header {
@@ -5258,7 +5310,7 @@ html.light body .news .news-card__title:hover {
 }
 .header-panel-actions__button {
   font-family: Rubik;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .header-main-actions__el {
@@ -5374,6 +5426,50 @@ html.light body .news .news-card__title:hover {
             transform: rotate(0deg);
   }
 }
+.header-main-actions__select-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  height: 33px;
+  -webkit-transition: border ease-in-out 0.3s;
+  transition: border ease-in-out 0.3s;
+  padding: 0 6px;
+  position: relative;
+}
+.header-main-actions__select-wrapper:hover {
+  border: 1px solid #2A59FF;
+}
+.header-main-actions__select-wrapper::before {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 1px;
+  height: 18px;
+  background-color: #B5BACB;
+  -webkit-transition: opacity ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s;
+  opacity: 0;
+}
+.header-main-actions__select-wrapper::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 1px;
+  height: 18px;
+  background-color: #323642;
+  -webkit-transition: opacity ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s;
+  opacity: 0;
+}
+
 .header-main {
   position: relative;
   -webkit-transition: border ease-in-out 0.3s;
