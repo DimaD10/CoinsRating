@@ -17,11 +17,11 @@ let select = function () {
     }
 
     function selectChoose() {
-        let text = this.innerText,
+        let text = this.innerHTML,
             select = this.closest('.select'),
             icon = this.closest('.header-main-actions__el_select'),
             currentText = select.querySelector('.select__current');
-        currentText.innerText = text;
+        currentText.innerHTML = text;
         select.classList.remove('is-active');
         icon.classList.remove("_active");
     }
