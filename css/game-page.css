@@ -245,13 +245,13 @@ body .main__watchlist .show-rows .select__body {
 body .main__watchlist .show-rows .select__item:hover {
   background-color: #e9e9e9;
 }
-body .main__watchlist .watchlist-filters__name, body .main__watchlist .filter-button__name {
+body .main__watchlist .watchlist-filters__name {
   color: #1E222A;
 }
-body .main__watchlist .watchlist-filters__button_filter, body .main__watchlist .filter-button {
+body .main__watchlist .watchlist-filters__button_filter {
   border: 1px solid #B5BACB;
 }
-body .main__watchlist .watchlist-filters__button_filter::before, body .main__watchlist .filter-button::before {
+body .main__watchlist .watchlist-filters__button_filter::before {
   opacity: 0;
 }
 body .main__watchlist .watchlist-orientation__button {
@@ -442,7 +442,7 @@ body .watchlist_mod .watchlist-showing:before, body .watchlist_mod .watchlist-sh
 body .watchlist_mod .watchlist-showing .select__body {
   border: 0;
 }
-body .watchlist_mod .watchlist-filters__button_filter._opened, body .watchlist_mod ._opened.filter-button {
+body .watchlist_mod .watchlist-filters__button_filter._opened {
   border: 1px solid transparent;
 }
 body .watchlist_mod .watchlist-orientation__button._current {
@@ -968,13 +968,13 @@ body .game-descr .status__status {
   body .main__watchlist .show-rows .select__item:hover {
     background-color: #2d3036;
   }
-  body .main__watchlist .watchlist-filters__name, body .main__watchlist .filter-button__name {
+  body .main__watchlist .watchlist-filters__name {
     color: #B5BACB;
   }
-  body .main__watchlist .watchlist-filters__button_filter, body .main__watchlist .filter-button {
+  body .main__watchlist .watchlist-filters__button_filter {
     border: 1px solid rgba(69, 78, 83, 0.1490196078);
   }
-  body .main__watchlist .watchlist-filters__button_filter::before, body .main__watchlist .filter-button::before {
+  body .main__watchlist .watchlist-filters__button_filter::before {
     opacity: 1;
   }
   body .main__watchlist .watchlist-orientation__button {
@@ -1196,7 +1196,7 @@ body .game-descr .status__status {
   body .watchlist_mod .watchlist-showing:before, body .watchlist_mod .watchlist-showing::after {
     display: none;
   }
-  body .watchlist_mod .watchlist-filters__button_filter._opened, body .watchlist_mod ._opened.filter-button {
+  body .watchlist_mod .watchlist-filters__button_filter._opened {
     border: 1px solid transparent;
   }
   body .watchlist_mod .watchlist-orientation__button._current {
@@ -1715,13 +1715,13 @@ html.dark body .main__watchlist .show-rows .select__body {
 html.dark body .main__watchlist .show-rows .select__item:hover {
   background-color: #2d3036;
 }
-html.dark body .main__watchlist .watchlist-filters__name, html.dark body .main__watchlist .filter-button__name {
+html.dark body .main__watchlist .watchlist-filters__name {
   color: #B5BACB;
 }
-html.dark body .main__watchlist .watchlist-filters__button_filter, html.dark body .main__watchlist .filter-button {
+html.dark body .main__watchlist .watchlist-filters__button_filter {
   border: 1px solid rgba(69, 78, 83, 0.1490196078);
 }
-html.dark body .main__watchlist .watchlist-filters__button_filter::before, html.dark body .main__watchlist .filter-button::before {
+html.dark body .main__watchlist .watchlist-filters__button_filter::before {
   opacity: 1;
 }
 html.dark body .main__watchlist .watchlist-orientation__button {
@@ -1906,7 +1906,7 @@ html.dark body .watchlist_mod .watchlist-showing:before, html.dark body .watchli
 html.dark body .watchlist_mod .watchlist-showing .select__body {
   border: 0;
 }
-html.dark body .watchlist_mod .watchlist-filters__button_filter._opened, html.dark body .watchlist_mod ._opened.filter-button {
+html.dark body .watchlist_mod .watchlist-filters__button_filter._opened {
   border: 1px solid transparent;
 }
 html.dark body .watchlist_mod .watchlist-orientation__button._current {
@@ -2386,13 +2386,13 @@ html.light body .main__watchlist .show-rows .select__body {
 html.light body .main__watchlist .show-rows .select__item:hover {
   background-color: #e9e9e9;
 }
-html.light body .main__watchlist .watchlist-filters__name, html.light body .main__watchlist .filter-button__name {
+html.light body .main__watchlist .watchlist-filters__name {
   color: #1E222A;
 }
-html.light body .main__watchlist .watchlist-filters__button_filter, html.light body .main__watchlist .filter-button {
+html.light body .main__watchlist .watchlist-filters__button_filter {
   border: 1px solid #B5BACB;
 }
-html.light body .main__watchlist .watchlist-filters__button_filter::before, html.light body .main__watchlist .filter-button::before {
+html.light body .main__watchlist .watchlist-filters__button_filter::before {
   opacity: 0;
 }
 html.light body .main__watchlist .watchlist-orientation__button {
@@ -2580,7 +2580,7 @@ html.light body .watchlist_mod .watchlist-showing:before, html.light body .watch
 html.light body .watchlist_mod .watchlist-showing .select__body {
   border: 0;
 }
-html.light body .watchlist_mod .watchlist-filters__button_filter._opened, html.light body .watchlist_mod ._opened.filter-button {
+html.light body .watchlist_mod .watchlist-filters__button_filter._opened {
   border: 1px solid transparent;
 }
 html.light body .watchlist_mod .watchlist-orientation__button._current {
@@ -3388,13 +3388,13 @@ body .main__watchlist .show-rows .select__body {
 body .main__watchlist .show-rows .select__item:hover {
   background-color: #e9e9e9;
 }
-body .main__watchlist .watchlist-filters__name, body .main__watchlist .filter-button__name {
+body .main__watchlist .watchlist-filters__name {
   color: #1E222A;
 }
-body .main__watchlist .watchlist-filters__button_filter, body .main__watchlist .filter-button {
+body .main__watchlist .watchlist-filters__button_filter {
   border: 1px solid #B5BACB;
 }
-body .main__watchlist .watchlist-filters__button_filter::before, body .main__watchlist .filter-button::before {
+body .main__watchlist .watchlist-filters__button_filter::before {
   opacity: 0;
 }
 body .main__watchlist .watchlist-orientation__button {
@@ -3585,7 +3585,7 @@ body .watchlist_mod .watchlist-showing:before, body .watchlist_mod .watchlist-sh
 body .watchlist_mod .watchlist-showing .select__body {
   border: 0;
 }
-body .watchlist_mod .watchlist-filters__button_filter._opened, body .watchlist_mod ._opened.filter-button {
+body .watchlist_mod .watchlist-filters__button_filter._opened {
   border: 1px solid transparent;
 }
 body .watchlist_mod .watchlist-orientation__button._current {
@@ -4111,13 +4111,13 @@ body .game-descr .status__status {
   body .main__watchlist .show-rows .select__item:hover {
     background-color: #2d3036;
   }
-  body .main__watchlist .watchlist-filters__name, body .main__watchlist .filter-button__name {
+  body .main__watchlist .watchlist-filters__name {
     color: #B5BACB;
   }
-  body .main__watchlist .watchlist-filters__button_filter, body .main__watchlist .filter-button {
+  body .main__watchlist .watchlist-filters__button_filter {
     border: 1px solid rgba(69, 78, 83, 0.1490196078);
   }
-  body .main__watchlist .watchlist-filters__button_filter::before, body .main__watchlist .filter-button::before {
+  body .main__watchlist .watchlist-filters__button_filter::before {
     opacity: 1;
   }
   body .main__watchlist .watchlist-orientation__button {
@@ -4339,7 +4339,7 @@ body .game-descr .status__status {
   body .watchlist_mod .watchlist-showing:before, body .watchlist_mod .watchlist-showing::after {
     display: none;
   }
-  body .watchlist_mod .watchlist-filters__button_filter._opened, body .watchlist_mod ._opened.filter-button {
+  body .watchlist_mod .watchlist-filters__button_filter._opened {
     border: 1px solid transparent;
   }
   body .watchlist_mod .watchlist-orientation__button._current {
@@ -4858,13 +4858,13 @@ html.dark body .main__watchlist .show-rows .select__body {
 html.dark body .main__watchlist .show-rows .select__item:hover {
   background-color: #2d3036;
 }
-html.dark body .main__watchlist .watchlist-filters__name, html.dark body .main__watchlist .filter-button__name {
+html.dark body .main__watchlist .watchlist-filters__name {
   color: #B5BACB;
 }
-html.dark body .main__watchlist .watchlist-filters__button_filter, html.dark body .main__watchlist .filter-button {
+html.dark body .main__watchlist .watchlist-filters__button_filter {
   border: 1px solid rgba(69, 78, 83, 0.1490196078);
 }
-html.dark body .main__watchlist .watchlist-filters__button_filter::before, html.dark body .main__watchlist .filter-button::before {
+html.dark body .main__watchlist .watchlist-filters__button_filter::before {
   opacity: 1;
 }
 html.dark body .main__watchlist .watchlist-orientation__button {
@@ -5049,7 +5049,7 @@ html.dark body .watchlist_mod .watchlist-showing:before, html.dark body .watchli
 html.dark body .watchlist_mod .watchlist-showing .select__body {
   border: 0;
 }
-html.dark body .watchlist_mod .watchlist-filters__button_filter._opened, html.dark body .watchlist_mod ._opened.filter-button {
+html.dark body .watchlist_mod .watchlist-filters__button_filter._opened {
   border: 1px solid transparent;
 }
 html.dark body .watchlist_mod .watchlist-orientation__button._current {
@@ -5529,13 +5529,13 @@ html.light body .main__watchlist .show-rows .select__body {
 html.light body .main__watchlist .show-rows .select__item:hover {
   background-color: #e9e9e9;
 }
-html.light body .main__watchlist .watchlist-filters__name, html.light body .main__watchlist .filter-button__name {
+html.light body .main__watchlist .watchlist-filters__name {
   color: #1E222A;
 }
-html.light body .main__watchlist .watchlist-filters__button_filter, html.light body .main__watchlist .filter-button {
+html.light body .main__watchlist .watchlist-filters__button_filter {
   border: 1px solid #B5BACB;
 }
-html.light body .main__watchlist .watchlist-filters__button_filter::before, html.light body .main__watchlist .filter-button::before {
+html.light body .main__watchlist .watchlist-filters__button_filter::before {
   opacity: 0;
 }
 html.light body .main__watchlist .watchlist-orientation__button {
@@ -5723,7 +5723,7 @@ html.light body .watchlist_mod .watchlist-showing:before, html.light body .watch
 html.light body .watchlist_mod .watchlist-showing .select__body {
   border: 0;
 }
-html.light body .watchlist_mod .watchlist-filters__button_filter._opened, html.light body .watchlist_mod ._opened.filter-button {
+html.light body .watchlist_mod .watchlist-filters__button_filter._opened {
   border: 1px solid transparent;
 }
 html.light body .watchlist_mod .watchlist-orientation__button._current {
@@ -8175,27 +8175,27 @@ html.light body .game-descr .status__status {
     width: 100%;
   }
 }
-.watchlist_mod .watchlist-filters__button_filter._opened, .watchlist_mod ._opened.filter-button {
+.watchlist_mod .watchlist-filters__button_filter._opened {
   border: 1px solid transparent;
   background-color: #2A59FF;
 }
-.watchlist_mod .watchlist-filters__button_filter._opened::before, .watchlist_mod ._opened.filter-button::before, .watchlist_mod .watchlist-filters__button_filter._opened::after, .watchlist_mod ._opened.filter-button::after {
+.watchlist_mod .watchlist-filters__button_filter._opened::before, .watchlist_mod .watchlist-filters__button_filter._opened::after {
   display: none;
 }
-.watchlist_mod .watchlist-filters__button_filter._opened path, .watchlist_mod ._opened.filter-button path {
+.watchlist_mod .watchlist-filters__button_filter._opened path {
   fill: #fff;
 }
-.watchlist_mod .watchlist-filters__button_filter._opened .watchlist-filters__name, .watchlist_mod .watchlist-filters__button_filter._opened .filter-button__name, .watchlist_mod ._opened.filter-button .watchlist-filters__name, .watchlist_mod ._opened.filter-button .filter-button__name {
+.watchlist_mod .watchlist-filters__button_filter._opened .watchlist-filters__name {
   color: #fff;
 }
-.watchlist_mod .watchlist-filters__button_filter, .watchlist_mod .filter-button {
+.watchlist_mod .watchlist-filters__button_filter {
   -webkit-transition: border ease-in-out 0.3s, background-color ease-in-out 0.3s, opacity ease-in-out 0.3s;
   transition: border ease-in-out 0.3s, background-color ease-in-out 0.3s, opacity ease-in-out 0.3s;
 }
-.watchlist_mod .watchlist-filters__button_filter svg, .watchlist_mod .filter-button svg {
+.watchlist_mod .watchlist-filters__button_filter svg {
   width: 10px;
 }
-.watchlist_mod .watchlist-filters__button_filter path, .watchlist_mod .filter-button path {
+.watchlist_mod .watchlist-filters__button_filter path {
   fill: #2A59FF;
   -webkit-transition: fill ease-in-out 0.3s;
   transition: fill ease-in-out 0.3s;
@@ -11289,16 +11289,16 @@ html.light body .game-descr .status__status {
     display: none;
   }
 }
-.watchlist-filters__button_filter, .filter-button {
+.watchlist-filters__button_filter {
   position: relative;
 }
-.watchlist-filters__button_filter:hover, .filter-button:hover {
+.watchlist-filters__button_filter:hover {
   opacity: 0.7;
 }
-.watchlist-filters__button_filter span, .filter-button span {
+.watchlist-filters__button_filter span {
   pointer-events: none;
 }
-.watchlist-filters__button_filter::before, .filter-button::before {
+.watchlist-filters__button_filter::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -11318,12 +11318,12 @@ html.light body .game-descr .status__status {
   pointer-events: none;
 }
 @media (max-width: 1250px) {
-  .watchlist-filters__button_filter, .filter-button {
+  .watchlist-filters__button_filter {
     margin-left: auto;
   }
 }
 @media (max-width: 767.98px) {
-  .watchlist-filters__button_filter, .filter-button {
+  .watchlist-filters__button_filter {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -11343,7 +11343,7 @@ html.light body .game-descr .status__status {
       -ms-flex-align: center;
           align-items: center;
 }
-.watchlist-filters__name, .filter-button__name {
+.watchlist-filters__name {
   font-family: Rubik;
   font-weight: 300;
   font-size: 12px;
@@ -12354,266 +12354,224 @@ html.light body .game-descr .status__status {
   overflow: hidden;
 }
 
-.main__news {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+.breadcrumbs__wrapper {
+  border-bottom: 0;
 }
 
-.news .filter {
-  position: static;
-  overflow: visible;
-  background: transparent;
-  padding: 0;
-  opacity: 1;
-  display: none;
-  margin-bottom: 8px;
-}
-.news .filter__wrapper {
-  width: 100%;
-  max-width: none;
-  padding: 0;
-  -webkit-transform: none;
-          transform: none;
-  opacity: 1;
-}
-.news .filter__form {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
-}
-@media (max-width: 767.98px) {
-  .news .filter__form {
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-.news .filter .filter-search {
-  border-radius: 6px;
-}
-@media (max-width: 991.98px) {
-  .news .filter {
-    margin-bottom: calc(12px + 4 * (100vw - 320px) / 671.98);
-  }
-}
-.news .filter._opened {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.main__game-info {
+  margin-bottom: 22px;
 }
 
-.news {
-  height: 100%;
+.game-info__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%;
-}
-.news__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-}
-.news__title {
-  font-family: Rubik;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 23px;
-}
-
-.filter-button._opened {
-  background-color: #2A59FF;
-  border: 1px solid transparent;
-}
-.filter-button._opened::before {
-  display: none;
-}
-.filter-button._opened .filter-button__name {
-  color: #fff;
-}
-.filter-button._opened .filter-button__icon path {
-  fill: #fff;
-}
-
-.filter-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 5px;
-  background-color: transparent;
+  padding: 22px 26px;
+  gap: 32px;
+  border-radius: 8px;
   -webkit-transition: background-color ease-in-out 0.3s, border ease-in-out 0.3s;
   transition: background-color ease-in-out 0.3s, border ease-in-out 0.3s;
-  position: relative;
-}
-.filter-button::before {
-  content: "";
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: linear-gradient(191.45deg, rgba(42, 46, 58, 0.4) -73.23%, rgba(42, 46, 58, 0) 91.58%);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
-}
-.filter-button__icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 10px;
-}
-.filter-button__icon svg {
-  width: 100%;
-}
-.filter-button__icon path {
-  -webkit-transition: fill ease-in-out 0.3s;
-  transition: fill ease-in-out 0.3s;
-}
-.filter-button__name {
-  color: #2A59FF;
-}
-
-.header-news {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 10px 0;
-}
-
-.news__list {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 8px 1fr 8px 1fr 8px 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 8px;
 }
 @media (max-width: 1200px) {
-  .news__list {
-    -ms-grid-columns: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+  .game-info__wrapper {
+    padding-top: calc(16px + 6 * (100vw - 480px) / 720);
+    padding-bottom: calc(16px + 6 * (100vw - 480px) / 720);
+    padding-left: calc(16px + 10 * (100vw - 480px) / 720);
+    padding-right: calc(16px + 10 * (100vw - 480px) / 720);
   }
 }
-@media (max-width: 991.98px) {
-  .news__list {
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+@media (max-width: 480px) {
+  .game-info__wrapper {
+    padding: 16px;
   }
 }
-@media (max-width: 627.98px) {
-  .news__list {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
-}
-
-.news-card {
-  border-radius: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.game-info__preview {
+  width: 262px;
+  height: 262px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 262px;
+          flex: 0 0 262px;
+  border-radius: 6px;
   overflow: hidden;
-  z-index: 10;
-  -webkit-transition: border ease-in-out 0.3s;
-  transition: border ease-in-out 0.3s;
-  position: relative;
 }
-.news-card::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: linear-gradient(348.01deg, #FFFFFF -2.12%, rgba(241, 241, 241, 0) 106.88%);
-  -webkit-filter: drop-shadow(0px 4px 22px rgba(224, 227, 244, 0.4));
-          filter: drop-shadow(0px 4px 22px rgba(224, 227, 244, 0.4));
-  z-index: -1;
-  -webkit-transition: opacity ease-in-out 0.3s;
-  transition: opacity ease-in-out 0.3s;
-  opacity: 0;
+@media (max-width: 1200px) {
+  .game-info__preview {
+    width: calc(152px + 110 * (100vw - 320px) / 880);
+    height: calc(152px + 110 * (100vw - 320px) / 880);
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(152px + 110 * (100vw - 320px) / 880);
+            flex: 0 0 calc(152px + 110 * (100vw - 320px) / 880);
+  }
 }
-.news-card::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: linear-gradient(191.45deg, rgba(42, 46, 58, 0.4) -73.23%, rgba(42, 46, 58, 0) 91.58%);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
-  z-index: -1;
-  -webkit-transition: opacity ease-in-out 0.3s;
-  transition: opacity ease-in-out 0.3s;
-  opacity: 0;
-}
-.news-card__preview {
-  width: 100%;
-  overflow: hidden;
-  height: 205px;
-}
-.news-card__preview:hover img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-.news-card__preview img {
+.game-info__preview img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  -webkit-transition: -webkit-transform ease-in-out 0.3s;
-  transition: -webkit-transform ease-in-out 0.3s;
-  transition: transform ease-in-out 0.3s;
-  transition: transform ease-in-out 0.3s, -webkit-transform ease-in-out 0.3s;
 }
-.news-card__body {
-  padding: 15px;
+@media (max-width: 767.98px) {
+  .game-info__preview {
+    display: none;
+  }
+}
+
+.info-game {
+  padding-top: 8px;
+}
+@media (max-width: 767.98px) {
+  .info-game {
+    padding-top: 0;
+  }
+}
+.info-game__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 767.98px) {
+  .info-game__top {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 28px 1fr;
+    grid-template-columns: auto 1fr;
+    -webkit-column-gap: 28px;
+       -moz-column-gap: 28px;
+            column-gap: 28px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+        grid-template-areas: "preview title" "preview subtitle" "preview upd";
+  }
+}
+@media (max-width: 480px) {
+  .info-game__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 4px;
+  }
+}
+.info-game__top .info-game__subtitle {
+  display: none;
+  grid-area: subtitle;
+}
+@media (max-width: 767.98px) {
+  .info-game__top .info-game__subtitle {
+    display: block;
+  }
+}
+@media (max-width: 480px) {
+  .info-game__top .info-game__subtitle {
+    text-align: center;
+  }
+}
+.info-game__top .game-info__preview {
+  display: none;
+  grid-area: preview;
+}
+@media (max-width: 767.98px) {
+  .info-game__top .game-info__preview {
+    display: block;
+  }
+}
+@media (max-width: 480px) {
+  .info-game__top .game-info__preview {
+    margin-bottom: 18px;
+  }
+}
+.info-game__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  grid-area: title;
+}
+.info-game__subtitle {
+  margin-top: 4px;
+  font-family: Rubik;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 139.69%;
+  -webkit-transition: color ease-in-out 0.3s;
+  transition: color ease-in-out 0.3s;
+}
+@media (max-width: 767.98px) {
+  .info-game__subtitle {
+    display: none;
+  }
+}
+.info-game__paragraph {
+  margin: 20px 0;
+  font-family: Rubik;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 139.69%;
+}
+@media (max-width: 480px) {
+  .info-game__paragraph {
+    text-align: center;
+    margin: 13px 0;
+  }
+}
+
+.game-upd {
+  font-family: Rubik;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 139.69%;
+  -webkit-transition: color ease-in-out 0.3s;
+  transition: color ease-in-out 0.3s;
+  grid-area: upd;
+}
+
+@media (max-width: 767.98px){
+  .info-game__top .info-game__subtitle {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+  }
+  .info-game__top .game-info__preview {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+  }
+  .info-game__title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .game-upd {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+}
+@media (max-width: 480px) {
+  .game-upd {
+    margin-top: 10px;
+  }
+}
+.game-upd__date {
+  font-family: Rubik;
+  color: #2A59FF;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 139.69%;
+}
+
+.info-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12621,83 +12579,369 @@ html.light body .game-descr .status__status {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
-.news-card__title {
-  font-weight: 600;
-  font-size: 14px;
+@media (max-width: 480px) {
+  .info-links {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.info-links__title {
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 18px;
   line-height: 129.19%;
+  color: #2A59FF;
+  margin-bottom: 10px;
+}
+.info-links__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 7px 1fr 7px 1fr 7px 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 7px;
+  max-width: 485px;
+}
+@media (max-width: 480px) {
+  .info-links__list {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    max-width: 200px;
+    width: 100%;
+  }
+}
+.info-links__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 45px;
+  gap: 4px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  -webkit-transition: background-color ease-in-out 0.3s, border ease-in-out 0.3s;
+  transition: background-color ease-in-out 0.3s, border ease-in-out 0.3s;
+  position: relative;
+}
+.info-links__link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(42, 88, 255, 0.1);
+  border-radius: 4px;
+  -webkit-transition: opacity ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s;
+  opacity: 0;
+}
+.info-links__link:hover::after {
+  opacity: 1;
+}
+.info-links__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 5;
+}
+.info-links__text {
+  font-family: Rubik;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  z-index: 5;
   -webkit-transition: color ease-in-out 0.3s;
   transition: color ease-in-out 0.3s;
 }
-.news-card__paragraph {
-  margin: 12px 0;
+
+.game-descr__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.descr-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.descr-block__title {
   font-family: Rubik;
-  font-weight: 300;
-  font-size: 13px;
-  line-height: 139.69%;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+}
+.descr-block__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  -webkit-transition: background-color ease-in-out 0.3s, border ease-in-out 0.3s;
+  transition: background-color ease-in-out 0.3s, border ease-in-out 0.3s;
+}
+@media (max-width: 480px) {
+  .descr-block__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
-.news-action {
-  margin-top: 4px;
+.descr-card__el {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 14px;
-}
-.news-action__block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 6px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.news-action__block:not(:last-child) {
-  padding-right: 14px;
-  border-right: 1px solid #B5BACB;
-}
-.news-action__icon {
-  height: 13px;
-  max-width: 13px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.news-action__icon img {
-  width: 100%;
-}
-.news-action__text {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 139.69%;
-}
-
-.pagination {
-  padding: 15px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 20px;
+  padding-left: 20px;
+  min-height: 92px;
+  gap: 10px;
   -webkit-transition: border ease-in-out 0.3s;
   transition: border ease-in-out 0.3s;
-  margin-top: auto;
+}
+.descr-card__el:not(:last-child) {
+  border-right: 1px solid #DFE3F0;
+}
+.descr-card__el_genre {
+  width: 285px;
+}
+@media (max-width: 991.98px) {
+  .descr-card__el_genre {
+    width: calc(160px + 125 * (100vw - 480px) / 511.98);
+  }
+}
+@media (max-width: 480px) {
+  .descr-card__el_genre {
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (max-width: 480px) {
+  .descr-card__el_genre .descr-card__label {
+    display: none;
+  }
+}
+.descr-card__label {
+  font-family: Rubik;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  -webkit-transition: color ease-in-out 0.3s;
+  transition: color ease-in-out 0.3s;
+}
+.descr-card__main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.descr-card__main .descr-card__el {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 0;
+}
+@media (max-width: 991.98px) {
+  .descr-card__main {
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
-.header-news__filter {
-  z-index: 10;
-  padding: 8px 12px;
+.descr-card__content.genre .descr-card__label {
+  display: none;
+  grid-area: label;
+}
+@media (max-width: 480px) {
+  .descr-card__content.genre .descr-card__label {
+    display: block;
+  }
+}
+
+.genre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  padding-right: 8px;
+}
+@media (max-width: 480px) {
+  .genre {
+    width: auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+    grid-template-columns: auto auto;
+        grid-template-areas: "icon label" "icon name";
+  }
+  .descr-card__content.genre .descr-card__label {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+}
+.genre__icon {
+  width: 25px;
+  height: 25px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25px;
+          flex: 0 0 25px;
   border-radius: 6px;
-  -webkit-transition: border ease-in-out 0.3s, background-color ease-in-out 0.3s;
-  transition: border ease-in-out 0.3s, background-color ease-in-out 0.3s;
+  overflow: hidden;
+  grid-area: icon;
+}
+@media (max-width: 480px) {
+  .genre__icon {
+    width: 50px;
+    height: 50px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50px;
+            flex: 0 0 50px;
+  }
+}
+.genre__icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.genre__label {
+  text-transform: uppercase;
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  grid-area: name;
+}
+@media (max-width: 480px){
+  .genre__icon {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+  }
+  .genre__label {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
 }
 
-.filter-button {
-  -webkit-transition: opacity ease-in-out 0.3s, border ease-in-out 0.3s;
-  transition: opacity ease-in-out 0.3s, border ease-in-out 0.3s;
+.blockchain__icon {
+  height: 26px;
+  max-width: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.filter-button:hover {
-  opacity: 0.7;
+.blockchain__icon img {
+  width: 100%;
+}
+
+.platforms__icon {
+  height: 20px;
+  max-width: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.platforms__icon img {
+  width: 100%;
+}
+
+.status__marker {
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  color: #fff;
+  text-transform: uppercase;
+  height: 20px;
+  padding: 0 10px;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.status__marker_yellow {
+  background-color: #EAB300;
+}
+.status__marker_blue {
+  background-color: #2A59FF;
+}
+.status__marker_pink {
+  background-color: #B14C6B;
+}
+.status__status {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  -webkit-transition: background-color ease-in-out 0.3s;
+  transition: background-color ease-in-out 0.3s;
+}
+.status__status img {
+  max-width: 10px;
+  max-height: 10px;
 }
