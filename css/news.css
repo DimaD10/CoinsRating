@@ -686,6 +686,19 @@ body .blockchain .blockchain-body__card {
   background-color: #f7faff;
   border: 1px solid transparent;
 }
+body .glossary__body {
+  border-bottom: 1px solid #B5BACB;
+}
+body .glossary__spoiler {
+  background-color: #f7faff;
+  border: 1px solid transparent;
+}
+body .glossary .spoiler._opened {
+  background-color: #fffefd;
+}
+body .glossary .content-spoiler__paragraph, body .glossary .spoiler__subtitle {
+  color: #4A596D;
+}
 
 @media (prefers-color-scheme: dark) {
   body {
@@ -1551,6 +1564,21 @@ body .blockchain .blockchain-body__card {
     color: #fff;
   }
 }
+@media (prefers-color-scheme: dark) {
+  body .glossary__body {
+    border-bottom: 1px solid rgba(28, 41, 81, 0.5);
+  }
+  body .glossary__spoiler {
+    background-color: rgba(41, 44, 45, 0.2);
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  }
+  body .glossary .spoiler._opened {
+    background-color: transparent;
+  }
+  body .glossary .content-spoiler__paragraph, body .glossary .spoiler__subtitle {
+    color: #fff;
+  }
+}
 html.dark body {
   background-color: #1E222A;
   color: #fff;
@@ -2274,6 +2302,19 @@ html.dark body .blockchain .links-blockchain__text {
 html.dark body .blockchain .blockchain-body__card {
   background-color: rgba(41, 44, 45, 0.2);
   border: 1px solid rgba(69, 78, 83, 0.5019607843);
+}
+html.dark body .glossary__body {
+  border-bottom: 1px solid rgba(28, 41, 81, 0.5);
+}
+html.dark body .glossary__spoiler {
+  background-color: rgba(41, 44, 45, 0.2);
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+}
+html.dark body .glossary .spoiler._opened {
+  background-color: transparent;
+}
+html.dark body .glossary .content-spoiler__paragraph, html.dark body .glossary .spoiler__subtitle {
+  color: #fff;
 }
 
 html.light body {
@@ -3007,6 +3048,19 @@ html.light body .blockchain .links-blockchain__text {
 html.light body .blockchain .blockchain-body__card {
   background-color: #f7faff;
   border: 1px solid transparent;
+}
+html.light body .glossary__body {
+  border-bottom: 1px solid #B5BACB;
+}
+html.light body .glossary__spoiler {
+  background-color: #f7faff;
+  border: 1px solid transparent;
+}
+html.light body .glossary .spoiler._opened {
+  background-color: #fffefd;
+}
+html.light body .glossary .content-spoiler__paragraph, html.light body .glossary .spoiler__subtitle {
+  color: #4A596D;
 }
 
 /*ОБНУЛЕНИЕ СТИЛЕЙ*/
@@ -4055,6 +4109,19 @@ body .blockchain .blockchain-body__card {
   background-color: #f7faff;
   border: 1px solid transparent;
 }
+body .glossary__body {
+  border-bottom: 1px solid #B5BACB;
+}
+body .glossary__spoiler {
+  background-color: #f7faff;
+  border: 1px solid transparent;
+}
+body .glossary .spoiler._opened {
+  background-color: #fffefd;
+}
+body .glossary .content-spoiler__paragraph, body .glossary .spoiler__subtitle {
+  color: #4A596D;
+}
 
 @media (prefers-color-scheme: dark) {
   body {
@@ -4920,6 +4987,21 @@ body .blockchain .blockchain-body__card {
     color: #fff;
   }
 }
+@media (prefers-color-scheme: dark) {
+  body .glossary__body {
+    border-bottom: 1px solid rgba(28, 41, 81, 0.5);
+  }
+  body .glossary__spoiler {
+    background-color: rgba(41, 44, 45, 0.2);
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  }
+  body .glossary .spoiler._opened {
+    background-color: transparent;
+  }
+  body .glossary .content-spoiler__paragraph, body .glossary .spoiler__subtitle {
+    color: #fff;
+  }
+}
 html.dark body {
   background-color: #1E222A;
   color: #fff;
@@ -5643,6 +5725,19 @@ html.dark body .blockchain .links-blockchain__text {
 html.dark body .blockchain .blockchain-body__card {
   background-color: rgba(41, 44, 45, 0.2);
   border: 1px solid rgba(69, 78, 83, 0.5019607843);
+}
+html.dark body .glossary__body {
+  border-bottom: 1px solid rgba(28, 41, 81, 0.5);
+}
+html.dark body .glossary__spoiler {
+  background-color: rgba(41, 44, 45, 0.2);
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+}
+html.dark body .glossary .spoiler._opened {
+  background-color: transparent;
+}
+html.dark body .glossary .content-spoiler__paragraph, html.dark body .glossary .spoiler__subtitle {
+  color: #fff;
 }
 
 html.light body {
@@ -6376,6 +6471,19 @@ html.light body .blockchain .links-blockchain__text {
 html.light body .blockchain .blockchain-body__card {
   background-color: #f7faff;
   border: 1px solid transparent;
+}
+html.light body .glossary__body {
+  border-bottom: 1px solid #B5BACB;
+}
+html.light body .glossary__spoiler {
+  background-color: #f7faff;
+  border: 1px solid transparent;
+}
+html.light body .glossary .spoiler._opened {
+  background-color: #fffefd;
+}
+html.light body .glossary .content-spoiler__paragraph, html.light body .glossary .spoiler__subtitle {
+  color: #4A596D;
 }
 
 .header {
