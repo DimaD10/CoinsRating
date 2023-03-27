@@ -1282,6 +1282,62 @@ body .crypto-currency .top-content__part:not(:last-child) {
     border-right: 0;
   }
 }
+body .about .about__box {
+  background-color: #f7faff;
+  border: 1px solid transparent;
+}
+body .about .actions-about__button_filled {
+  background-color: #f7faff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+  color: #55606F;
+}
+body .about .actions-about__button_stroke {
+  background-color: transparent;
+  border: 1px solid rgba(181, 186, 203, 0.5);
+  color: #55606F;
+}
+body .about .actions-about__button_stroke:hover {
+  border: 1px solid #2A59FF;
+  background-color: #2A59FF;
+  color: #fff;
+}
+body .about .about-row {
+  border-bottom: 1px solid rgba(181, 186, 203, 0.3);
+}
+@media (min-width: 1200px) {
+  body .about .about-row__part:not(:last-child) {
+    border-right: 1px solid rgba(181, 186, 203, 0.3);
+  }
+}
+body .about .about-volume__part {
+  border-right: 1px solid rgba(181, 186, 203, 0.3);
+}
+@media (max-width: 1200px) {
+  body .about .about-volume__part:last-child {
+    border-right: 0;
+  }
+}
+@media (max-width: 480px) {
+  body .about .about-volume__part {
+    border-right: 0;
+  }
+  body .about .about-volume__part:first-child {
+    border-bottom: 1px solid rgba(181, 186, 203, 0.3);
+  }
+}
+body .about .about-volume__label, body .about .about-volume__value, body .about .about-article__paragraph, body .about .about-article__more {
+  color: #4A596D;
+}
+@media (max-width: 1200px) {
+  body .about .about-volume {
+    border-top: 1px solid rgba(181, 186, 203, 0.3);
+  }
+}
+body .about .about-article__more {
+  border-right: 1px solid rgba(181, 186, 203, 0.5);
+}
 
 @media (prefers-color-scheme: dark) {
   body {
@@ -2418,6 +2474,72 @@ body .crypto-currency .top-content__part:not(:last-child) {
     border-right: 0;
   }
 }
+@media (prefers-color-scheme: dark) {
+  body .about .about__box {
+    background-color: rgba(41, 44, 45, 0.2);
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  }
+  body .about .actions-about__button_filled {
+    background-color: rgba(47, 51, 54, 0.5019607843);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+    color: #fff;
+  }
+  body .about .actions-about__button_stroke {
+    background-color: rgba(47, 51, 54, 0.5019607843);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 1px solid hwb(201 27% 67%/0.502);
+    color: #fff;
+  }
+  body .about .actions-about__button_stroke:hover {
+    border: 1px solid #2A59FF;
+    background-color: #2A59FF;
+    color: #fff;
+  }
+  body .about .about-row {
+    border-bottom: 1px solid rgba(223, 227, 240, 0.1);
+  }
+}
+@media (prefers-color-scheme: dark) and (min-width: 1200px) {
+  body .about .about-row__part:not(:last-child) {
+    border-right: 1px solid rgba(223, 227, 240, 0.1);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .about .about-volume__part {
+    border-right: 1px solid rgba(223, 227, 240, 0.1);
+  }
+}
+@media (prefers-color-scheme: dark) and (max-width: 1200px) {
+  body .about .about-volume__part:last-child {
+    border-right: 0;
+  }
+}
+@media (prefers-color-scheme: dark) and (max-width: 480px) {
+  body .about .about-volume__part {
+    border-right: 0;
+  }
+  body .about .about-volume__part:first-child {
+    border-bottom: 1px solid rgba(223, 227, 240, 0.1);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .about .about-volume__label, body .about .about-volume__value, body .about .about-article__paragraph, body .about .about-article__more {
+    color: #fff;
+  }
+}
+@media (prefers-color-scheme: dark) and (max-width: 1200px) {
+  body .about .about-volume {
+    border-top: 1px solid rgba(223, 227, 240, 0.1);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .about .about-article__more {
+    border-right: 1px solid #323642;
+  }
+}
 html.dark body {
   background-color: #1E222A;
   color: #fff;
@@ -3376,6 +3498,64 @@ html.dark body .crypto-currency .top-content__part:not(:last-child) {
   html.dark body .crypto-currency .top-content .crypto-currency-about {
     border-right: 0;
   }
+}
+html.dark body .about .about__box {
+  background-color: rgba(41, 44, 45, 0.2);
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+}
+html.dark body .about .actions-about__button_filled {
+  background-color: rgba(47, 51, 54, 0.5019607843);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  color: #fff;
+}
+html.dark body .about .actions-about__button_stroke {
+  background-color: rgba(47, 51, 54, 0.5019607843);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  color: #fff;
+}
+html.dark body .about .actions-about__button_stroke:hover {
+  border: 1px solid #2A59FF;
+  background-color: #2A59FF;
+  color: #fff;
+}
+html.dark body .about .about-row {
+  border-bottom: 1px solid rgba(223, 227, 240, 0.1);
+}
+@media (min-width: 1200px) {
+  html.dark body .about .about-row__part:not(:last-child) {
+    border-right: 1px solid rgba(223, 227, 240, 0.1);
+  }
+}
+html.dark body .about .about-volume__part {
+  border-right: 1px solid rgba(223, 227, 240, 0.1);
+}
+@media (max-width: 1200px) {
+  html.dark body .about .about-volume__part:last-child {
+    border-right: 0;
+  }
+}
+@media (max-width: 480px) {
+  html.dark body .about .about-volume__part {
+    border-right: 0;
+  }
+  html.dark body .about .about-volume__part:first-child {
+    border-bottom: 1px solid rgba(223, 227, 240, 0.1);
+  }
+}
+html.dark body .about .about-volume__label, html.dark body .about .about-volume__value, html.dark body .about .about-article__paragraph, html.dark body .about .about-article__more {
+  color: #fff;
+}
+@media (max-width: 1200px) {
+  html.dark body .about .about-volume {
+    border-top: 1px solid rgba(223, 227, 240, 0.1);
+  }
+}
+html.dark body .about .about-article__more {
+  border-right: 1px solid #323642;
 }
 
 html.light body {
@@ -4345,6 +4525,62 @@ html.light body .crypto-currency .top-content__part:not(:last-child) {
   html.light body .crypto-currency .top-content .crypto-currency-about {
     border-right: 0;
   }
+}
+html.light body .about .about__box {
+  background-color: #f7faff;
+  border: 1px solid transparent;
+}
+html.light body .about .actions-about__button_filled {
+  background: #f7faff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+  color: #55606F;
+}
+html.light body .about .actions-about__button_stroke {
+  background-color: transparent;
+  border: 1px solid rgba(181, 186, 203, 0.5);
+  color: #55606F;
+}
+html.light body .about .actions-about__button_stroke:hover {
+  border: 1px solid #2A59FF;
+  background-color: #2A59FF;
+  color: #fff;
+}
+html.light body .about .about-row {
+  border-bottom: 1px solid rgba(181, 186, 203, 0.3);
+}
+@media (min-width: 1200px) {
+  html.light body .about .about-row__part:not(:last-child) {
+    border-right: 1px solid rgba(181, 186, 203, 0.3);
+  }
+}
+html.light body .about .about-volume__part {
+  border-right: 1px solid rgba(181, 186, 203, 0.3);
+}
+@media (max-width: 1200px) {
+  html.light body .about .about-volume__part:last-child {
+    border-right: 0;
+  }
+}
+@media (max-width: 480px) {
+  html.light body .about .about-volume__part {
+    border-right: 0;
+  }
+  html.light body .about .about-volume__part:first-child {
+    border-bottom: 1px solid rgba(181, 186, 203, 0.3);
+  }
+}
+html.light body .about .about-volume__label, html.light body .about .about-volume__value, html.light body .about .about-article__paragraph, html.light body .about .about-article__more {
+  color: #4A596D;
+}
+@media (max-width: 1200px) {
+  html.light body .about .about-volume {
+    border-top: 1px solid rgba(181, 186, 203, 0.3);
+  }
+}
+html.light body .about .about-article__more {
+  border-right: 1px solid rgba(181, 186, 203, 0.5);
 }
 
 .header {
