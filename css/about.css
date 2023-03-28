@@ -4307,21 +4307,13 @@ html.light body .about .about-article__more {
       -ms-flex: 0 0 105px;
           flex: 0 0 105px;
 }
-.about-row__icon {
-  width: 47px;
-  height: 47px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.about-row__icon img {
+.about-row__preview img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .about-row__article-head {
   display: -webkit-box;

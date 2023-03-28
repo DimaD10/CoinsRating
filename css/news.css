@@ -10062,6 +10062,8 @@ html.light body .about .about-article__more {
   -webkit-transition: border ease-in-out 0.3s, color ease-in-out 0.3s;
   transition: border ease-in-out 0.3s, color ease-in-out 0.3s;
   position: relative;
+  -webkit-transition: background-color ease-in-out 0.3s;
+  transition: background-color ease-in-out 0.3s;
 }
 .bottom-panel-navigation .stroke-button:hover {
   background-color: rgba(16, 57, 204, 0.1568627451);
