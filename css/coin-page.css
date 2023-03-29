@@ -970,6 +970,11 @@ body .about .about-volume__label, body .about .about-volume__value, body .about 
 body .about .about-article__more {
   border-right: 1px solid rgba(181, 186, 203, 0.5);
 }
+@media (max-width: 1300px) {
+  body .watchlist-product-name._fixed .watchlist-product-name__box {
+    background-color: #fff;
+  }
+}
 
 @media (prefers-color-scheme: dark) {
   body {
@@ -2172,6 +2177,11 @@ body .about .about-article__more {
     border-right: 1px solid #323642;
   }
 }
+@media (prefers-color-scheme: dark) and (max-width: 1300px) {
+  body .watchlist-product-name._fixed .watchlist-product-name__box {
+    background-color: #1E222A;
+  }
+}
 html.dark body {
   background-color: #1E222A;
   color: #fff;
@@ -3188,6 +3198,11 @@ html.dark body .about .about-volume__label, html.dark body .about .about-volume_
 }
 html.dark body .about .about-article__more {
   border-right: 1px solid #323642;
+}
+@media (max-width: 1300px) {
+  html.dark body .watchlist-product-name._fixed .watchlist-product-name__box {
+    background-color: #1E222A;
+  }
 }
 
 html.light body {
@@ -4213,6 +4228,11 @@ html.light body .about .about-volume__label, html.light body .about .about-volum
 }
 html.light body .about .about-article__more {
   border-right: 1px solid rgba(181, 186, 203, 0.5);
+}
+@media (max-width: 1300px) {
+  html.light body .watchlist-product-name._fixed .watchlist-product-name__box {
+    background-color: #fff;
+  }
 }
 
 .main__crypto-currency {
@@ -5916,6 +5936,7 @@ html.light body .about .about-article__more {
       -ms-flex: 0 0 28px;
           flex: 0 0 28px;
   border-radius: 6px;
+  overflow: hidden;
 }
 .user-live-chat__avatar img {
   width: 100%;
@@ -6122,7 +6143,7 @@ html.light body .about .about-article__more {
   display: -ms-flexbox;
   display: flex;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 767.98px) {
   .news__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -6355,8 +6376,16 @@ html.light body .about .about-article__more {
   gap: 14px;
   z-index: 5;
 }
+.also-watch-card__icon {
+  width: 32px;
+}
 .also-watch-card__icon img {
   height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
 }
 .also-watch-card__stat {
   display: -webkit-box;

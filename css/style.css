@@ -368,6 +368,12 @@ button, a, .header-main-actions__el, .header-navigation__el {
   opacity: 0.7;
 }
 
+input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
 body {
   background-color: #E8EBEF;
   -webkit-transition: background-color ease-in-out 0.3s, color ease-in-out 0.3s;
@@ -1337,6 +1343,11 @@ body .about .about-volume__label, body .about .about-volume__value, body .about 
 }
 body .about .about-article__more {
   border-right: 1px solid rgba(181, 186, 203, 0.5);
+}
+@media (max-width: 1300px) {
+  body .watchlist-product-name._fixed .watchlist-product-name__box {
+    background-color: #fff;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -2540,6 +2551,11 @@ body .about .about-article__more {
     border-right: 1px solid #323642;
   }
 }
+@media (prefers-color-scheme: dark) and (max-width: 1300px) {
+  body .watchlist-product-name._fixed .watchlist-product-name__box {
+    background-color: #1E222A;
+  }
+}
 html.dark body {
   background-color: #1E222A;
   color: #fff;
@@ -3556,6 +3572,11 @@ html.dark body .about .about-volume__label, html.dark body .about .about-volume_
 }
 html.dark body .about .about-article__more {
   border-right: 1px solid #323642;
+}
+@media (max-width: 1300px) {
+  html.dark body .watchlist-product-name._fixed .watchlist-product-name__box {
+    background-color: #1E222A;
+  }
 }
 
 html.light body {
@@ -4581,6 +4602,11 @@ html.light body .about .about-volume__label, html.light body .about .about-volum
 }
 html.light body .about .about-article__more {
   border-right: 1px solid rgba(181, 186, 203, 0.5);
+}
+@media (max-width: 1300px) {
+  html.light body .watchlist-product-name._fixed .watchlist-product-name__box {
+    background-color: #fff;
+  }
 }
 
 .header {
@@ -5964,6 +5990,7 @@ html.light body .about .about-article__more {
           align-items: center;
   cursor: pointer;
   gap: 20px;
+  -webkit-tap-highlight-color: transparent;
 }
 @media (max-width: 480px) {
   .trends-switch {
@@ -5997,6 +6024,8 @@ html.light body .about .about-article__more {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: background-color ease-in-out 0.3s;
+  transition: background-color ease-in-out 0.3s;
 }
 .trends-switch__switch span {
   display: -webkit-box;
@@ -6006,12 +6035,9 @@ html.light body .about .about-article__more {
   transition: margin ease-in-out 0.3s, -webkit-box-flex ease-in-out 0.3s;
   transition: flex ease-in-out 0.3s, margin ease-in-out 0.3s;
   transition: flex ease-in-out 0.3s, margin ease-in-out 0.3s, -webkit-box-flex ease-in-out 0.3s, -ms-flex ease-in-out 0.3s;
-  height: 12px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 0px;
           flex: 0 0 0;
-  background-color: #1039cc;
-  border-radius: 22px;
 }
 .trends-switch__switch img {
   -webkit-user-select: none;
@@ -6020,13 +6046,49 @@ html.light body .about .about-article__more {
           user-select: none;
 }
 
+.trends-switch._active .trends-switch__switch {
+  background-color: #bbc9f6;
+}
 .trends-switch._active .trends-switch__switch span {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   margin-right: -14px;
 }
+.trends-switch._active .trends-switch__switch img {
+  -webkit-animation: smooth ease 0.3s;
+          animation: smooth ease 0.3s;
+}
 
+@-webkit-keyframes smooth {
+  0% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  90% {
+    -webkit-transform: scaleX(1.2);
+            transform: scaleX(1.2);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@keyframes smooth {
+  0% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  90% {
+    -webkit-transform: scaleX(1.2);
+            transform: scaleX(1.2);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
 .main-trends__title {
   font-weight: 700;
   font-size: 20px;
@@ -6795,7 +6857,7 @@ html.light body .about .about-article__more {
   border-right: 0;
 }
 .watchlist_mod .watchlist-header {
-  z-index: 120;
+  z-index: 100;
 }
 @media (max-width: 767.98px) {
   .watchlist_mod .watchlist-header {
@@ -6965,6 +7027,10 @@ html.light body .about .about-article__more {
 }
 .watchlist_mod .watchlist-product__wrapper {
   height: 100%;
+}
+.watchlist_mod .watchlist-product-name {
+  padding: 0;
+  padding-left: 14px;
 }
 .watchlist_earn-games .watchlist-legends, .watchlist_earn-games .watchlist-product__wrapper {
   -ms-grid-columns: 59px 214px 104px 139px 132px 125px 125px 125px 124px 122px;
@@ -7262,6 +7328,7 @@ html.light body .about .about-article__more {
   -o-object-fit: contain;
      object-fit: contain;
   width: 100%;
+  height: 100%;
 }
 .watchlist_collections .watchlist-product-name__blockchain-name {
   font-family: Rubik;
@@ -7496,6 +7563,12 @@ html.light body .about .about-article__more {
 }
 .watchlist_currency .watchlist-product-rating-score__score {
   text-transform: capitalize;
+}
+.watchlist_currency .watchlist-product-name.watchlist-product__part {
+  padding: 0;
+}
+.watchlist_currency .watchlist-product-name.watchlist-product__part .watchlist-product-name__box {
+  padding-left: 14px;
 }
 
 .watchlist-title {
@@ -8072,6 +8145,7 @@ html.light body .about .about-article__more {
   height: 7px;
   width: 8px;
   position: relative;
+  z-index: -1;
 }
 .watchlist-product-rating-day__icon img {
   position: absolute;
@@ -8837,10 +8911,18 @@ html.light body .about .about-article__more {
 .watchlist-product-name {
   padding-left: 14px;
 }
+.watchlist-product-name__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .watchlist-product-name__icon {
   margin-right: 8px;
-  width: 16px;
-  height: 16px;
+  width: 2rem;
+  height: 2rem;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -8868,6 +8950,16 @@ html.light body .about .about-article__more {
   margin-right: 7px;
   -webkit-transition: color ease-in-out 0.3s;
   transition: color ease-in-out 0.3s;
+}
+
+.watchlist-product-name._fixed .watchlist-product-name__box {
+  -webkit-transition: background-color ease-in-out 0.3s;
+  transition: background-color ease-in-out 0.3s;
+  position: absolute;
+  left: 0;
+  padding-left: 14px;
+  -webkit-box-shadow: 8px 0px 10px -7px rgba(0, 0, 0, 0.2);
+          box-shadow: 8px 0px 10px -7px rgba(0, 0, 0, 0.2);
 }
 
 .watchlist-product-rate {
@@ -10525,6 +10617,7 @@ html.light body .about .about-article__more {
   background-color: transparent;
   -webkit-transition: color ease-in-out 0.3s;
   transition: color ease-in-out 0.3s;
+  padding-right: 10px;
 }
 .first-use-form__button {
   width: 135px;
