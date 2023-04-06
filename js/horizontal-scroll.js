@@ -22,7 +22,7 @@ scrollContainer.addEventListener('scroll', () => {
         }
     }
 
-
+/*
     names.forEach(el => {
         el.querySelector('.watchlist-product-name__box').style.width = `${el.offsetWidth}px`;
         el.querySelector('.watchlist-product-name__box').style.height = `${el.offsetHeight}px`;
@@ -38,6 +38,6 @@ scrollContainer.addEventListener('scroll', () => {
                 el.classList.remove('_fixed');
             }
         })
-    }
+    }*/
 
 });
