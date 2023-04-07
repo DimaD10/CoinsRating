@@ -1114,6 +1114,15 @@ body .main__support .support-form__box, body .main__support .support-form__text-
 body .main__support .support-form__input, body .main__support .support-form__text-area {
   color: #1E222A;
 }
+body .main__auth .auth-card {
+  background-color: #f7faff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+body .main__auth .auth-card__other-way-label {
+  color: #454E53;
+}
 
 @media (prefers-color-scheme: dark) {
   body {
@@ -2469,6 +2478,17 @@ body .main__support .support-form__input, body .main__support .support-form__tex
     color: #fff;
   }
 }
+@media (prefers-color-scheme: dark) {
+  body .main__auth .auth-card {
+    background-color: rgba(41, 44, 45, 0.2);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  }
+  body .main__auth .auth-card__other-way-label {
+    color: #fff;
+  }
+}
 html.dark body {
   background-color: #1E222A;
   color: #fff;
@@ -3617,6 +3637,15 @@ html.dark body .main__support .support-form__box, html.dark body .main__support 
   border: 1px solid rgba(69, 78, 83, 0.5019607843);
 }
 html.dark body .main__support .support-form__input, html.dark body .main__support .support-form__text-area {
+  color: #fff;
+}
+html.dark body .main__auth .auth-card {
+  background-color: rgba(41, 44, 45, 0.2);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+}
+html.dark body .main__auth .auth-card__other-way-label {
   color: #fff;
 }
 
@@ -4776,6 +4805,15 @@ html.light body .main__support .support-form__box, html.light body .main__suppor
 }
 html.light body .main__support .support-form__input, html.light body .main__support .support-form__text-area {
   color: #1E222A;
+}
+html.light body .main__auth .auth-card {
+  background-color: #f7faff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+html.light body .main__auth .auth-card__other-way-label {
+  color: #454E53;
 }
 
 /*ОБНУЛЕНИЕ СТИЛЕЙ*/
@@ -6258,6 +6296,15 @@ body .main__support .support-form__box, body .main__support .support-form__text-
 body .main__support .support-form__input, body .main__support .support-form__text-area {
   color: #1E222A;
 }
+body .main__auth .auth-card {
+  background-color: #f7faff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+body .main__auth .auth-card__other-way-label {
+  color: #454E53;
+}
 
 @media (prefers-color-scheme: dark) {
   body {
@@ -7613,6 +7660,17 @@ body .main__support .support-form__input, body .main__support .support-form__tex
     color: #fff;
   }
 }
+@media (prefers-color-scheme: dark) {
+  body .main__auth .auth-card {
+    background-color: rgba(41, 44, 45, 0.2);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  }
+  body .main__auth .auth-card__other-way-label {
+    color: #fff;
+  }
+}
 html.dark body {
   background-color: #1E222A;
   color: #fff;
@@ -8761,6 +8819,15 @@ html.dark body .main__support .support-form__box, html.dark body .main__support 
   border: 1px solid rgba(69, 78, 83, 0.5019607843);
 }
 html.dark body .main__support .support-form__input, html.dark body .main__support .support-form__text-area {
+  color: #fff;
+}
+html.dark body .main__auth .auth-card {
+  background-color: rgba(41, 44, 45, 0.2);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+}
+html.dark body .main__auth .auth-card__other-way-label {
   color: #fff;
 }
 
@@ -9920,6 +9987,15 @@ html.light body .main__support .support-form__box, html.light body .main__suppor
 }
 html.light body .main__support .support-form__input, html.light body .main__support .support-form__text-area {
   color: #1E222A;
+}
+html.light body .main__auth .auth-card {
+  background-color: #f7faff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+html.light body .main__auth .auth-card__other-way-label {
+  color: #454E53;
 }
 
 .header {
