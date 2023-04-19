@@ -93,6 +93,14 @@ body .header .header-main .header-navigation .header-navigation__el:not(:last-ch
     border-bottom: 1px solid #B5BACB;
   }
 }
+body .header .header-main .header-navigation .header-navigation__el .header-submenu__wrapper {
+  background-color: rgba(243, 247, 251, 0.9);
+}
+@media (max-width: 1200px) {
+  body .header .header-main .header-navigation .header-navigation__el .header-submenu__wrapper {
+    background-color: transparent;
+  }
+}
 body .header .header-main .submenu-item__text {
   color: #515764;
 }
@@ -138,6 +146,12 @@ body .header .bottom-panel-navigation__button path {
 }
 body .header .bottom-panel-navigation__button::before {
   opacity: 0;
+}
+body .header .bottom-panel-navigation__button:hover {
+  border: 1px solid transparent;
+}
+body .header .bottom-panel-navigation__button:hover path {
+  fill: #fff;
 }
 body .header .bottom-panel-navigation .stroke-button {
   color: #4A596D;
@@ -278,6 +292,9 @@ body .main__watchlist .watchlist-categories-spoiler {
     border-right: 0px;
   }
 }
+body .main__watchlist .watchlist-categories-spoiler .select__item:hover {
+  background-color: #e9e9e9;
+}
 body .main__watchlist .watchlist-main__header {
   background-color: #f7faff;
   border: 1px solid transparent;
@@ -298,8 +315,14 @@ body .main__watchlist .watchlist-product {
 body .main__watchlist .watchlist-product:nth-child(2n) {
   background-color: #f7faff;
 }
+body .main__watchlist .watchlist-product:nth-child(2n) .watchlist-product-name {
+  background-color: #f7faff;
+}
 body .main__watchlist .watchlist-product:hover .watchlist-product-name__full-name {
   color: #2A59FF;
+}
+body .main__watchlist .watchlist-product-name {
+  background-color: rgb(242, 244, 253);
 }
 body .main__watchlist .watchlist-product__num {
   border: 1px solid #DFE3F0;
@@ -457,6 +480,18 @@ body .watchlist_mod .select__header, body .watchlist_mod .select__body, body .wa
 body .watchlist .watchlist-product-status__status {
   background-color: #DFE4F0;
 }
+body .watchlist_ico .watchlist-main__list._grid .start {
+  border-left: 0;
+}
+body .watchlist_ico .watchlist-main__list._grid .watchlist-product-links {
+  border-left: 1px solid #DFE3F0;
+}
+body .watchlist_ico .watchlist-main__list._grid .watchlist-product-name::before, body .watchlist_ico .watchlist-main__list._grid .watchlist-product-category::before, body .watchlist_ico .watchlist-main__list._grid .watchlist-product__price::before {
+  opacity: 1;
+}
+body .watchlist_ico .watchlist-main__list._grid .watchlist-product-name::after, body .watchlist_ico .watchlist-main__list._grid .watchlist-product-category::after, body .watchlist_ico .watchlist-main__list._grid .watchlist-product__price::after {
+  opacity: 0;
+}
 body .watchlist-main__list._grid .watchlist-product-nft {
   border-left: 0px;
 }
@@ -469,6 +504,9 @@ body .watchlist-main__list._grid .watchlist-product-links {
 body .watchlist-main__list._grid .watchlist-product {
   background-color: #f7faff;
   border-radius: 8px;
+}
+body .watchlist-main__list._grid .watchlist-product .watchlist-product-name {
+  background-color: #f7faff;
 }
 body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-name::before, body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-genre::before, body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-blockchain::before, body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-os::before {
   opacity: 1;
@@ -725,6 +763,10 @@ body .section-button__button {
   background-color: #fff;
   color: #4A596D;
 }
+body .section-button__button:hover {
+  background-color: #ddd;
+  color: #515764;
+}
 body .also-watch-card {
   background-color: #f7faff;
   border: 1px solid rgba(197, 199, 207, 0.7);
@@ -743,6 +785,355 @@ body .also-watch::before {
 }
 body .also-watch::after {
   opacity: 0;
+}
+body .currency-info .currency-graph__content {
+  background-color: #f7faff;
+  border: 1px solid transparent;
+}
+body .currency-info .currency-graph__dark-img {
+  display: none;
+}
+body .currency-info .currency-graph__light-img {
+  display: block;
+}
+body .currency-info .currency-characteristic__el {
+  border: 1px solid transparent;
+  background-color: #f2f4fd;
+  color: #4A596D;
+}
+body .currency-info .currency-characteristic__el:nth-child(2n) {
+  background-color: #f7faff;
+}
+body .currency-info .currency-characteristic__name {
+  color: #4A596D;
+}
+body .currency-info .live-chat__chat {
+  background-color: #f7faff;
+  border: 1px solid transparent;
+}
+body .currency-info .post-comment__button {
+  color: #4A596D;
+}
+body .currency-info .post-comment__button:hover {
+  color: #2A59FF;
+}
+body .currency-info .user-live-chat__about {
+  color: #4A596D;
+}
+body .currency-info .post-comment__area {
+  background-color: #f5f8ff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+body .currency-info .post-comment__input {
+  color: #4A596D;
+}
+body .currency-info .comments-list .post-comment__comment {
+  color: #4A596D;
+}
+body .currency-info .comments-list .post-comment__button_red:hover {
+  color: #B14C6B;
+}
+body .currency-info .comments-list .post-comment__button_green:hover {
+  color: #71BA57;
+}
+body .currency-info .comments-list::-webkit-scrollbar {
+  background-color: #fff;
+}
+body .crypto-currency__box {
+  background-color: #f7faff;
+  border: 1px solid transparent;
+}
+body .crypto-currency .crypto-currency__paragraph, body .crypto-currency .links-list__text, body .crypto-currency .middle-content__title, body .crypto-currency .middle-content__price, body .crypto-currency .stat-middle-content__value, body .crypto-currency .stat-middle-content__label, body .crypto-currency .crypto-currency-converter__label, body .crypto-currency .crypto-currency-converter__input, body .crypto-currency .crypto-currency-about__subtitle, body .crypto-currency .about-range__labels {
+  color: #4A596D;
+}
+body .crypto-currency .crypto-currency__paragraph a, body .crypto-currency .links-list__text a, body .crypto-currency .middle-content__title a, body .crypto-currency .middle-content__price a, body .crypto-currency .stat-middle-content__value a, body .crypto-currency .stat-middle-content__label a, body .crypto-currency .crypto-currency-converter__label a, body .crypto-currency .crypto-currency-converter__input a, body .crypto-currency .crypto-currency-about__subtitle a, body .crypto-currency .about-range__labels a {
+  color: #4A596D;
+}
+body .crypto-currency .links-list__card {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+body .crypto-currency .middle-content__part:not(:nth-child(5)) {
+  border-right: 1px solid rgba(181, 186, 203, 0.3);
+}
+@media (max-width: 991.98px) {
+  body .crypto-currency .middle-content__part:nth-child(4) {
+    border: 0;
+  }
+  body .crypto-currency .middle-content__part:nth-child(5) {
+    border-right: 1px solid rgba(181, 186, 203, 0.3);
+  }
+  body .crypto-currency .middle-content__part:nth-child(6) {
+    border-right: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  body .crypto-currency .middle-content__part:nth-child(3), body .crypto-currency .middle-content__part:nth-child(5) {
+    border-right: 0;
+  }
+  body .crypto-currency .middle-content__part:nth-child(4) {
+    border-right: 1px solid rgba(181, 186, 203, 0.3);
+  }
+  body .crypto-currency .middle-content__part:nth-child(2) {
+    border: 0;
+  }
+}
+@media (max-width: 480px) {
+  body .crypto-currency .middle-content__part:first-child {
+    border-right: 0;
+    border-bottom: 1px solid rgba(181, 186, 203, 0.3);
+  }
+  body .crypto-currency .middle-content__part:nth-child(4) {
+    border-right: 0;
+    border-top: 1px solid rgba(181, 186, 203, 0.3);
+  }
+  body .crypto-currency .middle-content__part:nth-child(3) {
+    border-right: 1px solid rgba(181, 186, 203, 0.3);
+  }
+}
+body .crypto-currency .middle-content {
+  border-top: 1px solid rgba(181, 186, 203, 0.3);
+  border-bottom: 1px solid rgba(181, 186, 203, 0.3);
+}
+body .crypto-currency .middle-content__wrapper::before {
+  opacity: 1;
+}
+body .crypto-currency .middle-content__wrapper::after {
+  opacity: 0;
+}
+body .crypto-currency .select__body {
+  background-color: rgba(243, 247, 251, 0.9);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+body .crypto-currency .select__item:hover {
+  background-color: #e9e9e9;
+}
+body .crypto-currency .crypto-currency-converter__body {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+@media (max-width: 767.98px) {
+  body .crypto-currency .supply {
+    border-top: 1px solid rgba(181, 186, 203, 0.3);
+    border-bottom: 1px solid rgba(181, 186, 203, 0.3);
+  }
+}
+@media (min-width: 480px) {
+  body .crypto-currency .fully-cap::before, body .crypto-currency .crypto-currency-tags::before {
+    opacity: 1;
+  }
+  body .crypto-currency .fully-cap::after, body .crypto-currency .crypto-currency-tags::after {
+    opacity: 0;
+  }
+}
+body .crypto-currency .crypto-currency-tags__button {
+  background-color: transparent;
+  border: 1px solid rgba(181, 186, 203, 0.5);
+  color: #4A596D;
+}
+body .crypto-currency .crypto-currency-tags__button path {
+  fill: #4A596D;
+}
+body .crypto-currency .crypto-currency-tags__button:hover {
+  background-color: #2A59FF;
+  color: #fff;
+}
+body .crypto-currency .crypto-currency-tags__button:hover path {
+  fill: #fff;
+}
+body .crypto-currency .top-content__part:not(:last-child) {
+  border-right: 1px solid rgba(181, 186, 203, 0.3);
+}
+@media (max-width: 991.98px) {
+  body .crypto-currency .top-content .crypto-currency-tags {
+    border-right: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  body .crypto-currency .top-content .crypto-currency-about {
+    border-right: 0;
+  }
+}
+body .about .about__box {
+  background-color: #f7faff;
+  border: 1px solid transparent;
+}
+body .about .actions-about__button_filled {
+  background-color: #f7faff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+  color: #55606F;
+}
+body .about .actions-about__button_stroke {
+  background-color: transparent;
+  border: 1px solid rgba(181, 186, 203, 0.5);
+  color: #55606F;
+}
+body .about .actions-about__button_stroke:hover {
+  border: 1px solid #2A59FF;
+  background-color: #2A59FF;
+  color: #fff;
+}
+body .about .about-row {
+  border-bottom: 1px solid rgba(181, 186, 203, 0.3);
+}
+@media (min-width: 1200px) {
+  body .about .about-row__part:not(:last-child) {
+    border-right: 1px solid rgba(181, 186, 203, 0.3);
+  }
+}
+body .about .about-volume__part {
+  border-right: 1px solid rgba(181, 186, 203, 0.3);
+}
+@media (max-width: 1200px) {
+  body .about .about-volume__part:last-child {
+    border-right: 0;
+  }
+}
+@media (max-width: 480px) {
+  body .about .about-volume__part {
+    border-right: 0;
+  }
+  body .about .about-volume__part:first-child {
+    border-bottom: 1px solid rgba(181, 186, 203, 0.3);
+  }
+}
+body .about .about-volume__label, body .about .about-volume__value, body .about .about-article__paragraph, body .about .about-article__more {
+  color: #4A596D;
+}
+@media (max-width: 1200px) {
+  body .about .about-volume {
+    border-top: 1px solid rgba(181, 186, 203, 0.3);
+  }
+}
+body .about .about-article__more {
+  border-right: 1px solid rgba(181, 186, 203, 0.5);
+}
+@media (max-width: 1300px) {
+  body .watchlist-product-name._fixed .watchlist-product-name__box {
+    background-color: #fff;
+  }
+}
+body .game-info_ico .token-sale__label, body .game-info_ico .token-sale__value {
+  color: #4A596D;
+}
+body .descr-card__screenshot {
+  background-color: #fdfdfd;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+}
+body .watchlist_airdrops .watchlist-main__list._grid .start {
+  border-left: 0;
+}
+body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-links {
+  border-left: 1px solid #DFE3F0;
+}
+body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name::before, body .watchlist_airdrops .watchlist-main__list._grid .amount::before, body .watchlist_airdrops .watchlist-main__list._grid .receivers::before {
+  opacity: 1;
+}
+body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name::after, body .watchlist_airdrops .watchlist-main__list._grid .amount::after, body .watchlist_airdrops .watchlist-main__list._grid .receivers::after {
+  opacity: 0;
+}
+body .main__about-us .about-us__box {
+  background-color: #f7faff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+body .main__about-us .about-us__paragraph {
+  color: #4A596D;
+}
+body .main__qa .qa-qoute {
+  background-color: rgb(248, 250, 253);
+}
+body .main__qa .qa-qoute__text, body .main__qa .answer__paragraph {
+  color: #454E53;
+}
+body .main__blog .blog-list__list-el::before {
+  opacity: 0;
+}
+body .main__blog .blog-list__list-el::after {
+  opacity: 1;
+}
+body .main__blog .blog-body__paragraph, body .main__blog .blog-list__list-el, body .main__blog .blog-body__list-headline {
+  color: #454E53;
+}
+body .main__blog .footer-social__el {
+  border: 1px solid transparent;
+}
+body .main__blog .footer-social__el:hover path {
+  fill: #fff;
+}
+body .main__blog .footer-social__el::before {
+  opacity: 0.6;
+}
+body .main__blog .footer-social__el::after {
+  opacity: 0;
+}
+body .main__card-offer .card-offer__card {
+  background-color: #f7faff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+body .main__support .footer-social__el {
+  border: 1px solid transparent;
+}
+body .main__support .footer-social__el:hover path {
+  fill: #fff;
+}
+body .main__support .footer-social__el::before {
+  opacity: 1;
+}
+body .main__support .footer-social__el::after {
+  opacity: 0;
+}
+body .main__support .support-card {
+  background-color: #f7faff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+body .main__support .support-contacts__subtitle, body .main__support .support-contacts__text {
+  color: #454E53;
+}
+body .main__support .support-contacts__action:hover .support-contacts__text {
+  color: #2A59FF;
+}
+body .main__support .support-form__box, body .main__support .support-form__text-area {
+  border: 1px solid #B5BACB;
+}
+body .main__support .support-form__input, body .main__support .support-form__text-area {
+  color: #1E222A;
+}
+body .main__auth .auth-card {
+  background-color: #f7faff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+body .main__auth .auth-card__other-way-label, body .main__auth .auth-card__another, body .main__auth .auth-radio__label, body .main__auth .form-auth__label, body .main__auth .form-auth__input, body .main__auth .form-auth__paragraph {
+  color: #454E53;
+}
+body .main__auth .auth-card__another a, body .main__auth .auth-radio__label a {
+  color: #2A59FF;
+}
+body .main__auth .form-auth__input {
+  border: 1px solid #B5BACB;
+}
+body .main__auth .reset-link {
+  color: #B5BACB;
+}
+body .main__auth .reset-link:hover {
+  color: #2A59FF;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -903,11 +1294,13 @@ body .also-watch::after {
   }
 }
 @media (prefers-color-scheme: dark) {
-  body .header .header-main .header-navigation .header-navigation__el .header-submenu__wrapper::before {
-    opacity: 0;
+  body .header .header-main .header-navigation .header-navigation__el .header-submenu__wrapper {
+    background-color: rgba(27, 32, 49, 0.95);
   }
-  body .header .header-main .header-navigation .header-navigation__el .header-submenu__wrapper::after {
-    opacity: 1;
+}
+@media (prefers-color-scheme: dark) and (max-width: 1200px) {
+  body .header .header-main .header-navigation .header-navigation__el .header-submenu__wrapper {
+    background-color: transparent;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -968,6 +1361,12 @@ body .also-watch::after {
   }
   body .header .bottom-panel-navigation__button::before {
     opacity: 1;
+  }
+  body .header .bottom-panel-navigation__button:hover {
+    border: 1px solid transparent;
+  }
+  body .header .bottom-panel-navigation__button:hover path {
+    fill: #fff;
   }
   body .header .bottom-panel-navigation .stroke-button {
     color: #fff;
@@ -1115,6 +1514,11 @@ body .also-watch::after {
   }
 }
 @media (prefers-color-scheme: dark) {
+  body .main__watchlist .watchlist-categories-spoiler .select__item:hover {
+    background-color: #2d3036;
+  }
+}
+@media (prefers-color-scheme: dark) {
   body .main__watchlist .watchlist-main__header {
     background-color: rgba(41, 44, 45, 0.2);
     border: 1px solid rgba(69, 78, 83, 0.5019607843);
@@ -1136,13 +1540,21 @@ body .also-watch::after {
 @media (prefers-color-scheme: dark) {
   body .main__watchlist .watchlist-product {
     border: 1px solid rgba(69, 78, 83, 0.2);
-    background-color: rgba(55, 59, 62, 0.168627451);
+    background-color: #1e212a;
   }
   body .main__watchlist .watchlist-product:nth-child(2n) {
-    background-color: rgba(41, 44, 45, 0.2);
+    background-color: #191C24;
+  }
+  body .main__watchlist .watchlist-product:nth-child(2n) .watchlist-product-name {
+    background-color: #191C24;
   }
   body .main__watchlist .watchlist-product:hover .watchlist-product-name__full-name {
     color: #2A59FF;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .main__watchlist .watchlist-product-name {
+    background-color: #1e212a;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -1332,6 +1744,18 @@ body .also-watch::after {
   body .watchlist .watchlist-product-status__status {
     background-color: #1E222A;
   }
+  body .watchlist_ico .watchlist-main__list._grid .start {
+    border-left: 0;
+  }
+  body .watchlist_ico .watchlist-main__list._grid .watchlist-product-links {
+    border-left: 1px solid #1E222A;
+  }
+  body .watchlist_ico .watchlist-main__list._grid .watchlist-product-name::before, body .watchlist_ico .watchlist-main__list._grid .watchlist-product-category::before, body .watchlist_ico .watchlist-main__list._grid .watchlist-product__price::before {
+    opacity: 0;
+  }
+  body .watchlist_ico .watchlist-main__list._grid .watchlist-product-name::after, body .watchlist_ico .watchlist-main__list._grid .watchlist-product-category::after, body .watchlist_ico .watchlist-main__list._grid .watchlist-product__price::after {
+    opacity: 1;
+  }
 }
 @media (prefers-color-scheme: dark) {
   body .watchlist-main__list._grid .watchlist-product-nft {
@@ -1344,8 +1768,11 @@ body .also-watch::after {
     border-left: 0;
   }
   body .watchlist-main__list._grid .watchlist-product {
-    background-color: rgba(41, 44, 45, 0.2);
+    background-color: #191C24;
     border-radius: 8px;
+  }
+  body .watchlist-main__list._grid .watchlist-product .watchlist-product-name {
+    background-color: #191C24;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -1654,6 +2081,10 @@ body .also-watch::after {
     background-color: #2A59FF;
     color: #fff;
   }
+  body .section-button__button:hover {
+    background-color: #1c3aa6;
+    color: #fff;
+  }
 }
 @media (prefers-color-scheme: dark) {
   body .also-watch-card {
@@ -1680,6 +2111,406 @@ body .also-watch::after {
   }
   body .also-watch::after {
     opacity: 1;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .watchlist_currency .watchlist-header {
+    border-top: 0;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .currency-info .currency-graph__content {
+    background-color: rgba(41, 44, 45, 0.2);
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  }
+  body .currency-info .currency-graph__dark-img {
+    display: block;
+  }
+  body .currency-info .currency-graph__light-img {
+    display: none;
+  }
+  body .currency-info .currency-characteristic__el {
+    border: 1px solid rgba(69, 78, 83, 0.2);
+    background-color: rgba(55, 59, 62, 0.168627451);
+    color: #fff;
+  }
+  body .currency-info .currency-characteristic__el:nth-child(2n) {
+    background-color: rgba(41, 44, 45, 0.2);
+  }
+  body .currency-info .currency-characteristic__name {
+    color: #fff;
+  }
+  body .currency-info .live-chat__chat {
+    border: 1px solid rgba(69, 78, 83, 0.2);
+    background-color: rgba(55, 59, 62, 0.168627451);
+  }
+  body .currency-info .post-comment__button {
+    color: #fff;
+  }
+  body .currency-info .post-comment__button:hover {
+    color: #2A59FF;
+  }
+  body .currency-info .user-live-chat__about {
+    color: #fff;
+  }
+  body .currency-info .post-comment__area {
+    background-color: rgba(47, 51, 54, 0.2);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 1px solid rgba(69, 78, 83, 0.2);
+  }
+  body .currency-info .post-comment__input {
+    color: #fff;
+  }
+  body .currency-info .comments-list .post-comment__comment {
+    color: #fff;
+  }
+  body .currency-info .comments-list .post-comment__button_red:hover {
+    color: #B14C6B;
+  }
+  body .currency-info .comments-list .post-comment__button_green:hover {
+    color: #71BA57;
+  }
+  body .currency-info .comments-list::-webkit-scrollbar {
+    background-color: #2A2E3A;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .crypto-currency__box {
+    background-color: rgba(41, 44, 45, 0.2);
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  }
+  body .crypto-currency .crypto-currency__paragraph, body .crypto-currency .links-list__text, body .crypto-currency .middle-content__title, body .crypto-currency .middle-content__price, body .crypto-currency .stat-middle-content__value, body .crypto-currency .stat-middle-content__label, body .crypto-currency .crypto-currency-converter__label, body .crypto-currency .crypto-currency-converter__input, body .crypto-currency .crypto-currency-about__subtitle, body .crypto-currency .about-range__labels {
+    color: #fff;
+  }
+  body .crypto-currency .crypto-currency__paragraph a, body .crypto-currency .links-list__text a, body .crypto-currency .middle-content__title a, body .crypto-currency .middle-content__price a, body .crypto-currency .stat-middle-content__value a, body .crypto-currency .stat-middle-content__label a, body .crypto-currency .crypto-currency-converter__label a, body .crypto-currency .crypto-currency-converter__input a, body .crypto-currency .crypto-currency-about__subtitle a, body .crypto-currency .about-range__labels a {
+    color: #fff;
+  }
+  body .crypto-currency .links-list__card {
+    background-color: rgba(47, 51, 54, 0.2);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 1px solid rgba(69, 78, 83, 0.2);
+  }
+  body .crypto-currency .middle-content__part:not(:nth-child(5)) {
+    border-right: 1px solid rgba(181, 186, 203, 0.1);
+  }
+}
+@media (prefers-color-scheme: dark) and (max-width: 991.98px) {
+  body .crypto-currency .middle-content__part:nth-child(4) {
+    border: 0;
+  }
+  body .crypto-currency .middle-content__part:nth-child(5) {
+    border-right: 1px solid rgba(181, 186, 203, 0.1);
+  }
+  body .crypto-currency .middle-content__part:nth-child(6) {
+    border-right: 0;
+  }
+}
+@media (prefers-color-scheme: dark) and (max-width: 767.98px) {
+  body .crypto-currency .middle-content__part:nth-child(3), body .crypto-currency .middle-content__part:nth-child(5) {
+    border-right: 0;
+  }
+  body .crypto-currency .middle-content__part:nth-child(4) {
+    border-right: 1px solid rgba(181, 186, 203, 0.1);
+  }
+  body .crypto-currency .middle-content__part:nth-child(2) {
+    border: 0;
+  }
+}
+@media (prefers-color-scheme: dark) and (max-width: 480px) {
+  body .crypto-currency .middle-content__part:first-child {
+    border-right: 0;
+    border-bottom: 1px solid rgba(181, 186, 203, 0.1);
+  }
+  body .crypto-currency .middle-content__part:nth-child(4) {
+    border-right: 0;
+    border-top: 1px solid rgba(181, 186, 203, 0.1);
+  }
+  body .crypto-currency .middle-content__part:nth-child(3) {
+    border-right: 1px solid rgba(181, 186, 203, 0.1);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .crypto-currency .middle-content {
+    border-top: 1px solid rgba(181, 186, 203, 0.1);
+    border-bottom: 1px solid rgba(181, 186, 203, 0.1);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .crypto-currency .middle-content__wrapper::before {
+    opacity: 0;
+  }
+  body .crypto-currency .middle-content__wrapper::after {
+    opacity: 1;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .crypto-currency .select__body {
+    background-color: rgba(27, 32, 49, 0.95);
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .crypto-currency .select__item:hover {
+    background-color: #2d3036;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .crypto-currency .crypto-currency-converter__body {
+    background-color: rgba(47, 51, 54, 0.5019607843);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 1px solid rgba(69, 78, 83, 0.2);
+  }
+}
+@media (prefers-color-scheme: dark) and (max-width: 767.98px) {
+  body .crypto-currency .supply {
+    border-top: 1px solid rgba(181, 186, 203, 0.1);
+    border-bottom: 1px solid rgba(181, 186, 203, 0.1);
+  }
+}
+@media (prefers-color-scheme: dark) and (min-width: 480px) {
+  body .crypto-currency .fully-cap::before, body .crypto-currency .crypto-currency-tags::before {
+    opacity: 0;
+  }
+  body .crypto-currency .fully-cap::after, body .crypto-currency .crypto-currency-tags::after {
+    opacity: 1;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .crypto-currency .crypto-currency-tags__button {
+    background-color: rgba(47, 51, 54, 0.5019607843);
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+    color: #fff;
+  }
+  body .crypto-currency .crypto-currency-tags__button path {
+    fill: #fff;
+  }
+  body .crypto-currency .crypto-currency-tags__button:hover {
+    background-color: #2A59FF;
+    color: #fff;
+  }
+  body .crypto-currency .crypto-currency-tags__button:hover path {
+    fill: #fff;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .crypto-currency .top-content__part:not(:last-child) {
+    border-right: 1px solid rgba(181, 186, 203, 0.1);
+  }
+}
+@media (prefers-color-scheme: dark) and (max-width: 991.98px) {
+  body .crypto-currency .top-content .crypto-currency-tags {
+    border-right: 0;
+  }
+}
+@media (prefers-color-scheme: dark) and (max-width: 767.98px) {
+  body .crypto-currency .top-content .crypto-currency-about {
+    border-right: 0;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .about .about__box {
+    background-color: rgba(41, 44, 45, 0.2);
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  }
+  body .about .actions-about__button_filled {
+    background-color: rgba(47, 51, 54, 0.5019607843);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+    color: #fff;
+  }
+  body .about .actions-about__button_stroke {
+    background-color: rgba(47, 51, 54, 0.5019607843);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 1px solid hwb(201 27% 67%/0.502);
+    color: #fff;
+  }
+  body .about .actions-about__button_stroke:hover {
+    border: 1px solid #2A59FF;
+    background-color: #2A59FF;
+    color: #fff;
+  }
+  body .about .about-row {
+    border-bottom: 1px solid rgba(223, 227, 240, 0.1);
+  }
+}
+@media (prefers-color-scheme: dark) and (min-width: 1200px) {
+  body .about .about-row__part:not(:last-child) {
+    border-right: 1px solid rgba(223, 227, 240, 0.1);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .about .about-volume__part {
+    border-right: 1px solid rgba(223, 227, 240, 0.1);
+  }
+}
+@media (prefers-color-scheme: dark) and (max-width: 1200px) {
+  body .about .about-volume__part:last-child {
+    border-right: 0;
+  }
+}
+@media (prefers-color-scheme: dark) and (max-width: 480px) {
+  body .about .about-volume__part {
+    border-right: 0;
+  }
+  body .about .about-volume__part:first-child {
+    border-bottom: 1px solid rgba(223, 227, 240, 0.1);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .about .about-volume__label, body .about .about-volume__value, body .about .about-article__paragraph, body .about .about-article__more {
+    color: #fff;
+  }
+}
+@media (prefers-color-scheme: dark) and (max-width: 1200px) {
+  body .about .about-volume {
+    border-top: 1px solid rgba(223, 227, 240, 0.1);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .about .about-article__more {
+    border-right: 1px solid #323642;
+  }
+}
+@media (prefers-color-scheme: dark) and (max-width: 1300px) {
+  body .watchlist-product-name._fixed .watchlist-product-name__box {
+    background-color: #1E222A;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .game-info_ico .token-sale__label, body .game-info_ico .token-sale__value {
+    color: #fff;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .descr-card__screenshot {
+    background-color: rgba(41, 44, 45, 0.2);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .watchlist_airdrops .watchlist-main__list._grid .start {
+    border-left: 0;
+  }
+  body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-links {
+    border-left: 1px solid #1E222A;
+  }
+  body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name::before, body .watchlist_airdrops .watchlist-main__list._grid .amount::before, body .watchlist_airdrops .watchlist-main__list._grid .receivers::before {
+    opacity: 0;
+  }
+  body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name::after, body .watchlist_airdrops .watchlist-main__list._grid .amount::after, body .watchlist_airdrops .watchlist-main__list._grid .receivers::after {
+    opacity: 1;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .main__about-us .about-us__box {
+    background-color: rgba(41, 44, 45, 0.2);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  }
+  body .main__about-us .about-us__paragraph {
+    color: #fff;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .main__qa .qa-qoute {
+    background-color: rgba(45, 48, 52, 0.4);
+  }
+  body .main__qa .qa-qoute__text, body .main__qa .answer__paragraph {
+    color: #fff;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .main__blog .blog-list__list-el::before {
+    opacity: 1;
+  }
+  body .main__blog .blog-list__list-el::after {
+    opacity: 0;
+  }
+  body .main__blog .blog-body__paragraph, body .main__blog .blog-list__list-el, body .main__blog .blog-body__list-headline {
+    color: #fff;
+  }
+  body .main__blog .footer-social__el {
+    border: 1px solid rgba(69, 78, 83, 0.2);
+  }
+  body .main__blog .footer-social__el:hover path {
+    fill: #1E222A;
+  }
+  body .main__blog .footer-social__el::before {
+    opacity: 0;
+  }
+  body .main__blog .footer-social__el::after {
+    opacity: 1;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .main__card-offer .card-offer__card {
+    background-color: rgba(41, 44, 45, 0.2);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .main__support .footer-social__el {
+    border: 1px solid rgba(69, 78, 83, 0.2);
+  }
+  body .main__support .footer-social__el:hover path {
+    fill: #1E222A;
+  }
+  body .main__support .footer-social__el::before {
+    opacity: 0;
+  }
+  body .main__support .footer-social__el::after {
+    opacity: 1;
+  }
+  body .main__support .support-card {
+    background-color: rgba(41, 44, 45, 0.2);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  }
+  body .main__support .support-contacts__subtitle, body .main__support .support-contacts__text {
+    color: #fff;
+  }
+  body .main__support .support-contacts__action:hover .support-contacts__text {
+    color: #2A59FF;
+  }
+  body .main__support .support-form__box, body .main__support .support-form__text-area {
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  }
+  body .main__support .support-form__input, body .main__support .support-form__text-area {
+    color: #fff;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .main__auth .auth-card {
+    background-color: rgba(41, 44, 45, 0.2);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  }
+  body .main__auth .auth-card__other-way-label, body .main__auth .auth-card__another, body .main__auth .auth-radio__label, body .main__auth .form-auth__label, body .main__auth .form-auth__input, body .main__auth .form-auth__paragraph {
+    color: #fff;
+  }
+  body .main__auth .auth-card__another a, body .main__auth .auth-radio__label a {
+    color: #2A59FF;
+  }
+  body .main__auth .form-auth__input {
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  }
+  body .main__auth .reset-link {
+    color: #DFE3F0;
+  }
+  body .main__auth .reset-link:hover {
+    color: #2A59FF;
   }
 }
 html.dark body {
@@ -1803,11 +2634,13 @@ html.dark body .header .header-main .header-navigation .header-navigation__el:no
     border-bottom: 1px solid #323642;
   }
 }
-html.dark body .header .header-main .header-navigation .header-navigation__el .header-submenu__wrapper::before {
-  opacity: 0;
+html.dark body .header .header-main .header-navigation .header-navigation__el .header-submenu__wrapper {
+  background-color: rgba(27, 32, 49, 0.95);
 }
-html.dark body .header .header-main .header-navigation .header-navigation__el .header-submenu__wrapper::after {
-  opacity: 1;
+@media (max-width: 1200px) {
+  html.dark body .header .header-main .header-navigation .header-navigation__el .header-submenu__wrapper {
+    background-color: transparent;
+  }
 }
 html.dark body .header .header-main .submenu-item__text {
   color: #fff;
@@ -1854,6 +2687,12 @@ html.dark body .header .bottom-panel-navigation__button path {
 }
 html.dark body .header .bottom-panel-navigation__button::before {
   opacity: 1;
+}
+html.dark body .header .bottom-panel-navigation__button:hover {
+  border: 1px solid transparent;
+}
+html.dark body .header .bottom-panel-navigation__button:hover path {
+  fill: #fff;
 }
 html.dark body .header .bottom-panel-navigation .stroke-button {
   color: #fff;
@@ -1997,6 +2836,9 @@ html.dark body .main__watchlist .watchlist-categories-spoiler {
     border-right: 0px;
   }
 }
+html.dark body .main__watchlist .watchlist-categories-spoiler .select__item:hover {
+  background-color: #2d3036;
+}
 html.dark body .main__watchlist .watchlist-main__header {
   background-color: rgba(41, 44, 45, 0.2);
   border: 1px solid rgba(69, 78, 83, 0.5019607843);
@@ -2012,13 +2854,19 @@ html.dark body .main__watchlist .watchlist-main::after {
 }
 html.dark body .main__watchlist .watchlist-product {
   border: 1px solid rgba(69, 78, 83, 0.2);
-  background-color: rgba(55, 59, 62, 0.168627451);
+  background-color: #1e212a;
 }
 html.dark body .main__watchlist .watchlist-product:nth-child(2n) {
-  background-color: rgba(41, 44, 45, 0.2);
+  background-color: #191C24;
+}
+html.dark body .main__watchlist .watchlist-product:nth-child(2n) .watchlist-product-name {
+  background-color: #191C24;
 }
 html.dark body .main__watchlist .watchlist-product:hover .watchlist-product-name__full-name {
   color: #2A59FF;
+}
+html.dark body .main__watchlist .watchlist-product-name {
+  background-color: #1e212a;
 }
 html.dark body .main__watchlist .watchlist-product__num {
   border: 1px solid rgba(69, 78, 83, 0.1490196078);
@@ -2179,6 +3027,18 @@ html.dark body .watchlist_mod .show-rows:hover .select__header {
 html.dark body .watchlist .watchlist-product-status__status {
   background-color: #1E222A;
 }
+html.dark body .watchlist_ico .watchlist-main__list._grid .start {
+  border-left: 0;
+}
+html.dark body .watchlist_ico .watchlist-main__list._grid .watchlist-product-links {
+  border-left: 1px solid #1E222A;
+}
+html.dark body .watchlist_ico .watchlist-main__list._grid .watchlist-product-name::before, html.dark body .watchlist_ico .watchlist-main__list._grid .watchlist-product-category::before, html.dark body .watchlist_ico .watchlist-main__list._grid .watchlist-product__price::before {
+  opacity: 0;
+}
+html.dark body .watchlist_ico .watchlist-main__list._grid .watchlist-product-name::after, html.dark body .watchlist_ico .watchlist-main__list._grid .watchlist-product-category::after, html.dark body .watchlist_ico .watchlist-main__list._grid .watchlist-product__price::after {
+  opacity: 1;
+}
 html.dark body .watchlist-main__list._grid .watchlist-product-nft {
   border-left: 0px;
 }
@@ -2189,8 +3049,11 @@ html.dark body .watchlist-main__list._grid .watchlist-product-links {
   border-left: 0;
 }
 html.dark body .watchlist-main__list._grid .watchlist-product {
-  background-color: rgba(41, 44, 45, 0.2);
+  background-color: #191C24;
   border-radius: 8px;
+}
+html.dark body .watchlist-main__list._grid .watchlist-product .watchlist-product-name {
+  background-color: #191C24;
 }
 html.dark body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-name::before, html.dark body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-genre::before, html.dark body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-blockchain::before, html.dark body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-os::before {
   opacity: 0;
@@ -2445,6 +3308,10 @@ html.dark body .section-button__button {
   background-color: #2A59FF;
   color: #fff;
 }
+html.dark body .section-button__button:hover {
+  background-color: #1c3aa6;
+  color: #fff;
+}
 html.dark body .also-watch-card {
   background-color: rgba(41, 44, 45, 0.2);
   border: 1px solid rgba(69, 78, 83, 0.5019607843);
@@ -2463,6 +3330,359 @@ html.dark body .also-watch::before {
 }
 html.dark body .also-watch::after {
   opacity: 1;
+}
+html.dark body .watchlist_currency .watchlist-header {
+  border-top: 0;
+}
+html.dark body .currency-info .currency-graph__content {
+  background-color: rgba(41, 44, 45, 0.2);
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+}
+html.dark body .currency-info .currency-graph__dark-img {
+  display: block;
+}
+html.dark body .currency-info .currency-graph__light-img {
+  display: none;
+}
+html.dark body .currency-info .currency-characteristic__el {
+  border: 1px solid rgba(69, 78, 83, 0.2);
+  background-color: rgba(55, 59, 62, 0.168627451);
+  color: #fff;
+}
+html.dark body .currency-info .currency-characteristic__el:nth-child(2n) {
+  background-color: rgba(41, 44, 45, 0.2);
+}
+html.dark body .currency-info .currency-characteristic__name {
+  color: #fff;
+}
+html.dark body .currency-info .live-chat__chat {
+  border: 1px solid rgba(69, 78, 83, 0.2);
+  background-color: rgba(55, 59, 62, 0.168627451);
+}
+html.dark body .currency-info .post-comment__button {
+  color: #fff;
+}
+html.dark body .currency-info .post-comment__button:hover {
+  color: #2A59FF;
+}
+html.dark body .currency-info .user-live-chat__about {
+  color: #fff;
+}
+html.dark body .currency-info .post-comment__area {
+  background-color: rgba(47, 51, 54, 0.2);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid rgba(69, 78, 83, 0.2);
+}
+html.dark body .currency-info .post-comment__input {
+  color: #fff;
+}
+html.dark body .currency-info .comments-list .post-comment__comment {
+  color: #fff;
+}
+html.dark body .currency-info .comments-list .post-comment__button_red:hover {
+  color: #B14C6B;
+}
+html.dark body .currency-info .comments-list .post-comment__button_green:hover {
+  color: #71BA57;
+}
+html.dark body .currency-info .comments-list::-webkit-scrollbar {
+  background-color: #2A2E3A;
+}
+html.dark body .crypto-currency__box {
+  background-color: rgba(41, 44, 45, 0.2);
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+}
+html.dark body .crypto-currency .crypto-currency__paragraph, html.dark body .crypto-currency .links-list__text, html.dark body .crypto-currency .middle-content__title, html.dark body .crypto-currency .middle-content__price, html.dark body .crypto-currency .stat-middle-content__value, html.dark body .crypto-currency .stat-middle-content__label, html.dark body .crypto-currency .crypto-currency-converter__label, html.dark body .crypto-currency .crypto-currency-converter__input, html.dark body .crypto-currency .crypto-currency-about__subtitle, html.dark body .crypto-currency .about-range__labels {
+  color: #fff;
+}
+html.dark body .crypto-currency .crypto-currency__paragraph a, html.dark body .crypto-currency .links-list__text a, html.dark body .crypto-currency .middle-content__title a, html.dark body .crypto-currency .middle-content__price a, html.dark body .crypto-currency .stat-middle-content__value a, html.dark body .crypto-currency .stat-middle-content__label a, html.dark body .crypto-currency .crypto-currency-converter__label a, html.dark body .crypto-currency .crypto-currency-converter__input a, html.dark body .crypto-currency .crypto-currency-about__subtitle a, html.dark body .crypto-currency .about-range__labels a {
+  color: #fff;
+}
+html.dark body .crypto-currency .links-list__card {
+  background-color: rgba(47, 51, 54, 0.2);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid rgba(69, 78, 83, 0.2);
+}
+html.dark body .crypto-currency .middle-content__part:not(:nth-child(5)) {
+  border-right: 1px solid rgba(181, 186, 203, 0.1);
+}
+@media (max-width: 991.98px) {
+  html.dark body .crypto-currency .middle-content__part:nth-child(4) {
+    border: 0;
+  }
+  html.dark body .crypto-currency .middle-content__part:nth-child(5) {
+    border-right: 1px solid rgba(181, 186, 203, 0.1);
+  }
+  html.dark body .crypto-currency .middle-content__part:nth-child(6) {
+    border-right: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  html.dark body .crypto-currency .middle-content__part:nth-child(3), html.dark body .crypto-currency .middle-content__part:nth-child(5) {
+    border-right: 0;
+  }
+  html.dark body .crypto-currency .middle-content__part:nth-child(4) {
+    border-right: 1px solid rgba(181, 186, 203, 0.1);
+  }
+  html.dark body .crypto-currency .middle-content__part:nth-child(2) {
+    border: 0;
+  }
+}
+@media (max-width: 480px) {
+  html.dark body .crypto-currency .middle-content__part:first-child {
+    border-right: 0;
+  }
+  html.dark body .crypto-currency .middle-content__part:nth-child(4) {
+    border-right: 0;
+    border-top: 1px solid rgba(181, 186, 203, 0.1);
+  }
+  html.dark body .crypto-currency .middle-content__part:nth-child(3) {
+    border-right: 1px solid rgba(181, 186, 203, 0.1);
+  }
+}
+html.dark body .crypto-currency .middle-content {
+  border-top: 1px solid rgba(181, 186, 203, 0.1);
+  border-bottom: 1px solid rgba(181, 186, 203, 0.1);
+}
+html.dark body .crypto-currency .middle-content__wrapper::before {
+  opacity: 0;
+}
+html.dark body .crypto-currency .middle-content__wrapper::after {
+  opacity: 1;
+}
+html.dark body .crypto-currency .select__body {
+  background-color: rgba(27, 32, 49, 0.95);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+html.dark body .crypto-currency .select__item:hover {
+  background-color: #2d3036;
+}
+html.dark body .crypto-currency .crypto-currency-converter__body {
+  background-color: rgba(47, 51, 54, 0.5019607843);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid rgba(69, 78, 83, 0.2);
+}
+@media (max-width: 767.98px) {
+  html.dark body .crypto-currency .supply {
+    border-top: 1px solid rgba(181, 186, 203, 0.1);
+    border-bottom: 1px solid rgba(181, 186, 203, 0.1);
+  }
+}
+@media (min-width: 480px) {
+  html.dark body .crypto-currency .fully-cap::before, html.dark body .crypto-currency .crypto-currency-tags::before {
+    opacity: 0;
+  }
+  html.dark body .crypto-currency .fully-cap::after, html.dark body .crypto-currency .crypto-currency-tags::after {
+    opacity: 1;
+  }
+}
+html.dark body .crypto-currency .crypto-currency-tags__button {
+  background-color: rgba(47, 51, 54, 0.5019607843);
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  color: #fff;
+}
+html.dark body .crypto-currency .crypto-currency-tags__button path {
+  fill: #fff;
+}
+html.dark body .crypto-currency .crypto-currency-tags__button:hover {
+  background-color: #2A59FF;
+  color: #fff;
+}
+html.dark body .crypto-currency .crypto-currency-tags__button:hover path {
+  fill: #fff;
+}
+html.dark body .crypto-currency .top-content__part:not(:last-child) {
+  border-right: 1px solid rgba(181, 186, 203, 0.1);
+}
+@media (max-width: 991.98px) {
+  html.dark body .crypto-currency .top-content .crypto-currency-tags {
+    border-right: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  html.dark body .crypto-currency .top-content .crypto-currency-about {
+    border-right: 0;
+  }
+}
+html.dark body .about .about__box {
+  background-color: rgba(41, 44, 45, 0.2);
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+}
+html.dark body .about .actions-about__button_filled {
+  background-color: rgba(47, 51, 54, 0.5019607843);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  color: #fff;
+}
+html.dark body .about .actions-about__button_stroke {
+  background-color: rgba(47, 51, 54, 0.5019607843);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  color: #fff;
+}
+html.dark body .about .actions-about__button_stroke:hover {
+  border: 1px solid #2A59FF;
+  background-color: #2A59FF;
+  color: #fff;
+}
+html.dark body .about .about-row {
+  border-bottom: 1px solid rgba(223, 227, 240, 0.1);
+}
+@media (min-width: 1200px) {
+  html.dark body .about .about-row__part:not(:last-child) {
+    border-right: 1px solid rgba(223, 227, 240, 0.1);
+  }
+}
+html.dark body .about .about-volume__part {
+  border-right: 1px solid rgba(223, 227, 240, 0.1);
+}
+@media (max-width: 1200px) {
+  html.dark body .about .about-volume__part:last-child {
+    border-right: 0;
+  }
+}
+@media (max-width: 480px) {
+  html.dark body .about .about-volume__part {
+    border-right: 0;
+  }
+  html.dark body .about .about-volume__part:first-child {
+    border-bottom: 1px solid rgba(223, 227, 240, 0.1);
+  }
+}
+html.dark body .about .about-volume__label, html.dark body .about .about-volume__value, html.dark body .about .about-article__paragraph, html.dark body .about .about-article__more {
+  color: #fff;
+}
+@media (max-width: 1200px) {
+  html.dark body .about .about-volume {
+    border-top: 1px solid rgba(223, 227, 240, 0.1);
+  }
+}
+html.dark body .about .about-article__more {
+  border-right: 1px solid #323642;
+}
+@media (max-width: 1300px) {
+  html.dark body .watchlist-product-name._fixed .watchlist-product-name__box {
+    background-color: #1E222A;
+  }
+}
+html.dark body .game-info_ico .token-sale__label, html.dark body .game-info_ico .token-sale__value {
+  color: #fff;
+}
+html.dark body .descr-card__screenshot {
+  background-color: rgba(41, 44, 45, 0.2);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+html.dark body .watchlist_airdrops .watchlist-main__list._grid .start {
+  border-left: 0;
+}
+html.dark body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-links {
+  border-left: 1px solid #1E222A;
+}
+html.dark body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name::before, html.dark body .watchlist_airdrops .watchlist-main__list._grid .amount::before, html.dark body .watchlist_airdrops .watchlist-main__list._grid .receivers::before {
+  opacity: 0;
+}
+html.dark body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name::after, html.dark body .watchlist_airdrops .watchlist-main__list._grid .amount::after, html.dark body .watchlist_airdrops .watchlist-main__list._grid .receivers::after {
+  opacity: 1;
+}
+html.dark body .main__about-us .about-us__box {
+  background-color: rgba(41, 44, 45, 0.2);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+}
+html.dark body .main__about-us .about-us__paragraph {
+  color: #fff;
+}
+html.dark body .main__qa .qa-qoute {
+  background-color: rgba(45, 48, 52, 0.4);
+}
+html.dark body .main__qa .qa-qoute__text, html.dark body .main__qa .answer__paragraph {
+  color: #fff;
+}
+html.dark body .main__blog .blog-list__list-el::before {
+  opacity: 1;
+}
+html.dark body .main__blog .blog-list__list-el::after {
+  opacity: 0;
+}
+html.dark body .main__blog .blog-body__paragraph, html.dark body .main__blog .blog-list__list-el, html.dark body .main__blog .blog-body__list-headline {
+  color: #fff;
+}
+html.dark body .main__blog .footer-social__el {
+  border: 1px solid rgba(69, 78, 83, 0.2);
+}
+html.dark body .main__blog .footer-social__el:hover path {
+  fill: #1E222A;
+}
+html.dark body .main__blog .footer-social__el::before {
+  opacity: 0;
+}
+html.dark body .main__blog .footer-social__el::after {
+  opacity: 1;
+}
+html.dark body .main__card-offer .card-offer__card {
+  background-color: rgba(41, 44, 45, 0.2);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+}
+html.dark body .main__support .footer-social__el {
+  border: 1px solid rgba(69, 78, 83, 0.2);
+}
+html.dark body .main__support .footer-social__el:hover path {
+  fill: #1E222A;
+}
+html.dark body .main__support .footer-social__el::before {
+  opacity: 0;
+}
+html.dark body .main__support .footer-social__el::after {
+  opacity: 1;
+}
+html.dark body .main__support .support-card {
+  background-color: rgba(41, 44, 45, 0.2);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+}
+html.dark body .main__support .support-contacts__subtitle, html.dark body .main__support .support-contacts__text {
+  color: #fff;
+}
+html.dark body .main__support .support-contacts__action:hover .support-contacts__text {
+  color: #2A59FF;
+}
+html.dark body .main__support .support-form__box, html.dark body .main__support .support-form__text-area {
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+}
+html.dark body .main__support .support-form__input, html.dark body .main__support .support-form__text-area {
+  color: #fff;
+}
+html.dark body .main__auth .auth-card {
+  background-color: rgba(41, 44, 45, 0.2);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+}
+html.dark body .main__auth .auth-card__other-way-label, html.dark body .main__auth .auth-card__another, html.dark body .main__auth .auth-radio__label, html.dark body .main__auth .form-auth__label, html.dark body .main__auth .form-auth__input, html.dark body .main__auth .form-auth__paragraph {
+  color: #fff;
+}
+html.dark body .main__auth .auth-card__another a, html.dark body .main__auth .auth-radio__label a {
+  color: #2A59FF;
+}
+html.dark body .main__auth .form-auth__input {
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+}
+html.dark body .main__auth .reset-link {
+  color: #DFE3F0;
+}
+html.dark body .main__auth .reset-link:hover {
+  color: #2A59FF;
 }
 
 html.light body {
@@ -2589,11 +3809,13 @@ html.light body .header .header-navigation .header-navigation__el:not(:last-chil
     border-bottom: 1px solid #B5BACB;
   }
 }
-html.light body .header .header-navigation .header-navigation__el .header-submenu__wrapper::before {
-  opacity: 1;
+html.light body .header .header-navigation .header-navigation__el .header-submenu__wrapper {
+  background-color: rgba(243, 247, 251, 0.9);
 }
-html.light body .header .header-navigation .header-navigation__el .header-submenu__wrapper::after {
-  opacity: 0;
+@media (max-width: 1200px) {
+  html.light body .header .header-navigation .header-navigation__el .header-submenu__wrapper {
+    background-color: transparent;
+  }
 }
 html.light body .header .submenu-item__text {
   color: #515764;
@@ -2637,6 +3859,12 @@ html.light body .header .bottom-panel-navigation__button path {
 }
 html.light body .header .bottom-panel-navigation__button::before {
   opacity: 0;
+}
+html.light body .header .bottom-panel-navigation__button:hover {
+  border: 1px solid transparent;
+}
+html.light body .header .bottom-panel-navigation__button:hover path {
+  fill: #fff;
 }
 html.light body .header .bottom-panel-navigation .stroke-button {
   color: #4A596D;
@@ -2780,6 +4008,9 @@ html.light body .main__watchlist .watchlist-categories-spoiler {
     border-right: 0px;
   }
 }
+html.light body .main__watchlist .watchlist-categories-spoiler .select__item:hover {
+  background-color: #e9e9e9;
+}
 html.light body .main__watchlist .watchlist-main__header {
   background-color: #f7faff;
   border: 1px solid transparent;
@@ -2800,8 +4031,14 @@ html.light body .main__watchlist .watchlist-product {
 html.light body .main__watchlist .watchlist-product:nth-child(2n) {
   background-color: #f7faff;
 }
+html.light body .main__watchlist .watchlist-product:nth-child(2n) .watchlist-product-name {
+  background-color: #f7faff;
+}
 html.light body .main__watchlist .watchlist-product:hover .watchlist-product-name__full-name {
   color: #2A59FF;
+}
+html.light body .main__watchlist .watchlist-product-name {
+  background-color: rgb(242, 244, 253);
 }
 html.light body .main__watchlist .watchlist-product__num {
   border: 1px solid #DFE3F0;
@@ -2965,6 +4202,18 @@ html.light body .watchlist_mod .show-rows:hover .select__header {
 html.light body .watchlist .watchlist-product-status__status {
   background-color: #DFE4F0;
 }
+html.light body .watchlist_ico .watchlist-main__list._grid .start {
+  border-left: 0;
+}
+html.light body .watchlist_ico .watchlist-main__list._grid .watchlist-product-links {
+  border-left: 1px solid #DFE3F0;
+}
+html.light body .watchlist_ico .watchlist-main__list._grid .watchlist-product-name::before, html.light body .watchlist_ico .watchlist-main__list._grid .watchlist-product-category::before, html.light body .watchlist_ico .watchlist-main__list._grid .watchlist-product__price::before {
+  opacity: 1;
+}
+html.light body .watchlist_ico .watchlist-main__list._grid .watchlist-product-name::after, html.light body .watchlist_ico .watchlist-main__list._grid .watchlist-product-category::after, html.light body .watchlist_ico .watchlist-main__list._grid .watchlist-product__price::after {
+  opacity: 0;
+}
 html.light body .watchlist-main__list._grid .watchlist-product-nft {
   border-left: 0px;
 }
@@ -2977,6 +4226,9 @@ html.light body .watchlist-main__list._grid .watchlist-product-links {
 html.light body .watchlist-main__list._grid .watchlist-product {
   background-color: #f7faff;
   border-radius: 8px;
+}
+html.light body .watchlist-main__list._grid .watchlist-product .watchlist-product-name {
+  background-color: #f7faff;
 }
 html.light body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-name::before, html.light body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-genre::before, html.light body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-blockchain::before, html.light body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-os::before {
   opacity: 1;
@@ -3236,6 +4488,10 @@ html.light body .section-button__button {
   background-color: #fff;
   color: #4A596D;
 }
+html.light body .section-button__button:hover {
+  background-color: #ddd;
+  color: #515764;
+}
 html.light body .also-watch-card {
   background-color: #f7faff;
   border: 1px solid rgba(197, 199, 207, 0.7);
@@ -3254,6 +4510,364 @@ html.light body .also-watch::before {
 }
 html.light body .also-watch::after {
   opacity: 0;
+}
+html.light body .watchlist_currency .watchlist-header {
+  border-top: 0;
+}
+html.light body .currency-info .currency-graph__content {
+  background-color: #f7faff;
+  border: 1px solid transparent;
+}
+html.light body .currency-info .currency-graph__dark-img {
+  display: none;
+}
+html.light body .currency-info .currency-graph__light-img {
+  display: block;
+}
+html.light body .currency-info .currency-characteristic__el {
+  border: 1px solid transparent;
+  background-color: #f2f4fd;
+  color: #4A596D;
+}
+html.light body .currency-info .currency-characteristic__el:nth-child(2n) {
+  background-color: #f7faff;
+}
+html.light body .currency-info .currency-characteristic__name {
+  color: #4A596D;
+}
+html.light body .currency-info .live-chat__chat {
+  background-color: #f3f6fb;
+  border: 1px solid transparent;
+}
+html.light body .currency-info .post-comment__button {
+  color: #4A596D;
+}
+html.light body .currency-info .post-comment__button:hover {
+  color: #2A59FF;
+}
+html.light body .currency-info .user-live-chat__about {
+  color: #4A596D;
+}
+html.light body .currency-info .post-comment__area {
+  background-color: #f5f8ff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+html.light body .currency-info .post-comment__input {
+  color: #4A596D;
+}
+html.light body .currency-info .comments-list .post-comment__comment {
+  color: #4A596D;
+}
+html.light body .currency-info .comments-list .post-comment__button_red:hover {
+  color: #B14C6B;
+}
+html.light body .currency-info .comments-list .post-comment__button_green:hover {
+  color: #71BA57;
+}
+html.light body .currency-info .comments-list::-webkit-scrollbar {
+  background-color: #fff;
+}
+html.light body .crypto-currency__box {
+  background-color: #f7faff;
+  border: 1px solid transparent;
+}
+html.light body .crypto-currency .crypto-currency__paragraph, html.light body .crypto-currency .links-list__text, html.light body .crypto-currency .middle-content__title, html.light body .crypto-currency .middle-content__price, html.light body .crypto-currency .stat-middle-content__value, html.light body .crypto-currency .stat-middle-content__label, html.light body .crypto-currency .crypto-currency-converter__label, html.light body .crypto-currency .crypto-currency-converter__input, html.light body .crypto-currency .crypto-currency-about__subtitle, html.light body .crypto-currency .about-range__labels {
+  color: #4A596D;
+}
+html.light body .crypto-currency .crypto-currency__paragraph a, html.light body .crypto-currency .links-list__text a, html.light body .crypto-currency .middle-content__title a, html.light body .crypto-currency .middle-content__price a, html.light body .crypto-currency .stat-middle-content__value a, html.light body .crypto-currency .stat-middle-content__label a, html.light body .crypto-currency .crypto-currency-converter__label a, html.light body .crypto-currency .crypto-currency-converter__input a, html.light body .crypto-currency .crypto-currency-about__subtitle a, html.light body .crypto-currency .about-range__labels a {
+  color: #4A596D;
+}
+html.light body .crypto-currency .links-list__card {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+html.light body .crypto-currency .middle-content__part:not(:nth-child(5)) {
+  border-right: 1px solid rgba(181, 186, 203, 0.3);
+}
+@media (max-width: 991.98px) {
+  html.light body .crypto-currency .middle-content__part:nth-child(4) {
+    border: 0;
+  }
+  html.light body .crypto-currency .middle-content__part:nth-child(5) {
+    border-right: 1px solid rgba(181, 186, 203, 0.3);
+  }
+  html.light body .crypto-currency .middle-content__part:nth-child(6) {
+    border-right: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  html.light body .crypto-currency .middle-content__part:nth-child(3), html.light body .crypto-currency .middle-content__part:nth-child(5) {
+    border-right: 0;
+  }
+  html.light body .crypto-currency .middle-content__part:nth-child(4) {
+    border-right: 1px solid rgba(181, 186, 203, 0.3);
+  }
+  html.light body .crypto-currency .middle-content__part:nth-child(2) {
+    border: 0;
+  }
+}
+@media (max-width: 480px) {
+  html.light body .crypto-currency .middle-content__part:first-child {
+    border-right: 0;
+    border-bottom: 1px solid rgba(181, 186, 203, 0.3);
+  }
+  html.light body .crypto-currency .middle-content__part:nth-child(4) {
+    border-right: 0;
+    border-top: 1px solid rgba(181, 186, 203, 0.3);
+  }
+  html.light body .crypto-currency .middle-content__part:nth-child(3) {
+    border-right: 1px solid rgba(181, 186, 203, 0.3);
+  }
+}
+html.light body .crypto-currency .middle-content {
+  border-top: 1px solid rgba(181, 186, 203, 0.3);
+  border-bottom: 1px solid rgba(181, 186, 203, 0.3);
+}
+html.light body .crypto-currency .middle-content__wrapper::before {
+  opacity: 1;
+}
+html.light body .crypto-currency .middle-content__wrapper::after {
+  opacity: 0;
+}
+html.light body .crypto-currency .select__body {
+  background-color: rgba(243, 247, 251, 0.9);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+html.light body .crypto-currency .select__item:hover {
+  background-color: #e9e9e9;
+}
+html.light body .crypto-currency .crypto-currency-converter__body {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+@media (max-width: 767.98px) {
+  html.light body .crypto-currency .supply {
+    border-top: 1px solid rgba(181, 186, 203, 0.3);
+    border-bottom: 1px solid rgba(181, 186, 203, 0.3);
+  }
+}
+@media (min-width: 480px) {
+  html.light body .crypto-currency .fully-cap::before, html.light body .crypto-currency .crypto-currency-tags::before {
+    opacity: 1;
+  }
+  html.light body .crypto-currency .fully-cap::after, html.light body .crypto-currency .crypto-currency-tags::after {
+    opacity: 0;
+  }
+}
+html.light body .crypto-currency .crypto-currency-tags__button {
+  background-color: transparent;
+  border: 1px solid rgba(181, 186, 203, 0.5);
+  color: #4A596D;
+}
+html.light body .crypto-currency .crypto-currency-tags__button path {
+  fill: #4A596D;
+}
+html.light body .crypto-currency .crypto-currency-tags__button:hover {
+  background-color: #2A59FF;
+  color: #fff;
+}
+html.light body .crypto-currency .crypto-currency-tags__button:hover path {
+  fill: #fff;
+}
+html.light body .crypto-currency .top-content__part:not(:last-child) {
+  border-right: 1px solid rgba(181, 186, 203, 0.3);
+}
+@media (max-width: 991.98px) {
+  html.light body .crypto-currency .top-content .crypto-currency-tags {
+    border-right: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  html.light body .crypto-currency .top-content .crypto-currency-about {
+    border-right: 0;
+  }
+}
+html.light body .about .about__box {
+  background-color: #f7faff;
+  border: 1px solid transparent;
+}
+html.light body .about .actions-about__button_filled {
+  background: #f7faff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+  color: #55606F;
+}
+html.light body .about .actions-about__button_stroke {
+  background-color: transparent;
+  border: 1px solid rgba(181, 186, 203, 0.5);
+  color: #55606F;
+}
+html.light body .about .actions-about__button_stroke:hover {
+  border: 1px solid #2A59FF;
+  background-color: #2A59FF;
+  color: #fff;
+}
+html.light body .about .about-row {
+  border-bottom: 1px solid rgba(181, 186, 203, 0.3);
+}
+@media (min-width: 1200px) {
+  html.light body .about .about-row__part:not(:last-child) {
+    border-right: 1px solid rgba(181, 186, 203, 0.3);
+  }
+}
+html.light body .about .about-volume__part {
+  border-right: 1px solid rgba(181, 186, 203, 0.3);
+}
+@media (max-width: 1200px) {
+  html.light body .about .about-volume__part:last-child {
+    border-right: 0;
+  }
+}
+@media (max-width: 480px) {
+  html.light body .about .about-volume__part {
+    border-right: 0;
+  }
+  html.light body .about .about-volume__part:first-child {
+    border-bottom: 1px solid rgba(181, 186, 203, 0.3);
+  }
+}
+html.light body .about .about-volume__label, html.light body .about .about-volume__value, html.light body .about .about-article__paragraph, html.light body .about .about-article__more {
+  color: #4A596D;
+}
+@media (max-width: 1200px) {
+  html.light body .about .about-volume {
+    border-top: 1px solid rgba(181, 186, 203, 0.3);
+  }
+}
+html.light body .about .about-article__more {
+  border-right: 1px solid rgba(181, 186, 203, 0.5);
+}
+@media (max-width: 1300px) {
+  html.light body .watchlist-product-name._fixed .watchlist-product-name__box {
+    background-color: #fff;
+  }
+}
+html.light body .game-info_ico .token-sale__label, html.light body .game-info_ico .token-sale__value {
+  color: #4A596D;
+}
+html.light body .descr-card__screenshot {
+  background-color: #fdfdfd;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+}
+html.light body .watchlist_airdrops .watchlist-main__list._grid .start {
+  border-left: 0;
+}
+html.light body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-links {
+  border-left: 1px solid #DFE3F0;
+}
+html.light body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name::before, html.light body .watchlist_airdrops .watchlist-main__list._grid .amount::before, html.light body .watchlist_airdrops .watchlist-main__list._grid .receivers::before {
+  opacity: 1;
+}
+html.light body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name::after, html.light body .watchlist_airdrops .watchlist-main__list._grid .amount::after, html.light body .watchlist_airdrops .watchlist-main__list._grid .receivers::after {
+  opacity: 0;
+}
+html.light body .main__about-us .about-us__box {
+  background-color: #f7faff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+html.light body .main__about-us .about-us__paragraph {
+  color: #4A596D;
+}
+html.light body .main__qa .qa-qoute {
+  background-color: rgb(248, 250, 253);
+}
+html.light body .main__qa .qa-qoute__text, html.light body .main__qa .answer__paragraph {
+  color: #454E53;
+}
+html.light body .main__blog .blog-list__list-el::before {
+  opacity: 0;
+}
+html.light body .main__blog .blog-list__list-el::after {
+  opacity: 1;
+}
+html.light body .main__blog .blog-body__paragraph, html.light body .main__blog .blog-list__list-el, html.light body .main__blog .blog-body__list-headline {
+  color: #454E53;
+}
+html.light body .main__blog .footer-social__el {
+  border: 1px solid transparent;
+}
+html.light body .main__blog .footer-social__el:hover path {
+  fill: #fff;
+}
+html.light body .main__blog .footer-social__el::before {
+  opacity: 0.6;
+}
+html.light body .main__blog .footer-social__el::after {
+  opacity: 0;
+}
+html.light body .main__card-offer .card-offer__card {
+  background-color: #f7faff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+html.light body .main__support .footer-social__el {
+  border: 1px solid transparent;
+}
+html.light body .main__support .footer-social__el:hover path {
+  fill: #fff;
+}
+html.light body .main__support .footer-social__el::before {
+  opacity: 1;
+}
+html.light body .main__support .footer-social__el::after {
+  opacity: 0;
+}
+html.light body .main__support .support-card {
+  background-color: #f7faff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+html.light body .main__support .support-contacts__subtitle, html.light body .main__support .support-contacts__text {
+  color: #454E53;
+}
+html.light body .main__support .support-contacts__action:hover .support-contacts__text {
+  color: #2A59FF;
+}
+html.light body .main__support .support-form__box, html.light body .main__support .support-form__text-area {
+  border: 1px solid #B5BACB;
+}
+html.light body .main__support .support-form__input, html.light body .main__support .support-form__text-area {
+  color: #1E222A;
+}
+html.light body .main__auth .auth-card {
+  background-color: #f7faff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+html.light body .main__auth .auth-card__other-way-label, html.light body .main__auth .auth-card__another, html.light body .main__auth .auth-radio__label, html.light body .main__auth .form-auth__label, html.light body .main__auth .form-auth__input, html.light body .main__auth .form-auth__paragraph {
+  color: #454E53;
+}
+html.light body .main__auth .auth-card__another a, html.light body .main__auth .auth-radio__label a {
+  color: #2A59FF;
+}
+html.light body .main__auth .form-auth__input {
+  border: 1px solid #B5BACB;
+}
+html.light body .main__auth .form-auth__input {
+  border: 1px solid #B5BACB;
+}
+html.light body .main__auth .form-auth__input:hover {
+  color: #2A59FF;
+}
+html.light body .main__auth .reset-link {
+  color: #B5BACB;
+}
+html.light body .main__auth .reset-link:hover {
+  color: #2A59FF;
 }
 
 /*ОБНУЛЕНИЕ СТИЛЕЙ*/
@@ -3339,13 +4953,13 @@ h1, h2, h3, h4, h5, h6 {
           flex-direction: column;
   min-height: 100vh;
   overflow: hidden;
-  position: relative;
 }
 .wrapper::before {
   content: "";
-  position: absolute;
+  position: fixed;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  top: 0;
   background: url("../img/page-bg/homepage-bg-light-desktop.svg");
   background-position: center;
   background-size: 100%;
@@ -3361,9 +4975,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .wrapper::after {
   content: "";
-  position: absolute;
+  position: fixed;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: url("../img/page-bg/homepage-bg-dark-desktop.svg");
   background-position: center;
   background-size: 100%;
@@ -3537,11 +5151,11 @@ button, a, .header-main-actions__el, .header-navigation__el {
   background-color: transparent;
   position: fixed;
   right: 10px;
-  top: 14px;
+  top: 15px;
 }
 @media (max-width: 480px) {
   .header-burger._active {
-    top: calc(8px + 10 * (100vw - 320px) / 160);
+    top: calc(7.5px + 10.5 * (100vw - 320px) / 160);
   }
 }
 .header-burger._active span:nth-child(1) {
@@ -3619,6 +5233,12 @@ button, a, .header-main-actions__el, .header-navigation__el {
 }
 .filter-button:hover {
   opacity: 0.7;
+}
+
+input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
 
 body {
@@ -3709,6 +5329,14 @@ body .header .header-main .header-navigation .header-navigation__el:not(:last-ch
     border-bottom: 1px solid #B5BACB;
   }
 }
+body .header .header-main .header-navigation .header-navigation__el .header-submenu__wrapper {
+  background-color: rgba(243, 247, 251, 0.9);
+}
+@media (max-width: 1200px) {
+  body .header .header-main .header-navigation .header-navigation__el .header-submenu__wrapper {
+    background-color: transparent;
+  }
+}
 body .header .header-main .submenu-item__text {
   color: #515764;
 }
@@ -3754,6 +5382,12 @@ body .header .bottom-panel-navigation__button path {
 }
 body .header .bottom-panel-navigation__button::before {
   opacity: 0;
+}
+body .header .bottom-panel-navigation__button:hover {
+  border: 1px solid transparent;
+}
+body .header .bottom-panel-navigation__button:hover path {
+  fill: #fff;
 }
 body .header .bottom-panel-navigation .stroke-button {
   color: #4A596D;
@@ -3894,6 +5528,9 @@ body .main__watchlist .watchlist-categories-spoiler {
     border-right: 0px;
   }
 }
+body .main__watchlist .watchlist-categories-spoiler .select__item:hover {
+  background-color: #e9e9e9;
+}
 body .main__watchlist .watchlist-main__header {
   background-color: #f7faff;
   border: 1px solid transparent;
@@ -3914,8 +5551,14 @@ body .main__watchlist .watchlist-product {
 body .main__watchlist .watchlist-product:nth-child(2n) {
   background-color: #f7faff;
 }
+body .main__watchlist .watchlist-product:nth-child(2n) .watchlist-product-name {
+  background-color: #f7faff;
+}
 body .main__watchlist .watchlist-product:hover .watchlist-product-name__full-name {
   color: #2A59FF;
+}
+body .main__watchlist .watchlist-product-name {
+  background-color: rgb(242, 244, 253);
 }
 body .main__watchlist .watchlist-product__num {
   border: 1px solid #DFE3F0;
@@ -4073,6 +5716,18 @@ body .watchlist_mod .select__header, body .watchlist_mod .select__body, body .wa
 body .watchlist .watchlist-product-status__status {
   background-color: #DFE4F0;
 }
+body .watchlist_ico .watchlist-main__list._grid .start {
+  border-left: 0;
+}
+body .watchlist_ico .watchlist-main__list._grid .watchlist-product-links {
+  border-left: 1px solid #DFE3F0;
+}
+body .watchlist_ico .watchlist-main__list._grid .watchlist-product-name::before, body .watchlist_ico .watchlist-main__list._grid .watchlist-product-category::before, body .watchlist_ico .watchlist-main__list._grid .watchlist-product__price::before {
+  opacity: 1;
+}
+body .watchlist_ico .watchlist-main__list._grid .watchlist-product-name::after, body .watchlist_ico .watchlist-main__list._grid .watchlist-product-category::after, body .watchlist_ico .watchlist-main__list._grid .watchlist-product__price::after {
+  opacity: 0;
+}
 body .watchlist-main__list._grid .watchlist-product-nft {
   border-left: 0px;
 }
@@ -4085,6 +5740,9 @@ body .watchlist-main__list._grid .watchlist-product-links {
 body .watchlist-main__list._grid .watchlist-product {
   background-color: #f7faff;
   border-radius: 8px;
+}
+body .watchlist-main__list._grid .watchlist-product .watchlist-product-name {
+  background-color: #f7faff;
 }
 body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-name::before, body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-genre::before, body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-blockchain::before, body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-os::before {
   opacity: 1;
@@ -4341,6 +5999,10 @@ body .section-button__button {
   background-color: #fff;
   color: #4A596D;
 }
+body .section-button__button:hover {
+  background-color: #ddd;
+  color: #515764;
+}
 body .also-watch-card {
   background-color: #f7faff;
   border: 1px solid rgba(197, 199, 207, 0.7);
@@ -4359,6 +6021,355 @@ body .also-watch::before {
 }
 body .also-watch::after {
   opacity: 0;
+}
+body .currency-info .currency-graph__content {
+  background-color: #f7faff;
+  border: 1px solid transparent;
+}
+body .currency-info .currency-graph__dark-img {
+  display: none;
+}
+body .currency-info .currency-graph__light-img {
+  display: block;
+}
+body .currency-info .currency-characteristic__el {
+  border: 1px solid transparent;
+  background-color: #f2f4fd;
+  color: #4A596D;
+}
+body .currency-info .currency-characteristic__el:nth-child(2n) {
+  background-color: #f7faff;
+}
+body .currency-info .currency-characteristic__name {
+  color: #4A596D;
+}
+body .currency-info .live-chat__chat {
+  background-color: #f7faff;
+  border: 1px solid transparent;
+}
+body .currency-info .post-comment__button {
+  color: #4A596D;
+}
+body .currency-info .post-comment__button:hover {
+  color: #2A59FF;
+}
+body .currency-info .user-live-chat__about {
+  color: #4A596D;
+}
+body .currency-info .post-comment__area {
+  background-color: #f5f8ff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+body .currency-info .post-comment__input {
+  color: #4A596D;
+}
+body .currency-info .comments-list .post-comment__comment {
+  color: #4A596D;
+}
+body .currency-info .comments-list .post-comment__button_red:hover {
+  color: #B14C6B;
+}
+body .currency-info .comments-list .post-comment__button_green:hover {
+  color: #71BA57;
+}
+body .currency-info .comments-list::-webkit-scrollbar {
+  background-color: #fff;
+}
+body .crypto-currency__box {
+  background-color: #f7faff;
+  border: 1px solid transparent;
+}
+body .crypto-currency .crypto-currency__paragraph, body .crypto-currency .links-list__text, body .crypto-currency .middle-content__title, body .crypto-currency .middle-content__price, body .crypto-currency .stat-middle-content__value, body .crypto-currency .stat-middle-content__label, body .crypto-currency .crypto-currency-converter__label, body .crypto-currency .crypto-currency-converter__input, body .crypto-currency .crypto-currency-about__subtitle, body .crypto-currency .about-range__labels {
+  color: #4A596D;
+}
+body .crypto-currency .crypto-currency__paragraph a, body .crypto-currency .links-list__text a, body .crypto-currency .middle-content__title a, body .crypto-currency .middle-content__price a, body .crypto-currency .stat-middle-content__value a, body .crypto-currency .stat-middle-content__label a, body .crypto-currency .crypto-currency-converter__label a, body .crypto-currency .crypto-currency-converter__input a, body .crypto-currency .crypto-currency-about__subtitle a, body .crypto-currency .about-range__labels a {
+  color: #4A596D;
+}
+body .crypto-currency .links-list__card {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+body .crypto-currency .middle-content__part:not(:nth-child(5)) {
+  border-right: 1px solid rgba(181, 186, 203, 0.3);
+}
+@media (max-width: 991.98px) {
+  body .crypto-currency .middle-content__part:nth-child(4) {
+    border: 0;
+  }
+  body .crypto-currency .middle-content__part:nth-child(5) {
+    border-right: 1px solid rgba(181, 186, 203, 0.3);
+  }
+  body .crypto-currency .middle-content__part:nth-child(6) {
+    border-right: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  body .crypto-currency .middle-content__part:nth-child(3), body .crypto-currency .middle-content__part:nth-child(5) {
+    border-right: 0;
+  }
+  body .crypto-currency .middle-content__part:nth-child(4) {
+    border-right: 1px solid rgba(181, 186, 203, 0.3);
+  }
+  body .crypto-currency .middle-content__part:nth-child(2) {
+    border: 0;
+  }
+}
+@media (max-width: 480px) {
+  body .crypto-currency .middle-content__part:first-child {
+    border-right: 0;
+    border-bottom: 1px solid rgba(181, 186, 203, 0.3);
+  }
+  body .crypto-currency .middle-content__part:nth-child(4) {
+    border-right: 0;
+    border-top: 1px solid rgba(181, 186, 203, 0.3);
+  }
+  body .crypto-currency .middle-content__part:nth-child(3) {
+    border-right: 1px solid rgba(181, 186, 203, 0.3);
+  }
+}
+body .crypto-currency .middle-content {
+  border-top: 1px solid rgba(181, 186, 203, 0.3);
+  border-bottom: 1px solid rgba(181, 186, 203, 0.3);
+}
+body .crypto-currency .middle-content__wrapper::before {
+  opacity: 1;
+}
+body .crypto-currency .middle-content__wrapper::after {
+  opacity: 0;
+}
+body .crypto-currency .select__body {
+  background-color: rgba(243, 247, 251, 0.9);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+body .crypto-currency .select__item:hover {
+  background-color: #e9e9e9;
+}
+body .crypto-currency .crypto-currency-converter__body {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+@media (max-width: 767.98px) {
+  body .crypto-currency .supply {
+    border-top: 1px solid rgba(181, 186, 203, 0.3);
+    border-bottom: 1px solid rgba(181, 186, 203, 0.3);
+  }
+}
+@media (min-width: 480px) {
+  body .crypto-currency .fully-cap::before, body .crypto-currency .crypto-currency-tags::before {
+    opacity: 1;
+  }
+  body .crypto-currency .fully-cap::after, body .crypto-currency .crypto-currency-tags::after {
+    opacity: 0;
+  }
+}
+body .crypto-currency .crypto-currency-tags__button {
+  background-color: transparent;
+  border: 1px solid rgba(181, 186, 203, 0.5);
+  color: #4A596D;
+}
+body .crypto-currency .crypto-currency-tags__button path {
+  fill: #4A596D;
+}
+body .crypto-currency .crypto-currency-tags__button:hover {
+  background-color: #2A59FF;
+  color: #fff;
+}
+body .crypto-currency .crypto-currency-tags__button:hover path {
+  fill: #fff;
+}
+body .crypto-currency .top-content__part:not(:last-child) {
+  border-right: 1px solid rgba(181, 186, 203, 0.3);
+}
+@media (max-width: 991.98px) {
+  body .crypto-currency .top-content .crypto-currency-tags {
+    border-right: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  body .crypto-currency .top-content .crypto-currency-about {
+    border-right: 0;
+  }
+}
+body .about .about__box {
+  background-color: #f7faff;
+  border: 1px solid transparent;
+}
+body .about .actions-about__button_filled {
+  background-color: #f7faff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+  color: #55606F;
+}
+body .about .actions-about__button_stroke {
+  background-color: transparent;
+  border: 1px solid rgba(181, 186, 203, 0.5);
+  color: #55606F;
+}
+body .about .actions-about__button_stroke:hover {
+  border: 1px solid #2A59FF;
+  background-color: #2A59FF;
+  color: #fff;
+}
+body .about .about-row {
+  border-bottom: 1px solid rgba(181, 186, 203, 0.3);
+}
+@media (min-width: 1200px) {
+  body .about .about-row__part:not(:last-child) {
+    border-right: 1px solid rgba(181, 186, 203, 0.3);
+  }
+}
+body .about .about-volume__part {
+  border-right: 1px solid rgba(181, 186, 203, 0.3);
+}
+@media (max-width: 1200px) {
+  body .about .about-volume__part:last-child {
+    border-right: 0;
+  }
+}
+@media (max-width: 480px) {
+  body .about .about-volume__part {
+    border-right: 0;
+  }
+  body .about .about-volume__part:first-child {
+    border-bottom: 1px solid rgba(181, 186, 203, 0.3);
+  }
+}
+body .about .about-volume__label, body .about .about-volume__value, body .about .about-article__paragraph, body .about .about-article__more {
+  color: #4A596D;
+}
+@media (max-width: 1200px) {
+  body .about .about-volume {
+    border-top: 1px solid rgba(181, 186, 203, 0.3);
+  }
+}
+body .about .about-article__more {
+  border-right: 1px solid rgba(181, 186, 203, 0.5);
+}
+@media (max-width: 1300px) {
+  body .watchlist-product-name._fixed .watchlist-product-name__box {
+    background-color: #fff;
+  }
+}
+body .game-info_ico .token-sale__label, body .game-info_ico .token-sale__value {
+  color: #4A596D;
+}
+body .descr-card__screenshot {
+  background-color: #fdfdfd;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+}
+body .watchlist_airdrops .watchlist-main__list._grid .start {
+  border-left: 0;
+}
+body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-links {
+  border-left: 1px solid #DFE3F0;
+}
+body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name::before, body .watchlist_airdrops .watchlist-main__list._grid .amount::before, body .watchlist_airdrops .watchlist-main__list._grid .receivers::before {
+  opacity: 1;
+}
+body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name::after, body .watchlist_airdrops .watchlist-main__list._grid .amount::after, body .watchlist_airdrops .watchlist-main__list._grid .receivers::after {
+  opacity: 0;
+}
+body .main__about-us .about-us__box {
+  background-color: #f7faff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+body .main__about-us .about-us__paragraph {
+  color: #4A596D;
+}
+body .main__qa .qa-qoute {
+  background-color: rgb(248, 250, 253);
+}
+body .main__qa .qa-qoute__text, body .main__qa .answer__paragraph {
+  color: #454E53;
+}
+body .main__blog .blog-list__list-el::before {
+  opacity: 0;
+}
+body .main__blog .blog-list__list-el::after {
+  opacity: 1;
+}
+body .main__blog .blog-body__paragraph, body .main__blog .blog-list__list-el, body .main__blog .blog-body__list-headline {
+  color: #454E53;
+}
+body .main__blog .footer-social__el {
+  border: 1px solid transparent;
+}
+body .main__blog .footer-social__el:hover path {
+  fill: #fff;
+}
+body .main__blog .footer-social__el::before {
+  opacity: 0.6;
+}
+body .main__blog .footer-social__el::after {
+  opacity: 0;
+}
+body .main__card-offer .card-offer__card {
+  background-color: #f7faff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+body .main__support .footer-social__el {
+  border: 1px solid transparent;
+}
+body .main__support .footer-social__el:hover path {
+  fill: #fff;
+}
+body .main__support .footer-social__el::before {
+  opacity: 1;
+}
+body .main__support .footer-social__el::after {
+  opacity: 0;
+}
+body .main__support .support-card {
+  background-color: #f7faff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+body .main__support .support-contacts__subtitle, body .main__support .support-contacts__text {
+  color: #454E53;
+}
+body .main__support .support-contacts__action:hover .support-contacts__text {
+  color: #2A59FF;
+}
+body .main__support .support-form__box, body .main__support .support-form__text-area {
+  border: 1px solid #B5BACB;
+}
+body .main__support .support-form__input, body .main__support .support-form__text-area {
+  color: #1E222A;
+}
+body .main__auth .auth-card {
+  background-color: #f7faff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+body .main__auth .auth-card__other-way-label, body .main__auth .auth-card__another, body .main__auth .auth-radio__label, body .main__auth .form-auth__label, body .main__auth .form-auth__input, body .main__auth .form-auth__paragraph {
+  color: #454E53;
+}
+body .main__auth .auth-card__another a, body .main__auth .auth-radio__label a {
+  color: #2A59FF;
+}
+body .main__auth .form-auth__input {
+  border: 1px solid #B5BACB;
+}
+body .main__auth .reset-link {
+  color: #B5BACB;
+}
+body .main__auth .reset-link:hover {
+  color: #2A59FF;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -4519,11 +6530,13 @@ body .also-watch::after {
   }
 }
 @media (prefers-color-scheme: dark) {
-  body .header .header-main .header-navigation .header-navigation__el .header-submenu__wrapper::before {
-    opacity: 0;
+  body .header .header-main .header-navigation .header-navigation__el .header-submenu__wrapper {
+    background-color: rgba(27, 32, 49, 0.95);
   }
-  body .header .header-main .header-navigation .header-navigation__el .header-submenu__wrapper::after {
-    opacity: 1;
+}
+@media (prefers-color-scheme: dark) and (max-width: 1200px) {
+  body .header .header-main .header-navigation .header-navigation__el .header-submenu__wrapper {
+    background-color: transparent;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -4584,6 +6597,12 @@ body .also-watch::after {
   }
   body .header .bottom-panel-navigation__button::before {
     opacity: 1;
+  }
+  body .header .bottom-panel-navigation__button:hover {
+    border: 1px solid transparent;
+  }
+  body .header .bottom-panel-navigation__button:hover path {
+    fill: #fff;
   }
   body .header .bottom-panel-navigation .stroke-button {
     color: #fff;
@@ -4731,6 +6750,11 @@ body .also-watch::after {
   }
 }
 @media (prefers-color-scheme: dark) {
+  body .main__watchlist .watchlist-categories-spoiler .select__item:hover {
+    background-color: #2d3036;
+  }
+}
+@media (prefers-color-scheme: dark) {
   body .main__watchlist .watchlist-main__header {
     background-color: rgba(41, 44, 45, 0.2);
     border: 1px solid rgba(69, 78, 83, 0.5019607843);
@@ -4752,13 +6776,21 @@ body .also-watch::after {
 @media (prefers-color-scheme: dark) {
   body .main__watchlist .watchlist-product {
     border: 1px solid rgba(69, 78, 83, 0.2);
-    background-color: rgba(55, 59, 62, 0.168627451);
+    background-color: #1e212a;
   }
   body .main__watchlist .watchlist-product:nth-child(2n) {
-    background-color: rgba(41, 44, 45, 0.2);
+    background-color: #191C24;
+  }
+  body .main__watchlist .watchlist-product:nth-child(2n) .watchlist-product-name {
+    background-color: #191C24;
   }
   body .main__watchlist .watchlist-product:hover .watchlist-product-name__full-name {
     color: #2A59FF;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .main__watchlist .watchlist-product-name {
+    background-color: #1e212a;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -4948,6 +6980,18 @@ body .also-watch::after {
   body .watchlist .watchlist-product-status__status {
     background-color: #1E222A;
   }
+  body .watchlist_ico .watchlist-main__list._grid .start {
+    border-left: 0;
+  }
+  body .watchlist_ico .watchlist-main__list._grid .watchlist-product-links {
+    border-left: 1px solid #1E222A;
+  }
+  body .watchlist_ico .watchlist-main__list._grid .watchlist-product-name::before, body .watchlist_ico .watchlist-main__list._grid .watchlist-product-category::before, body .watchlist_ico .watchlist-main__list._grid .watchlist-product__price::before {
+    opacity: 0;
+  }
+  body .watchlist_ico .watchlist-main__list._grid .watchlist-product-name::after, body .watchlist_ico .watchlist-main__list._grid .watchlist-product-category::after, body .watchlist_ico .watchlist-main__list._grid .watchlist-product__price::after {
+    opacity: 1;
+  }
 }
 @media (prefers-color-scheme: dark) {
   body .watchlist-main__list._grid .watchlist-product-nft {
@@ -4960,8 +7004,11 @@ body .also-watch::after {
     border-left: 0;
   }
   body .watchlist-main__list._grid .watchlist-product {
-    background-color: rgba(41, 44, 45, 0.2);
+    background-color: #191C24;
     border-radius: 8px;
+  }
+  body .watchlist-main__list._grid .watchlist-product .watchlist-product-name {
+    background-color: #191C24;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -5270,6 +7317,10 @@ body .also-watch::after {
     background-color: #2A59FF;
     color: #fff;
   }
+  body .section-button__button:hover {
+    background-color: #1c3aa6;
+    color: #fff;
+  }
 }
 @media (prefers-color-scheme: dark) {
   body .also-watch-card {
@@ -5296,6 +7347,406 @@ body .also-watch::after {
   }
   body .also-watch::after {
     opacity: 1;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .watchlist_currency .watchlist-header {
+    border-top: 0;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .currency-info .currency-graph__content {
+    background-color: rgba(41, 44, 45, 0.2);
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  }
+  body .currency-info .currency-graph__dark-img {
+    display: block;
+  }
+  body .currency-info .currency-graph__light-img {
+    display: none;
+  }
+  body .currency-info .currency-characteristic__el {
+    border: 1px solid rgba(69, 78, 83, 0.2);
+    background-color: rgba(55, 59, 62, 0.168627451);
+    color: #fff;
+  }
+  body .currency-info .currency-characteristic__el:nth-child(2n) {
+    background-color: rgba(41, 44, 45, 0.2);
+  }
+  body .currency-info .currency-characteristic__name {
+    color: #fff;
+  }
+  body .currency-info .live-chat__chat {
+    border: 1px solid rgba(69, 78, 83, 0.2);
+    background-color: rgba(55, 59, 62, 0.168627451);
+  }
+  body .currency-info .post-comment__button {
+    color: #fff;
+  }
+  body .currency-info .post-comment__button:hover {
+    color: #2A59FF;
+  }
+  body .currency-info .user-live-chat__about {
+    color: #fff;
+  }
+  body .currency-info .post-comment__area {
+    background-color: rgba(47, 51, 54, 0.2);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 1px solid rgba(69, 78, 83, 0.2);
+  }
+  body .currency-info .post-comment__input {
+    color: #fff;
+  }
+  body .currency-info .comments-list .post-comment__comment {
+    color: #fff;
+  }
+  body .currency-info .comments-list .post-comment__button_red:hover {
+    color: #B14C6B;
+  }
+  body .currency-info .comments-list .post-comment__button_green:hover {
+    color: #71BA57;
+  }
+  body .currency-info .comments-list::-webkit-scrollbar {
+    background-color: #2A2E3A;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .crypto-currency__box {
+    background-color: rgba(41, 44, 45, 0.2);
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  }
+  body .crypto-currency .crypto-currency__paragraph, body .crypto-currency .links-list__text, body .crypto-currency .middle-content__title, body .crypto-currency .middle-content__price, body .crypto-currency .stat-middle-content__value, body .crypto-currency .stat-middle-content__label, body .crypto-currency .crypto-currency-converter__label, body .crypto-currency .crypto-currency-converter__input, body .crypto-currency .crypto-currency-about__subtitle, body .crypto-currency .about-range__labels {
+    color: #fff;
+  }
+  body .crypto-currency .crypto-currency__paragraph a, body .crypto-currency .links-list__text a, body .crypto-currency .middle-content__title a, body .crypto-currency .middle-content__price a, body .crypto-currency .stat-middle-content__value a, body .crypto-currency .stat-middle-content__label a, body .crypto-currency .crypto-currency-converter__label a, body .crypto-currency .crypto-currency-converter__input a, body .crypto-currency .crypto-currency-about__subtitle a, body .crypto-currency .about-range__labels a {
+    color: #fff;
+  }
+  body .crypto-currency .links-list__card {
+    background-color: rgba(47, 51, 54, 0.2);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 1px solid rgba(69, 78, 83, 0.2);
+  }
+  body .crypto-currency .middle-content__part:not(:nth-child(5)) {
+    border-right: 1px solid rgba(181, 186, 203, 0.1);
+  }
+}
+@media (prefers-color-scheme: dark) and (max-width: 991.98px) {
+  body .crypto-currency .middle-content__part:nth-child(4) {
+    border: 0;
+  }
+  body .crypto-currency .middle-content__part:nth-child(5) {
+    border-right: 1px solid rgba(181, 186, 203, 0.1);
+  }
+  body .crypto-currency .middle-content__part:nth-child(6) {
+    border-right: 0;
+  }
+}
+@media (prefers-color-scheme: dark) and (max-width: 767.98px) {
+  body .crypto-currency .middle-content__part:nth-child(3), body .crypto-currency .middle-content__part:nth-child(5) {
+    border-right: 0;
+  }
+  body .crypto-currency .middle-content__part:nth-child(4) {
+    border-right: 1px solid rgba(181, 186, 203, 0.1);
+  }
+  body .crypto-currency .middle-content__part:nth-child(2) {
+    border: 0;
+  }
+}
+@media (prefers-color-scheme: dark) and (max-width: 480px) {
+  body .crypto-currency .middle-content__part:first-child {
+    border-right: 0;
+    border-bottom: 1px solid rgba(181, 186, 203, 0.1);
+  }
+  body .crypto-currency .middle-content__part:nth-child(4) {
+    border-right: 0;
+    border-top: 1px solid rgba(181, 186, 203, 0.1);
+  }
+  body .crypto-currency .middle-content__part:nth-child(3) {
+    border-right: 1px solid rgba(181, 186, 203, 0.1);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .crypto-currency .middle-content {
+    border-top: 1px solid rgba(181, 186, 203, 0.1);
+    border-bottom: 1px solid rgba(181, 186, 203, 0.1);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .crypto-currency .middle-content__wrapper::before {
+    opacity: 0;
+  }
+  body .crypto-currency .middle-content__wrapper::after {
+    opacity: 1;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .crypto-currency .select__body {
+    background-color: rgba(27, 32, 49, 0.95);
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .crypto-currency .select__item:hover {
+    background-color: #2d3036;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .crypto-currency .crypto-currency-converter__body {
+    background-color: rgba(47, 51, 54, 0.5019607843);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 1px solid rgba(69, 78, 83, 0.2);
+  }
+}
+@media (prefers-color-scheme: dark) and (max-width: 767.98px) {
+  body .crypto-currency .supply {
+    border-top: 1px solid rgba(181, 186, 203, 0.1);
+    border-bottom: 1px solid rgba(181, 186, 203, 0.1);
+  }
+}
+@media (prefers-color-scheme: dark) and (min-width: 480px) {
+  body .crypto-currency .fully-cap::before, body .crypto-currency .crypto-currency-tags::before {
+    opacity: 0;
+  }
+  body .crypto-currency .fully-cap::after, body .crypto-currency .crypto-currency-tags::after {
+    opacity: 1;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .crypto-currency .crypto-currency-tags__button {
+    background-color: rgba(47, 51, 54, 0.5019607843);
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+    color: #fff;
+  }
+  body .crypto-currency .crypto-currency-tags__button path {
+    fill: #fff;
+  }
+  body .crypto-currency .crypto-currency-tags__button:hover {
+    background-color: #2A59FF;
+    color: #fff;
+  }
+  body .crypto-currency .crypto-currency-tags__button:hover path {
+    fill: #fff;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .crypto-currency .top-content__part:not(:last-child) {
+    border-right: 1px solid rgba(181, 186, 203, 0.1);
+  }
+}
+@media (prefers-color-scheme: dark) and (max-width: 991.98px) {
+  body .crypto-currency .top-content .crypto-currency-tags {
+    border-right: 0;
+  }
+}
+@media (prefers-color-scheme: dark) and (max-width: 767.98px) {
+  body .crypto-currency .top-content .crypto-currency-about {
+    border-right: 0;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .about .about__box {
+    background-color: rgba(41, 44, 45, 0.2);
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  }
+  body .about .actions-about__button_filled {
+    background-color: rgba(47, 51, 54, 0.5019607843);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+    color: #fff;
+  }
+  body .about .actions-about__button_stroke {
+    background-color: rgba(47, 51, 54, 0.5019607843);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 1px solid hwb(201 27% 67%/0.502);
+    color: #fff;
+  }
+  body .about .actions-about__button_stroke:hover {
+    border: 1px solid #2A59FF;
+    background-color: #2A59FF;
+    color: #fff;
+  }
+  body .about .about-row {
+    border-bottom: 1px solid rgba(223, 227, 240, 0.1);
+  }
+}
+@media (prefers-color-scheme: dark) and (min-width: 1200px) {
+  body .about .about-row__part:not(:last-child) {
+    border-right: 1px solid rgba(223, 227, 240, 0.1);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .about .about-volume__part {
+    border-right: 1px solid rgba(223, 227, 240, 0.1);
+  }
+}
+@media (prefers-color-scheme: dark) and (max-width: 1200px) {
+  body .about .about-volume__part:last-child {
+    border-right: 0;
+  }
+}
+@media (prefers-color-scheme: dark) and (max-width: 480px) {
+  body .about .about-volume__part {
+    border-right: 0;
+  }
+  body .about .about-volume__part:first-child {
+    border-bottom: 1px solid rgba(223, 227, 240, 0.1);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .about .about-volume__label, body .about .about-volume__value, body .about .about-article__paragraph, body .about .about-article__more {
+    color: #fff;
+  }
+}
+@media (prefers-color-scheme: dark) and (max-width: 1200px) {
+  body .about .about-volume {
+    border-top: 1px solid rgba(223, 227, 240, 0.1);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .about .about-article__more {
+    border-right: 1px solid #323642;
+  }
+}
+@media (prefers-color-scheme: dark) and (max-width: 1300px) {
+  body .watchlist-product-name._fixed .watchlist-product-name__box {
+    background-color: #1E222A;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .game-info_ico .token-sale__label, body .game-info_ico .token-sale__value {
+    color: #fff;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .descr-card__screenshot {
+    background-color: rgba(41, 44, 45, 0.2);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .watchlist_airdrops .watchlist-main__list._grid .start {
+    border-left: 0;
+  }
+  body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-links {
+    border-left: 1px solid #1E222A;
+  }
+  body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name::before, body .watchlist_airdrops .watchlist-main__list._grid .amount::before, body .watchlist_airdrops .watchlist-main__list._grid .receivers::before {
+    opacity: 0;
+  }
+  body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name::after, body .watchlist_airdrops .watchlist-main__list._grid .amount::after, body .watchlist_airdrops .watchlist-main__list._grid .receivers::after {
+    opacity: 1;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .main__about-us .about-us__box {
+    background-color: rgba(41, 44, 45, 0.2);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  }
+  body .main__about-us .about-us__paragraph {
+    color: #fff;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .main__qa .qa-qoute {
+    background-color: rgba(45, 48, 52, 0.4);
+  }
+  body .main__qa .qa-qoute__text, body .main__qa .answer__paragraph {
+    color: #fff;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .main__blog .blog-list__list-el::before {
+    opacity: 1;
+  }
+  body .main__blog .blog-list__list-el::after {
+    opacity: 0;
+  }
+  body .main__blog .blog-body__paragraph, body .main__blog .blog-list__list-el, body .main__blog .blog-body__list-headline {
+    color: #fff;
+  }
+  body .main__blog .footer-social__el {
+    border: 1px solid rgba(69, 78, 83, 0.2);
+  }
+  body .main__blog .footer-social__el:hover path {
+    fill: #1E222A;
+  }
+  body .main__blog .footer-social__el::before {
+    opacity: 0;
+  }
+  body .main__blog .footer-social__el::after {
+    opacity: 1;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .main__card-offer .card-offer__card {
+    background-color: rgba(41, 44, 45, 0.2);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .main__support .footer-social__el {
+    border: 1px solid rgba(69, 78, 83, 0.2);
+  }
+  body .main__support .footer-social__el:hover path {
+    fill: #1E222A;
+  }
+  body .main__support .footer-social__el::before {
+    opacity: 0;
+  }
+  body .main__support .footer-social__el::after {
+    opacity: 1;
+  }
+  body .main__support .support-card {
+    background-color: rgba(41, 44, 45, 0.2);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  }
+  body .main__support .support-contacts__subtitle, body .main__support .support-contacts__text {
+    color: #fff;
+  }
+  body .main__support .support-contacts__action:hover .support-contacts__text {
+    color: #2A59FF;
+  }
+  body .main__support .support-form__box, body .main__support .support-form__text-area {
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  }
+  body .main__support .support-form__input, body .main__support .support-form__text-area {
+    color: #fff;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .main__auth .auth-card {
+    background-color: rgba(41, 44, 45, 0.2);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  }
+  body .main__auth .auth-card__other-way-label, body .main__auth .auth-card__another, body .main__auth .auth-radio__label, body .main__auth .form-auth__label, body .main__auth .form-auth__input, body .main__auth .form-auth__paragraph {
+    color: #fff;
+  }
+  body .main__auth .auth-card__another a, body .main__auth .auth-radio__label a {
+    color: #2A59FF;
+  }
+  body .main__auth .form-auth__input {
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  }
+  body .main__auth .reset-link {
+    color: #DFE3F0;
+  }
+  body .main__auth .reset-link:hover {
+    color: #2A59FF;
   }
 }
 html.dark body {
@@ -5419,11 +7870,13 @@ html.dark body .header .header-main .header-navigation .header-navigation__el:no
     border-bottom: 1px solid #323642;
   }
 }
-html.dark body .header .header-main .header-navigation .header-navigation__el .header-submenu__wrapper::before {
-  opacity: 0;
+html.dark body .header .header-main .header-navigation .header-navigation__el .header-submenu__wrapper {
+  background-color: rgba(27, 32, 49, 0.95);
 }
-html.dark body .header .header-main .header-navigation .header-navigation__el .header-submenu__wrapper::after {
-  opacity: 1;
+@media (max-width: 1200px) {
+  html.dark body .header .header-main .header-navigation .header-navigation__el .header-submenu__wrapper {
+    background-color: transparent;
+  }
 }
 html.dark body .header .header-main .submenu-item__text {
   color: #fff;
@@ -5470,6 +7923,12 @@ html.dark body .header .bottom-panel-navigation__button path {
 }
 html.dark body .header .bottom-panel-navigation__button::before {
   opacity: 1;
+}
+html.dark body .header .bottom-panel-navigation__button:hover {
+  border: 1px solid transparent;
+}
+html.dark body .header .bottom-panel-navigation__button:hover path {
+  fill: #fff;
 }
 html.dark body .header .bottom-panel-navigation .stroke-button {
   color: #fff;
@@ -5613,6 +8072,9 @@ html.dark body .main__watchlist .watchlist-categories-spoiler {
     border-right: 0px;
   }
 }
+html.dark body .main__watchlist .watchlist-categories-spoiler .select__item:hover {
+  background-color: #2d3036;
+}
 html.dark body .main__watchlist .watchlist-main__header {
   background-color: rgba(41, 44, 45, 0.2);
   border: 1px solid rgba(69, 78, 83, 0.5019607843);
@@ -5628,13 +8090,19 @@ html.dark body .main__watchlist .watchlist-main::after {
 }
 html.dark body .main__watchlist .watchlist-product {
   border: 1px solid rgba(69, 78, 83, 0.2);
-  background-color: rgba(55, 59, 62, 0.168627451);
+  background-color: #1e212a;
 }
 html.dark body .main__watchlist .watchlist-product:nth-child(2n) {
-  background-color: rgba(41, 44, 45, 0.2);
+  background-color: #191C24;
+}
+html.dark body .main__watchlist .watchlist-product:nth-child(2n) .watchlist-product-name {
+  background-color: #191C24;
 }
 html.dark body .main__watchlist .watchlist-product:hover .watchlist-product-name__full-name {
   color: #2A59FF;
+}
+html.dark body .main__watchlist .watchlist-product-name {
+  background-color: #1e212a;
 }
 html.dark body .main__watchlist .watchlist-product__num {
   border: 1px solid rgba(69, 78, 83, 0.1490196078);
@@ -5795,6 +8263,18 @@ html.dark body .watchlist_mod .show-rows:hover .select__header {
 html.dark body .watchlist .watchlist-product-status__status {
   background-color: #1E222A;
 }
+html.dark body .watchlist_ico .watchlist-main__list._grid .start {
+  border-left: 0;
+}
+html.dark body .watchlist_ico .watchlist-main__list._grid .watchlist-product-links {
+  border-left: 1px solid #1E222A;
+}
+html.dark body .watchlist_ico .watchlist-main__list._grid .watchlist-product-name::before, html.dark body .watchlist_ico .watchlist-main__list._grid .watchlist-product-category::before, html.dark body .watchlist_ico .watchlist-main__list._grid .watchlist-product__price::before {
+  opacity: 0;
+}
+html.dark body .watchlist_ico .watchlist-main__list._grid .watchlist-product-name::after, html.dark body .watchlist_ico .watchlist-main__list._grid .watchlist-product-category::after, html.dark body .watchlist_ico .watchlist-main__list._grid .watchlist-product__price::after {
+  opacity: 1;
+}
 html.dark body .watchlist-main__list._grid .watchlist-product-nft {
   border-left: 0px;
 }
@@ -5805,8 +8285,11 @@ html.dark body .watchlist-main__list._grid .watchlist-product-links {
   border-left: 0;
 }
 html.dark body .watchlist-main__list._grid .watchlist-product {
-  background-color: rgba(41, 44, 45, 0.2);
+  background-color: #191C24;
   border-radius: 8px;
+}
+html.dark body .watchlist-main__list._grid .watchlist-product .watchlist-product-name {
+  background-color: #191C24;
 }
 html.dark body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-name::before, html.dark body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-genre::before, html.dark body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-blockchain::before, html.dark body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-os::before {
   opacity: 0;
@@ -6061,6 +8544,10 @@ html.dark body .section-button__button {
   background-color: #2A59FF;
   color: #fff;
 }
+html.dark body .section-button__button:hover {
+  background-color: #1c3aa6;
+  color: #fff;
+}
 html.dark body .also-watch-card {
   background-color: rgba(41, 44, 45, 0.2);
   border: 1px solid rgba(69, 78, 83, 0.5019607843);
@@ -6079,6 +8566,359 @@ html.dark body .also-watch::before {
 }
 html.dark body .also-watch::after {
   opacity: 1;
+}
+html.dark body .watchlist_currency .watchlist-header {
+  border-top: 0;
+}
+html.dark body .currency-info .currency-graph__content {
+  background-color: rgba(41, 44, 45, 0.2);
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+}
+html.dark body .currency-info .currency-graph__dark-img {
+  display: block;
+}
+html.dark body .currency-info .currency-graph__light-img {
+  display: none;
+}
+html.dark body .currency-info .currency-characteristic__el {
+  border: 1px solid rgba(69, 78, 83, 0.2);
+  background-color: rgba(55, 59, 62, 0.168627451);
+  color: #fff;
+}
+html.dark body .currency-info .currency-characteristic__el:nth-child(2n) {
+  background-color: rgba(41, 44, 45, 0.2);
+}
+html.dark body .currency-info .currency-characteristic__name {
+  color: #fff;
+}
+html.dark body .currency-info .live-chat__chat {
+  border: 1px solid rgba(69, 78, 83, 0.2);
+  background-color: rgba(55, 59, 62, 0.168627451);
+}
+html.dark body .currency-info .post-comment__button {
+  color: #fff;
+}
+html.dark body .currency-info .post-comment__button:hover {
+  color: #2A59FF;
+}
+html.dark body .currency-info .user-live-chat__about {
+  color: #fff;
+}
+html.dark body .currency-info .post-comment__area {
+  background-color: rgba(47, 51, 54, 0.2);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid rgba(69, 78, 83, 0.2);
+}
+html.dark body .currency-info .post-comment__input {
+  color: #fff;
+}
+html.dark body .currency-info .comments-list .post-comment__comment {
+  color: #fff;
+}
+html.dark body .currency-info .comments-list .post-comment__button_red:hover {
+  color: #B14C6B;
+}
+html.dark body .currency-info .comments-list .post-comment__button_green:hover {
+  color: #71BA57;
+}
+html.dark body .currency-info .comments-list::-webkit-scrollbar {
+  background-color: #2A2E3A;
+}
+html.dark body .crypto-currency__box {
+  background-color: rgba(41, 44, 45, 0.2);
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+}
+html.dark body .crypto-currency .crypto-currency__paragraph, html.dark body .crypto-currency .links-list__text, html.dark body .crypto-currency .middle-content__title, html.dark body .crypto-currency .middle-content__price, html.dark body .crypto-currency .stat-middle-content__value, html.dark body .crypto-currency .stat-middle-content__label, html.dark body .crypto-currency .crypto-currency-converter__label, html.dark body .crypto-currency .crypto-currency-converter__input, html.dark body .crypto-currency .crypto-currency-about__subtitle, html.dark body .crypto-currency .about-range__labels {
+  color: #fff;
+}
+html.dark body .crypto-currency .crypto-currency__paragraph a, html.dark body .crypto-currency .links-list__text a, html.dark body .crypto-currency .middle-content__title a, html.dark body .crypto-currency .middle-content__price a, html.dark body .crypto-currency .stat-middle-content__value a, html.dark body .crypto-currency .stat-middle-content__label a, html.dark body .crypto-currency .crypto-currency-converter__label a, html.dark body .crypto-currency .crypto-currency-converter__input a, html.dark body .crypto-currency .crypto-currency-about__subtitle a, html.dark body .crypto-currency .about-range__labels a {
+  color: #fff;
+}
+html.dark body .crypto-currency .links-list__card {
+  background-color: rgba(47, 51, 54, 0.2);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid rgba(69, 78, 83, 0.2);
+}
+html.dark body .crypto-currency .middle-content__part:not(:nth-child(5)) {
+  border-right: 1px solid rgba(181, 186, 203, 0.1);
+}
+@media (max-width: 991.98px) {
+  html.dark body .crypto-currency .middle-content__part:nth-child(4) {
+    border: 0;
+  }
+  html.dark body .crypto-currency .middle-content__part:nth-child(5) {
+    border-right: 1px solid rgba(181, 186, 203, 0.1);
+  }
+  html.dark body .crypto-currency .middle-content__part:nth-child(6) {
+    border-right: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  html.dark body .crypto-currency .middle-content__part:nth-child(3), html.dark body .crypto-currency .middle-content__part:nth-child(5) {
+    border-right: 0;
+  }
+  html.dark body .crypto-currency .middle-content__part:nth-child(4) {
+    border-right: 1px solid rgba(181, 186, 203, 0.1);
+  }
+  html.dark body .crypto-currency .middle-content__part:nth-child(2) {
+    border: 0;
+  }
+}
+@media (max-width: 480px) {
+  html.dark body .crypto-currency .middle-content__part:first-child {
+    border-right: 0;
+  }
+  html.dark body .crypto-currency .middle-content__part:nth-child(4) {
+    border-right: 0;
+    border-top: 1px solid rgba(181, 186, 203, 0.1);
+  }
+  html.dark body .crypto-currency .middle-content__part:nth-child(3) {
+    border-right: 1px solid rgba(181, 186, 203, 0.1);
+  }
+}
+html.dark body .crypto-currency .middle-content {
+  border-top: 1px solid rgba(181, 186, 203, 0.1);
+  border-bottom: 1px solid rgba(181, 186, 203, 0.1);
+}
+html.dark body .crypto-currency .middle-content__wrapper::before {
+  opacity: 0;
+}
+html.dark body .crypto-currency .middle-content__wrapper::after {
+  opacity: 1;
+}
+html.dark body .crypto-currency .select__body {
+  background-color: rgba(27, 32, 49, 0.95);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+html.dark body .crypto-currency .select__item:hover {
+  background-color: #2d3036;
+}
+html.dark body .crypto-currency .crypto-currency-converter__body {
+  background-color: rgba(47, 51, 54, 0.5019607843);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid rgba(69, 78, 83, 0.2);
+}
+@media (max-width: 767.98px) {
+  html.dark body .crypto-currency .supply {
+    border-top: 1px solid rgba(181, 186, 203, 0.1);
+    border-bottom: 1px solid rgba(181, 186, 203, 0.1);
+  }
+}
+@media (min-width: 480px) {
+  html.dark body .crypto-currency .fully-cap::before, html.dark body .crypto-currency .crypto-currency-tags::before {
+    opacity: 0;
+  }
+  html.dark body .crypto-currency .fully-cap::after, html.dark body .crypto-currency .crypto-currency-tags::after {
+    opacity: 1;
+  }
+}
+html.dark body .crypto-currency .crypto-currency-tags__button {
+  background-color: rgba(47, 51, 54, 0.5019607843);
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  color: #fff;
+}
+html.dark body .crypto-currency .crypto-currency-tags__button path {
+  fill: #fff;
+}
+html.dark body .crypto-currency .crypto-currency-tags__button:hover {
+  background-color: #2A59FF;
+  color: #fff;
+}
+html.dark body .crypto-currency .crypto-currency-tags__button:hover path {
+  fill: #fff;
+}
+html.dark body .crypto-currency .top-content__part:not(:last-child) {
+  border-right: 1px solid rgba(181, 186, 203, 0.1);
+}
+@media (max-width: 991.98px) {
+  html.dark body .crypto-currency .top-content .crypto-currency-tags {
+    border-right: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  html.dark body .crypto-currency .top-content .crypto-currency-about {
+    border-right: 0;
+  }
+}
+html.dark body .about .about__box {
+  background-color: rgba(41, 44, 45, 0.2);
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+}
+html.dark body .about .actions-about__button_filled {
+  background-color: rgba(47, 51, 54, 0.5019607843);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  color: #fff;
+}
+html.dark body .about .actions-about__button_stroke {
+  background-color: rgba(47, 51, 54, 0.5019607843);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  color: #fff;
+}
+html.dark body .about .actions-about__button_stroke:hover {
+  border: 1px solid #2A59FF;
+  background-color: #2A59FF;
+  color: #fff;
+}
+html.dark body .about .about-row {
+  border-bottom: 1px solid rgba(223, 227, 240, 0.1);
+}
+@media (min-width: 1200px) {
+  html.dark body .about .about-row__part:not(:last-child) {
+    border-right: 1px solid rgba(223, 227, 240, 0.1);
+  }
+}
+html.dark body .about .about-volume__part {
+  border-right: 1px solid rgba(223, 227, 240, 0.1);
+}
+@media (max-width: 1200px) {
+  html.dark body .about .about-volume__part:last-child {
+    border-right: 0;
+  }
+}
+@media (max-width: 480px) {
+  html.dark body .about .about-volume__part {
+    border-right: 0;
+  }
+  html.dark body .about .about-volume__part:first-child {
+    border-bottom: 1px solid rgba(223, 227, 240, 0.1);
+  }
+}
+html.dark body .about .about-volume__label, html.dark body .about .about-volume__value, html.dark body .about .about-article__paragraph, html.dark body .about .about-article__more {
+  color: #fff;
+}
+@media (max-width: 1200px) {
+  html.dark body .about .about-volume {
+    border-top: 1px solid rgba(223, 227, 240, 0.1);
+  }
+}
+html.dark body .about .about-article__more {
+  border-right: 1px solid #323642;
+}
+@media (max-width: 1300px) {
+  html.dark body .watchlist-product-name._fixed .watchlist-product-name__box {
+    background-color: #1E222A;
+  }
+}
+html.dark body .game-info_ico .token-sale__label, html.dark body .game-info_ico .token-sale__value {
+  color: #fff;
+}
+html.dark body .descr-card__screenshot {
+  background-color: rgba(41, 44, 45, 0.2);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+html.dark body .watchlist_airdrops .watchlist-main__list._grid .start {
+  border-left: 0;
+}
+html.dark body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-links {
+  border-left: 1px solid #1E222A;
+}
+html.dark body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name::before, html.dark body .watchlist_airdrops .watchlist-main__list._grid .amount::before, html.dark body .watchlist_airdrops .watchlist-main__list._grid .receivers::before {
+  opacity: 0;
+}
+html.dark body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name::after, html.dark body .watchlist_airdrops .watchlist-main__list._grid .amount::after, html.dark body .watchlist_airdrops .watchlist-main__list._grid .receivers::after {
+  opacity: 1;
+}
+html.dark body .main__about-us .about-us__box {
+  background-color: rgba(41, 44, 45, 0.2);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+}
+html.dark body .main__about-us .about-us__paragraph {
+  color: #fff;
+}
+html.dark body .main__qa .qa-qoute {
+  background-color: rgba(45, 48, 52, 0.4);
+}
+html.dark body .main__qa .qa-qoute__text, html.dark body .main__qa .answer__paragraph {
+  color: #fff;
+}
+html.dark body .main__blog .blog-list__list-el::before {
+  opacity: 1;
+}
+html.dark body .main__blog .blog-list__list-el::after {
+  opacity: 0;
+}
+html.dark body .main__blog .blog-body__paragraph, html.dark body .main__blog .blog-list__list-el, html.dark body .main__blog .blog-body__list-headline {
+  color: #fff;
+}
+html.dark body .main__blog .footer-social__el {
+  border: 1px solid rgba(69, 78, 83, 0.2);
+}
+html.dark body .main__blog .footer-social__el:hover path {
+  fill: #1E222A;
+}
+html.dark body .main__blog .footer-social__el::before {
+  opacity: 0;
+}
+html.dark body .main__blog .footer-social__el::after {
+  opacity: 1;
+}
+html.dark body .main__card-offer .card-offer__card {
+  background-color: rgba(41, 44, 45, 0.2);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+}
+html.dark body .main__support .footer-social__el {
+  border: 1px solid rgba(69, 78, 83, 0.2);
+}
+html.dark body .main__support .footer-social__el:hover path {
+  fill: #1E222A;
+}
+html.dark body .main__support .footer-social__el::before {
+  opacity: 0;
+}
+html.dark body .main__support .footer-social__el::after {
+  opacity: 1;
+}
+html.dark body .main__support .support-card {
+  background-color: rgba(41, 44, 45, 0.2);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+}
+html.dark body .main__support .support-contacts__subtitle, html.dark body .main__support .support-contacts__text {
+  color: #fff;
+}
+html.dark body .main__support .support-contacts__action:hover .support-contacts__text {
+  color: #2A59FF;
+}
+html.dark body .main__support .support-form__box, html.dark body .main__support .support-form__text-area {
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+}
+html.dark body .main__support .support-form__input, html.dark body .main__support .support-form__text-area {
+  color: #fff;
+}
+html.dark body .main__auth .auth-card {
+  background-color: rgba(41, 44, 45, 0.2);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+}
+html.dark body .main__auth .auth-card__other-way-label, html.dark body .main__auth .auth-card__another, html.dark body .main__auth .auth-radio__label, html.dark body .main__auth .form-auth__label, html.dark body .main__auth .form-auth__input, html.dark body .main__auth .form-auth__paragraph {
+  color: #fff;
+}
+html.dark body .main__auth .auth-card__another a, html.dark body .main__auth .auth-radio__label a {
+  color: #2A59FF;
+}
+html.dark body .main__auth .form-auth__input {
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+}
+html.dark body .main__auth .reset-link {
+  color: #DFE3F0;
+}
+html.dark body .main__auth .reset-link:hover {
+  color: #2A59FF;
 }
 
 html.light body {
@@ -6205,11 +9045,13 @@ html.light body .header .header-navigation .header-navigation__el:not(:last-chil
     border-bottom: 1px solid #B5BACB;
   }
 }
-html.light body .header .header-navigation .header-navigation__el .header-submenu__wrapper::before {
-  opacity: 1;
+html.light body .header .header-navigation .header-navigation__el .header-submenu__wrapper {
+  background-color: rgba(243, 247, 251, 0.9);
 }
-html.light body .header .header-navigation .header-navigation__el .header-submenu__wrapper::after {
-  opacity: 0;
+@media (max-width: 1200px) {
+  html.light body .header .header-navigation .header-navigation__el .header-submenu__wrapper {
+    background-color: transparent;
+  }
 }
 html.light body .header .submenu-item__text {
   color: #515764;
@@ -6253,6 +9095,12 @@ html.light body .header .bottom-panel-navigation__button path {
 }
 html.light body .header .bottom-panel-navigation__button::before {
   opacity: 0;
+}
+html.light body .header .bottom-panel-navigation__button:hover {
+  border: 1px solid transparent;
+}
+html.light body .header .bottom-panel-navigation__button:hover path {
+  fill: #fff;
 }
 html.light body .header .bottom-panel-navigation .stroke-button {
   color: #4A596D;
@@ -6396,6 +9244,9 @@ html.light body .main__watchlist .watchlist-categories-spoiler {
     border-right: 0px;
   }
 }
+html.light body .main__watchlist .watchlist-categories-spoiler .select__item:hover {
+  background-color: #e9e9e9;
+}
 html.light body .main__watchlist .watchlist-main__header {
   background-color: #f7faff;
   border: 1px solid transparent;
@@ -6416,8 +9267,14 @@ html.light body .main__watchlist .watchlist-product {
 html.light body .main__watchlist .watchlist-product:nth-child(2n) {
   background-color: #f7faff;
 }
+html.light body .main__watchlist .watchlist-product:nth-child(2n) .watchlist-product-name {
+  background-color: #f7faff;
+}
 html.light body .main__watchlist .watchlist-product:hover .watchlist-product-name__full-name {
   color: #2A59FF;
+}
+html.light body .main__watchlist .watchlist-product-name {
+  background-color: rgb(242, 244, 253);
 }
 html.light body .main__watchlist .watchlist-product__num {
   border: 1px solid #DFE3F0;
@@ -6581,6 +9438,18 @@ html.light body .watchlist_mod .show-rows:hover .select__header {
 html.light body .watchlist .watchlist-product-status__status {
   background-color: #DFE4F0;
 }
+html.light body .watchlist_ico .watchlist-main__list._grid .start {
+  border-left: 0;
+}
+html.light body .watchlist_ico .watchlist-main__list._grid .watchlist-product-links {
+  border-left: 1px solid #DFE3F0;
+}
+html.light body .watchlist_ico .watchlist-main__list._grid .watchlist-product-name::before, html.light body .watchlist_ico .watchlist-main__list._grid .watchlist-product-category::before, html.light body .watchlist_ico .watchlist-main__list._grid .watchlist-product__price::before {
+  opacity: 1;
+}
+html.light body .watchlist_ico .watchlist-main__list._grid .watchlist-product-name::after, html.light body .watchlist_ico .watchlist-main__list._grid .watchlist-product-category::after, html.light body .watchlist_ico .watchlist-main__list._grid .watchlist-product__price::after {
+  opacity: 0;
+}
 html.light body .watchlist-main__list._grid .watchlist-product-nft {
   border-left: 0px;
 }
@@ -6593,6 +9462,9 @@ html.light body .watchlist-main__list._grid .watchlist-product-links {
 html.light body .watchlist-main__list._grid .watchlist-product {
   background-color: #f7faff;
   border-radius: 8px;
+}
+html.light body .watchlist-main__list._grid .watchlist-product .watchlist-product-name {
+  background-color: #f7faff;
 }
 html.light body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-name::before, html.light body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-genre::before, html.light body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-blockchain::before, html.light body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-os::before {
   opacity: 1;
@@ -6852,6 +9724,10 @@ html.light body .section-button__button {
   background-color: #fff;
   color: #4A596D;
 }
+html.light body .section-button__button:hover {
+  background-color: #ddd;
+  color: #515764;
+}
 html.light body .also-watch-card {
   background-color: #f7faff;
   border: 1px solid rgba(197, 199, 207, 0.7);
@@ -6870,6 +9746,364 @@ html.light body .also-watch::before {
 }
 html.light body .also-watch::after {
   opacity: 0;
+}
+html.light body .watchlist_currency .watchlist-header {
+  border-top: 0;
+}
+html.light body .currency-info .currency-graph__content {
+  background-color: #f7faff;
+  border: 1px solid transparent;
+}
+html.light body .currency-info .currency-graph__dark-img {
+  display: none;
+}
+html.light body .currency-info .currency-graph__light-img {
+  display: block;
+}
+html.light body .currency-info .currency-characteristic__el {
+  border: 1px solid transparent;
+  background-color: #f2f4fd;
+  color: #4A596D;
+}
+html.light body .currency-info .currency-characteristic__el:nth-child(2n) {
+  background-color: #f7faff;
+}
+html.light body .currency-info .currency-characteristic__name {
+  color: #4A596D;
+}
+html.light body .currency-info .live-chat__chat {
+  background-color: #f3f6fb;
+  border: 1px solid transparent;
+}
+html.light body .currency-info .post-comment__button {
+  color: #4A596D;
+}
+html.light body .currency-info .post-comment__button:hover {
+  color: #2A59FF;
+}
+html.light body .currency-info .user-live-chat__about {
+  color: #4A596D;
+}
+html.light body .currency-info .post-comment__area {
+  background-color: #f5f8ff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+html.light body .currency-info .post-comment__input {
+  color: #4A596D;
+}
+html.light body .currency-info .comments-list .post-comment__comment {
+  color: #4A596D;
+}
+html.light body .currency-info .comments-list .post-comment__button_red:hover {
+  color: #B14C6B;
+}
+html.light body .currency-info .comments-list .post-comment__button_green:hover {
+  color: #71BA57;
+}
+html.light body .currency-info .comments-list::-webkit-scrollbar {
+  background-color: #fff;
+}
+html.light body .crypto-currency__box {
+  background-color: #f7faff;
+  border: 1px solid transparent;
+}
+html.light body .crypto-currency .crypto-currency__paragraph, html.light body .crypto-currency .links-list__text, html.light body .crypto-currency .middle-content__title, html.light body .crypto-currency .middle-content__price, html.light body .crypto-currency .stat-middle-content__value, html.light body .crypto-currency .stat-middle-content__label, html.light body .crypto-currency .crypto-currency-converter__label, html.light body .crypto-currency .crypto-currency-converter__input, html.light body .crypto-currency .crypto-currency-about__subtitle, html.light body .crypto-currency .about-range__labels {
+  color: #4A596D;
+}
+html.light body .crypto-currency .crypto-currency__paragraph a, html.light body .crypto-currency .links-list__text a, html.light body .crypto-currency .middle-content__title a, html.light body .crypto-currency .middle-content__price a, html.light body .crypto-currency .stat-middle-content__value a, html.light body .crypto-currency .stat-middle-content__label a, html.light body .crypto-currency .crypto-currency-converter__label a, html.light body .crypto-currency .crypto-currency-converter__input a, html.light body .crypto-currency .crypto-currency-about__subtitle a, html.light body .crypto-currency .about-range__labels a {
+  color: #4A596D;
+}
+html.light body .crypto-currency .links-list__card {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+html.light body .crypto-currency .middle-content__part:not(:nth-child(5)) {
+  border-right: 1px solid rgba(181, 186, 203, 0.3);
+}
+@media (max-width: 991.98px) {
+  html.light body .crypto-currency .middle-content__part:nth-child(4) {
+    border: 0;
+  }
+  html.light body .crypto-currency .middle-content__part:nth-child(5) {
+    border-right: 1px solid rgba(181, 186, 203, 0.3);
+  }
+  html.light body .crypto-currency .middle-content__part:nth-child(6) {
+    border-right: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  html.light body .crypto-currency .middle-content__part:nth-child(3), html.light body .crypto-currency .middle-content__part:nth-child(5) {
+    border-right: 0;
+  }
+  html.light body .crypto-currency .middle-content__part:nth-child(4) {
+    border-right: 1px solid rgba(181, 186, 203, 0.3);
+  }
+  html.light body .crypto-currency .middle-content__part:nth-child(2) {
+    border: 0;
+  }
+}
+@media (max-width: 480px) {
+  html.light body .crypto-currency .middle-content__part:first-child {
+    border-right: 0;
+    border-bottom: 1px solid rgba(181, 186, 203, 0.3);
+  }
+  html.light body .crypto-currency .middle-content__part:nth-child(4) {
+    border-right: 0;
+    border-top: 1px solid rgba(181, 186, 203, 0.3);
+  }
+  html.light body .crypto-currency .middle-content__part:nth-child(3) {
+    border-right: 1px solid rgba(181, 186, 203, 0.3);
+  }
+}
+html.light body .crypto-currency .middle-content {
+  border-top: 1px solid rgba(181, 186, 203, 0.3);
+  border-bottom: 1px solid rgba(181, 186, 203, 0.3);
+}
+html.light body .crypto-currency .middle-content__wrapper::before {
+  opacity: 1;
+}
+html.light body .crypto-currency .middle-content__wrapper::after {
+  opacity: 0;
+}
+html.light body .crypto-currency .select__body {
+  background-color: rgba(243, 247, 251, 0.9);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+html.light body .crypto-currency .select__item:hover {
+  background-color: #e9e9e9;
+}
+html.light body .crypto-currency .crypto-currency-converter__body {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+@media (max-width: 767.98px) {
+  html.light body .crypto-currency .supply {
+    border-top: 1px solid rgba(181, 186, 203, 0.3);
+    border-bottom: 1px solid rgba(181, 186, 203, 0.3);
+  }
+}
+@media (min-width: 480px) {
+  html.light body .crypto-currency .fully-cap::before, html.light body .crypto-currency .crypto-currency-tags::before {
+    opacity: 1;
+  }
+  html.light body .crypto-currency .fully-cap::after, html.light body .crypto-currency .crypto-currency-tags::after {
+    opacity: 0;
+  }
+}
+html.light body .crypto-currency .crypto-currency-tags__button {
+  background-color: transparent;
+  border: 1px solid rgba(181, 186, 203, 0.5);
+  color: #4A596D;
+}
+html.light body .crypto-currency .crypto-currency-tags__button path {
+  fill: #4A596D;
+}
+html.light body .crypto-currency .crypto-currency-tags__button:hover {
+  background-color: #2A59FF;
+  color: #fff;
+}
+html.light body .crypto-currency .crypto-currency-tags__button:hover path {
+  fill: #fff;
+}
+html.light body .crypto-currency .top-content__part:not(:last-child) {
+  border-right: 1px solid rgba(181, 186, 203, 0.3);
+}
+@media (max-width: 991.98px) {
+  html.light body .crypto-currency .top-content .crypto-currency-tags {
+    border-right: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  html.light body .crypto-currency .top-content .crypto-currency-about {
+    border-right: 0;
+  }
+}
+html.light body .about .about__box {
+  background-color: #f7faff;
+  border: 1px solid transparent;
+}
+html.light body .about .actions-about__button_filled {
+  background: #f7faff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+  color: #55606F;
+}
+html.light body .about .actions-about__button_stroke {
+  background-color: transparent;
+  border: 1px solid rgba(181, 186, 203, 0.5);
+  color: #55606F;
+}
+html.light body .about .actions-about__button_stroke:hover {
+  border: 1px solid #2A59FF;
+  background-color: #2A59FF;
+  color: #fff;
+}
+html.light body .about .about-row {
+  border-bottom: 1px solid rgba(181, 186, 203, 0.3);
+}
+@media (min-width: 1200px) {
+  html.light body .about .about-row__part:not(:last-child) {
+    border-right: 1px solid rgba(181, 186, 203, 0.3);
+  }
+}
+html.light body .about .about-volume__part {
+  border-right: 1px solid rgba(181, 186, 203, 0.3);
+}
+@media (max-width: 1200px) {
+  html.light body .about .about-volume__part:last-child {
+    border-right: 0;
+  }
+}
+@media (max-width: 480px) {
+  html.light body .about .about-volume__part {
+    border-right: 0;
+  }
+  html.light body .about .about-volume__part:first-child {
+    border-bottom: 1px solid rgba(181, 186, 203, 0.3);
+  }
+}
+html.light body .about .about-volume__label, html.light body .about .about-volume__value, html.light body .about .about-article__paragraph, html.light body .about .about-article__more {
+  color: #4A596D;
+}
+@media (max-width: 1200px) {
+  html.light body .about .about-volume {
+    border-top: 1px solid rgba(181, 186, 203, 0.3);
+  }
+}
+html.light body .about .about-article__more {
+  border-right: 1px solid rgba(181, 186, 203, 0.5);
+}
+@media (max-width: 1300px) {
+  html.light body .watchlist-product-name._fixed .watchlist-product-name__box {
+    background-color: #fff;
+  }
+}
+html.light body .game-info_ico .token-sale__label, html.light body .game-info_ico .token-sale__value {
+  color: #4A596D;
+}
+html.light body .descr-card__screenshot {
+  background-color: #fdfdfd;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+}
+html.light body .watchlist_airdrops .watchlist-main__list._grid .start {
+  border-left: 0;
+}
+html.light body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-links {
+  border-left: 1px solid #DFE3F0;
+}
+html.light body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name::before, html.light body .watchlist_airdrops .watchlist-main__list._grid .amount::before, html.light body .watchlist_airdrops .watchlist-main__list._grid .receivers::before {
+  opacity: 1;
+}
+html.light body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name::after, html.light body .watchlist_airdrops .watchlist-main__list._grid .amount::after, html.light body .watchlist_airdrops .watchlist-main__list._grid .receivers::after {
+  opacity: 0;
+}
+html.light body .main__about-us .about-us__box {
+  background-color: #f7faff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+html.light body .main__about-us .about-us__paragraph {
+  color: #4A596D;
+}
+html.light body .main__qa .qa-qoute {
+  background-color: rgb(248, 250, 253);
+}
+html.light body .main__qa .qa-qoute__text, html.light body .main__qa .answer__paragraph {
+  color: #454E53;
+}
+html.light body .main__blog .blog-list__list-el::before {
+  opacity: 0;
+}
+html.light body .main__blog .blog-list__list-el::after {
+  opacity: 1;
+}
+html.light body .main__blog .blog-body__paragraph, html.light body .main__blog .blog-list__list-el, html.light body .main__blog .blog-body__list-headline {
+  color: #454E53;
+}
+html.light body .main__blog .footer-social__el {
+  border: 1px solid transparent;
+}
+html.light body .main__blog .footer-social__el:hover path {
+  fill: #fff;
+}
+html.light body .main__blog .footer-social__el::before {
+  opacity: 0.6;
+}
+html.light body .main__blog .footer-social__el::after {
+  opacity: 0;
+}
+html.light body .main__card-offer .card-offer__card {
+  background-color: #f7faff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+html.light body .main__support .footer-social__el {
+  border: 1px solid transparent;
+}
+html.light body .main__support .footer-social__el:hover path {
+  fill: #fff;
+}
+html.light body .main__support .footer-social__el::before {
+  opacity: 1;
+}
+html.light body .main__support .footer-social__el::after {
+  opacity: 0;
+}
+html.light body .main__support .support-card {
+  background-color: #f7faff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+html.light body .main__support .support-contacts__subtitle, html.light body .main__support .support-contacts__text {
+  color: #454E53;
+}
+html.light body .main__support .support-contacts__action:hover .support-contacts__text {
+  color: #2A59FF;
+}
+html.light body .main__support .support-form__box, html.light body .main__support .support-form__text-area {
+  border: 1px solid #B5BACB;
+}
+html.light body .main__support .support-form__input, html.light body .main__support .support-form__text-area {
+  color: #1E222A;
+}
+html.light body .main__auth .auth-card {
+  background-color: #f7faff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+html.light body .main__auth .auth-card__other-way-label, html.light body .main__auth .auth-card__another, html.light body .main__auth .auth-radio__label, html.light body .main__auth .form-auth__label, html.light body .main__auth .form-auth__input, html.light body .main__auth .form-auth__paragraph {
+  color: #454E53;
+}
+html.light body .main__auth .auth-card__another a, html.light body .main__auth .auth-radio__label a {
+  color: #2A59FF;
+}
+html.light body .main__auth .form-auth__input {
+  border: 1px solid #B5BACB;
+}
+html.light body .main__auth .form-auth__input {
+  border: 1px solid #B5BACB;
+}
+html.light body .main__auth .form-auth__input:hover {
+  color: #2A59FF;
+}
+html.light body .main__auth .reset-link {
+  color: #B5BACB;
+}
+html.light body .main__auth .reset-link:hover {
+  color: #2A59FF;
 }
 
 .header {
@@ -7826,7 +11060,8 @@ html.light body .also-watch::after {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
-  position: relative;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
   padding: 26px 24px;
   -webkit-transition: gap cubic-bezier(0.79, 0.33, 0.14, 0.53) 0.3s;
   transition: gap cubic-bezier(0.79, 0.33, 0.14, 0.53) 0.3s;
@@ -7835,36 +11070,9 @@ html.light body .also-watch::after {
   .header-submenu__wrapper {
     padding: 0;
     gap: 0;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
   }
-  .header-submenu__wrapper::before, .header-submenu__wrapper::after {
-    display: none;
-  }
-}
-.header-submenu__wrapper::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: rgba(243, 247, 251, 0.9);
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
-  z-index: -1;
-  opacity: 0;
-}
-.header-submenu__wrapper::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: rgba(27, 32, 49, 0.95);
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
-  z-index: -1;
-  opacity: 0;
 }
 .header-submenu__body {
   display: -webkit-box;
@@ -8077,7 +11285,7 @@ html.light body .also-watch::after {
           flex-direction: column;
   margin: 0 auto;
   max-width: 300px;
-  gap: 5px;
+  gap: 1rem;
   width: 100%;
 }
 .bottom-panel-navigation__buttons {
@@ -8111,8 +11319,8 @@ html.light body .also-watch::after {
   width: 40px;
   height: 40px;
   border-radius: 6px;
-  -webkit-transition: border ease-in-out 0.3s;
-  transition: border ease-in-out 0.3s;
+  -webkit-transition: border ease-in-out 0.3s, background-color ease-in-out 0.3s;
+  transition: border ease-in-out 0.3s, background-color ease-in-out 0.3s;
   position: relative;
 }
 .bottom-panel-navigation__button path {
@@ -8130,10 +11338,18 @@ html.light body .also-watch::after {
   -webkit-transition: opacity ease-in-out 0.3s;
   transition: opacity ease-in-out 0.3s;
 }
+.bottom-panel-navigation__button:hover {
+  background-color: #2A59FF;
+}
+.bottom-panel-navigation__button:hover path {
+  fill: #fff;
+}
 .bottom-panel-navigation .stroke-button {
   -webkit-transition: border ease-in-out 0.3s, color ease-in-out 0.3s;
   transition: border ease-in-out 0.3s, color ease-in-out 0.3s;
   position: relative;
+  -webkit-transition: background-color ease-in-out 0.3s;
+  transition: background-color ease-in-out 0.3s;
 }
 .bottom-panel-navigation .stroke-button:hover {
   background-color: rgba(16, 57, 204, 0.1568627451);
@@ -8190,10 +11406,9 @@ html.light body .also-watch::after {
   }
 }
 .trends__body {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   gap: 20px;
 }
 @media (max-width: 1200px) {
@@ -8251,6 +11466,7 @@ html.light body .also-watch::after {
           align-items: center;
   cursor: pointer;
   gap: 20px;
+  -webkit-tap-highlight-color: transparent;
 }
 @media (max-width: 480px) {
   .trends-switch {
@@ -8284,6 +11500,8 @@ html.light body .also-watch::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: background-color ease-in-out 0.3s;
+  transition: background-color ease-in-out 0.3s;
 }
 .trends-switch__switch span {
   display: -webkit-box;
@@ -8293,12 +11511,9 @@ html.light body .also-watch::after {
   transition: margin ease-in-out 0.3s, -webkit-box-flex ease-in-out 0.3s;
   transition: flex ease-in-out 0.3s, margin ease-in-out 0.3s;
   transition: flex ease-in-out 0.3s, margin ease-in-out 0.3s, -webkit-box-flex ease-in-out 0.3s, -ms-flex ease-in-out 0.3s;
-  height: 12px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 0px;
           flex: 0 0 0;
-  background-color: #1039cc;
-  border-radius: 22px;
 }
 .trends-switch__switch img {
   -webkit-user-select: none;
@@ -8307,13 +11522,49 @@ html.light body .also-watch::after {
           user-select: none;
 }
 
+.trends-switch._active .trends-switch__switch {
+  background-color: #bbc9f6;
+}
 .trends-switch._active .trends-switch__switch span {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   margin-right: -14px;
 }
+.trends-switch._active .trends-switch__switch img {
+  -webkit-animation: smooth ease 0.3s;
+          animation: smooth ease 0.3s;
+}
 
+@-webkit-keyframes smooth {
+  0% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  90% {
+    -webkit-transform: scaleX(1.2);
+            transform: scaleX(1.2);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@keyframes smooth {
+  0% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  90% {
+    -webkit-transform: scaleX(1.2);
+            transform: scaleX(1.2);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
 .main-trends__title {
   font-weight: 700;
   font-size: 20px;
@@ -8328,13 +11579,13 @@ html.light body .also-watch::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  max-width: calc(33.3333333333% - 13.3333333333px);
+  width: 100%;
 }
 @media (max-width: 1200px) {
   .list-trends {
     display: none;
+    max-width: 100%;
   }
 }
 .list-trends__top {
@@ -8368,6 +11619,8 @@ html.light body .also-watch::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -8434,6 +11687,7 @@ html.light body .also-watch::after {
   -webkit-transition: border ease-in-out 0.3s, background-color ease-in-out 0.3s;
   transition: border ease-in-out 0.3s, background-color ease-in-out 0.3s;
   position: relative;
+  width: 100%;
 }
 .list-pos__wrapper {
   display: -webkit-box;
@@ -8490,6 +11744,8 @@ html.light body .also-watch::after {
   font-size: 13px;
   line-height: 15px;
   color: #515764;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 .list-pos__main-info {
   display: -webkit-box;
@@ -8499,12 +11755,16 @@ html.light body .also-watch::after {
       -ms-flex-align: center;
           align-items: center;
   gap: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .list-pos__icon {
   width: 16px;
   height: 16px;
   border-radius: 50%;
   overflow: hidden;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 .list-pos__icon img {
   width: 100%;
@@ -8515,15 +11775,16 @@ html.light body .also-watch::after {
      object-position: center;
 }
 .list-pos__name {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 12px;
+  display: inline;
   font-family: Rubik;
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
   color: #515764;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
 }
 .list-pos__title {
   font-family: Rubik;
@@ -8532,6 +11793,10 @@ html.light body .also-watch::after {
   line-height: 16px;
   -webkit-transition: color ease-in-out 0.3s;
   transition: color ease-in-out 0.3s;
+  white-space: nowrap;
+}
+.list-pos__slash {
+  margin: 0 10px;
 }
 .list-pos__short-name {
   text-transform: uppercase;
@@ -8967,6 +12232,83 @@ html.light body .also-watch::after {
   margin-bottom: 10px;
 }
 
+.watchlist-product-name {
+  padding-left: 0;
+  position: sticky;
+  left: -10px;
+  width: auto;
+  -webkit-transition: background-color ease-in-out 0.3s;
+  transition: background-color ease-in-out 0.3s;
+}
+.watchlist-product-name__box {
+  padding-left: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: background-color ease-in-out 0.3s;
+  transition: background-color ease-in-out 0.3s;
+  position: relative;
+}
+.watchlist-product-name__box::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(191.45deg, rgba(28, 49, 109, 0) -73.23%, rgba(2, 10, 196, 0.06) 91.58%);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(30, 33, 48, 0.11));
+          filter: drop-shadow(0px 4px 4px rgba(30, 33, 48, 0.11));
+  border-radius: 4px;
+  opacity: 0;
+  -webkit-transition: opacity ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s;
+  z-index: -1;
+}
+.watchlist-product-name__icon {
+  margin-right: 8px;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  overflow: hidden;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.watchlist-product-name__icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.watchlist-product-name__name {
+  font-family: Rubik;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #515764;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 7px;
+}
+.watchlist-product-name__full-name {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  -webkit-transition: color ease-in-out 0.3s;
+  transition: color ease-in-out 0.3s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
 .watchlist__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9082,7 +12424,7 @@ html.light body .also-watch::after {
   border-right: 0;
 }
 .watchlist_mod .watchlist-header {
-  z-index: 120;
+  z-index: 100;
 }
 @media (max-width: 767.98px) {
   .watchlist_mod .watchlist-header {
@@ -9253,6 +12595,9 @@ html.light body .also-watch::after {
 .watchlist_mod .watchlist-product__wrapper {
   height: 100%;
 }
+.watchlist_mod .watchlist-product-name {
+  padding: 0;
+}
 .watchlist_earn-games .watchlist-legends, .watchlist_earn-games .watchlist-product__wrapper {
   -ms-grid-columns: 59px 214px 104px 139px 132px 125px 125px 125px 124px 122px;
   grid-template-columns: 59px 214px 104px 139px 132px 125px 125px 125px 124px 122px;
@@ -9281,12 +12626,15 @@ html.light body .also-watch::after {
       -ms-flex-align: start;
           align-items: flex-start;
   gap: 5px;
+  width: 100%;
+  white-space: wrap;
 }
 .watchlist_earn-games .watchlist-product-name__descr {
   font-family: Rubik;
   font-weight: 300;
   font-size: 12px;
   line-height: 14px;
+  white-space: wrap;
 }
 .watchlist_earn-games .watchlist-product-genre {
   -webkit-box-align: start;
@@ -9437,8 +12785,12 @@ html.light body .also-watch::after {
   border-radius: 50%;
 }
 .watchlist_events .watchlist-product-name__blockchain-icon img {
-  max-width: 100%;
+  width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .watchlist_events .watchlist-product-name__blockchain-name {
   font-family: Rubik;
@@ -9549,6 +12901,7 @@ html.light body .also-watch::after {
   -o-object-fit: contain;
      object-fit: contain;
   width: 100%;
+  height: 100%;
 }
 .watchlist_collections .watchlist-product-name__blockchain-name {
   font-family: Rubik;
@@ -9768,6 +13121,322 @@ html.light body .also-watch::after {
   -ms-grid-columns: 70px 156px 115px 115px 115px 115px 115px 115px 115px 115px 133px;
   grid-template-columns: 70px 156px 115px 115px 115px 115px 115px 115px 115px 115px 133px;
 }
+.watchlist_currency .watchlist-legend {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.watchlist_currency .watchlist-legends__title {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.watchlist_currency .watchlist-product__price {
+  padding-left: 0;
+}
+.watchlist_currency .watchlist-product-rating-score__score {
+  text-transform: capitalize;
+}
+.watchlist_currency .watchlist-product-name.watchlist-product__part {
+  padding: 0;
+}
+.watchlist_currency .watchlist-product-name.watchlist-product__part .watchlist-product-name__box {
+  padding-left: 14px;
+}
+.watchlist_ico .filter .select__header {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.watchlist_ico .filter .select__icon {
+  margin-left: auto;
+}
+.watchlist_ico .filter__form {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -ms-grid-columns: 1fr 6px 1fr 6px 1fr 6px 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 6px;
+}
+@media (max-width: 1300px) {
+  .watchlist_ico .filter__form {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 767.98px) {
+  .watchlist_ico .filter__form {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 480px) {
+  .watchlist_ico .filter__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .watchlist_ico .filter__form .filter-search {
+    max-width: none;
+    width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+  .watchlist_ico .filter__form .filter-select {
+    width: 100%;
+  }
+}
+.watchlist_ico .filter .filter-search__icon img {
+  max-width: 13px;
+}
+.watchlist_ico .watchlist-legend {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.watchlist_ico .watchlist-legends__title {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.watchlist_ico .watchlist-legends, .watchlist_ico .watchlist-product__wrapper {
+  -ms-grid-columns: 70px 298px 180px 180px 180px 180px 191px;
+  grid-template-columns: 70px 298px 180px 180px 180px 180px 191px;
+}
+.watchlist_ico .watchlist-product-name__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 5px;
+  width: 100%;
+  white-space: wrap;
+  padding: 0;
+}
+.watchlist_ico .watchlist-product-name__box {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.watchlist_ico .watchlist-product-name__icon {
+  width: 25px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25px;
+          flex: 0 0 25px;
+  height: 25px;
+  border-radius: 6px;
+}
+.watchlist_ico .watchlist-product__price {
+  padding-left: 0;
+}
+.watchlist_ico .watchlist-product-volume {
+  padding-left: 0;
+}
+.watchlist_ico .watchlist-product-volume__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.watchlist_ico .watchlist-product-links {
+  padding-left: 0;
+}
+.watchlist_airdrops .filter .select__header {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.watchlist_airdrops .filter .select__icon {
+  margin-left: auto;
+}
+.watchlist_airdrops .filter__form {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -ms-grid-columns: 1fr 6px 1fr 6px 1fr 6px 1fr 6px 1fr 6px 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: auto 6px auto;
+      grid-template-areas: "blockchain blockchain time-frame time-frame search search" "start start start end end end";
+  gap: 6px;
+}
+@media (max-width: 1300px) {
+  .watchlist_airdrops .filter__form {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 767.98px) {
+  .watchlist_airdrops .filter__form {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+        grid-template-areas: "blockchain time-frame" "search search" "start end";
+  }
+}
+@media (max-width: 480px) {
+  .watchlist_airdrops .filter__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .watchlist_airdrops .filter__form .filter-search {
+    max-width: none;
+    width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+  .watchlist_airdrops .filter__form .filter-select {
+    width: 100%;
+  }
+}
+.watchlist_airdrops .filter__form .blockchain {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: blockchain;
+}
+.watchlist_airdrops .filter__form .time-frame {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 3;
+  grid-area: time-frame;
+}
+.watchlist_airdrops .filter__form .search {
+  -ms-grid-row: 1;
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 3;
+  grid-area: search;
+}
+.watchlist_airdrops .filter__form .start {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: start;
+}
+.watchlist_airdrops .filter__form .end {
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 5;
+  grid-area: end;
+}
+.watchlist_airdrops .filter .filter-search__icon img {
+  max-width: 13px;
+}
+.watchlist_airdrops .watchlist-legend {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.watchlist_airdrops .watchlist-legends__title {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.watchlist_airdrops .watchlist-legends, .watchlist_airdrops .watchlist-product__wrapper {
+  -ms-grid-columns: 70px 298px 180px 180px 180px 180px 191px;
+  grid-template-columns: 70px 298px 180px 180px 180px 180px 191px;
+}
+.watchlist_airdrops .watchlist-product-name__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 5px;
+  width: 100%;
+  white-space: wrap;
+  padding: 0;
+  z-index: 14;
+}
+.watchlist_airdrops .watchlist-product-name__box {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 10;
+}
+.watchlist_airdrops .watchlist-product-name__box::before {
+  z-index: -1;
+  -webkit-transition: opacity ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s;
+}
+.watchlist_airdrops .watchlist-product-name__icon {
+  width: 25px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25px;
+          flex: 0 0 25px;
+  height: 25px;
+  border-radius: 6px;
+  z-index: 14;
+}
+.watchlist_airdrops .watchlist-product__price {
+  padding-left: 0;
+}
+.watchlist_airdrops .watchlist-product-volume {
+  padding-left: 0;
+}
+.watchlist_airdrops .watchlist-product-volume__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.watchlist_airdrops .watchlist-product-links {
+  padding-left: 0;
+}
+.watchlist_airdrops .watchlist-product-name__blockchain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+.watchlist_airdrops .watchlist-product-links__list {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  gap: 16px;
+}
 
 .watchlist-title {
   display: -webkit-box;
@@ -9892,6 +13561,10 @@ html.light body .also-watch::after {
   display: -ms-flexbox;
   display: flex;
   padding: 0 9px;
+  gap: 4px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-transition: border ease-in-out 0.3s;
   transition: border ease-in-out 0.3s;
   position: relative;
@@ -9986,10 +13659,12 @@ html.light body .also-watch::after {
 }
 .watchlist-showing .select__body {
   position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
+  top: calc(100% + 1px);
+  right: 50%;
+  min-width: 100%;
   padding: 4px 0;
+  border-radius: 6px;
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10003,8 +13678,8 @@ html.light body .also-watch::after {
   transition: background-color ease-in-out 0.3s, opacity ease-in-out 0.3s, transform ease-in-out 0.3s, -webkit-transform ease-in-out 0.3s;
   opacity: 0;
   pointer-events: none;
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
+  -webkit-transform: translate(50%, -10px);
+          transform: translate(50%, -10px);
 }
 .watchlist-showing .select__current {
   margin-left: 3px;
@@ -10021,12 +13696,16 @@ html.light body .also-watch::after {
   -webkit-transition: background-color ease-in-out 0.3s;
   transition: background-color ease-in-out 0.3s;
   padding: 6px 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
 }
 .watchlist-showing .select.is-active .select__body {
   pointer-events: all;
   opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  -webkit-transform: translate(50%, 0px);
+          transform: translate(50%, 0px);
 }
 .watchlist-showing .select.is-active .watchlist-showing__icon {
   -webkit-transform: rotate(180deg);
@@ -10036,6 +13715,7 @@ html.light body .also-watch::after {
 .watchlist-categories-spoiler {
   display: none;
   position: relative;
+  z-index: 120;
   z-index: 120;
   padding: 0 20px;
   -webkit-transition: border ease-in-out 0.3s;
@@ -10058,6 +13738,7 @@ html.light body .also-watch::after {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+  cursor: pointer;
 }
 .watchlist-categories-spoiler .select__current {
   color: #2A59FF;
@@ -10067,16 +13748,19 @@ html.light body .also-watch::after {
   width: 4px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  -webkit-transition: -webkit-transform ease-in-out 0.3s;
+  transition: -webkit-transform ease-in-out 0.3s;
+  transition: transform ease-in-out 0.3s;
+  transition: transform ease-in-out 0.3s, -webkit-transform ease-in-out 0.3s;
 }
 .watchlist-categories-spoiler .select__icon svg path {
   fill: #2A59FF;
 }
 .watchlist-categories-spoiler .select__body {
   position: absolute;
-  left: 20px;
-  top: 100%;
-  height: auto;
-  width: auto;
+  top: calc(100% + 10px);
+  left: 0;
+  min-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10084,12 +13768,11 @@ html.light body .also-watch::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 6px;
+  -webkit-transition: background-color ease-in-out 0.3s, opacity ease-in-out 0.3s, -webkit-transform ease-in-out 0.3s;
+  transition: background-color ease-in-out 0.3s, opacity ease-in-out 0.3s, -webkit-transform ease-in-out 0.3s;
+  transition: background-color ease-in-out 0.3s, opacity ease-in-out 0.3s, transform ease-in-out 0.3s;
+  transition: background-color ease-in-out 0.3s, opacity ease-in-out 0.3s, transform ease-in-out 0.3s, -webkit-transform ease-in-out 0.3s;
   opacity: 0;
-  -webkit-transition: opacity ease-in-out 0.3s, -webkit-transform ease-in-out 0.3s;
-  transition: opacity ease-in-out 0.3s, -webkit-transform ease-in-out 0.3s;
-  transition: opacity ease-in-out 0.3s, transform ease-in-out 0.3s;
-  transition: opacity ease-in-out 0.3s, transform ease-in-out 0.3s, -webkit-transform ease-in-out 0.3s;
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
   pointer-events: none;
@@ -10104,7 +13787,9 @@ html.light body .also-watch::after {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 10px;
-  padding: 12px;
+  padding: 4px 0;
+  border-radius: 6px;
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
 }
 .watchlist-categories-spoiler .select__body-wrapper::before {
   content: "";
@@ -10141,6 +13826,11 @@ html.light body .also-watch::after {
   font-weight: 400;
   font-size: 13px;
   line-height: 15px;
+  width: 100%;
+  cursor: pointer;
+  -webkit-transition: background-color ease-in-out 0.3s;
+  transition: background-color ease-in-out 0.3s;
+  padding: 6px 12px;
 }
 
 .watchlist-categories-spoiler.is-active .select__body {
@@ -10148,6 +13838,10 @@ html.light body .also-watch::after {
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
   pointer-events: all;
+}
+.watchlist-categories-spoiler.is-active .select__icon svg {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 
 .watchlist-product-genre {
@@ -10333,6 +14027,7 @@ html.light body .also-watch::after {
   height: 7px;
   width: 8px;
   position: relative;
+  z-index: -1;
 }
 .watchlist-product-rating-day__icon img {
   position: absolute;
@@ -10512,6 +14207,12 @@ html.light body .also-watch::after {
   width: 7.3px;
 }
 
+.watchlist-product-category__content {
+  font-family: Rubik;
+  font-weight: 500;
+  text-align: center;
+}
+
 .pagination {
   display: -ms-grid;
   display: grid;
@@ -10520,7 +14221,7 @@ html.light body .also-watch::after {
           align-items: center;
   -ms-grid-columns: 1fr 2fr 1fr;
   grid-template-columns: 1fr 2fr 1fr;
-  z-index: 40;
+  z-index: 30;
 }
 @media (max-width: 767.98px) {
   .pagination {
@@ -10692,6 +14393,10 @@ html.light body .also-watch::after {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4px;
 }
 @media (max-width: 767.98px) {
   .show-rows {
@@ -10753,10 +14458,12 @@ html.light body .also-watch::after {
 }
 .show-rows .select__body {
   position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
+  top: calc(100% + 1px);
+  right: 50%;
+  min-width: 100%;
   padding: 4px 0;
+  border-radius: 6px;
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10770,8 +14477,8 @@ html.light body .also-watch::after {
   transition: background-color ease-in-out 0.3s, opacity ease-in-out 0.3s, transform ease-in-out 0.3s, -webkit-transform ease-in-out 0.3s;
   opacity: 0;
   pointer-events: none;
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
+  -webkit-transform: translate(50%, -10px);
+          transform: translate(50%, -10px);
 }
 .show-rows .select__current {
   margin-left: 3px;
@@ -10788,12 +14495,16 @@ html.light body .also-watch::after {
   -webkit-transition: background-color ease-in-out 0.3s;
   transition: background-color ease-in-out 0.3s;
   padding: 6px 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
 }
 .show-rows .select.is-active .select__body {
   pointer-events: all;
   opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  -webkit-transform: translate(50%, 0px);
+          transform: translate(50%, 0px);
 }
 .show-rows .select.is-active .watchlist-showing__icon {
   -webkit-transform: rotate(180deg);
@@ -10859,6 +14570,7 @@ html.light body .also-watch::after {
   margin-bottom: 5px;
   -webkit-transition: border ease-in-out 0.3s, background-color ease-in-out 0.3s;
   transition: border ease-in-out 0.3s, background-color ease-in-out 0.3s;
+  z-index: 40;
 }
 
 .watchlist-main._in-the-end::before, .watchlist-main._in-the-end::after {
@@ -10959,6 +14671,7 @@ html.light body .also-watch::after {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 5px;
+  z-index: 39;
 }
 
 .watchlist-product {
@@ -10971,6 +14684,10 @@ html.light body .also-watch::after {
 }
 .watchlist-product:hover .watchlist-product__wrapper::before {
   opacity: 1;
+}
+.watchlist-product:hover .watchlist-product-name__box::before {
+  opacity: 1;
+  z-index: 4;
 }
 .watchlist-product__wrapper {
   display: -ms-grid;
@@ -10999,8 +14716,8 @@ html.light body .also-watch::after {
   z-index: -1;
 }
 .watchlist-product__part {
-  -webkit-transition: border ease-in-out 0.3s;
-  transition: border ease-in-out 0.3s;
+  -webkit-transition: border ease-in-out 0.3s, background-color ease-in-out 0.3s;
+  transition: border ease-in-out 0.3s, background-color ease-in-out 0.3s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11085,40 +14802,14 @@ html.light body .also-watch::after {
   opacity: 1;
 }
 
-.watchlist-product-name {
+.watchlist-product-name._fixed .watchlist-product-name__box {
+  -webkit-transition: background-color ease-in-out 0.3s;
+  transition: background-color ease-in-out 0.3s;
+  position: absolute;
+  left: 0;
   padding-left: 14px;
-}
-.watchlist-product-name__icon {
-  margin-right: 8px;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-.watchlist-product-name__icon img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-}
-.watchlist-product-name__name {
-  font-family: Rubik;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 16px;
-  color: #515764;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.watchlist-product-name__full-name {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 16px;
-  margin-right: 7px;
-  -webkit-transition: color ease-in-out 0.3s;
-  transition: color ease-in-out 0.3s;
+  -webkit-box-shadow: 8px 0px 10px -7px rgba(0, 0, 0, 0.2);
+          box-shadow: 8px 0px 10px -7px rgba(0, 0, 0, 0.2);
 }
 
 .watchlist-product-rate {
@@ -11640,6 +15331,10 @@ html.light body .also-watch::after {
   z-index: -1;
   opacity: 0;
 }
+.watchlist-main__list._grid .watchlist-product:hover .watchlist-product-name__box::before, .watchlist-main__list._grid .watchlist-product::after .watchlist-product-name__box::before {
+  opacity: 1;
+  z-index: 1;
+}
 .watchlist-main__list._grid .watchlist-product-single {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -11713,7 +15408,7 @@ html.light body .also-watch::after {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: info;
-  padding-left: 4px;
+  margin-left: 10px;
 }
 .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-genre {
   -ms-grid-row: 1;
@@ -11722,7 +15417,8 @@ html.light body .also-watch::after {
 }
 .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-blockchain {
   -ms-grid-row: 1;
-  -ms-grid-column: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: blockchain;
 }
 .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-os {
@@ -11772,6 +15468,9 @@ html.light body .also-watch::after {
     display: block;
   }
 }
+.watchlist_earn-games .watchlist-product-name__descr {
+  white-space: wrap;
+}
 
 .watchlist_events .watchlist-main__list._grid .watchlist-product__part_actions {
   -ms-grid-row: 1;
@@ -11785,7 +15484,7 @@ html.light body .also-watch::after {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: info;
-  padding-left: 2px;
+  padding-left: 0px;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -11807,9 +15506,13 @@ html.light body .also-watch::after {
   -webkit-transition: border ease-in-out 0.3s;
   transition: border ease-in-out 0.3s;
 }
+.watchlist_events .watchlist-main__list._grid .watchlist-product-name__box {
+  padding-left: 2px;
+}
 .watchlist_events .watchlist-main__list._grid .watchlist-product-start {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
   grid-area: start;
   gap: 2px;
 }
@@ -11906,9 +15609,13 @@ html.light body .also-watch::after {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: info;
-  padding-left: 2px;
+  padding-left: 0px;
   padding-top: 0;
   padding-bottom: 0;
+  margin-left: 10px;
+}
+.watchlist_collections .watchlist-main__list._grid .watchlist-product-name__box {
+  padding-left: 2px;
 }
 .watchlist_collections .watchlist-main__list._grid .day-volume {
   -ms-grid-row: 1;
@@ -12048,12 +15755,15 @@ html.light body .also-watch::after {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: info;
-  padding-left: 2px;
+  padding-left: 0px;
   padding-top: 0;
   padding-bottom: 0;
-  padding-bottom: 11px;
   -webkit-transition: border ease-in-out 0.3s;
   transition: border ease-in-out 0.3s;
+}
+.watchlist_defi .watchlist-main__list._grid .watchlist-product-name__box {
+  padding-bottom: 11px;
+  padding-left: 2px;
 }
 .watchlist_defi .watchlist-main__list._grid .day-volume {
   -ms-grid-row: 1;
@@ -12139,9 +15849,13 @@ html.light body .also-watch::after {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: info;
-  padding-left: 2px;
   padding-top: 0;
   padding-bottom: 0;
+  margin-left: 14px;
+  width: 100%;
+}
+.watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name__box {
+  padding-left: 2px;
 }
 .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score {
   -ms-grid-row: 1;
@@ -12233,6 +15947,249 @@ html.light body .also-watch::after {
 }
 @media (max-width: 654.98px) {
   .watchlist_exchanges .watchlist-main.grid-mod::before, .watchlist_exchanges .watchlist-main.grid-mod::after {
+    display: block;
+  }
+}
+
+.watchlist_ico .watchlist-main__list._grid .watchlist-product__part_actions {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: actions;
+  padding-left: 0px;
+}
+.watchlist_ico .watchlist-main__list._grid .watchlist-product-category {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: category;
+}
+.watchlist_ico .watchlist-main__list._grid .watchlist-product__price {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-area: price;
+}
+.watchlist_ico .watchlist-main__list._grid .start {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: start;
+}
+.watchlist_ico .watchlist-main__list._grid .end {
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 5;
+  grid-area: end;
+}
+.watchlist_ico .watchlist-main__list._grid .watchlist-product-links {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: links;
+}
+.watchlist_ico .watchlist-main__list._grid .watchlist-product__wrapper {
+  -ms-grid-columns: 56px 92px 120px 120px 120px 103px;
+  grid-template-columns: 56px 92px 120px 120px 120px 103px;
+  -ms-grid-rows: auto 20px auto;
+  grid-template-rows: auto auto;
+  row-gap: 20px;
+  padding: 12px;
+      grid-template-areas: "actions info info info category price" "actions start start end end links";
+}
+.watchlist_ico .watchlist-main__list._grid .watchlist-product-name, .watchlist_ico .watchlist-main__list._grid .watchlist-product-category, .watchlist_ico .watchlist-main__list._grid .watchlist-product__price {
+  position: relative;
+  width: 100%;
+}
+.watchlist_ico .watchlist-main__list._grid .watchlist-product-name::before, .watchlist_ico .watchlist-main__list._grid .watchlist-product-name::after, .watchlist_ico .watchlist-main__list._grid .watchlist-product-category::before, .watchlist_ico .watchlist-main__list._grid .watchlist-product-category::after, .watchlist_ico .watchlist-main__list._grid .watchlist-product__price::before, .watchlist_ico .watchlist-main__list._grid .watchlist-product__price::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 1px);
+  height: 1px;
+  right: -1px;
+  bottom: -10px;
+  opacity: 0;
+  -webkit-transition: opacity ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s;
+}
+.watchlist_ico .watchlist-main__list._grid .watchlist-product-name::before, .watchlist_ico .watchlist-main__list._grid .watchlist-product-category::before, .watchlist_ico .watchlist-main__list._grid .watchlist-product__price::before {
+  background-color: #DFE3F0;
+}
+.watchlist_ico .watchlist-main__list._grid .watchlist-product-name::after, .watchlist_ico .watchlist-main__list._grid .watchlist-product-category::after, .watchlist_ico .watchlist-main__list._grid .watchlist-product__price::after {
+  background-color: #1E222A;
+}
+.watchlist_ico .watchlist-main__list._grid .watchlist-product-name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: info;
+  padding-left: 0px;
+  padding-top: 0;
+  padding-bottom: 0;
+  -webkit-transition: border ease-in-out 0.3s, background-color ease-in-out 0.3s;
+  transition: border ease-in-out 0.3s, background-color ease-in-out 0.3s;
+}
+.watchlist_ico .watchlist-main__list._grid .watchlist-product-name::before, .watchlist_ico .watchlist-main__list._grid .watchlist-product-name::after {
+  right: -11px;
+}
+@media (max-width: 991.98px) {
+  .watchlist_ico .watchlist-main.grid-mod::before, .watchlist_ico .watchlist-main.grid-mod::after {
+    display: none;
+  }
+}
+@media (max-width: 654.98px) {
+  .watchlist_ico .watchlist-main.grid-mod::before, .watchlist_ico .watchlist-main.grid-mod::after {
+    display: block;
+  }
+}
+
+.watchlist_airdrops .watchlist-main__list._grid .watchlist-product__part_actions {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: actions;
+  padding-left: 0px;
+}
+.watchlist_airdrops .watchlist-main__list._grid .amount {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: amount;
+}
+.watchlist_airdrops .watchlist-main__list._grid .receivers {
+  -ms-grid-row: 1;
+  -ms-grid-column: 6;
+  grid-area: receivers;
+}
+.watchlist_airdrops .watchlist-main__list._grid .start {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: start;
+}
+.watchlist_airdrops .watchlist-main__list._grid .end {
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 5;
+  grid-area: end;
+}
+.watchlist_airdrops .watchlist-main__list._grid .watchlist-product-links {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: links;
+  gap: 2px;
+  padding-top: 0;
+}
+.watchlist_airdrops .watchlist-main__list._grid .watchlist-product__wrapper {
+  -ms-grid-columns: 56px 92px 120px 120px 120px 103px;
+  grid-template-columns: 56px 92px 120px 120px 120px 103px;
+  -ms-grid-rows: auto 20px auto;
+  grid-template-rows: auto auto;
+  row-gap: 20px;
+  padding: 12px;
+      grid-template-areas: "actions info info info amount receivers" "actions start start end end links";
+}
+.watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name, .watchlist_airdrops .watchlist-main__list._grid .amount, .watchlist_airdrops .watchlist-main__list._grid .receivers {
+  position: relative;
+  width: 100%;
+}
+.watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name::before, .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name::after, .watchlist_airdrops .watchlist-main__list._grid .amount::before, .watchlist_airdrops .watchlist-main__list._grid .amount::after, .watchlist_airdrops .watchlist-main__list._grid .receivers::before, .watchlist_airdrops .watchlist-main__list._grid .receivers::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 1px);
+  height: 1px;
+  right: -1px;
+  bottom: -10px;
+  opacity: 0;
+  -webkit-transition: opacity ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s;
+}
+.watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name::before, .watchlist_airdrops .watchlist-main__list._grid .amount::before, .watchlist_airdrops .watchlist-main__list._grid .receivers::before {
+  background-color: #DFE3F0;
+}
+.watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name::after, .watchlist_airdrops .watchlist-main__list._grid .amount::after, .watchlist_airdrops .watchlist-main__list._grid .receivers::after {
+  background-color: #1E222A;
+}
+.watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: info;
+  padding-left: 0px;
+  padding-top: 0;
+  padding-bottom: 0;
+  -webkit-transition: border ease-in-out 0.3s, background-color ease-in-out 0.3s, opacity ease-in-out 0.3s;
+  transition: border ease-in-out 0.3s, background-color ease-in-out 0.3s, opacity ease-in-out 0.3s;
+}
+@media (max-width: 767.98px){
+  .watchlist_airdrops .filter__form .blockchain {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .watchlist_airdrops .filter__form .time-frame {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+  }
+  .watchlist_airdrops .filter__form .search {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_airdrops .filter__form .start {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .watchlist_airdrops .filter__form .end {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+  }
+  .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-blockchain {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .watchlist_events .watchlist-main__list._grid .watchlist-product-start {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .watchlist_ico .watchlist-main__list._grid .start {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .watchlist_ico .watchlist-main__list._grid .end {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+  }
+  .watchlist_airdrops .watchlist-main__list._grid .start {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .watchlist_airdrops .watchlist-main__list._grid .end {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+  }
+}
+.watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name::before, .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name::after {
+  right: -11px;
+}
+.watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name__box::before {
+  z-index: -1;
+}
+@media (max-width: 991.98px) {
+  .watchlist_airdrops .watchlist-main.grid-mod::before, .watchlist_airdrops .watchlist-main.grid-mod::after {
+    display: none;
+  }
+}
+@media (max-width: 654.98px) {
+  .watchlist_airdrops .watchlist-main.grid-mod::before, .watchlist_airdrops .watchlist-main.grid-mod::after {
     display: block;
   }
 }
@@ -12776,6 +16733,7 @@ html.light body .also-watch::after {
   background-color: transparent;
   -webkit-transition: color ease-in-out 0.3s;
   transition: color ease-in-out 0.3s;
+  padding-right: 10px;
 }
 .first-use-form__button {
   width: 135px;

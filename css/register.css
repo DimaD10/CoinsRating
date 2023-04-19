@@ -1063,7 +1063,7 @@ body .main__blog .blog-list__list-el::before {
 body .main__blog .blog-list__list-el::after {
   opacity: 1;
 }
-body .main__blog .blog-body__paragraph, body .main__blog .blog-list__list-el, body .main__blog .blog-body__list-headline {
+body .main__blog p, body .main__blog li {
   color: #454E53;
 }
 body .main__blog .footer-social__el {
@@ -2434,7 +2434,7 @@ body .main__auth .reset-link:hover {
   body .main__blog .blog-list__list-el::after {
     opacity: 0;
   }
-  body .main__blog .blog-body__paragraph, body .main__blog .blog-list__list-el, body .main__blog .blog-body__list-headline {
+  body .main__blog p, body .main__blog li {
     color: #fff;
   }
   body .main__blog .footer-social__el {
@@ -3612,7 +3612,7 @@ html.dark body .main__blog .blog-list__list-el::before {
 html.dark body .main__blog .blog-list__list-el::after {
   opacity: 0;
 }
-html.dark body .main__blog .blog-body__paragraph, html.dark body .main__blog .blog-list__list-el, html.dark body .main__blog .blog-body__list-headline {
+html.dark body .main__blog p, html.dark body .main__blog li {
   color: #fff;
 }
 html.dark body .main__blog .footer-social__el {
@@ -4791,7 +4791,7 @@ html.light body .main__blog .blog-list__list-el::before {
 html.light body .main__blog .blog-list__list-el::after {
   opacity: 1;
 }
-html.light body .main__blog .blog-body__paragraph, html.light body .main__blog .blog-list__list-el, html.light body .main__blog .blog-body__list-headline {
+html.light body .main__blog p, html.light body .main__blog li {
   color: #454E53;
 }
 html.light body .main__blog .footer-social__el {
@@ -4953,13 +4953,13 @@ h1, h2, h3, h4, h5, h6 {
           flex-direction: column;
   min-height: 100vh;
   overflow: hidden;
-  position: relative;
 }
 .wrapper::before {
   content: "";
-  position: absolute;
+  position: fixed;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  top: 0;
   background: url("../img/page-bg/homepage-bg-light-desktop.svg");
   background-position: center;
   background-size: 100%;
@@ -4975,9 +4975,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .wrapper::after {
   content: "";
-  position: absolute;
+  position: fixed;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: url("../img/page-bg/homepage-bg-dark-desktop.svg");
   background-position: center;
   background-size: 100%;
@@ -6299,7 +6299,7 @@ body .main__blog .blog-list__list-el::before {
 body .main__blog .blog-list__list-el::after {
   opacity: 1;
 }
-body .main__blog .blog-body__paragraph, body .main__blog .blog-list__list-el, body .main__blog .blog-body__list-headline {
+body .main__blog p, body .main__blog li {
   color: #454E53;
 }
 body .main__blog .footer-social__el {
@@ -7670,7 +7670,7 @@ body .main__auth .reset-link:hover {
   body .main__blog .blog-list__list-el::after {
     opacity: 0;
   }
-  body .main__blog .blog-body__paragraph, body .main__blog .blog-list__list-el, body .main__blog .blog-body__list-headline {
+  body .main__blog p, body .main__blog li {
     color: #fff;
   }
   body .main__blog .footer-social__el {
@@ -8848,7 +8848,7 @@ html.dark body .main__blog .blog-list__list-el::before {
 html.dark body .main__blog .blog-list__list-el::after {
   opacity: 0;
 }
-html.dark body .main__blog .blog-body__paragraph, html.dark body .main__blog .blog-list__list-el, html.dark body .main__blog .blog-body__list-headline {
+html.dark body .main__blog p, html.dark body .main__blog li {
   color: #fff;
 }
 html.dark body .main__blog .footer-social__el {
@@ -10027,7 +10027,7 @@ html.light body .main__blog .blog-list__list-el::before {
 html.light body .main__blog .blog-list__list-el::after {
   opacity: 1;
 }
-html.light body .main__blog .blog-body__paragraph, html.light body .main__blog .blog-list__list-el, html.light body .main__blog .blog-body__list-headline {
+html.light body .main__blog p, html.light body .main__blog li {
   color: #454E53;
 }
 html.light body .main__blog .footer-social__el {
@@ -12266,9 +12266,13 @@ html.light body .main__auth .reset-link:hover {
           filter: drop-shadow(0px 4px 4px rgba(30, 33, 48, 0.11));
   border-radius: 4px;
   opacity: 0;
+  pointer-events: none;
   -webkit-transition: opacity ease-in-out 0.3s;
   transition: opacity ease-in-out 0.3s;
-  z-index: -1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .watchlist-product-name__icon {
   margin-right: 8px;
@@ -15271,7 +15275,7 @@ html.light body .main__auth .reset-link:hover {
   width: 1280px;
   gap: 10px;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 654.98px) {
   .watchlist-main__list._grid {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -15458,16 +15462,6 @@ html.light body .main__auth .reset-link:hover {
       -ms-flex-align: center;
           align-items: center;
 }
-@media (max-width: 991.98px) {
-  .watchlist_earn-games .watchlist-main.grid-mod::before, .watchlist_earn-games .watchlist-main.grid-mod::after {
-    display: none;
-  }
-}
-@media (max-width: 654.98px) {
-  .watchlist_earn-games .watchlist-main.grid-mod::before, .watchlist_earn-games .watchlist-main.grid-mod::after {
-    display: block;
-  }
-}
 .watchlist_earn-games .watchlist-product-name__descr {
   white-space: wrap;
 }
@@ -15585,16 +15579,6 @@ html.light body .main__auth .reset-link:hover {
   row-gap: 8px;
   padding: 12px;
       grid-template-areas: "actions info start" "actions sale sale" "actions links links";
-}
-@media (max-width: 991.98px) {
-  .watchlist_events .watchlist-main.grid-mod::before, .watchlist_events .watchlist-main.grid-mod::after {
-    display: none;
-  }
-}
-@media (max-width: 654.98px) {
-  .watchlist_events .watchlist-main.grid-mod::before, .watchlist_events .watchlist-main.grid-mod::after {
-    display: block;
-  }
 }
 
 .watchlist_collections .watchlist-main__list._grid .watchlist-product__part_actions {
@@ -15732,16 +15716,6 @@ html.light body .main__auth .reset-link:hover {
   -webkit-transition: opacity ease-in-out 0.3s;
   transition: opacity ease-in-out 0.3s;
 }
-@media (max-width: 991.98px) {
-  .watchlist_collections .watchlist-main.grid-mod::before, .watchlist_collections .watchlist-main.grid-mod::after {
-    display: none;
-  }
-}
-@media (max-width: 654.98px) {
-  .watchlist_collections .watchlist-main.grid-mod::before, .watchlist_collections .watchlist-main.grid-mod::after {
-    display: block;
-  }
-}
 
 .watchlist_defi .watchlist-main__list._grid .watchlist-product__part_actions {
   -ms-grid-row: 1;
@@ -15807,16 +15781,6 @@ html.light body .main__auth .reset-link:hover {
   row-gap: 10px;
   padding: 12px;
       grid-template-areas: "actions info info info info info" "actions day-volume week-volume tvl mtvl rating";
-}
-@media (max-width: 991.98px) {
-  .watchlist_defi .watchlist-main.grid-mod::before, .watchlist_defi .watchlist-main.grid-mod::after {
-    display: none;
-  }
-}
-@media (max-width: 654.98px) {
-  .watchlist_defi .watchlist-main.grid-mod::before, .watchlist_defi .watchlist-main.grid-mod::after {
-    display: block;
-  }
 }
 
 .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-single__label {
@@ -15940,16 +15904,6 @@ html.light body .main__auth .reset-link:hover {
   padding: 12px;
       grid-template-areas: "actions info score price price effective effective effective" "actions traffic markets markets coins coins fiat more";
 }
-@media (max-width: 991.98px) {
-  .watchlist_exchanges .watchlist-main.grid-mod::before, .watchlist_exchanges .watchlist-main.grid-mod::after {
-    display: none;
-  }
-}
-@media (max-width: 654.98px) {
-  .watchlist_exchanges .watchlist-main.grid-mod::before, .watchlist_exchanges .watchlist-main.grid-mod::after {
-    display: block;
-  }
-}
 
 .watchlist_ico .watchlist-main__list._grid .watchlist-product__part_actions {
   -ms-grid-row: 1;
@@ -16030,16 +15984,6 @@ html.light body .main__auth .reset-link:hover {
 }
 .watchlist_ico .watchlist-main__list._grid .watchlist-product-name::before, .watchlist_ico .watchlist-main__list._grid .watchlist-product-name::after {
   right: -11px;
-}
-@media (max-width: 991.98px) {
-  .watchlist_ico .watchlist-main.grid-mod::before, .watchlist_ico .watchlist-main.grid-mod::after {
-    display: none;
-  }
-}
-@media (max-width: 654.98px) {
-  .watchlist_ico .watchlist-main.grid-mod::before, .watchlist_ico .watchlist-main.grid-mod::after {
-    display: block;
-  }
 }
 
 .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__part_actions {
@@ -16182,16 +16126,6 @@ html.light body .main__auth .reset-link:hover {
 }
 .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name__box::before {
   z-index: -1;
-}
-@media (max-width: 991.98px) {
-  .watchlist_airdrops .watchlist-main.grid-mod::before, .watchlist_airdrops .watchlist-main.grid-mod::after {
-    display: none;
-  }
-}
-@media (max-width: 654.98px) {
-  .watchlist_airdrops .watchlist-main.grid-mod::before, .watchlist_airdrops .watchlist-main.grid-mod::after {
-    display: block;
-  }
 }
 
 .watchlist-filters {
@@ -17560,7 +17494,7 @@ html.light body .main__auth .reset-link:hover {
 
 #policy:checked ~ .auth-radio__custom {
   border-color: transparent;
-  background: #6871f1;
+  background: #2A59FF;
 }
 
 #policy:checked ~ .auth-radio__custom::after {

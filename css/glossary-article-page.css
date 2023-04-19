@@ -1120,8 +1120,20 @@ body .main__auth .auth-card {
           box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
   border: 1px solid transparent;
 }
-body .main__auth .auth-card__other-way-label {
+body .main__auth .auth-card__other-way-label, body .main__auth .auth-card__another, body .main__auth .auth-radio__label, body .main__auth .form-auth__label, body .main__auth .form-auth__input, body .main__auth .form-auth__paragraph {
   color: #454E53;
+}
+body .main__auth .auth-card__another a, body .main__auth .auth-radio__label a {
+  color: #2A59FF;
+}
+body .main__auth .form-auth__input {
+  border: 1px solid #B5BACB;
+}
+body .main__auth .reset-link {
+  color: #B5BACB;
+}
+body .main__auth .reset-link:hover {
+  color: #2A59FF;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -2485,8 +2497,20 @@ body .main__auth .auth-card__other-way-label {
             box-shadow: none;
     border: 1px solid rgba(69, 78, 83, 0.5019607843);
   }
-  body .main__auth .auth-card__other-way-label {
+  body .main__auth .auth-card__other-way-label, body .main__auth .auth-card__another, body .main__auth .auth-radio__label, body .main__auth .form-auth__label, body .main__auth .form-auth__input, body .main__auth .form-auth__paragraph {
     color: #fff;
+  }
+  body .main__auth .auth-card__another a, body .main__auth .auth-radio__label a {
+    color: #2A59FF;
+  }
+  body .main__auth .form-auth__input {
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  }
+  body .main__auth .reset-link {
+    color: #DFE3F0;
+  }
+  body .main__auth .reset-link:hover {
+    color: #2A59FF;
   }
 }
 html.dark body {
@@ -3645,8 +3669,20 @@ html.dark body .main__auth .auth-card {
           box-shadow: none;
   border: 1px solid rgba(69, 78, 83, 0.5019607843);
 }
-html.dark body .main__auth .auth-card__other-way-label {
+html.dark body .main__auth .auth-card__other-way-label, html.dark body .main__auth .auth-card__another, html.dark body .main__auth .auth-radio__label, html.dark body .main__auth .form-auth__label, html.dark body .main__auth .form-auth__input, html.dark body .main__auth .form-auth__paragraph {
   color: #fff;
+}
+html.dark body .main__auth .auth-card__another a, html.dark body .main__auth .auth-radio__label a {
+  color: #2A59FF;
+}
+html.dark body .main__auth .form-auth__input {
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+}
+html.dark body .main__auth .reset-link {
+  color: #DFE3F0;
+}
+html.dark body .main__auth .reset-link:hover {
+  color: #2A59FF;
 }
 
 html.light body {
@@ -4812,8 +4848,26 @@ html.light body .main__auth .auth-card {
           box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
   border: 1px solid transparent;
 }
-html.light body .main__auth .auth-card__other-way-label {
+html.light body .main__auth .auth-card__other-way-label, html.light body .main__auth .auth-card__another, html.light body .main__auth .auth-radio__label, html.light body .main__auth .form-auth__label, html.light body .main__auth .form-auth__input, html.light body .main__auth .form-auth__paragraph {
   color: #454E53;
+}
+html.light body .main__auth .auth-card__another a, html.light body .main__auth .auth-radio__label a {
+  color: #2A59FF;
+}
+html.light body .main__auth .form-auth__input {
+  border: 1px solid #B5BACB;
+}
+html.light body .main__auth .form-auth__input {
+  border: 1px solid #B5BACB;
+}
+html.light body .main__auth .form-auth__input:hover {
+  color: #2A59FF;
+}
+html.light body .main__auth .reset-link {
+  color: #B5BACB;
+}
+html.light body .main__auth .reset-link:hover {
+  color: #2A59FF;
 }
 
 /*ОБНУЛЕНИЕ СТИЛЕЙ*/
@@ -4899,13 +4953,13 @@ h1, h2, h3, h4, h5, h6 {
           flex-direction: column;
   min-height: 100vh;
   overflow: hidden;
-  position: relative;
 }
 .wrapper::before {
   content: "";
-  position: absolute;
+  position: fixed;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  top: 0;
   background: url("../img/page-bg/homepage-bg-light-desktop.svg");
   background-position: center;
   background-size: 100%;
@@ -4921,9 +4975,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .wrapper::after {
   content: "";
-  position: absolute;
+  position: fixed;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: url("../img/page-bg/homepage-bg-dark-desktop.svg");
   background-position: center;
   background-size: 100%;
@@ -6302,8 +6356,20 @@ body .main__auth .auth-card {
           box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
   border: 1px solid transparent;
 }
-body .main__auth .auth-card__other-way-label {
+body .main__auth .auth-card__other-way-label, body .main__auth .auth-card__another, body .main__auth .auth-radio__label, body .main__auth .form-auth__label, body .main__auth .form-auth__input, body .main__auth .form-auth__paragraph {
   color: #454E53;
+}
+body .main__auth .auth-card__another a, body .main__auth .auth-radio__label a {
+  color: #2A59FF;
+}
+body .main__auth .form-auth__input {
+  border: 1px solid #B5BACB;
+}
+body .main__auth .reset-link {
+  color: #B5BACB;
+}
+body .main__auth .reset-link:hover {
+  color: #2A59FF;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -7667,8 +7733,20 @@ body .main__auth .auth-card__other-way-label {
             box-shadow: none;
     border: 1px solid rgba(69, 78, 83, 0.5019607843);
   }
-  body .main__auth .auth-card__other-way-label {
+  body .main__auth .auth-card__other-way-label, body .main__auth .auth-card__another, body .main__auth .auth-radio__label, body .main__auth .form-auth__label, body .main__auth .form-auth__input, body .main__auth .form-auth__paragraph {
     color: #fff;
+  }
+  body .main__auth .auth-card__another a, body .main__auth .auth-radio__label a {
+    color: #2A59FF;
+  }
+  body .main__auth .form-auth__input {
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  }
+  body .main__auth .reset-link {
+    color: #DFE3F0;
+  }
+  body .main__auth .reset-link:hover {
+    color: #2A59FF;
   }
 }
 html.dark body {
@@ -8827,8 +8905,20 @@ html.dark body .main__auth .auth-card {
           box-shadow: none;
   border: 1px solid rgba(69, 78, 83, 0.5019607843);
 }
-html.dark body .main__auth .auth-card__other-way-label {
+html.dark body .main__auth .auth-card__other-way-label, html.dark body .main__auth .auth-card__another, html.dark body .main__auth .auth-radio__label, html.dark body .main__auth .form-auth__label, html.dark body .main__auth .form-auth__input, html.dark body .main__auth .form-auth__paragraph {
   color: #fff;
+}
+html.dark body .main__auth .auth-card__another a, html.dark body .main__auth .auth-radio__label a {
+  color: #2A59FF;
+}
+html.dark body .main__auth .form-auth__input {
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+}
+html.dark body .main__auth .reset-link {
+  color: #DFE3F0;
+}
+html.dark body .main__auth .reset-link:hover {
+  color: #2A59FF;
 }
 
 html.light body {
@@ -9994,8 +10084,26 @@ html.light body .main__auth .auth-card {
           box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
   border: 1px solid transparent;
 }
-html.light body .main__auth .auth-card__other-way-label {
+html.light body .main__auth .auth-card__other-way-label, html.light body .main__auth .auth-card__another, html.light body .main__auth .auth-radio__label, html.light body .main__auth .form-auth__label, html.light body .main__auth .form-auth__input, html.light body .main__auth .form-auth__paragraph {
   color: #454E53;
+}
+html.light body .main__auth .auth-card__another a, html.light body .main__auth .auth-radio__label a {
+  color: #2A59FF;
+}
+html.light body .main__auth .form-auth__input {
+  border: 1px solid #B5BACB;
+}
+html.light body .main__auth .form-auth__input {
+  border: 1px solid #B5BACB;
+}
+html.light body .main__auth .form-auth__input:hover {
+  color: #2A59FF;
+}
+html.light body .main__auth .reset-link {
+  color: #B5BACB;
+}
+html.light body .main__auth .reset-link:hover {
+  color: #2A59FF;
 }
 
 .header {

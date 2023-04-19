@@ -86,13 +86,13 @@ h1, h2, h3, h4, h5, h6 {
           flex-direction: column;
   min-height: 100vh;
   overflow: hidden;
-  position: relative;
 }
 .wrapper::before {
   content: "";
-  position: absolute;
+  position: fixed;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  top: 0;
   background: url("../img/page-bg/homepage-bg-light-desktop.svg");
   background-position: center;
   background-size: 100%;
@@ -108,9 +108,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .wrapper::after {
   content: "";
-  position: absolute;
+  position: fixed;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: url("../img/page-bg/homepage-bg-dark-desktop.svg");
   background-position: center;
   background-size: 100%;
@@ -563,6 +563,9 @@ body .main__trends .list-pos {
 }
 body .main__trends .list-pos:hover .list-pos__title {
   color: #2A59FF;
+}
+body .main__trends .list-pos__name {
+  color: #454E53;
 }
 body .main__trends .list-pos__title {
   color: #1E222A;
@@ -1432,7 +1435,7 @@ body .main__blog .blog-list__list-el::before {
 body .main__blog .blog-list__list-el::after {
   opacity: 1;
 }
-body .main__blog .blog-body__paragraph, body .main__blog .blog-list__list-el, body .main__blog .blog-body__list-headline {
+body .main__blog p, body .main__blog li {
   color: #454E53;
 }
 body .main__blog .footer-social__el {
@@ -1503,6 +1506,116 @@ body .main__auth .reset-link {
 }
 body .main__auth .reset-link:hover {
   color: #2A59FF;
+}
+@media (max-width: 567.98px) {
+  body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-single {
+    border-left: 0;
+  }
+  body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product__part::before {
+    opacity: 1;
+  }
+  body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product__part::after {
+    opacity: 0;
+  }
+  body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-p2e::before, body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-p2e::after, body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-rating-day::before, body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-rating-day::after {
+    display: none;
+  }
+  body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-f2p, body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-nft, body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-blockchain, body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-rating-day {
+    border-left: 1px solid #DFE3F0;
+  }
+  body .watchlist_earn-games .watchlist-main__list._grid .floor-price::before, body .watchlist_earn-games .watchlist-main__list._grid .floor-price::after, body .watchlist_earn-games .watchlist-main__list._grid .sales::before, body .watchlist_earn-games .watchlist-main__list._grid .sales::after {
+    display: none;
+  }
+}
+@media (max-width: 567.98px) {
+  body .watchlist_events .watchlist-main__list._grid .watchlist-product-single {
+    border-left: 0;
+  }
+  body .watchlist_events .watchlist-main__list._grid .watchlist-product-sale::before, body .watchlist_events .watchlist-main__list._grid .watchlist-product-name::before, body .watchlist_events .watchlist-main__list._grid .watchlist-product__part_actions::before {
+    opacity: 1;
+  }
+  body .watchlist_events .watchlist-main__list._grid .watchlist-product-sale::after, body .watchlist_events .watchlist-main__list._grid .watchlist-product-name::after, body .watchlist_events .watchlist-main__list._grid .watchlist-product__part_actions::after {
+    opacity: 0;
+  }
+  body .watchlist_events .watchlist-main__list._grid .avg-price, body .watchlist_events .watchlist-main__list._grid .sales, body .watchlist_events .watchlist-main__list._grid .owners, body .watchlist_events .watchlist-main__list._grid .owners-procent {
+    border-left: 1px solid #DFE3F0;
+  }
+  body .watchlist_events .watchlist-main__list._grid .floor-price::before, body .watchlist_events .watchlist-main__list._grid .floor-price::after, body .watchlist_events .watchlist-main__list._grid .sales::before, body .watchlist_events .watchlist-main__list._grid .sales::after {
+    display: none;
+  }
+}
+@media (max-width: 567.98px) {
+  body .watchlist_collections .watchlist-main__list._grid .watchlist-product-single {
+    border-left: 0;
+  }
+  body .watchlist_collections .watchlist-main__list._grid .watchlist-product__part::before {
+    opacity: 1;
+  }
+  body .watchlist_collections .watchlist-main__list._grid .watchlist-product__part::after {
+    opacity: 0;
+  }
+  body .watchlist_collections .watchlist-main__list._grid .avg-price, body .watchlist_collections .watchlist-main__list._grid .sales, body .watchlist_collections .watchlist-main__list._grid .owners, body .watchlist_collections .watchlist-main__list._grid .owners-procent {
+    border-left: 1px solid #DFE3F0;
+  }
+  body .watchlist_collections .watchlist-main__list._grid .floor-price::before, body .watchlist_collections .watchlist-main__list._grid .floor-price::after, body .watchlist_collections .watchlist-main__list._grid .sales::before, body .watchlist_collections .watchlist-main__list._grid .sales::after {
+    display: none;
+  }
+}
+@media (max-width: 567.98px) {
+  body .watchlist_defi .watchlist-main__list._grid .watchlist-product-single {
+    border-left: 0;
+  }
+  body .watchlist_defi .watchlist-main__list._grid .day-volume::before, body .watchlist_defi .watchlist-main__list._grid .week-volume::before, body .watchlist_defi .watchlist-main__list._grid .watchlist-product__part_actions::before {
+    opacity: 1;
+  }
+  body .watchlist_defi .watchlist-main__list._grid .day-volume::after, body .watchlist_defi .watchlist-main__list._grid .week-volume::after, body .watchlist_defi .watchlist-main__list._grid .watchlist-product__part_actions::after {
+    opacity: 0;
+  }
+  body .watchlist_defi .watchlist-main__list._grid .week-volume, body .watchlist_defi .watchlist-main__list._grid .mtvl, body .watchlist_defi .watchlist-main__list._grid .rating {
+    border-left: 1px solid #DFE3F0;
+  }
+}
+@media (max-width: 567.98px) {
+  body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-single {
+    border-left: 0;
+  }
+  body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__part::before {
+    opacity: 1;
+  }
+  body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__part::after {
+    opacity: 0;
+  }
+  body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price, body .watchlist_exchanges .watchlist-main__list._grid .effective, body .watchlist_exchanges .watchlist-main__list._grid .markets, body .watchlist_exchanges .watchlist-main__list._grid .coins, body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-more {
+    border-left: 1px solid #DFE3F0;
+  }
+}
+@media (max-width: 567.98px) {
+  body .watchlist_ico .watchlist-main__list._grid .watchlist-product-single {
+    border-left: 0;
+  }
+  body .watchlist_ico .watchlist-main__list._grid .watchlist-product__part::before {
+    opacity: 1;
+  }
+  body .watchlist_ico .watchlist-main__list._grid .watchlist-product__part::after {
+    opacity: 0;
+  }
+  body .watchlist_ico .watchlist-main__list._grid .watchlist-product__price, body .watchlist_ico .watchlist-main__list._grid .end {
+    border-left: 1px solid #DFE3F0;
+  }
+}
+@media (max-width: 567.98px) {
+  body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-single {
+    border-left: 0;
+  }
+  body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__part::before {
+    opacity: 1;
+  }
+  body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__part::after {
+    opacity: 0;
+  }
+  body .watchlist_airdrops .watchlist-main__list._grid .receivers, body .watchlist_airdrops .watchlist-main__list._grid .end {
+    border-left: 1px solid #DFE3F0;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1781,6 +1894,9 @@ body .main__auth .reset-link:hover {
   }
   body .main__trends .list-pos:hover .list-pos__title {
     color: #2A59FF;
+  }
+  body .main__trends .list-pos__name {
+    color: #fff;
   }
   body .main__trends .list-pos__title {
     color: #fff;
@@ -2154,23 +2270,23 @@ body .main__auth .reset-link:hover {
 }
 @media (prefers-color-scheme: dark) {
   body .watchlist_events .watchlist-main__list._grid .watchlist-product-name__blockchain {
-    border-left: 1px solid rgba(28, 41, 81, 0.5);
+    border-left: 1px solid #1E222A;
   }
   body .watchlist_events .watchlist-main__list._grid .watchlist-product-sale {
-    border-top: 1px solid rgba(28, 41, 81, 0.5);
-    border-bottom: 1px solid rgba(28, 41, 81, 0.5);
+    border-top: 1px solid #1E222A;
+    border-bottom: 1px solid #1E222A;
   }
   body .watchlist_events .watchlist-main__list._grid .watchlist-product-links__link:not(:last-child) {
-    border-right: 1px solid rgba(28, 41, 81, 0.5);
+    border-right: 1px solid #1E222A;
   }
   body .watchlist_events .watchlist-main__list._grid .watchlist-product-sale__el:not(:first-child) {
-    border-left: 1px solid rgba(28, 41, 81, 0.5);
+    border-left: 1px solid #1E222A;
   }
   body .watchlist_events .watchlist-main__list._grid .watchlist-product-sale__el:not(:first-child) {
-    border-left: 1px solid #DFE3F0;
+    border-left: 1px solid #1E222A;
   }
   body .watchlist_events .watchlist-main__list._grid .watchlist-product-start {
-    border-left: 1px solid rgba(28, 41, 81, 0.5);
+    border-left: 1px solid #1E222A;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -2803,7 +2919,7 @@ body .main__auth .reset-link:hover {
   body .main__blog .blog-list__list-el::after {
     opacity: 0;
   }
-  body .main__blog .blog-body__paragraph, body .main__blog .blog-list__list-el, body .main__blog .blog-body__list-headline {
+  body .main__blog p, body .main__blog li {
     color: #fff;
   }
   body .main__blog .footer-social__el {
@@ -2880,6 +2996,116 @@ body .main__auth .reset-link:hover {
   }
   body .main__auth .reset-link:hover {
     color: #2A59FF;
+  }
+}
+@media (prefers-color-scheme: dark) and (max-width: 567.98px) {
+  body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-single {
+    border-left: 0;
+  }
+  body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product__part::before {
+    opacity: 0;
+  }
+  body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product__part::after {
+    opacity: 1;
+  }
+  body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-p2e::before, body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-p2e::after, body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-rating-day::before, body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-rating-day::after {
+    display: none;
+  }
+  body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-f2p, body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-nft, body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-blockchain, body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-rating-day {
+    border-left: 1px solid #1E222A;
+  }
+  body .watchlist_earn-games .watchlist-main__list._grid .floor-price::before, body .watchlist_earn-games .watchlist-main__list._grid .floor-price::after, body .watchlist_earn-games .watchlist-main__list._grid .sales::before, body .watchlist_earn-games .watchlist-main__list._grid .sales::after {
+    display: none;
+  }
+}
+@media (prefers-color-scheme: dark) and (max-width: 567.98px) {
+  body .watchlist_events .watchlist-main__list._grid .watchlist-product-single {
+    border-left: 0;
+  }
+  body .watchlist_events .watchlist-main__list._grid .watchlist-product-sale::before, body .watchlist_events .watchlist-main__list._grid .watchlist-product-name::before, body .watchlist_events .watchlist-main__list._grid .watchlist-product__part_actions::before {
+    opacity: 0;
+  }
+  body .watchlist_events .watchlist-main__list._grid .watchlist-product-sale::after, body .watchlist_events .watchlist-main__list._grid .watchlist-product-name::after, body .watchlist_events .watchlist-main__list._grid .watchlist-product__part_actions::after {
+    opacity: 1;
+  }
+  body .watchlist_events .watchlist-main__list._grid .avg-price, body .watchlist_events .watchlist-main__list._grid .sales, body .watchlist_events .watchlist-main__list._grid .owners, body .watchlist_events .watchlist-main__list._grid .owners-procent {
+    border-left: 1px solid #1E222A;
+  }
+  body .watchlist_events .watchlist-main__list._grid .floor-price::before, body .watchlist_events .watchlist-main__list._grid .floor-price::after, body .watchlist_events .watchlist-main__list._grid .sales::before, body .watchlist_events .watchlist-main__list._grid .sales::after {
+    display: none;
+  }
+}
+@media (prefers-color-scheme: dark) and (max-width: 567.98px) {
+  body .watchlist_collections .watchlist-main__list._grid .watchlist-product-single {
+    border-left: 0;
+  }
+  body .watchlist_collections .watchlist-main__list._grid .watchlist-product__part::before {
+    opacity: 0;
+  }
+  body .watchlist_collections .watchlist-main__list._grid .watchlist-product__part::after {
+    opacity: 1;
+  }
+  body .watchlist_collections .watchlist-main__list._grid .avg-price, body .watchlist_collections .watchlist-main__list._grid .sales, body .watchlist_collections .watchlist-main__list._grid .owners, body .watchlist_collections .watchlist-main__list._grid .owners-procent {
+    border-left: 1px solid #1E222A;
+  }
+  body .watchlist_collections .watchlist-main__list._grid .floor-price::before, body .watchlist_collections .watchlist-main__list._grid .floor-price::after, body .watchlist_collections .watchlist-main__list._grid .sales::before, body .watchlist_collections .watchlist-main__list._grid .sales::after {
+    display: none;
+  }
+}
+@media (prefers-color-scheme: dark) and (max-width: 567.98px) {
+  body .watchlist_defi .watchlist-main__list._grid .watchlist-product-single {
+    border-left: 0;
+  }
+  body .watchlist_defi .watchlist-main__list._grid .day-volume::before, body .watchlist_defi .watchlist-main__list._grid .week-volume::before, body .watchlist_defi .watchlist-main__list._grid .watchlist-product__part_actions::before {
+    opacity: 0;
+  }
+  body .watchlist_defi .watchlist-main__list._grid .day-volume::after, body .watchlist_defi .watchlist-main__list._grid .week-volume::after, body .watchlist_defi .watchlist-main__list._grid .watchlist-product__part_actions::after {
+    opacity: 1;
+  }
+  body .watchlist_defi .watchlist-main__list._grid .week-volume, body .watchlist_defi .watchlist-main__list._grid .mtvl, body .watchlist_defi .watchlist-main__list._grid .rating {
+    border-left: 1px solid #1E222A;
+  }
+}
+@media (prefers-color-scheme: dark) and (max-width: 567.98px) {
+  body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-single {
+    border-left: 0;
+  }
+  body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__part::before {
+    opacity: 0;
+  }
+  body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__part::after {
+    opacity: 1;
+  }
+  body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price, body .watchlist_exchanges .watchlist-main__list._grid .effective, body .watchlist_exchanges .watchlist-main__list._grid .markets, body .watchlist_exchanges .watchlist-main__list._grid .coins, body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-more {
+    border-left: 1px solid #1E222A;
+  }
+}
+@media (prefers-color-scheme: dark) and (max-width: 567.98px) {
+  body .watchlist_ico .watchlist-main__list._grid .watchlist-product-single {
+    border-left: 0;
+  }
+  body .watchlist_ico .watchlist-main__list._grid .watchlist-product__part::before {
+    opacity: 0;
+  }
+  body .watchlist_ico .watchlist-main__list._grid .watchlist-product__part::after {
+    opacity: 1;
+  }
+  body .watchlist_ico .watchlist-main__list._grid .watchlist-product__price, body .watchlist_ico .watchlist-main__list._grid .end {
+    border-left: 1px solid #1E222A;
+  }
+}
+@media (prefers-color-scheme: dark) and (max-width: 567.98px) {
+  body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-single {
+    border-left: 0;
+  }
+  body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__part::before {
+    opacity: 0;
+  }
+  body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__part::after {
+    opacity: 1;
+  }
+  body .watchlist_airdrops .watchlist-main__list._grid .receivers, body .watchlist_airdrops .watchlist-main__list._grid .end {
+    border-left: 1px solid #1E222A;
   }
 }
 html.dark body {
@@ -3104,6 +3330,9 @@ html.dark body .main__trends .list-pos {
 }
 html.dark body .main__trends .list-pos:hover .list-pos__title {
   color: #2A59FF;
+}
+html.dark body .main__trends .list-pos__name {
+  color: #fff;
 }
 html.dark body .main__trends .list-pos__title {
   color: #fff;
@@ -3431,20 +3660,23 @@ html.dark body .watchlist_earn-games .watchlist-main__list._grid .watchlist-prod
   opacity: 1;
 }
 html.dark body .watchlist_events .watchlist-main__list._grid .watchlist-product-name__blockchain {
-  border-left: 1px solid rgba(28, 41, 81, 0.5);
+  border-left: 1px solid #1E222A;
 }
 html.dark body .watchlist_events .watchlist-main__list._grid .watchlist-product-sale {
-  border-top: 1px solid rgba(28, 41, 81, 0.5);
-  border-bottom: 1px solid rgba(28, 41, 81, 0.5);
+  border-top: 1px solid #1E222A;
+  border-bottom: 1px solid #1E222A;
 }
 html.dark body .watchlist_events .watchlist-main__list._grid .watchlist-product-links__link:not(:last-child) {
-  border-right: 1px solid rgba(28, 41, 81, 0.5);
+  border-right: 1px solid #1E222A;
 }
 html.dark body .watchlist_events .watchlist-main__list._grid .watchlist-product-sale__el:not(:first-child) {
-  border-left: 1px solid rgba(28, 41, 81, 0.5);
+  border-left: 1px solid #1E222A;
+}
+html.dark body .watchlist_events .watchlist-main__list._grid .watchlist-product-sale__el:not(:first-child) {
+  border-left: 1px solid #1E222A;
 }
 html.dark body .watchlist_events .watchlist-main__list._grid .watchlist-product-start {
-  border-left: 1px solid rgba(28, 41, 81, 0.5);
+  border-left: 1px solid #1E222A;
 }
 html.dark body .watchlist_collections .watchlist-main__list._grid .floor-price {
   border-left: 0;
@@ -3981,7 +4213,7 @@ html.dark body .main__blog .blog-list__list-el::before {
 html.dark body .main__blog .blog-list__list-el::after {
   opacity: 0;
 }
-html.dark body .main__blog .blog-body__paragraph, html.dark body .main__blog .blog-list__list-el, html.dark body .main__blog .blog-body__list-headline {
+html.dark body .main__blog p, html.dark body .main__blog li {
   color: #fff;
 }
 html.dark body .main__blog .footer-social__el {
@@ -4052,6 +4284,116 @@ html.dark body .main__auth .reset-link {
 }
 html.dark body .main__auth .reset-link:hover {
   color: #2A59FF;
+}
+@media (max-width: 567.98px) {
+  html.dark body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-single {
+    border-left: 0;
+  }
+  html.dark body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product__part::before {
+    opacity: 0;
+  }
+  html.dark body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product__part::after {
+    opacity: 1;
+  }
+  html.dark body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-p2e::before, html.dark body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-p2e::after, html.dark body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-rating-day::before, html.dark body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-rating-day::after {
+    display: none;
+  }
+  html.dark body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-f2p, html.dark body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-nft, html.dark body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-blockchain, html.dark body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-rating-day {
+    border-left: 1px solid #1E222A;
+  }
+  html.dark body .watchlist_earn-games .watchlist-main__list._grid .floor-price::before, html.dark body .watchlist_earn-games .watchlist-main__list._grid .floor-price::after, html.dark body .watchlist_earn-games .watchlist-main__list._grid .sales::before, html.dark body .watchlist_earn-games .watchlist-main__list._grid .sales::after {
+    display: none;
+  }
+}
+@media (max-width: 567.98px) {
+  html.dark body .watchlist_events .watchlist-main__list._grid .watchlist-product-single {
+    border-left: 0;
+  }
+  html.dark body .watchlist_events .watchlist-main__list._grid .watchlist-product-sale::before, html.dark body .watchlist_events .watchlist-main__list._grid .watchlist-product-name::before, html.dark body .watchlist_events .watchlist-main__list._grid .watchlist-product__part_actions::before {
+    opacity: 0;
+  }
+  html.dark body .watchlist_events .watchlist-main__list._grid .watchlist-product-sale::after, html.dark body .watchlist_events .watchlist-main__list._grid .watchlist-product-name::after, html.dark body .watchlist_events .watchlist-main__list._grid .watchlist-product__part_actions::after {
+    opacity: 1;
+  }
+  html.dark body .watchlist_events .watchlist-main__list._grid .avg-price, html.dark body .watchlist_events .watchlist-main__list._grid .sales, html.dark body .watchlist_events .watchlist-main__list._grid .owners, html.dark body .watchlist_events .watchlist-main__list._grid .owners-procent {
+    border-left: 1px solid #1E222A;
+  }
+  html.dark body .watchlist_events .watchlist-main__list._grid .floor-price::before, html.dark body .watchlist_events .watchlist-main__list._grid .floor-price::after, html.dark body .watchlist_events .watchlist-main__list._grid .sales::before, html.dark body .watchlist_events .watchlist-main__list._grid .sales::after {
+    display: none;
+  }
+}
+@media (max-width: 567.98px) {
+  html.dark body .watchlist_collections .watchlist-main__list._grid .watchlist-product-single {
+    border-left: 0;
+  }
+  html.dark body .watchlist_collections .watchlist-main__list._grid .watchlist-product__part::before {
+    opacity: 0;
+  }
+  html.dark body .watchlist_collections .watchlist-main__list._grid .watchlist-product__part::after {
+    opacity: 1;
+  }
+  html.dark body .watchlist_collections .watchlist-main__list._grid .avg-price, html.dark body .watchlist_collections .watchlist-main__list._grid .sales, html.dark body .watchlist_collections .watchlist-main__list._grid .owners, html.dark body .watchlist_collections .watchlist-main__list._grid .owners-procent {
+    border-left: 1px solid #1E222A;
+  }
+  html.dark body .watchlist_collections .watchlist-main__list._grid .floor-price::before, html.dark body .watchlist_collections .watchlist-main__list._grid .floor-price::after, html.dark body .watchlist_collections .watchlist-main__list._grid .sales::before, html.dark body .watchlist_collections .watchlist-main__list._grid .sales::after {
+    display: none;
+  }
+}
+@media (max-width: 567.98px) {
+  html.dark body .watchlist_defi .watchlist-main__list._grid .watchlist-product-single {
+    border-left: 0;
+  }
+  html.dark body .watchlist_defi .watchlist-main__list._grid .day-volume::before, html.dark body .watchlist_defi .watchlist-main__list._grid .week-volume::before, html.dark body .watchlist_defi .watchlist-main__list._grid .watchlist-product__part_actions::before {
+    opacity: 0;
+  }
+  html.dark body .watchlist_defi .watchlist-main__list._grid .day-volume::after, html.dark body .watchlist_defi .watchlist-main__list._grid .week-volume::after, html.dark body .watchlist_defi .watchlist-main__list._grid .watchlist-product__part_actions::after {
+    opacity: 1;
+  }
+  html.dark body .watchlist_defi .watchlist-main__list._grid .week-volume, html.dark body .watchlist_defi .watchlist-main__list._grid .mtvl, html.dark body .watchlist_defi .watchlist-main__list._grid .rating {
+    border-left: 1px solid #1E222A;
+  }
+}
+@media (max-width: 567.98px) {
+  html.dark body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-single {
+    border-left: 0;
+  }
+  html.dark body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__part::before {
+    opacity: 0;
+  }
+  html.dark body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__part::after {
+    opacity: 1;
+  }
+  html.dark body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price, html.dark body .watchlist_exchanges .watchlist-main__list._grid .effective, html.dark body .watchlist_exchanges .watchlist-main__list._grid .markets, html.dark body .watchlist_exchanges .watchlist-main__list._grid .coins, html.dark body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-more {
+    border-left: 1px solid #1E222A;
+  }
+}
+@media (max-width: 567.98px) {
+  html.dark body .watchlist_ico .watchlist-main__list._grid .watchlist-product-single {
+    border-left: 0;
+  }
+  html.dark body .watchlist_ico .watchlist-main__list._grid .watchlist-product__part::before {
+    opacity: 0;
+  }
+  html.dark body .watchlist_ico .watchlist-main__list._grid .watchlist-product__part::after {
+    opacity: 1;
+  }
+  html.dark body .watchlist_ico .watchlist-main__list._grid .watchlist-product__price, html.dark body .watchlist_ico .watchlist-main__list._grid .end {
+    border-left: 1px solid #1E222A;
+  }
+}
+@media (max-width: 567.98px) {
+  html.dark body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-single {
+    border-left: 0;
+  }
+  html.dark body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__part::before {
+    opacity: 0;
+  }
+  html.dark body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__part::after {
+    opacity: 1;
+  }
+  html.dark body .watchlist_airdrops .watchlist-main__list._grid .receivers, html.dark body .watchlist_airdrops .watchlist-main__list._grid .end {
+    border-left: 1px solid #1E222A;
+  }
 }
 
 html.light body {
@@ -4269,6 +4611,9 @@ html.light body .main__trends .list-trends__link, html.light body .main__trends 
 }
 html.light body .main__trends .list-pos__num {
   border: 1px solid rgba(69, 78, 83, 0.1490196078);
+}
+html.light body .main__trends .list-pos__name {
+  color: #454E53;
 }
 html.light body .main__trends .list-pos {
   background-color: #EBF2FF;
@@ -5160,7 +5505,7 @@ html.light body .main__blog .blog-list__list-el::before {
 html.light body .main__blog .blog-list__list-el::after {
   opacity: 1;
 }
-html.light body .main__blog .blog-body__paragraph, html.light body .main__blog .blog-list__list-el, html.light body .main__blog .blog-body__list-headline {
+html.light body .main__blog p, html.light body .main__blog li {
   color: #454E53;
 }
 html.light body .main__blog .footer-social__el {
@@ -5237,6 +5582,116 @@ html.light body .main__auth .reset-link {
 }
 html.light body .main__auth .reset-link:hover {
   color: #2A59FF;
+}
+@media (max-width: 567.98px) {
+  html.light body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-single {
+    border-left: 0;
+  }
+  html.light body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product__part::before {
+    opacity: 1;
+  }
+  html.light body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product__part::after {
+    opacity: 0;
+  }
+  html.light body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-p2e::before, html.light body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-p2e::after, html.light body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-rating-day::before, html.light body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-rating-day::after {
+    display: none;
+  }
+  html.light body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-f2p, html.light body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-nft, html.light body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-blockchain, html.light body .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-rating-day {
+    border-left: 1px solid #DFE3F0;
+  }
+  html.light body .watchlist_earn-games .watchlist-main__list._grid .floor-price::before, html.light body .watchlist_earn-games .watchlist-main__list._grid .floor-price::after, html.light body .watchlist_earn-games .watchlist-main__list._grid .sales::before, html.light body .watchlist_earn-games .watchlist-main__list._grid .sales::after {
+    display: none;
+  }
+}
+@media (max-width: 567.98px) {
+  html.light body .watchlist_events .watchlist-main__list._grid .watchlist-product-single {
+    border-left: 0;
+  }
+  html.light body .watchlist_events .watchlist-main__list._grid .watchlist-product-sale::before, html.light body .watchlist_events .watchlist-main__list._grid .watchlist-product-name::before, html.light body .watchlist_events .watchlist-main__list._grid .watchlist-product__part_actions::before {
+    opacity: 1;
+  }
+  html.light body .watchlist_events .watchlist-main__list._grid .watchlist-product-sale::after, html.light body .watchlist_events .watchlist-main__list._grid .watchlist-product-name::after, html.light body .watchlist_events .watchlist-main__list._grid .watchlist-product__part_actions::after {
+    opacity: 0;
+  }
+  html.light body .watchlist_events .watchlist-main__list._grid .avg-price, html.light body .watchlist_events .watchlist-main__list._grid .sales, html.light body .watchlist_events .watchlist-main__list._grid .owners, html.light body .watchlist_events .watchlist-main__list._grid .owners-procent {
+    border-left: 1px solid #DFE3F0;
+  }
+  html.light body .watchlist_events .watchlist-main__list._grid .floor-price::before, html.light body .watchlist_events .watchlist-main__list._grid .floor-price::after, html.light body .watchlist_events .watchlist-main__list._grid .sales::before, html.light body .watchlist_events .watchlist-main__list._grid .sales::after {
+    display: none;
+  }
+}
+@media (max-width: 567.98px) {
+  html.light body .watchlist_collections .watchlist-main__list._grid .watchlist-product-single {
+    border-left: 0;
+  }
+  html.light body .watchlist_collections .watchlist-main__list._grid .watchlist-product__part::before {
+    opacity: 1;
+  }
+  html.light body .watchlist_collections .watchlist-main__list._grid .watchlist-product__part::after {
+    opacity: 0;
+  }
+  html.light body .watchlist_collections .watchlist-main__list._grid .avg-price, html.light body .watchlist_collections .watchlist-main__list._grid .sales, html.light body .watchlist_collections .watchlist-main__list._grid .owners, html.light body .watchlist_collections .watchlist-main__list._grid .owners-procent {
+    border-left: 1px solid #DFE3F0;
+  }
+  html.light body .watchlist_collections .watchlist-main__list._grid .floor-price::before, html.light body .watchlist_collections .watchlist-main__list._grid .floor-price::after, html.light body .watchlist_collections .watchlist-main__list._grid .sales::before, html.light body .watchlist_collections .watchlist-main__list._grid .sales::after {
+    display: none;
+  }
+}
+@media (max-width: 567.98px) {
+  html.light body .watchlist_defi .watchlist-main__list._grid .watchlist-product-single {
+    border-left: 0;
+  }
+  html.light body .watchlist_defi .watchlist-main__list._grid .day-volume::before, html.light body .watchlist_defi .watchlist-main__list._grid .week-volume::before, html.light body .watchlist_defi .watchlist-main__list._grid .watchlist-product__part_actions::before {
+    opacity: 1;
+  }
+  html.light body .watchlist_defi .watchlist-main__list._grid .day-volume::after, html.light body .watchlist_defi .watchlist-main__list._grid .week-volume::after, html.light body .watchlist_defi .watchlist-main__list._grid .watchlist-product__part_actions::after {
+    opacity: 0;
+  }
+  html.light body .watchlist_defi .watchlist-main__list._grid .week-volume, html.light body .watchlist_defi .watchlist-main__list._grid .mtvl, html.light body .watchlist_defi .watchlist-main__list._grid .rating {
+    border-left: 1px solid #DFE3F0;
+  }
+}
+@media (max-width: 567.98px) {
+  html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-single {
+    border-left: 0;
+  }
+  html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__part::before {
+    opacity: 1;
+  }
+  html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__part::after {
+    opacity: 0;
+  }
+  html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price, html.light body .watchlist_exchanges .watchlist-main__list._grid .effective, html.light body .watchlist_exchanges .watchlist-main__list._grid .markets, html.light body .watchlist_exchanges .watchlist-main__list._grid .coins, html.light body .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-more {
+    border-left: 1px solid #DFE3F0;
+  }
+}
+@media (max-width: 567.98px) {
+  html.light body .watchlist_ico .watchlist-main__list._grid .watchlist-product-single {
+    border-left: 0;
+  }
+  html.light body .watchlist_ico .watchlist-main__list._grid .watchlist-product__part::before {
+    opacity: 1;
+  }
+  html.light body .watchlist_ico .watchlist-main__list._grid .watchlist-product__part::after {
+    opacity: 0;
+  }
+  html.light body .watchlist_ico .watchlist-main__list._grid .watchlist-product__price, html.light body .watchlist_ico .watchlist-main__list._grid .end {
+    border-left: 1px solid #DFE3F0;
+  }
+}
+@media (max-width: 567.98px) {
+  html.light body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-single {
+    border-left: 0;
+  }
+  html.light body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__part::before {
+    opacity: 1;
+  }
+  html.light body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__part::after {
+    opacity: 0;
+  }
+  html.light body .watchlist_airdrops .watchlist-main__list._grid .receivers, html.light body .watchlist_airdrops .watchlist-main__list._grid .end {
+    border-left: 1px solid #DFE3F0;
+  }
 }
 
 .header {
@@ -6913,7 +7368,8 @@ html.light body .main__auth .reset-link:hover {
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
-  color: #515764;
+  -webkit-transition: color ease-in-out 0.3s;
+  transition: color ease-in-out 0.3s;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -7399,9 +7855,13 @@ html.light body .main__auth .reset-link:hover {
           filter: drop-shadow(0px 4px 4px rgba(30, 33, 48, 0.11));
   border-radius: 4px;
   opacity: 0;
+  pointer-events: none;
   -webkit-transition: opacity ease-in-out 0.3s;
   transition: opacity ease-in-out 0.3s;
-  z-index: -1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .watchlist-product-name__icon {
   margin-right: 8px;
@@ -8489,8 +8949,8 @@ html.light body .main__auth .reset-link:hover {
           justify-content: flex-start;
 }
 .watchlist_airdrops .watchlist-legends, .watchlist_airdrops .watchlist-product__wrapper {
-  -ms-grid-columns: 70px 298px 180px 180px 180px 180px 191px;
-  grid-template-columns: 70px 298px 180px 180px 180px 180px 191px;
+  -ms-grid-columns: 70px 161px 212px 212px 212px 212px 200px;
+  grid-template-columns: 70px 161px 212px 212px 212px 212px 200px;
 }
 .watchlist_airdrops .watchlist-product-name__name {
   display: -webkit-box;
@@ -8508,6 +8968,20 @@ html.light body .main__auth .reset-link:hover {
   white-space: wrap;
   padding: 0;
   z-index: 14;
+}
+.watchlist_airdrops .watchlist-product-name__blockchain-icon {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.watchlist_airdrops .watchlist-product-name__blockchain-icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .watchlist_airdrops .watchlist-product-name__box {
   padding-top: 10px;
@@ -9878,6 +10352,8 @@ html.light body .main__auth .reset-link:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -9893,6 +10369,21 @@ html.light body .main__auth .reset-link:hover {
   color: #515764;
   -webkit-transition: border ease-in-out 0.3s;
   transition: border ease-in-out 0.3s;
+}
+@media (max-width: 1200px) {
+  .watchlist-product__num {
+    margin-left: calc(4px + 6 * (100vw - 991.98px) / 208.02);
+  }
+}
+@media (max-width: 991.98px) {
+  .watchlist-product__num {
+    margin-left: calc(4px + 6 * (100vw - 567.98px) / 424);
+  }
+}
+@media (max-width: 567.98px) {
+  .watchlist-product__num {
+    margin-left: 10px;
+  }
 }
 .watchlist-product__price {
   font-weight: 500;
@@ -9917,6 +10408,9 @@ html.light body .main__auth .reset-link:hover {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  z-index: 25;
 }
 .watchlist-favorite img {
   pointer-events: none;
@@ -10413,14 +10907,25 @@ html.light body .main__auth .reset-link:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 635px;
+    width: 100%;
+    min-width: 0;
     margin: 0 auto;
   }
 }
 .watchlist-main__list._grid .watchlist-product {
   min-width: 0;
-  width: 100%;
+  width: 635px;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
   overflow: hidden;
+}
+@media (max-width: 991.98px) {
+  .watchlist-main__list._grid .watchlist-product {
+    width: 100%;
+    max-width: calc(100vw - 20px);
+    min-width: 0;
+  }
 }
 @media (max-width: 654.98px) {
   .watchlist-main__list._grid .watchlist-product {
@@ -10468,6 +10973,9 @@ html.light body .main__auth .reset-link:hover {
   opacity: 1;
   z-index: 1;
 }
+.watchlist-main__list._grid .watchlist-product .watchlist-product-name {
+  left: 0;
+}
 .watchlist-main__list._grid .watchlist-product-single {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -10499,6 +11007,9 @@ html.light body .main__auth .reset-link:hover {
       grid-template-areas: "actions info info genre blockchain os" "actions nft status f2p p2e rating-day";
 }
 
+.watchlist_earn-games .watchlist-main__list._grid {
+  width: auto;
+}
 .watchlist_earn-games .watchlist-main__list._grid .watchlist-product__wrapper {
   padding: 14px 12px;
 }
@@ -10511,7 +11022,7 @@ html.light body .main__auth .reset-link:hover {
   width: calc(100% + 1px);
   height: 1px;
   left: -1px;
-  bottom: -8px;
+  bottom: -10px;
   background-color: #DFE3F0;
   opacity: 0;
   -webkit-transition: opacity ease-in-out 0.3s;
@@ -10523,7 +11034,7 @@ html.light body .main__auth .reset-link:hover {
   width: calc(100% + 1px);
   height: 1px;
   left: -1px;
-  bottom: -8px;
+  bottom: -10px;
   background-color: #1E222A;
   opacity: 0;
   -webkit-transition: opacity ease-in-out 0.3s;
@@ -10542,6 +11053,52 @@ html.light body .main__auth .reset-link:hover {
   -ms-grid-column-span: 2;
   grid-area: info;
   margin-left: 10px;
+}
+@media (max-width: 567.98px) {
+  .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-name {
+    margin-left: 0;
+  }
+}
+@media (max-width: 567.98px) {
+  .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-name__icon {
+    margin-right: 0;
+  }
+}
+.watchlist_earn-games .watchlist-main__list._grid .watchlist-product-name__box {
+  padding-left: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media (max-width: 567.98px) {
+  .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-name__box {
+    padding-left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+  }
+}
+@media (max-width: 567.98px) {
+  .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-name__name {
+    padding-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-name__name span, .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-name__name a {
+    text-align: center;
+  }
 }
 .watchlist_earn-games .watchlist-main__list._grid .watchlist-product-genre {
   -ms-grid-row: 1;
@@ -10591,26 +11148,143 @@ html.light body .main__auth .reset-link:hover {
       -ms-flex-align: center;
           align-items: center;
 }
-@media (max-width: 991.98px) {
-  .watchlist_earn-games .watchlist-main.grid-mod::before, .watchlist_earn-games .watchlist-main.grid-mod::after {
-    display: none;
+.watchlist_earn-games .watchlist-main__list._grid .watchlist-product__wrapper {
+  -ms-grid-columns: 9.032032% 13.797829% 19.3929% 19.3929% 19.3929% 19.3929%;
+  grid-template-columns: 9.032032% 13.797829% 19.3929% 19.3929% 19.3929% 19.3929%;
+  -ms-grid-rows: 1fr 20px auto;
+  grid-template-rows: 1fr auto;
+  row-gap: 20px;
+      grid-template-areas: "actions info info genre blockchain os" "actions nft status f2p p2e rating-day";
+}
+@media (max-width: 567.98px) {
+  .watchlist_earn-games .watchlist-main__list._grid .watchlist-product__wrapper {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+        grid-template-areas: "actions actions" "info info" "genre blockchain" "os nft" "status f2p" "p2e rating-day";
+  }
+  .watchlist_earn-games .watchlist-main__list._grid .watchlist-product__wrapper > .blockchain {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+  }
+  .watchlist_earn-games .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_earn-games .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_earn-games .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-genre {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .watchlist_earn-games .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-blockchain {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+  }
+  .watchlist_earn-games .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-os {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+  }
+  .watchlist_earn-games .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-nft {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+  }
+  .watchlist_earn-games .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-status {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+  .watchlist_earn-games .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-f2p {
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+  }
+  .watchlist_earn-games .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-p2e {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+  }
+  .watchlist_earn-games .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-rating-day {
+    -ms-grid-row: 6;
+    -ms-grid-column: 2;
   }
 }
-@media (max-width: 654.98px) {
-  .watchlist_earn-games .watchlist-main.grid-mod::before, .watchlist_earn-games .watchlist-main.grid-mod::after {
-    display: block;
+.watchlist_earn-games .watchlist-main__list._grid .watchlist-product {
+  width: 100%;
+}
+.watchlist_earn-games .watchlist-main__list._grid .watchlist-product__part {
+  position: relative;
+}
+.watchlist_earn-games .watchlist-main__list._grid .watchlist-product__part::before, .watchlist_earn-games .watchlist-main__list._grid .watchlist-product__part::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 1px);
+  height: 1px;
+  right: -1px;
+  bottom: -10px;
+  opacity: 0;
+  -webkit-transition: opacity ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s;
+}
+.watchlist_earn-games .watchlist-main__list._grid .watchlist-product__part::before {
+  background-color: #DFE3F0;
+}
+.watchlist_earn-games .watchlist-main__list._grid .watchlist-product__part::after {
+  background-color: #1E222A;
+}
+@media (max-width: 567.98px) {
+  .watchlist_earn-games .watchlist-main__list._grid .watchlist-product__part {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (max-width: 567.98px) {
+  .watchlist_earn-games .watchlist-main__list._grid .watchlist-product__part_actions {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 .watchlist_earn-games .watchlist-product-name__descr {
   white-space: wrap;
 }
+.watchlist_earn-games .watchlist-main.grid-mod::before, .watchlist_earn-games .watchlist-main.grid-mod::after {
+  display: none;
+}
 
+.watchlist_events .watchlist-main__list._grid {
+  width: auto;
+}
 .watchlist_events .watchlist-main__list._grid .watchlist-product__part_actions {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   -ms-grid-column: 1;
   grid-area: actions;
   padding-left: 0px;
+  padding-right: 4px;
+  position: relative;
+  z-index: 40;
+}
+@media (max-width: 567.98px) {
+  .watchlist_events .watchlist-main__list._grid .watchlist-product__part_actions {
+    padding-right: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 .watchlist_events .watchlist-main__list._grid .watchlist-product-name {
   -ms-grid-row: 1;
@@ -10641,6 +11315,16 @@ html.light body .main__auth .reset-link:hover {
 }
 .watchlist_events .watchlist-main__list._grid .watchlist-product-name__box {
   padding-left: 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media (max-width: 567.98px) {
+  .watchlist_events .watchlist-main__list._grid .watchlist-product-name__box {
+    padding-left: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .watchlist_events .watchlist-main__list._grid .watchlist-product-start {
   -ms-grid-row: 3;
@@ -10648,12 +11332,24 @@ html.light body .main__auth .reset-link:hover {
   -ms-grid-column-span: 5;
   grid-area: start;
   gap: 2px;
+  padding: 10px 0;
+  padding-left: 15px;
+}
+@media (max-width: 567.98px) {
+  .watchlist_events .watchlist-main__list._grid .watchlist-product-start {
+    padding-left: 0;
+  }
 }
 .watchlist_events .watchlist-main__list._grid .watchlist-product-start .watchlist-product-start__text {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   gap: 5px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -10673,13 +11369,66 @@ html.light body .main__auth .reset-link:hover {
   padding: 12px 0;
   overflow: hidden;
 }
+@media (max-width: 991.98px) {
+  .watchlist_events .watchlist-main__list._grid .watchlist-product-sale {
+    gap: calc(16px + 12 * (100vw - 567.98px) / 424);
+  }
+}
+@media (max-width: 567.98px) {
+  .watchlist_events .watchlist-main__list._grid .watchlist-product-sale {
+    gap: 25px;
+  }
+}
+.watchlist_events .watchlist-main__list._grid .watchlist-product-sale .watchlist-product-single__label {
+  white-space: nowrap;
+  margin: auto 0;
+}
 .watchlist_events .watchlist-main__list._grid .watchlist-product-sale .watchlist-product-sale__list {
   gap: 25px;
+}
+@media (max-width: 567.98px) {
+  .watchlist_events .watchlist-main__list._grid .watchlist-product-sale .watchlist-product-sale__list {
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    -ms-grid-columns: 1fr 0 1fr 0 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+  }
+}
+.watchlist_events .watchlist-main__list._grid .watchlist-product-sale .watchlist-product-sale__el {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 4px;
+}
+@media (max-width: 567.98px) {
+  .watchlist_events .watchlist-main__list._grid .watchlist-product-sale .watchlist-product-sale__el {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .watchlist_events .watchlist-main__list._grid .watchlist-product-sale .watchlist-product-sale__el span {
+    text-align: center;
+  }
 }
 .watchlist_events .watchlist-main__list._grid .watchlist-product-sale .watchlist-product-sale__el:not(:first-child) {
   padding-left: 20px;
   -webkit-transition: border ease-in-out 0.3s;
   transition: border ease-in-out 0.3s;
+}
+@media (max-width: 567.98px) {
+  .watchlist_events .watchlist-main__list._grid .watchlist-product-sale .watchlist-product-sale__el:not(:first-child) {
+    padding: 0 5px;
+  }
 }
 .watchlist_events .watchlist-main__list._grid .watchlist-product-links {
   -ms-grid-row: 5;
@@ -10704,38 +11453,139 @@ html.light body .main__auth .reset-link:hover {
 }
 .watchlist_events .watchlist-main__list._grid .watchlist-product-links .watchlist-product-links__link {
   padding: 6px 0;
+  -webkit-transition: opacity ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s;
 }
 .watchlist_events .watchlist-main__list._grid .watchlist-product-links .watchlist-product-links__link:not(:last-child) {
   padding-right: 24px;
-  -webkit-transition: border ease-in-out 0.3s;
-  transition: border ease-in-out 0.3s;
+  -webkit-transition: border ease-in-out 0.3s, opacity ease-in-out 0.3s;
+  transition: border ease-in-out 0.3s, opacity ease-in-out 0.3s;
 }
 .watchlist_events .watchlist-main__list._grid .watchlist-product__wrapper {
-  -ms-grid-columns: 56px 256px 297px;
-  grid-template-columns: 56px 256px 297px;
+  -ms-grid-columns: 9.162835% 42.008007% 48.829158%;
+  grid-template-columns: 9.162835% 42.008007% 48.829158%;
   -ms-grid-rows: auto 8px auto;
   grid-template-rows: auto auto;
   row-gap: 8px;
   padding: 12px;
       grid-template-areas: "actions info start" "actions sale sale" "actions links links";
 }
-@media (max-width: 991.98px) {
-  .watchlist_events .watchlist-main.grid-mod::before, .watchlist_events .watchlist-main.grid-mod::after {
-    display: none;
+@media (max-width: 567.98px) {
+  .watchlist_events .watchlist-main__list._grid .watchlist-product__wrapper {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "actions actions actions actions actions actions" "info info info info info info" "start start start start start start" "sale sale sale sale sale sale" "links links links links links links";
+  }
+  .watchlist_events .watchlist-main__list._grid .watchlist-product__wrapper > .start {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_events .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_events .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_events .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_events .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_events .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-start {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_events .watchlist-main__list._grid .watchlist-product-sale {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_events .watchlist-main__list._grid .watchlist-product-links {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
   }
 }
-@media (max-width: 654.98px) {
-  .watchlist_events .watchlist-main.grid-mod::before, .watchlist_events .watchlist-main.grid-mod::after {
-    display: block;
+.watchlist_events .watchlist-main__list._grid .watchlist-product {
+  width: 100%;
+}
+.watchlist_events .watchlist-main__list._grid .watchlist-product__part {
+  position: relative;
+}
+.watchlist_events .watchlist-main__list._grid .watchlist-product__part::before, .watchlist_events .watchlist-main__list._grid .watchlist-product__part::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 1px);
+  height: 1px;
+  right: -1px;
+  bottom: -5px;
+  opacity: 0;
+  -webkit-transition: opacity ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s;
+}
+.watchlist_events .watchlist-main__list._grid .watchlist-product__part::before {
+  background-color: #DFE3F0;
+}
+.watchlist_events .watchlist-main__list._grid .watchlist-product__part::after {
+  background-color: #1E222A;
+}
+@media (max-width: 567.98px) {
+  .watchlist_events .watchlist-main__list._grid .watchlist-product__part {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
+}
+@media (max-width: 567.98px) {
+  .watchlist_events .watchlist-main__list._grid .watchlist-product__part_actions {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.watchlist_events .watchlist-main.grid-mod::before, .watchlist_events .watchlist-main.grid-mod::after {
+  display: none;
 }
 
+.watchlist_collections .watchlist-main__list._grid {
+  width: auto;
+}
 .watchlist_collections .watchlist-main__list._grid .watchlist-product__part_actions {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   -ms-grid-column: 1;
   grid-area: actions;
   padding-left: 0px;
+  padding-right: 4px;
+}
+@media (max-width: 567.98px) {
+  .watchlist_collections .watchlist-main__list._grid .watchlist-product__part_actions {
+    padding-right: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .watchlist_collections .watchlist-main__list._grid .watchlist-product-name {
   -ms-grid-row: 1;
@@ -10747,15 +11597,52 @@ html.light body .main__auth .reset-link:hover {
   padding-bottom: 0;
   margin-left: 10px;
 }
+@media (max-width: 567.98px) {
+  .watchlist_collections .watchlist-main__list._grid .watchlist-product-name {
+    margin: 0;
+  }
+}
+@media (max-width: 567.98px) {
+  .watchlist_collections .watchlist-main__list._grid .watchlist-product-name__icon {
+    margin: 0;
+  }
+}
+@media (max-width: 567.98px) {
+  .watchlist_collections .watchlist-main__list._grid .watchlist-product-name__name {
+    padding-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .watchlist_collections .watchlist-main__list._grid .watchlist-product-name__box {
   padding-left: 2px;
+}
+@media (max-width: 567.98px) {
+  .watchlist_collections .watchlist-main__list._grid .watchlist-product-name__box {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 6px;
+    padding-left: 0;
+  }
 }
 .watchlist_collections .watchlist-main__list._grid .day-volume {
   -ms-grid-row: 1;
   -ms-grid-column: 4;
   -ms-grid-column-span: 2;
   grid-area: day-volume;
-  min-width: 100px;
 }
 .watchlist_collections .watchlist-main__list._grid .est {
   -ms-grid-row: 1;
@@ -10779,14 +11666,15 @@ html.light body .main__auth .reset-link:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding-left: 27px;
+}
+@media (max-width: 567.98px) {
+  .watchlist_collections .watchlist-main__list._grid .est.watchlist-product__part {
+    padding-left: 0;
+  }
 }
 .watchlist_collections .watchlist-main__list._grid .floor-price {
   -ms-grid-row: 3;
@@ -10819,9 +11707,6 @@ html.light body .main__auth .reset-link:hover {
   -ms-grid-column: 8;
   grid-area: owners-procent;
 }
-.watchlist_collections .watchlist-main__list._grid .watchlist-product-single__label {
-  display: none;
-}
 .watchlist_collections .watchlist-main__list._grid .watchlist-product-single__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10831,14 +11716,97 @@ html.light body .main__auth .reset-link:hover {
           align-items: center;
   height: 100%;
 }
+.watchlist_collections .watchlist-main__list._grid .watchlist-product-single__label {
+  text-align: center;
+}
 .watchlist_collections .watchlist-main__list._grid .watchlist-product__wrapper {
-  -ms-grid-columns: 56px 93px 136px 79px 20px 66px 86px 75px;
-  grid-template-columns: 56px 93px 136px 79px 20px 66px 86px 75px;
+  -ms-grid-columns: 8.818898% 15.645669% 21.417323% 14.440945% 3.149606% 10.893701% 13.543307% 11.811024%;
+  grid-template-columns: 8.818898% 15.645669% 21.417323% 14.440945% 3.149606% 10.893701% 13.543307% 11.811024%;
   -ms-grid-rows: auto 20px auto;
   grid-template-rows: auto auto;
   row-gap: 20px;
   padding: 12px;
       grid-template-areas: "actions info info day-volume day-volume est est est" "actions floor-price avg-price sales assets assets owners owners-procent";
+}
+@media (max-width: 567.98px) {
+  .watchlist_collections .watchlist-main__list._grid .watchlist-product__wrapper {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "actions actions actions actions actions actions" "info info info info info info" "est est est est est est" "day-volume day-volume day-volume avg-price avg-price avg-price" "assets assets owners owners owners-procent owners-procent" "floor-price floor-price floor-price floor-price sales sales";
+  }
+  .watchlist_collections .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_collections .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_collections .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_collections .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_collections .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_collections .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_collections .watchlist-main__list._grid .day-volume {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  .watchlist_collections .watchlist-main__list._grid .est {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_collections .watchlist-main__list._grid .floor-price {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+  }
+  .watchlist_collections .watchlist-main__list._grid .avg-price {
+    -ms-grid-row: 4;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 3;
+  }
+  .watchlist_collections .watchlist-main__list._grid .sales {
+    -ms-grid-row: 6;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_collections .watchlist-main__list._grid .assets {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_collections .watchlist-main__list._grid .owners {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_collections .watchlist-main__list._grid .owners-procent {
+    -ms-grid-row: 5;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2;
+  }
 }
 .watchlist_collections .watchlist-main__list._grid .watchlist-product-name, .watchlist_collections .watchlist-main__list._grid .day-volume, .watchlist_collections .watchlist-main__list._grid .est {
   position: relative;
@@ -10865,23 +11833,51 @@ html.light body .main__auth .reset-link:hover {
   -webkit-transition: opacity ease-in-out 0.3s;
   transition: opacity ease-in-out 0.3s;
 }
-@media (max-width: 991.98px) {
-  .watchlist_collections .watchlist-main.grid-mod::before, .watchlist_collections .watchlist-main.grid-mod::after {
-    display: none;
-  }
+.watchlist_collections .watchlist-main__list._grid .watchlist-product {
+  width: 100%;
 }
-@media (max-width: 654.98px) {
-  .watchlist_collections .watchlist-main.grid-mod::before, .watchlist_collections .watchlist-main.grid-mod::after {
-    display: block;
-  }
+.watchlist_collections .watchlist-main__list._grid .watchlist-product__part {
+  position: relative;
+}
+.watchlist_collections .watchlist-main__list._grid .watchlist-product__part::before, .watchlist_collections .watchlist-main__list._grid .watchlist-product__part::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 1px);
+  height: 1px;
+  right: -1px;
+  bottom: -10px;
+  opacity: 0;
+  -webkit-transition: opacity ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s;
+}
+.watchlist_collections .watchlist-main__list._grid .watchlist-product__part::before {
+  background-color: #DFE3F0;
+}
+.watchlist_collections .watchlist-main__list._grid .watchlist-product__part::after {
+  background-color: #1E222A;
+}
+.watchlist_collections .watchlist-main.grid-mod::before, .watchlist_collections .watchlist-main.grid-mod::after {
+  display: none;
 }
 
+.watchlist_defi .watchlist-main__list._grid {
+  width: auto;
+}
 .watchlist_defi .watchlist-main__list._grid .watchlist-product__part_actions {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   -ms-grid-column: 1;
   grid-area: actions;
   padding-left: 0px;
+  padding-right: 4px;
+}
+@media (max-width: 567.98px) {
+  .watchlist_defi .watchlist-main__list._grid .watchlist-product__part_actions {
+    padding-right: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .watchlist_defi .watchlist-main__list._grid .watchlist-product-name {
   -ms-grid-row: 1;
@@ -10891,12 +11887,39 @@ html.light body .main__auth .reset-link:hover {
   padding-left: 0px;
   padding-top: 0;
   padding-bottom: 0;
-  -webkit-transition: border ease-in-out 0.3s;
-  transition: border ease-in-out 0.3s;
+  -webkit-transition: border ease-in-out 0.3s, background-color ease-in-out 0.3s;
+  transition: border ease-in-out 0.3s, background-color ease-in-out 0.3s;
+}
+@media (max-width: 567.98px) {
+  .watchlist_defi .watchlist-main__list._grid .watchlist-product-name__icon {
+    margin: 0;
+  }
 }
 .watchlist_defi .watchlist-main__list._grid .watchlist-product-name__box {
   padding-bottom: 11px;
   padding-left: 2px;
+  padding: 10px 0;
+}
+.watchlist_defi .watchlist-main__list._grid .watchlist-product-name__box::before {
+  -webkit-transition: opacity ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s;
+}
+@media (max-width: 567.98px) {
+  .watchlist_defi .watchlist-main__list._grid .watchlist-product-name__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .watchlist_defi .watchlist-main__list._grid .watchlist-product-name__box .watchlist-product-name__name {
+    margin-top: 6px;
+  }
 }
 .watchlist_defi .watchlist-main__list._grid .day-volume {
   -ms-grid-row: 1;
@@ -10929,31 +11952,125 @@ html.light body .main__auth .reset-link:hover {
   grid-area: rating;
   padding: 5px 0;
 }
-.watchlist_defi .watchlist-main__list._grid .watchlist-product-single__label {
-  display: none;
-}
 .watchlist_defi .watchlist-main__list._grid .watchlist-product__wrapper {
-  -ms-grid-columns: 56px 92px 120px 120px 120px 103px;
-  grid-template-columns: 56px 92px 120px 120px 120px 103px;
+  -ms-grid-columns: 9.818898% 15.488189% 19.897638% 19.897638% 19.697638% 15.220472%;
+  grid-template-columns: 9.818898% 15.488189% 19.897638% 19.897638% 19.697638% 15.220472%;
   -ms-grid-rows: auto 10px auto;
   grid-template-rows: auto auto;
   row-gap: 10px;
   padding: 12px;
       grid-template-areas: "actions info info info info info" "actions day-volume week-volume tvl mtvl rating";
 }
-@media (max-width: 991.98px) {
-  .watchlist_defi .watchlist-main.grid-mod::before, .watchlist_defi .watchlist-main.grid-mod::after {
-    display: none;
+@media (max-width: 567.98px) {
+  .watchlist_defi .watchlist-main__list._grid .watchlist-product__wrapper {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "actions actions actions actions actions actions" "info info info info info info" "day-volume day-volume day-volume week-volume week-volume week-volume" "tvl tvl mtvl mtvl rating rating";
+  }
+  .watchlist_defi .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_defi .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_defi .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_defi .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_defi .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_defi .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_defi .watchlist-main__list._grid .watchlist-product__wrapper > .day-volume {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  .watchlist_defi .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_defi .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_defi .watchlist-main__list._grid .watchlist-product__wrapper > .day-volume {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  .watchlist_defi .watchlist-main__list._grid .week-volume {
+    -ms-grid-row: 3;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 3;
+  }
+  .watchlist_defi .watchlist-main__list._grid .tvl {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_defi .watchlist-main__list._grid .mtvl {
+    -ms-grid-row: 4;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_defi .watchlist-main__list._grid .rating {
+    -ms-grid-row: 4;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2;
   }
 }
-@media (max-width: 654.98px) {
-  .watchlist_defi .watchlist-main.grid-mod::before, .watchlist_defi .watchlist-main.grid-mod::after {
-    display: block;
-  }
+.watchlist_defi .watchlist-main__list._grid .watchlist-product {
+  width: 100%;
+}
+.watchlist_defi .watchlist-main__list._grid .watchlist-product__part {
+  position: relative;
+}
+.watchlist_defi .watchlist-main__list._grid .watchlist-product__part:not(:last-child)::before, .watchlist_defi .watchlist-main__list._grid .watchlist-product__part:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 1px);
+  height: 1px;
+  right: -1px;
+  bottom: -6px;
+  opacity: 0;
+  -webkit-transition: opacity ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s;
+}
+.watchlist_defi .watchlist-main__list._grid .watchlist-product__part:not(:last-child)::before {
+  background-color: #DFE3F0;
+}
+.watchlist_defi .watchlist-main__list._grid .watchlist-product__part:not(:last-child)::after {
+  background-color: #1E222A;
+}
+.watchlist_defi .watchlist-main.grid-mod::before, .watchlist_defi .watchlist-main.grid-mod::after {
+  display: none;
 }
 
-.watchlist_exchanges .watchlist-main__list._grid .watchlist-product-single__label {
-  display: none;
+.watchlist_exchanges .watchlist-main__list._grid {
+  width: auto;
 }
 .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__part {
   display: -webkit-box;
@@ -10984,11 +12101,31 @@ html.light body .main__auth .reset-link:hover {
   grid-area: info;
   padding-top: 0;
   padding-bottom: 0;
-  margin-left: 14px;
+  margin-left: 0px;
   width: 100%;
+}
+@media (max-width: 567.98px) {
+  .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name__box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.watchlist_exchanges .watchlist-main__list._grid .watchlist-product__part_actions {
+  padding-right: 4px;
+}
+@media (max-width: 567.98px) {
+  .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__part_actions {
+    padding-right: 0;
+  }
 }
 .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name__box {
   padding-left: 2px;
+}
+@media (max-width: 567.98px) {
+  .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-name__box {
+    padding-left: 0;
+  }
 }
 .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score {
   -ms-grid-row: 1;
@@ -10999,6 +12136,9 @@ html.light body .main__auth .reset-link:hover {
   -ms-grid-row: 1;
   -ms-grid-column: 4;
   -ms-grid-column-span: 2;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   grid-area: price;
   padding: 0;
 }
@@ -11065,31 +12205,194 @@ html.light body .main__auth .reset-link:hover {
   transition: opacity ease-in-out 0.3s;
 }
 .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__wrapper {
-  -ms-grid-columns: 56px 115px 71px 48px 106px 14px 172px 30px;
-  grid-template-columns: 56px 115px 71px 48px 106px 14px 172px 30px;
+  -ms-grid-columns: 8.818898% 20.110236% 12.181102% 7.559055% 16.692913% 2.204724% 27.086614% 5.444409%;
+  grid-template-columns: 8.818898% 20.110236% 12.181102% 7.559055% 16.692913% 2.204724% 27.086614% 5.444409%;
   -ms-grid-rows: auto 20px auto;
   grid-template-rows: auto auto;
   row-gap: 20px;
   padding: 12px;
       grid-template-areas: "actions info score price price effective effective effective" "actions traffic markets markets coins coins fiat more";
 }
-@media (max-width: 991.98px) {
-  .watchlist_exchanges .watchlist-main.grid-mod::before, .watchlist_exchanges .watchlist-main.grid-mod::after {
-    display: none;
+@media (max-width: 567.98px) {
+  .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__wrapper {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "actions actions actions actions actions actions" "info info info price price price" "score score score effective effective effective" "traffic traffic markets markets coins coins" "fiat fiat fiat fiat more more";
+  }
+  .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-rating-score {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__price {
+    -ms-grid-row: 2;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 3;
+  }
+  .watchlist_exchanges .watchlist-main__list._grid .effective {
+    -ms-grid-row: 3;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 3;
+  }
+  .watchlist_exchanges .watchlist-main__list._grid .traffic {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_exchanges .watchlist-main__list._grid .markets {
+    -ms-grid-row: 4;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_exchanges .watchlist-main__list._grid .coins {
+    -ms-grid-row: 4;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-fiat {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+  }
+  .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-more {
+    -ms-grid-row: 5;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2;
   }
 }
-@media (max-width: 654.98px) {
-  .watchlist_exchanges .watchlist-main.grid-mod::before, .watchlist_exchanges .watchlist-main.grid-mod::after {
-    display: block;
+.watchlist_exchanges .watchlist-main__list._grid .watchlist-product {
+  width: 100%;
+}
+.watchlist_exchanges .watchlist-main__list._grid .watchlist-product-single {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.watchlist_exchanges .watchlist-main__list._grid .watchlist-product-single__label {
+  text-align: center;
+}
+.watchlist_exchanges .watchlist-main__list._grid .watchlist-product__part {
+  position: relative;
+}
+.watchlist_exchanges .watchlist-main__list._grid .watchlist-product__part:not(:last-child)::before, .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__part:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 1px);
+  height: 1px;
+  right: -1px;
+  bottom: -10px;
+  opacity: 0;
+  -webkit-transition: opacity ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s;
+}
+.watchlist_exchanges .watchlist-main__list._grid .watchlist-product__part:not(:last-child)::before {
+  background-color: #DFE3F0;
+}
+.watchlist_exchanges .watchlist-main__list._grid .watchlist-product__part:not(:last-child)::after {
+  background-color: #1E222A;
+}
+.watchlist_exchanges .watchlist-main__list._grid .effective {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+@media (max-width: 567.98px) {
+  .watchlist_exchanges .watchlist-main__list._grid .effective {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
+}
+.watchlist_exchanges .watchlist-main__list._grid .watchlist-product-fiat::before, .watchlist_exchanges .watchlist-main__list._grid .watchlist-product-fiat::after {
+  display: none;
+}
+.watchlist_exchanges .watchlist-main.grid-mod::before, .watchlist_exchanges .watchlist-main.grid-mod::after {
+  display: none;
 }
 
+.watchlist_ico .watchlist-main__list._grid {
+  width: auto;
+}
 .watchlist_ico .watchlist-main__list._grid .watchlist-product__part_actions {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   -ms-grid-column: 1;
   grid-area: actions;
   padding-left: 0px;
+  z-index: 10;
+  padding-right: 6px;
+}
+@media (max-width: 567.98px) {
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product__part_actions {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .watchlist_ico .watchlist-main__list._grid .watchlist-product-category {
   -ms-grid-row: 1;
@@ -11120,14 +12423,140 @@ html.light body .main__auth .reset-link:hover {
   -ms-grid-column-span: 2;
   grid-area: links;
 }
+.watchlist_ico .watchlist-main__list._grid .watchlist-product {
+  width: 100%;
+}
 .watchlist_ico .watchlist-main__list._grid .watchlist-product__wrapper {
-  -ms-grid-columns: 56px 92px 120px 120px 120px 103px;
-  grid-template-columns: 56px 92px 120px 120px 120px 103px;
+  -ms-grid-columns: 9.42% 14.49% 20.37% 20.36% 20.37% 16.22%;
+  grid-template-columns: 9.42% 14.49% 20.37% 20.36% 20.37% 16.22%;
   -ms-grid-rows: auto 20px auto;
   grid-template-rows: auto auto;
   row-gap: 20px;
   padding: 12px;
       grid-template-areas: "actions info info info category price" "actions start start end end links";
+}
+@media (max-width: 991.98px) {
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product__wrapper {
+    -ms-grid-columns: 9.42% 14.49% 20.37% 20.36% 20.37% 16.22%;
+    grid-template-columns: 9.42% 14.49% 20.37% 20.36% 20.37% 16.22%;
+  }
+}
+@media (max-width: 567.98px) {
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product__wrapper {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+        grid-template-areas: "actions actions" "info info" "category price" "start end" "links links";
+  }
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product__wrapper > .start {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product__wrapper > .end {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+  }
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-start {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-links {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__price {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+  }
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product-category {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__price {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+  }
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product__wrapper > .start {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product__wrapper > .end {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+  }
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-links {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
 }
 .watchlist_ico .watchlist-main__list._grid .watchlist-product-name, .watchlist_ico .watchlist-main__list._grid .watchlist-product-category, .watchlist_ico .watchlist-main__list._grid .watchlist-product__price {
   position: relative;
@@ -11150,10 +12579,34 @@ html.light body .main__auth .reset-link:hover {
 .watchlist_ico .watchlist-main__list._grid .watchlist-product-name::after, .watchlist_ico .watchlist-main__list._grid .watchlist-product-category::after, .watchlist_ico .watchlist-main__list._grid .watchlist-product__price::after {
   background-color: #1E222A;
 }
+.watchlist_ico .watchlist-main__list._grid .watchlist-product__part {
+  position: relative;
+}
+.watchlist_ico .watchlist-main__list._grid .watchlist-product__part:not(:last-child)::before, .watchlist_ico .watchlist-main__list._grid .watchlist-product__part:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 1px);
+  height: 1px;
+  right: -1px;
+  bottom: -10px;
+  opacity: 0;
+  -webkit-transition: opacity ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s;
+}
+.watchlist_ico .watchlist-main__list._grid .watchlist-product__part:not(:last-child)::before {
+  background-color: #DFE3F0;
+}
+.watchlist_ico .watchlist-main__list._grid .watchlist-product__part:not(:last-child)::after {
+  background-color: #1E222A;
+}
+.watchlist_ico .watchlist-main__list._grid .watchlist-product__part_actions {
+  padding-right: 0;
+}
 .watchlist_ico .watchlist-main__list._grid .watchlist-product-name {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
+  left: 0;
   grid-area: info;
   padding-left: 0px;
   padding-top: 0;
@@ -11161,26 +12614,73 @@ html.light body .main__auth .reset-link:hover {
   -webkit-transition: border ease-in-out 0.3s, background-color ease-in-out 0.3s;
   transition: border ease-in-out 0.3s, background-color ease-in-out 0.3s;
 }
+.watchlist_ico .watchlist-main__list._grid .watchlist-product-name__box {
+  padding-left: 4px;
+  padding-right: 10px;
+}
 .watchlist_ico .watchlist-main__list._grid .watchlist-product-name::before, .watchlist_ico .watchlist-main__list._grid .watchlist-product-name::after {
   right: -11px;
 }
-@media (max-width: 991.98px) {
-  .watchlist_ico .watchlist-main.grid-mod::before, .watchlist_ico .watchlist-main.grid-mod::after {
-    display: none;
+@media (max-width: 567.98px) {
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product-name {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product-name__icon {
+    margin-right: 0;
+  }
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product-name__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product-name__name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 10px;
+  }
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product-name__name a, .watchlist_ico .watchlist-main__list._grid .watchlist-product-name__name span {
+    text-align: center;
   }
 }
-@media (max-width: 654.98px) {
-  .watchlist_ico .watchlist-main.grid-mod::before, .watchlist_ico .watchlist-main.grid-mod::after {
-    display: block;
-  }
+.watchlist_ico .watchlist-main.grid-mod::before, .watchlist_ico .watchlist-main.grid-mod::after {
+  display: none;
 }
 
+.watchlist_airdrops .watchlist-main__list._grid {
+  width: auto;
+}
 .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__part_actions {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   -ms-grid-column: 1;
   grid-area: actions;
   padding-left: 0px;
+}
+@media (max-width: 567.98px) {
+  .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__part_actions {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .watchlist_airdrops .watchlist-main__list._grid .amount {
   -ms-grid-row: 1;
@@ -11212,14 +12712,176 @@ html.light body .main__auth .reset-link:hover {
   gap: 2px;
   padding-top: 0;
 }
+@media (max-width: 567.98px) {
+  .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-links__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+.watchlist_airdrops .watchlist-main__list._grid .watchlist-product {
+  width: 100%;
+}
 .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__wrapper {
-  -ms-grid-columns: 56px 92px 120px 120px 120px 103px;
-  grid-template-columns: 56px 92px 120px 120px 120px 103px;
+  -ms-grid-columns: 9.42% 14.49% 20.37% 20.36% 20.37% 16.22%;
+  grid-template-columns: 9.42% 14.49% 20.37% 20.36% 20.37% 16.22%;
   -ms-grid-rows: auto 20px auto;
   grid-template-rows: auto auto;
   row-gap: 20px;
   padding: 12px;
       grid-template-areas: "actions info info info amount receivers" "actions start start end end links";
+}
+@media (max-width: 991.98px) {
+  .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__wrapper {
+    -ms-grid-columns: 9.42% 14.49% 20.37% 20.36% 20.37% 16.22%;
+    grid-template-columns: 9.42% 14.49% 20.37% 20.36% 20.37% 16.22%;
+  }
+}
+@media (max-width: 567.98px) {
+  .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__wrapper {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+        grid-template-areas: "actions actions" "info info" "amount receivers" "start end" "links links";
+  }
+  .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__wrapper > .start {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__wrapper > .end {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+  }
+  .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-start {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-links {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__wrapper > .start {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__wrapper > .end {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+  }
+  .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-links {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_airdrops .watchlist-main__list._grid .amount {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .watchlist_airdrops .watchlist-main__list._grid .receivers {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+  }
+  .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__wrapper > .start {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__wrapper > .end {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+  }
+  .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-links {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
 }
 .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name, .watchlist_airdrops .watchlist-main__list._grid .amount, .watchlist_airdrops .watchlist-main__list._grid .receivers {
   position: relative;
@@ -11240,6 +12902,26 @@ html.light body .main__auth .reset-link:hover {
   background-color: #DFE3F0;
 }
 .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name::after, .watchlist_airdrops .watchlist-main__list._grid .amount::after, .watchlist_airdrops .watchlist-main__list._grid .receivers::after {
+  background-color: #1E222A;
+}
+.watchlist_airdrops .watchlist-main__list._grid .watchlist-product__part {
+  position: relative;
+}
+.watchlist_airdrops .watchlist-main__list._grid .watchlist-product__part:not(:last-child)::before, .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__part:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 1px);
+  height: 1px;
+  right: -1px;
+  bottom: -10px;
+  opacity: 0;
+  -webkit-transition: opacity ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s;
+}
+.watchlist_airdrops .watchlist-main__list._grid .watchlist-product__part:not(:last-child)::before {
+  background-color: #DFE3F0;
+}
+.watchlist_airdrops .watchlist-main__list._grid .watchlist-product__part:not(:last-child)::after {
   background-color: #1E222A;
 }
 .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name {
@@ -11310,21 +12992,341 @@ html.light body .main__auth .reset-link:hover {
     -ms-grid-column-span: 1;
   }
 }
+@media (max-width: 567.98px){
+  .watchlist_earn-games .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_earn-games .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_earn-games .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_events .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_earn-games .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_events .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_earn-games .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_events .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_collections .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_earn-games .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_events .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_collections .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_defi .watchlist-main__list._grid .day-volume {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  .watchlist_earn-games .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_events .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_collections .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_defi .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_earn-games .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_events .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_collections .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_defi .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_earn-games .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_events .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_collections .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_defi .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product__price {
+    -ms-grid-row: 2;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 3;
+  }
+  .watchlist_events .watchlist-main__list._grid .watchlist-product__wrapper > .start {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product-links {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_earn-games .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_events .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_collections .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_defi .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_earn-games .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_events .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_collections .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_defi .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product__part_actions {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_events .watchlist-main__list._grid .watchlist-product__wrapper > .start {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product__wrapper > .start {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product__wrapper > .end {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+  }
+  .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-links {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-links {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_earn-games .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_events .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_collections .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_defi .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .watchlist_exchanges .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  .watchlist_ico .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .watchlist_airdrops .watchlist-main__list._grid .watchlist-product__wrapper > .watchlist-product-name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+}
 .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name::before, .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name::after {
   right: -11px;
+}
+@media (max-width: 567.98px) {
+  .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name__icon {
+    margin: 0;
+  }
+  .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 0;
+  }
+  .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name__name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 10px;
+  }
+  .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name__name a, .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name__name span {
+    text-align: center;
+  }
 }
 .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name__box::before {
   z-index: -1;
 }
-@media (max-width: 991.98px) {
-  .watchlist_airdrops .watchlist-main.grid-mod::before, .watchlist_airdrops .watchlist-main.grid-mod::after {
-    display: none;
-  }
-}
-@media (max-width: 654.98px) {
-  .watchlist_airdrops .watchlist-main.grid-mod::before, .watchlist_airdrops .watchlist-main.grid-mod::after {
-    display: block;
-  }
+.watchlist_airdrops .watchlist-main.grid-mod::before, .watchlist_airdrops .watchlist-main.grid-mod::after {
+  display: none;
 }
 
 .watchlist-filters {

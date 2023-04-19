@@ -475,6 +475,18 @@ body .watchlist_mod .select__header, body .watchlist_mod .select__body, body .wa
 body .watchlist .watchlist-product-status__status {
   background-color: #DFE4F0;
 }
+body .watchlist_ico .watchlist-main__list._grid .start {
+  border-left: 0;
+}
+body .watchlist_ico .watchlist-main__list._grid .watchlist-product-links {
+  border-left: 1px solid #DFE3F0;
+}
+body .watchlist_ico .watchlist-main__list._grid .watchlist-product-name::before, body .watchlist_ico .watchlist-main__list._grid .watchlist-product-category::before, body .watchlist_ico .watchlist-main__list._grid .watchlist-product__price::before {
+  opacity: 1;
+}
+body .watchlist_ico .watchlist-main__list._grid .watchlist-product-name::after, body .watchlist_ico .watchlist-main__list._grid .watchlist-product-category::after, body .watchlist_ico .watchlist-main__list._grid .watchlist-product__price::after {
+  opacity: 0;
+}
 body .watchlist-main__list._grid .watchlist-product-nft {
   border-left: 0px;
 }
@@ -1004,6 +1016,119 @@ body .about .about-article__more {
   body .watchlist-product-name._fixed .watchlist-product-name__box {
     background-color: #fff;
   }
+}
+body .game-info_ico .token-sale__label, body .game-info_ico .token-sale__value {
+  color: #4A596D;
+}
+body .descr-card__screenshot {
+  background-color: #fdfdfd;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+}
+body .watchlist_airdrops .watchlist-main__list._grid .start {
+  border-left: 0;
+}
+body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-links {
+  border-left: 1px solid #DFE3F0;
+}
+body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name::before, body .watchlist_airdrops .watchlist-main__list._grid .amount::before, body .watchlist_airdrops .watchlist-main__list._grid .receivers::before {
+  opacity: 1;
+}
+body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name::after, body .watchlist_airdrops .watchlist-main__list._grid .amount::after, body .watchlist_airdrops .watchlist-main__list._grid .receivers::after {
+  opacity: 0;
+}
+body .main__about-us .about-us__box {
+  background-color: #f7faff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+body .main__about-us .about-us__paragraph {
+  color: #4A596D;
+}
+body .main__qa .qa-qoute {
+  background-color: rgb(248, 250, 253);
+}
+body .main__qa .qa-qoute__text, body .main__qa .answer__paragraph {
+  color: #454E53;
+}
+body .main__blog .blog-list__list-el::before {
+  opacity: 0;
+}
+body .main__blog .blog-list__list-el::after {
+  opacity: 1;
+}
+body .main__blog .blog-body__paragraph, body .main__blog .blog-list__list-el, body .main__blog .blog-body__list-headline {
+  color: #454E53;
+}
+body .main__blog .footer-social__el {
+  border: 1px solid transparent;
+}
+body .main__blog .footer-social__el:hover path {
+  fill: #fff;
+}
+body .main__blog .footer-social__el::before {
+  opacity: 0.6;
+}
+body .main__blog .footer-social__el::after {
+  opacity: 0;
+}
+body .main__card-offer .card-offer__card {
+  background-color: #f7faff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+body .main__support .footer-social__el {
+  border: 1px solid transparent;
+}
+body .main__support .footer-social__el:hover path {
+  fill: #fff;
+}
+body .main__support .footer-social__el::before {
+  opacity: 1;
+}
+body .main__support .footer-social__el::after {
+  opacity: 0;
+}
+body .main__support .support-card {
+  background-color: #f7faff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+body .main__support .support-contacts__subtitle, body .main__support .support-contacts__text {
+  color: #454E53;
+}
+body .main__support .support-contacts__action:hover .support-contacts__text {
+  color: #2A59FF;
+}
+body .main__support .support-form__box, body .main__support .support-form__text-area {
+  border: 1px solid #B5BACB;
+}
+body .main__support .support-form__input, body .main__support .support-form__text-area {
+  color: #1E222A;
+}
+body .main__auth .auth-card {
+  background-color: #f7faff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+body .main__auth .auth-card__other-way-label, body .main__auth .auth-card__another, body .main__auth .auth-radio__label, body .main__auth .form-auth__label, body .main__auth .form-auth__input, body .main__auth .form-auth__paragraph {
+  color: #454E53;
+}
+body .main__auth .auth-card__another a, body .main__auth .auth-radio__label a {
+  color: #2A59FF;
+}
+body .main__auth .form-auth__input {
+  border: 1px solid #B5BACB;
+}
+body .main__auth .reset-link {
+  color: #B5BACB;
+}
+body .main__auth .reset-link:hover {
+  color: #2A59FF;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1613,6 +1738,18 @@ body .about .about-article__more {
   }
   body .watchlist .watchlist-product-status__status {
     background-color: #1E222A;
+  }
+  body .watchlist_ico .watchlist-main__list._grid .start {
+    border-left: 0;
+  }
+  body .watchlist_ico .watchlist-main__list._grid .watchlist-product-links {
+    border-left: 1px solid #1E222A;
+  }
+  body .watchlist_ico .watchlist-main__list._grid .watchlist-product-name::before, body .watchlist_ico .watchlist-main__list._grid .watchlist-product-category::before, body .watchlist_ico .watchlist-main__list._grid .watchlist-product__price::before {
+    opacity: 0;
+  }
+  body .watchlist_ico .watchlist-main__list._grid .watchlist-product-name::after, body .watchlist_ico .watchlist-main__list._grid .watchlist-product-category::after, body .watchlist_ico .watchlist-main__list._grid .watchlist-product__price::after {
+    opacity: 1;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -2240,6 +2377,137 @@ body .about .about-article__more {
     background-color: #1E222A;
   }
 }
+@media (prefers-color-scheme: dark) {
+  body .game-info_ico .token-sale__label, body .game-info_ico .token-sale__value {
+    color: #fff;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .descr-card__screenshot {
+    background-color: rgba(41, 44, 45, 0.2);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .watchlist_airdrops .watchlist-main__list._grid .start {
+    border-left: 0;
+  }
+  body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-links {
+    border-left: 1px solid #1E222A;
+  }
+  body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name::before, body .watchlist_airdrops .watchlist-main__list._grid .amount::before, body .watchlist_airdrops .watchlist-main__list._grid .receivers::before {
+    opacity: 0;
+  }
+  body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name::after, body .watchlist_airdrops .watchlist-main__list._grid .amount::after, body .watchlist_airdrops .watchlist-main__list._grid .receivers::after {
+    opacity: 1;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .main__about-us .about-us__box {
+    background-color: rgba(41, 44, 45, 0.2);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  }
+  body .main__about-us .about-us__paragraph {
+    color: #fff;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .main__qa .qa-qoute {
+    background-color: rgba(45, 48, 52, 0.4);
+  }
+  body .main__qa .qa-qoute__text, body .main__qa .answer__paragraph {
+    color: #fff;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .main__blog .blog-list__list-el::before {
+    opacity: 1;
+  }
+  body .main__blog .blog-list__list-el::after {
+    opacity: 0;
+  }
+  body .main__blog .blog-body__paragraph, body .main__blog .blog-list__list-el, body .main__blog .blog-body__list-headline {
+    color: #fff;
+  }
+  body .main__blog .footer-social__el {
+    border: 1px solid rgba(69, 78, 83, 0.2);
+  }
+  body .main__blog .footer-social__el:hover path {
+    fill: #1E222A;
+  }
+  body .main__blog .footer-social__el::before {
+    opacity: 0;
+  }
+  body .main__blog .footer-social__el::after {
+    opacity: 1;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .main__card-offer .card-offer__card {
+    background-color: rgba(41, 44, 45, 0.2);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .main__support .footer-social__el {
+    border: 1px solid rgba(69, 78, 83, 0.2);
+  }
+  body .main__support .footer-social__el:hover path {
+    fill: #1E222A;
+  }
+  body .main__support .footer-social__el::before {
+    opacity: 0;
+  }
+  body .main__support .footer-social__el::after {
+    opacity: 1;
+  }
+  body .main__support .support-card {
+    background-color: rgba(41, 44, 45, 0.2);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  }
+  body .main__support .support-contacts__subtitle, body .main__support .support-contacts__text {
+    color: #fff;
+  }
+  body .main__support .support-contacts__action:hover .support-contacts__text {
+    color: #2A59FF;
+  }
+  body .main__support .support-form__box, body .main__support .support-form__text-area {
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  }
+  body .main__support .support-form__input, body .main__support .support-form__text-area {
+    color: #fff;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body .main__auth .auth-card {
+    background-color: rgba(41, 44, 45, 0.2);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  }
+  body .main__auth .auth-card__other-way-label, body .main__auth .auth-card__another, body .main__auth .auth-radio__label, body .main__auth .form-auth__label, body .main__auth .form-auth__input, body .main__auth .form-auth__paragraph {
+    color: #fff;
+  }
+  body .main__auth .auth-card__another a, body .main__auth .auth-radio__label a {
+    color: #2A59FF;
+  }
+  body .main__auth .form-auth__input {
+    border: 1px solid rgba(69, 78, 83, 0.5019607843);
+  }
+  body .main__auth .reset-link {
+    color: #DFE3F0;
+  }
+  body .main__auth .reset-link:hover {
+    color: #2A59FF;
+  }
+}
 html.dark body {
   background-color: #1E222A;
   color: #fff;
@@ -2753,6 +3021,18 @@ html.dark body .watchlist_mod .show-rows:hover .select__header {
 }
 html.dark body .watchlist .watchlist-product-status__status {
   background-color: #1E222A;
+}
+html.dark body .watchlist_ico .watchlist-main__list._grid .start {
+  border-left: 0;
+}
+html.dark body .watchlist_ico .watchlist-main__list._grid .watchlist-product-links {
+  border-left: 1px solid #1E222A;
+}
+html.dark body .watchlist_ico .watchlist-main__list._grid .watchlist-product-name::before, html.dark body .watchlist_ico .watchlist-main__list._grid .watchlist-product-category::before, html.dark body .watchlist_ico .watchlist-main__list._grid .watchlist-product__price::before {
+  opacity: 0;
+}
+html.dark body .watchlist_ico .watchlist-main__list._grid .watchlist-product-name::after, html.dark body .watchlist_ico .watchlist-main__list._grid .watchlist-product-category::after, html.dark body .watchlist_ico .watchlist-main__list._grid .watchlist-product__price::after {
+  opacity: 1;
 }
 html.dark body .watchlist-main__list._grid .watchlist-product-nft {
   border-left: 0px;
@@ -3286,6 +3566,119 @@ html.dark body .about .about-article__more {
     background-color: #1E222A;
   }
 }
+html.dark body .game-info_ico .token-sale__label, html.dark body .game-info_ico .token-sale__value {
+  color: #fff;
+}
+html.dark body .descr-card__screenshot {
+  background-color: rgba(41, 44, 45, 0.2);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+html.dark body .watchlist_airdrops .watchlist-main__list._grid .start {
+  border-left: 0;
+}
+html.dark body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-links {
+  border-left: 1px solid #1E222A;
+}
+html.dark body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name::before, html.dark body .watchlist_airdrops .watchlist-main__list._grid .amount::before, html.dark body .watchlist_airdrops .watchlist-main__list._grid .receivers::before {
+  opacity: 0;
+}
+html.dark body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name::after, html.dark body .watchlist_airdrops .watchlist-main__list._grid .amount::after, html.dark body .watchlist_airdrops .watchlist-main__list._grid .receivers::after {
+  opacity: 1;
+}
+html.dark body .main__about-us .about-us__box {
+  background-color: rgba(41, 44, 45, 0.2);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+}
+html.dark body .main__about-us .about-us__paragraph {
+  color: #fff;
+}
+html.dark body .main__qa .qa-qoute {
+  background-color: rgba(45, 48, 52, 0.4);
+}
+html.dark body .main__qa .qa-qoute__text, html.dark body .main__qa .answer__paragraph {
+  color: #fff;
+}
+html.dark body .main__blog .blog-list__list-el::before {
+  opacity: 1;
+}
+html.dark body .main__blog .blog-list__list-el::after {
+  opacity: 0;
+}
+html.dark body .main__blog .blog-body__paragraph, html.dark body .main__blog .blog-list__list-el, html.dark body .main__blog .blog-body__list-headline {
+  color: #fff;
+}
+html.dark body .main__blog .footer-social__el {
+  border: 1px solid rgba(69, 78, 83, 0.2);
+}
+html.dark body .main__blog .footer-social__el:hover path {
+  fill: #1E222A;
+}
+html.dark body .main__blog .footer-social__el::before {
+  opacity: 0;
+}
+html.dark body .main__blog .footer-social__el::after {
+  opacity: 1;
+}
+html.dark body .main__card-offer .card-offer__card {
+  background-color: rgba(41, 44, 45, 0.2);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+}
+html.dark body .main__support .footer-social__el {
+  border: 1px solid rgba(69, 78, 83, 0.2);
+}
+html.dark body .main__support .footer-social__el:hover path {
+  fill: #1E222A;
+}
+html.dark body .main__support .footer-social__el::before {
+  opacity: 0;
+}
+html.dark body .main__support .footer-social__el::after {
+  opacity: 1;
+}
+html.dark body .main__support .support-card {
+  background-color: rgba(41, 44, 45, 0.2);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+}
+html.dark body .main__support .support-contacts__subtitle, html.dark body .main__support .support-contacts__text {
+  color: #fff;
+}
+html.dark body .main__support .support-contacts__action:hover .support-contacts__text {
+  color: #2A59FF;
+}
+html.dark body .main__support .support-form__box, html.dark body .main__support .support-form__text-area {
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+}
+html.dark body .main__support .support-form__input, html.dark body .main__support .support-form__text-area {
+  color: #fff;
+}
+html.dark body .main__auth .auth-card {
+  background-color: rgba(41, 44, 45, 0.2);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+}
+html.dark body .main__auth .auth-card__other-way-label, html.dark body .main__auth .auth-card__another, html.dark body .main__auth .auth-radio__label, html.dark body .main__auth .form-auth__label, html.dark body .main__auth .form-auth__input, html.dark body .main__auth .form-auth__paragraph {
+  color: #fff;
+}
+html.dark body .main__auth .auth-card__another a, html.dark body .main__auth .auth-radio__label a {
+  color: #2A59FF;
+}
+html.dark body .main__auth .form-auth__input {
+  border: 1px solid rgba(69, 78, 83, 0.5019607843);
+}
+html.dark body .main__auth .reset-link {
+  color: #DFE3F0;
+}
+html.dark body .main__auth .reset-link:hover {
+  color: #2A59FF;
+}
 
 html.light body {
   background-color: #E8EBEF;
@@ -3803,6 +4196,18 @@ html.light body .watchlist_mod .show-rows:hover .select__header {
 }
 html.light body .watchlist .watchlist-product-status__status {
   background-color: #DFE4F0;
+}
+html.light body .watchlist_ico .watchlist-main__list._grid .start {
+  border-left: 0;
+}
+html.light body .watchlist_ico .watchlist-main__list._grid .watchlist-product-links {
+  border-left: 1px solid #DFE3F0;
+}
+html.light body .watchlist_ico .watchlist-main__list._grid .watchlist-product-name::before, html.light body .watchlist_ico .watchlist-main__list._grid .watchlist-product-category::before, html.light body .watchlist_ico .watchlist-main__list._grid .watchlist-product__price::before {
+  opacity: 1;
+}
+html.light body .watchlist_ico .watchlist-main__list._grid .watchlist-product-name::after, html.light body .watchlist_ico .watchlist-main__list._grid .watchlist-product-category::after, html.light body .watchlist_ico .watchlist-main__list._grid .watchlist-product__price::after {
+  opacity: 0;
 }
 html.light body .watchlist-main__list._grid .watchlist-product-nft {
   border-left: 0px;
@@ -4339,6 +4744,125 @@ html.light body .about .about-article__more {
   html.light body .watchlist-product-name._fixed .watchlist-product-name__box {
     background-color: #fff;
   }
+}
+html.light body .game-info_ico .token-sale__label, html.light body .game-info_ico .token-sale__value {
+  color: #4A596D;
+}
+html.light body .descr-card__screenshot {
+  background-color: #fdfdfd;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+}
+html.light body .watchlist_airdrops .watchlist-main__list._grid .start {
+  border-left: 0;
+}
+html.light body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-links {
+  border-left: 1px solid #DFE3F0;
+}
+html.light body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name::before, html.light body .watchlist_airdrops .watchlist-main__list._grid .amount::before, html.light body .watchlist_airdrops .watchlist-main__list._grid .receivers::before {
+  opacity: 1;
+}
+html.light body .watchlist_airdrops .watchlist-main__list._grid .watchlist-product-name::after, html.light body .watchlist_airdrops .watchlist-main__list._grid .amount::after, html.light body .watchlist_airdrops .watchlist-main__list._grid .receivers::after {
+  opacity: 0;
+}
+html.light body .main__about-us .about-us__box {
+  background-color: #f7faff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+html.light body .main__about-us .about-us__paragraph {
+  color: #4A596D;
+}
+html.light body .main__qa .qa-qoute {
+  background-color: rgb(248, 250, 253);
+}
+html.light body .main__qa .qa-qoute__text, html.light body .main__qa .answer__paragraph {
+  color: #454E53;
+}
+html.light body .main__blog .blog-list__list-el::before {
+  opacity: 0;
+}
+html.light body .main__blog .blog-list__list-el::after {
+  opacity: 1;
+}
+html.light body .main__blog .blog-body__paragraph, html.light body .main__blog .blog-list__list-el, html.light body .main__blog .blog-body__list-headline {
+  color: #454E53;
+}
+html.light body .main__blog .footer-social__el {
+  border: 1px solid transparent;
+}
+html.light body .main__blog .footer-social__el:hover path {
+  fill: #fff;
+}
+html.light body .main__blog .footer-social__el::before {
+  opacity: 0.6;
+}
+html.light body .main__blog .footer-social__el::after {
+  opacity: 0;
+}
+html.light body .main__card-offer .card-offer__card {
+  background-color: #f7faff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+html.light body .main__support .footer-social__el {
+  border: 1px solid transparent;
+}
+html.light body .main__support .footer-social__el:hover path {
+  fill: #fff;
+}
+html.light body .main__support .footer-social__el::before {
+  opacity: 1;
+}
+html.light body .main__support .footer-social__el::after {
+  opacity: 0;
+}
+html.light body .main__support .support-card {
+  background-color: #f7faff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+html.light body .main__support .support-contacts__subtitle, html.light body .main__support .support-contacts__text {
+  color: #454E53;
+}
+html.light body .main__support .support-contacts__action:hover .support-contacts__text {
+  color: #2A59FF;
+}
+html.light body .main__support .support-form__box, html.light body .main__support .support-form__text-area {
+  border: 1px solid #B5BACB;
+}
+html.light body .main__support .support-form__input, html.light body .main__support .support-form__text-area {
+  color: #1E222A;
+}
+html.light body .main__auth .auth-card {
+  background-color: #f7faff;
+  -webkit-box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+          box-shadow: 0px 4px 22px rgba(224, 227, 244, 0.4);
+  border: 1px solid transparent;
+}
+html.light body .main__auth .auth-card__other-way-label, html.light body .main__auth .auth-card__another, html.light body .main__auth .auth-radio__label, html.light body .main__auth .form-auth__label, html.light body .main__auth .form-auth__input, html.light body .main__auth .form-auth__paragraph {
+  color: #454E53;
+}
+html.light body .main__auth .auth-card__another a, html.light body .main__auth .auth-radio__label a {
+  color: #2A59FF;
+}
+html.light body .main__auth .form-auth__input {
+  border: 1px solid #B5BACB;
+}
+html.light body .main__auth .form-auth__input {
+  border: 1px solid #B5BACB;
+}
+html.light body .main__auth .form-auth__input:hover {
+  color: #2A59FF;
+}
+html.light body .main__auth .reset-link {
+  color: #B5BACB;
+}
+html.light body .main__auth .reset-link:hover {
+  color: #2A59FF;
 }
 
 .main__about {
